@@ -48,7 +48,9 @@ export function LessonView({ lessonId }: { lessonId: string }) {
         {completed && <Pill icon="circle-check">abgeschlossen</Pill>}
       </Flex>
 
-      <Title size="2">Lernziele</Title>
+      <Title size="2" className="section-title">
+        Lernziele
+      </Title>
       <List>
         {lesson.goals.map((goal) => (
           <ListItem key={goal}>
@@ -68,7 +70,9 @@ export function LessonView({ lessonId }: { lessonId: string }) {
 
       {lesson.quiz.length > 0 && (
         <>
-          <Title size="2">Kontrollfragen</Title>
+          <Title size="2" className="section-title">
+            Kontrollfragen
+          </Title>
           <Text>
             Wie in der Prüfung können keine, eine, mehrere oder alle Aussagen richtig sein.
           </Text>

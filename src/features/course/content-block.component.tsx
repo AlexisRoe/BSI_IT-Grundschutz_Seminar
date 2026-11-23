@@ -6,7 +6,11 @@ import { Alert, Card, Description, Link, List, ListItem, Table, Text, Title } fr
 export function ContentBlockView({ block }: { block: ContentBlock }) {
   switch (block.type) {
     case "heading":
-      return <Title size="3">{block.text}</Title>;
+      return (
+        <Title size="3" className="section-title">
+          {block.text}
+        </Title>
+      );
     case "paragraph":
       return (
         <Text>

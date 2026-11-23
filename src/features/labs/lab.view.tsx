@@ -48,16 +48,18 @@ export function LabView({ labId }: { labId: string }) {
     <Flex column gap="md" key={lab.id}>
       <Text>{`Labor zu Themenfeld ${lab.topic}: ${getTopic(lab.topic).title}`}</Text>
       <Title size="1">{lab.title}</Title>
-      <Title size="2">Ausgangslage</Title>
+      <Title size="2" className="section-title">
+        Ausgangslage
+      </Title>
       {lab.scenario.map((p) => (
         <Text key={p}>
           <RichText text={p} />
         </Text>
       ))}
       {lab.tasks.map((task, i) => (
-        <Flex column gap="sm" key={task.id}>
+        <Flex column gap="md" key={task.id} className="lab-task">
           <Divider />
-          <Title size="2">{`Aufgabe ${i + 1}`}</Title>
+          <Title size="2" className="section-title">{`Aufgabe ${i + 1}`}</Title>
           {task.kind === "classify" ? (
             <ClassifyTask task={task} onChecked={(s) => onChecked(task.id, s)} />
           ) : (
