@@ -23,7 +23,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Elementare Gefährdungen sind produktneutral (immer) und möglichst technikneutral.",
-      source: { doc: "kompendium", section: "Elementare Gefährdungen (Einstieg)" },
+      source: {
+        doc: "kompendium",
+        section: "Elementare Gefährdungen (Einstieg)",
+        quote: "kompatibel mit vergleichbaren internationalen Katalogen und Standards",
+      },
     },
     {
       id: "p05-02",
@@ -38,7 +42,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Schicht – Teilschicht und Baustein – Anforderung. Die Art (B/S/H) ergibt sich aus dem Kürzel im Titel, nicht aus der Nummer.",
-      source: { doc: "kompendium", section: "Aufbau der Bausteine" },
+      source: {
+        doc: "kompendium",
+        section: "Aufbau der Bausteine",
+        quote: "dann die Nummern der jeweiligen Teilschichten und des Bausteins",
+      },
     },
     {
       id: "p05-03",
@@ -59,7 +67,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "DER (Detektion und Reaktion) ist eine Prozess-Schicht; INF eine System-Schicht.",
-      source: { doc: "kompendium", section: "Schichtenmodell und Modellierung" },
+      source: {
+        doc: "kompendium",
+        section: "Schichtenmodell und Modellierung",
+        quote:
+          "Die Prozess-Bausteine, die in der Regel für sämtliche oder große Teile eines Informationsverbunds gleichermaßen gelten",
+      },
     },
     {
       id: "p05-04",
@@ -74,7 +87,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Für realisierte Verbünde ist das Modell ein Prüfplan; für geplante Verbünde ein Entwicklungskonzept.",
-      source: { doc: "kompendium", section: "Schichtenmodell und Modellierung" },
+      source: {
+        doc: "kompendium",
+        section: "Schichtenmodell und Modellierung",
+        quote:
+          "Es kann in Form eines Prüfplans benutzt werden, um einen Soll-Ist-Vergleich durchzuführen",
+      },
     },
     {
       id: "p05-05",
@@ -95,7 +113,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die initial vergebene Nummerierung bleibt bestehen; neue Anforderungen erhalten die nächste freie Nummer.",
-      source: { doc: "kompendium", section: "Überarbeitung von IT-Grundschutz-Bausteinen" },
+      source: {
+        doc: "kompendium",
+        section: "Überarbeitung von IT-Grundschutz-Bausteinen",
+        quote: "die um eine neue Basis-Anforderung ergänzt werden, so erhält diese die Nummer",
+      },
     },
     {
       id: "p05-06",
@@ -113,7 +135,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Nicht hinreichend abbildbare Zielobjekte erfordern eine Risikoanalyse; allgemeine Bausteine helfen; neue Bausteine können vorgeschlagen werden.",
-      source: { doc: "kompendium", section: "Schichtenmodell und Modellierung, Kap. 2.1" },
+      source: {
+        doc: "kompendium",
+        section: "Schichtenmodell und Modellierung, Kap. 2.1",
+        quote:
+          "nicht hinreichend abgebildet werden können. In diesem Fall muss eine Risikoanalyse durchgeführt werden",
+      },
     },
   ],
 };

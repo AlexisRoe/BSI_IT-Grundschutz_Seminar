@@ -18,12 +18,21 @@ export const pool: TopicQuestions = {
           text: "Ein Soll-Ist-Vergleich zwischen den Anforderungen der modellierten Bausteine und den umgesetzten Maßnahmen",
           correct: true,
         },
-        { text: "Die frühere Bezeichnung war Basis-Sicherheitscheck.", correct: true },
+        {
+          text: "Mithilfe von Interviews wird der Umsetzungsgrad der Sicherheitsanforderungen im modellierten Informationsverbund ermittelt.",
+          correct: true,
+        },
         { text: "Eine Zertifizierungsprüfung durch das BSI", correct: false },
       ],
       explanation:
         "Der Check ist ein internes Instrument; zertifiziert wird durch Audits nach dem Zertifizierungsschema.",
-      source: { doc: "200-2", section: "Kap. 8; Glossar", page: 77 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8",
+        page: 77,
+        quote:
+          "Der IT-Grundschutz-Check ist ein Organisationsinstrument, das einen schnellen Überblick über das vorhandene Sicherheitsniveau bietet",
+      },
     },
     {
       id: "p07-02",
@@ -38,7 +47,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der Check besteht aus drei Schritten: Vorbereitung, Soll-Ist-Vergleich, Dokumentation.",
-      source: { doc: "200-2", section: "Kap. 8.4", page: 145 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4",
+        page: 145,
+        quote: "Der IT-Grundschutz-Check besteht aus drei unterschiedlichen Schritten",
+      },
     },
     {
       id: "p07-03",
@@ -53,7 +67,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Interviews werden bei Bedarf durch Stichproben, Sichtung von Regelungen, Besichtigungen und Prüfung von Einstellungen verifiziert.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4",
+        page: 145,
+        quote:
+          "der eigentliche Soll-Ist-Vergleich mittels Interviews und stichprobenartiger Kontrolle durchgeführt",
+      },
     },
     {
       id: "p07-04",
@@ -68,7 +88,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Für APP-Bausteine sind die Anwendungsverantwortlichen die richtigen Ansprechpartner.",
-      source: { doc: "200-2", section: "Kap. 8.4.1", page: 147 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.1",
+        page: 146,
+        quote:
+          "Für die Bausteine der Schicht APP (Anwendungen) sollten die Betreuer bzw. die Verantwortlichen der einzelnen Anwendungen als Hauptansprechpartner ausgewählt werden",
+      },
     },
     {
       id: "p07-05",
@@ -85,7 +111,13 @@ export const pool: TopicQuestions = {
         { text: "Ausschließlich externe Auditoren", correct: false },
       ],
       explanation: "Bewährt haben sich zwei Personen pro Interviewgruppe.",
-      source: { doc: "200-2", section: "Kap. 8.4.1", page: 147 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.1",
+        page: 147,
+        quote:
+          "Es hat sich bewährt, in jeder Gruppe zwei Personen für die Durchführung des Interviews einzuplanen",
+      },
     },
     {
       id: "p07-06",
@@ -103,7 +135,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Nicht relevant bzw. Alternativmaßnahme = „entbehrlich“; vollständig umgesetzt = „ja“.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote:
+          "Die Anforderung wurde noch nicht erfüllt, also geeignete Maßnahmen sind größtenteils noch nicht umgesetzt",
+      },
     },
     {
       id: "p07-07",
@@ -123,7 +161,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Kosten oder pauschale Risikoakzeptanz rechtfertigen „entbehrlich“ nicht.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote:
+          "weil die Anforderung im betrachteten Informationsverbund nicht relevant ist (z. B. weil Dienste nicht aktiviert wurden) oder durch Alternativmaßnahmen behandelt wurde",
+      },
     },
     {
       id: "p07-08",
@@ -137,7 +181,13 @@ export const pool: TopicQuestions = {
         { text: "Das Glossar", correct: false },
       ],
       explanation: "Die Kreuzreferenztabelle ordnet Anforderungen den elementaren Gefährdungen zu.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote:
+          "müssen über die Kreuzreferenztabelle des jeweiligen Bausteins die zugehörigen elementaren Gefährdungen identifiziert werden",
+      },
     },
     {
       id: "p07-09",
@@ -152,7 +202,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Weitergehende Aspekte hochschutzbedürftiger Anwendungen werden erst nach Abschluss des Checks betrachtet.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote:
+          "Die Befragungstiefe richtet sich zunächst nach dem Niveau von Basis- und Standard-Anforderungen",
+      },
     },
     {
       id: "p07-10",
@@ -166,7 +222,12 @@ export const pool: TopicQuestions = {
         { text: "Der Standort der zugeordneten Objekte", correct: true },
       ],
       explanation: "Alle vier Angaben werden im Standard als Stamminformationen genannt.",
-      source: { doc: "200-2", section: "Kap. 8.4.3", page: 151 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.3",
+        page: 151,
+        quote: "das Erfassungsdatum und der Name des Erfassers und die befragten Ansprechpartner",
+      },
     },
     {
       id: "p07-11",
@@ -189,7 +250,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Das Feld unterstützt Audits, Zertifizierung und die spätere Umsetzungsplanung.",
-      source: { doc: "200-2", section: "Kap. 8.4.3", page: 152 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.3",
+        page: 152,
+        quote:
+          "welchen finanziellen und personellen Aufwand die Beseitigung der Defizite erfordert",
+      },
     },
     {
       id: "p07-12",
@@ -207,7 +274,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Nicht relevante Anforderungen sind „entbehrlich“; die Begründung wird dokumentiert, damit die Entscheidung nachvollziehbar ist.",
-      source: { doc: "200-2", section: "Kap. 8.4.2 und 8.4.3", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2 und 8.4.3",
+        page: 150,
+        quote:
+          "im betrachteten Informationsverbund nicht relevant ist (z. B. weil Dienste nicht aktiviert wurden)",
+      },
     },
     {
       id: "p07-13",
@@ -231,7 +304,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Alternativmaßnahmen erfordern eine Begründung anhand der elementaren Gefährdungen.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote:
+          "muss begründet werden, dass das Risiko, das von allen betreffenden elementaren Gefährdungen ausgeht, angemessen minimiert wurde",
+      },
     },
     {
       id: "p07-14",
@@ -255,7 +334,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Interviewaussagen können durch Stichproben verifiziert werden; Ergebnisse werden den Befragten erläutert.",
-      source: { doc: "200-2", section: "Kap. 8.4.2", page: 150 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.2",
+        page: 150,
+        quote: "Falls der Bedarf besteht, die in den Interviews gemachten Aussagen zu verifizieren",
+      },
     },
     {
       id: "p07-15",
@@ -279,7 +363,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Externe Stellen sind ggf. einzubeziehen; die Verantwortung verbleibt bei der auslagernden Institution.",
-      source: { doc: "200-2", section: "Kap. 8.4.1 und 8.3.7", page: 146 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.4.1 und 8.3.7",
+        page: 146,
+        quote:
+          "ob und in welchem Umfang externe Stellen bei der Ermittlung des Umsetzungsstatus beteiligt werden müssen",
+      },
     },
   ],
 };

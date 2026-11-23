@@ -1,4 +1,6 @@
 import { useRegisterSW } from "virtual:pwa-register/react";
+import { UPDATE_CHECK_INTERVAL_MS } from "@/config/app.config";
+import { scheduleUpdateChecks } from "./pwa-update.utils";
 
 /** State of the service-worker update flow. */
 export interface PwaUpdate {
@@ -8,11 +10,19 @@ export interface PwaUpdate {
   applyUpdate: () => void;
 }
 
-/** Registers the service worker and exposes whether the user can reload into a newer version. */
+/**
+ * Registers the service worker, checks for new versions on start, periodically,
+ * on return to the app and on reconnect, and exposes whether the user can
+ * reload into a newer version.
+ */
 export function usePwaUpdate(): PwaUpdate {
   const {
     needRefresh: [updateAvailable],
     updateServiceWorker,
-  } = useRegisterSW();
+  } = useRegisterSW({
+    onRegisteredSW: (_url, registration) => {
+      if (registration) scheduleUpdateChecks(registration, UPDATE_CHECK_INTERVAL_MS);
+    },
+  });
   return { updateAvailable, applyUpdate: () => void updateServiceWorker(true) };
 }

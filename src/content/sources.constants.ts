@@ -6,6 +6,11 @@ export interface SourceDocument {
   title: string;
   version: string;
   file: string;
+  /**
+   * Physical PDF page minus printed page number. Used to find a cited printed
+   * page in the extracted text (ADR 0017).
+   */
+  pageOffset: number;
 }
 
 /** Registry of all citable documents (see ADR 0014). */
@@ -15,80 +20,99 @@ export const SOURCES: Readonly<Record<SourceDocId, SourceDocument>> = {
     title: "Curriculum zum Schulungskonzept IT-Grundschutz-Praktiker und -Berater",
     version: "1.1 (24.09.2024)",
     file: "curriculum_1_1.pdf",
+    pageOffset: 0,
   },
   faq: {
     id: "faq",
     title: "Fragen und Antworten zum Schulungskonzept IT-Grundschutz-Berater",
     version: "1.1 (24.09.2024)",
     file: "faq_curiculum.pdf",
+    pageOffset: 0,
   },
   pruefung: {
     id: "pruefung",
     title: "Prüfungsbedingungen für den IT-Grundschutz-Praktiker",
     version: "2.2 (23.06.2026)",
     file: "pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf",
+    pageOffset: 0,
   },
   kompendium: {
     id: "kompendium",
     title: "IT-Grundschutz-Kompendium",
     version: "Edition 2023",
     file: "IT_Grundschutz_Kompendium_Edition2023.pdf",
+    // Printed page numbers restart in every Baustein; cite by section, not page.
+    pageOffset: 0,
   },
   "200-1": {
     id: "200-1",
     title: "BSI-Standard 200-1: Managementsysteme für Informationssicherheit (ISMS)",
     version: "1.0 (Oktober 2017)",
     file: "standard_200_1.pdf",
+    pageOffset: 0,
   },
   "200-2": {
     id: "200-2",
     title: "BSI-Standard 200-2: IT-Grundschutz-Methodik",
     version: "1.0 (Oktober 2017)",
     file: "standard_200_2.pdf",
+    pageOffset: 0,
   },
   "200-3": {
     id: "200-3",
     title: "BSI-Standard 200-3: Risikoanalyse auf der Basis von IT-Grundschutz",
     version: "1.0 (Oktober 2017)",
     file: "standard_200_3.pdf",
+    pageOffset: 0,
   },
   "200-4": {
     id: "200-4",
     title: "BSI-Standard 200-4: Business Continuity Management",
     version: "2023",
     file: "standard_200_4.pdf",
+    pageOffset: -2,
   },
   zert: {
     id: "zert",
     title: "Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz – Zertifizierungsschema",
     version: "2.2",
     file: "zertifizierungsschema.pdf",
+    pageOffset: 0,
   },
   audit: {
     id: "audit",
     title: "Auditierungsschema für ISO 27001-Zertifizierungen auf der Basis von IT-Grundschutz",
     version: "2.5",
     file: "auditierungsschema.pdf",
+    pageOffset: 0,
   },
   refdoc: {
     id: "refdoc",
     title: "Hinweise zur Bereitstellung der Referenzdokumente (ISO 27001 auf Basis IT-Grundschutz)",
     version: "2.1",
     file: "hinweise_referenzdokumente.pdf",
+    pageOffset: 0,
   },
   basis: {
     id: "basis",
     title: "Leitfaden zur Basis-Absicherung nach IT-Grundschutz",
     version: "Oktober 2017",
     file: "leitfaden_basis_absicherung.pdf",
+    pageOffset: 0,
   },
   profil: {
     id: "profil",
     title: "IT-Grundschutz-Profile – Strukturbeschreibung",
     version: "1.0 (28.09.2018)",
     file: "it_grundschutz_profil_strukturbeschreibung.pdf",
+    pageOffset: -1,
   },
 };
+
+/** File name of the extracted text of a document in `resources/.text/`. */
+export function textFileOf(doc: SourceDocument): string {
+  return doc.file.replace(/\.pdf$/, ".txt");
+}
 
 /** Short German citation, e.g. "BSI-Standard 200-2, Kap. 8.2, S. 103". */
 export function formatSource(ref: SourceRef): string {

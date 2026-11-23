@@ -16,7 +16,12 @@ export const pool: TopicQuestions = {
         { text: "Festlegung des Umsetzungsstatus der Anforderungen", correct: false },
       ],
       explanation: "Der Umsetzungsstatus wird im IT-Grundschutz-Check festgestellt.",
-      source: { doc: "200-2", section: "Kap. 8.1", page: 79 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1",
+        page: 79,
+        quote: "Die Strukturanalyse gliedert sich in folgende Teilaufgaben",
+      },
     },
     {
       id: "p06-02",
@@ -40,7 +45,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Gruppenbildung ersetzt die Schutzbedarfsfeststellung nicht; gleicher Schutzbedarf ist Voraussetzung.",
-      source: { doc: "200-2", section: "Kap. 8.1.1", page: 79 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.1",
+        page: 79,
+        quote:
+          "dass die Administration wesentlich vereinfacht wird, wenn es nur wenige Grundkonfigurationen gibt",
+      },
     },
     {
       id: "p06-03",
@@ -55,7 +66,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Beim Cloud Computing ist eine Gruppenbildung, z. B. nach Schutzbedarf, zwingend erforderlich.",
-      source: { doc: "200-2", section: "Kap. 8.1.1", page: 80 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.1",
+        page: 80,
+        quote:
+          "Eine Gruppenbildung, beispielsweise anhand des Schutzbedarfs, ist beim Cloud Computing zwingend erforderlich",
+      },
     },
     {
       id: "p06-04",
@@ -69,7 +86,13 @@ export const pool: TopicQuestions = {
         { text: "USB-Sticks und externe Festplatten für den mobilen Einsatz", correct: true },
       ],
       explanation: "Alle genannten Beispiele werden im Standard ausdrücklich aufgeführt.",
-      source: { doc: "200-2", section: "Kap. 8.1.3", page: 83 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.3",
+        page: 83,
+        quote:
+          "Beispiele für Datenträger und Dokumente, die im Rahmen der Strukturanalyse gesondert erfasst werden sollten",
+      },
     },
     {
       id: "p06-05",
@@ -83,7 +106,13 @@ export const pool: TopicQuestions = {
         { text: "Seriennummer jeder Tastatur und jedes Bildschirms", correct: false },
       ],
       explanation: "Erfasst werden Systeme als Ganzes, nicht ihre einzelnen Bestandteile.",
-      source: { doc: "200-2", section: "Kap. 8.1.5", page: 91 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.5",
+        page: 91,
+        quote:
+          "Bei dieser Erfassung sollten folgende Informationen vermerkt werden, die für die nachfolgende Arbeit nützlich sind",
+      },
     },
     {
       id: "p06-06",
@@ -104,7 +133,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Auch mitgebrachte private Geräte wie Smartwatches werden als IoT-Beispiele genannt.",
-      source: { doc: "200-2", section: "Kap. 8.1.7", page: 97 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.7",
+        page: 97,
+        quote: "bei jeder Art von Übersicht oder Bestandserhebung IoT-Geräte übersehen werden",
+      },
     },
     {
       id: "p06-07",
@@ -122,7 +156,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Auch Räume mit nicht elektronischen schutzbedürftigen Informationen und Räume außerhalb der Liegenschaften gehören dazu.",
-      source: { doc: "200-2", section: "Kap. 8.1.8", page: 101 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.1.8",
+        page: 101,
+        quote:
+          "Hierbei müssen auch Räume hinzugezählt werden, in denen nicht elektronische schutzbedürftige Informationen aufbewahrt werden",
+      },
     },
     {
       id: "p06-08",
@@ -137,7 +177,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die sechs Szenarien: Gesetzesverstoß, informationelle Selbstbestimmung, persönliche Unversehrtheit, Aufgabenerfüllung, Innen-/Außenwirkung, finanzielle Auswirkungen.",
-      source: { doc: "200-2", section: "Kap. 8.2.1", page: 105 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.1",
+        page: 105,
+        quote: "lassen sich typischerweise folgenden Schadensszenarien zuordnen",
+      },
     },
     {
       id: "p06-09",
@@ -151,7 +196,12 @@ export const pool: TopicQuestions = {
         { text: "Mindestens eine Woche", correct: false },
       ],
       explanation: "normal: 24–72 h; hoch: 1–24 h; sehr hoch: unter 1 h.",
-      source: { doc: "200-2", section: "Kap. 8.2.1, Tabelle 2", page: 106 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.1, Tabelle 2",
+        page: 106,
+        quote: "Die maximal tolerierbare Ausfallzeit liegt zwischen 24 und 72 Stunden",
+      },
     },
     {
       id: "p06-10",
@@ -169,7 +219,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der Schutzbedarf der Geschäftsprozesse und Informationen vererbt sich auf die zur Verarbeitung genutzten Objekte.",
-      source: { doc: "200-2", section: "Kap. 8.2.2", page: 108 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.2",
+        page: 108,
+        quote:
+          "Der für diese Elemente ermittelte Schutzbedarf vererbt sich auf die für deren Verarbeitung genutzten Objekte",
+      },
     },
     {
       id: "p06-11",
@@ -189,7 +245,13 @@ export const pool: TopicQuestions = {
         { text: "Es werden maximal drei Schutzbedarfskategorien verwendet.", correct: false },
       ],
       explanation: "Maßgeblich ist der schwerwiegendste Schaden – kein Durchschnitt.",
-      source: { doc: "kompendium", section: "Glossar: Maximumprinzip" },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.2",
+        page: 108,
+        quote:
+          "bestimmt der Schaden bzw. die Summe der Schäden mit den schwerwiegendsten Auswirkungen den Schutzbedarf eines Objektes",
+      },
     },
     {
       id: "p06-12",
@@ -204,7 +266,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Vor allem bei redundant ausgelegten Systemen hinsichtlich der Verfügbarkeit; Verteilungseffekte bei Vertraulichkeit sind aber ebenfalls vorstellbar.",
-      source: { doc: "200-2", section: "Kap. 8.2.2", page: 109 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.2",
+        page: 109,
+        quote:
+          "Der Verteilungseffekt tritt hauptsächlich bezüglich des Grundwertes der Verfügbarkeit auf",
+      },
     },
     {
       id: "p06-13",
@@ -222,7 +290,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Übertragungstechnik ist kein Kriterium; maßgeblich sind Außenbezug und Schutzbedarf.",
-      source: { doc: "200-2", section: "Kap. 8.2.8", page: 124 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.8",
+        page: 125,
+        quote: "Hierbei werden folgende Kommunikationsverbindungen als kritisch gewertet",
+      },
     },
     {
       id: "p06-14",
@@ -246,7 +319,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Grundschutz-Anforderungen bleiben die Basis und werden durch Maßnahmen aus der Risikoanalyse ergänzt.",
-      source: { doc: "200-2", section: "Kap. 8.2.9, Tabelle 5", page: 130 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.9, Tabelle 5",
+        page: 130,
+        quote: "liefern eine Standard-Absicherung, reichen aber alleine im Allgemeinen nicht aus",
+      },
     },
     {
       id: "p06-15",
@@ -261,7 +339,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Genannt werden räumliche, technische und personelle Zonen sowie Zonenkonzepte für Virtualisierung und Cloud.",
-      source: { doc: "200-2", section: "Kap. 8.2.9", page: 130 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.9",
+        page: 131,
+        quote:
+          "Solche Sicherheitszonen können sowohl räumlich als auch technisch oder personell ausgeprägt sein",
+      },
     },
     {
       id: "p06-16",
@@ -274,8 +358,15 @@ export const pool: TopicQuestions = {
         { text: "OPS.1.1 Kern-IT-Betrieb", correct: true },
         { text: "INF Infrastruktur", correct: false },
       ],
-      explanation: "R1: ISMS, ORP und OPS.1.1. R2 und R3 finden sich in allen anderen Schichten.",
-      source: { doc: "200-2", section: "Kap. 8.3.3", page: 137 },
+      explanation:
+        "Laut BSI-Standard 200-2 (2017): R1 sind ISMS, ORP und OPS.1.1; R2 und R3 finden sich in allen anderen Schichten. Im Kompendium Edition 2023 sind darüber hinaus u. a. CON.3, CON.6, DER.1 und DER.2.1 mit R1 gekennzeichnet.",
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.3.3",
+        page: 138,
+        quote:
+          "Mit R1 sind die Bausteine gekennzeichnet, die notwendig sind, um ein grundlegendes Sicherheitsgerüst zu erreichen",
+      },
     },
     {
       id: "p06-17",
@@ -292,7 +383,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Bei der Modellierung kann nur Vorarbeit anhand der Rollen geleistet werden.",
-      source: { doc: "200-2", section: "Kap. 8.3.4", page: 138 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.3.4",
+        page: 138,
+        quote:
+          "erst bei der Planung des eigentlichen Soll-Ist-Vergleichs im IT-Grundschutz-Check ermittelt",
+      },
     },
     {
       id: "p06-18",
@@ -313,7 +410,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Anforderungen werden sinngemäß in konkrete Maßnahmen übersetzt; Änderungen werden dokumentiert.",
-      source: { doc: "200-2", section: "Kap. 8.3.6", page: 142 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.3.6",
+        page: 143,
+        quote:
+          "Generell sollten die Anforderungen der IT-Grundschutz-Bausteine immer sinngemäß umgesetzt werden",
+      },
     },
     {
       id: "p06-19",
@@ -337,7 +440,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Ruft ein Client nur unkritische Daten einer vertraulichen Anwendung ab, kann sein Schutzbedarf geringer sein; die Entscheidung ist zu dokumentieren.",
-      source: { doc: "200-2", section: "Kap. 8.2.2", page: 109 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.2",
+        page: 109,
+        quote:
+          "Falls sichergestellt ist, dass ein Client nur unkritische Daten einer hochvertraulichen Datenbankanwendung abrufen kann",
+      },
     },
     {
       id: "p06-20",
@@ -364,7 +473,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Abhängigkeiten zwischen Anwendungen führen zur Übertragung des höheren Schutzbedarfs.",
-      source: { doc: "200-2", section: "Kap. 8.2.2", page: 108 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.2",
+        page: 108,
+        quote:
+          "In diesem Fall muss der ermittelte Schutzbedarf der Anwendung B auch auf die Anwendung A übertragen werden",
+      },
     },
     {
       id: "p06-21",
@@ -385,7 +500,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der Standard beschreibt genau diesen Fall: Kumulation nach „hoch“, durch Verteilung (Warm-Standby) zurück auf „normal“.",
-      source: { doc: "200-2", section: "Kap. 8.2.4", page: 118 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.4",
+        page: 118,
+        quote:
+          "gibt es in der Regel eine Kumulation nach „hoch“ und dann durch Verteilung sinkt der Schutzbedarf wieder auf „normal“",
+      },
     },
     {
       id: "p06-22",
@@ -406,7 +527,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Weitere Kategorien sind möglich; ihre Entsprechung zu „hoch“/„sehr hoch“ muss für die Auswahl der Risikoanalyse-Objekte klar sein.",
-      source: { doc: "200-2", section: "Kap. 8.2.1", page: 104 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.1",
+        page: 105,
+        quote:
+          "Wenn mehr als drei Schutzbedarfskategorien definiert werden, so ist zu überlegen, welche der neu definierten Kategorien",
+      },
     },
     {
       id: "p06-23",
@@ -427,7 +554,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Bare-Metal-Hypervisoren sind kein Zielobjekt des Kompendiums; daher Risikoanalyse plus Abgleich mit SYS.1.5.",
-      source: { doc: "200-2", section: "Kap. 8.3.5", page: 139 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.3.5",
+        page: 140,
+        quote: "Daher muss eine Risikoanalyse für das entsprechende Zielobjekt durchgeführt",
+      },
     },
     {
       id: "p06-24",
@@ -451,7 +583,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Sicherheitszonen (räumlich, technisch, personell) begrenzen die Ausbreitung des höheren Schutzbedarfs.",
-      source: { doc: "200-2", section: "Kap. 8.2.9", page: 130 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.9",
+        page: 131,
+        quote:
+          "sollten daher Sicherheitszonen zur Trennung von Bereichen mit unterschiedlichem Schutzbedarf eingerichtet werden",
+      },
     },
   ],
 };

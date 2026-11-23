@@ -27,6 +27,11 @@ export interface SourceRef {
   section?: string;
   /** Printed page number in the document. */
   page?: number;
+  /**
+   * Short verbatim phrase (about 5–20 words) from the cited page that supports
+   * the claim. CI checks it against the extracted text in `resources/.text/` (ADR 0017).
+   */
+  quote?: string;
 }
 
 /**

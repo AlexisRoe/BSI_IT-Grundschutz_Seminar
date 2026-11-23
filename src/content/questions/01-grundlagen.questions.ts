@@ -20,7 +20,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Vertraulichkeit ist der Schutz vor unbefugter Preisgabe; Korrektheit beschreibt Integrität, Nutzbarkeit beschreibt Verfügbarkeit.",
-      source: { doc: "kompendium", section: "Glossar: Vertraulichkeit" },
+      source: {
+        doc: "kompendium",
+        section: "Glossar: Vertraulichkeit",
+        quote:
+          "Vertraulichkeit ist der Schutz vor unbefugter Preisgabe von Informationen. Vertrauliche Daten und Informationen dürfen ausschließlich Befugten in der zulässigen Weise zugänglich sein.",
+      },
     },
     {
       id: "p01-02",
@@ -31,11 +36,17 @@ export const pool: TopicQuestions = {
         { text: "Auf Papier", correct: true },
         { text: "In IT-Systemen", correct: true },
         { text: "In den Köpfen der Menschen", correct: true },
-        { text: "Auf Datenträgern in einem Archiv", correct: true },
+        { text: "Ausschließlich in digitaler Form", correct: false },
       ],
       explanation:
-        "Informationssicherheit schützt Informationen jeglicher Art und Herkunft – auf Papier, in IT-Systemen oder in den Köpfen der Benutzer. Archivierte Datenträger sind ebenfalls eingeschlossen.",
-      source: { doc: "200-1", section: "Kap. 2", page: 8 },
+        "Informationssicherheit schützt Informationen jeglicher Art und Herkunft – auf Papier, in IT-Systemen oder in den Köpfen der Benutzer, also nicht nur digitale Informationen.",
+      source: {
+        doc: "200-1",
+        section: "Kap. 2",
+        page: 8,
+        quote:
+          "Informationssicherheit hat das Ziel, Informationen jeglicher Art und Herkunft zu schützen. Dabei können Informationen auf Papier, in IT-Systemen oder auch in den Köpfen der Benutzer gespeichert sein.",
+      },
     },
     {
       id: "p01-03",
@@ -50,7 +61,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Genannt werden u. a. Authentizität, Verbindlichkeit, Zuverlässigkeit, Resilienz und Nichtabstreitbarkeit. Wirtschaftlichkeit ist kein Sicherheitsziel.",
-      source: { doc: "200-1", section: "Kap. 2", page: 8 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2",
+        page: 8,
+        quote:
+          "Weitere generische Oberbegriffe der Informationssicherheit sind beispielsweise Authentizität, Verbindlichkeit, Zuverlässigkeit, Resilienz und Nichtabstreitbarkeit.",
+      },
     },
     {
       id: "p01-04",
@@ -71,7 +88,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Ursachen von Schwachstellen können in Konzeption, Algorithmen, Implementierung, Konfiguration, Betrieb oder Organisation liegen. Die Kombination aus Häufigkeit und Schaden beschreibt das Risiko.",
-      source: { doc: "kompendium", section: "Glossar: Schwachstelle" },
+      source: {
+        doc: "kompendium",
+        section: "Glossar: Schwachstelle",
+        quote:
+          "Eine Schwachstelle ist ein sicherheitsrelevanter Fehler eines IT-Systems oder einer Institution.",
+      },
     },
     {
       id: "p01-05",
@@ -95,7 +117,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das Glossar grenzt Datenschutz ausdrücklich von Datensicherheit ab; für Datensicherheit wird heute der Begriff Informationssicherheit verwendet.",
-      source: { doc: "kompendium", section: "Glossar: Datenschutz, Datensicherheit" },
+      source: {
+        doc: "kompendium",
+        section: "Glossar: Datenschutz, Datensicherheit",
+        quote:
+          "Mit Datensicherheit wird der Schutz von Daten hinsichtlich gegebener Anforderungen an deren Vertraulichkeit, Verfügbarkeit und Integrität bezeichnet. Ein modernerer Begriff dafür ist „Informationssicherheit“.",
+      },
     },
     {
       id: "p01-06",
@@ -122,7 +149,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "OT unterliegt langen Lebenszyklen, auch über den Herstellersupport hinaus, sodass Sicherheitsupdates nicht durchgängig verfügbar sind.",
-      source: { doc: "kompendium", section: "IND.1, Kap. 1.1" },
+      source: {
+        doc: "kompendium",
+        section: "IND.1, Kap. 1.1",
+        quote:
+          "Da in der OT zunehmend auch IT-Komponenten aus der Office-IT eingesetzt werden, ist diese inzwischen ähnlich gefährdet.",
+      },
     },
     {
       id: "p01-07",
@@ -137,7 +169,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "IND.1 bezeichnet Safety-Aspekte als Aspekte der funktionalen Sicherheit. Schutz vor Preisgabe ist Vertraulichkeit (Security).",
-      source: { doc: "kompendium", section: "IND.1, Kap. 2.2" },
+      source: {
+        doc: "kompendium",
+        section: "IND.1, Kap. 2.2",
+        quote:
+          "ICS-spezifische Informationssicherheits- und Safety-Aspekte, also Aspekte der funktionalen Sicherheit",
+      },
     },
     {
       id: "p01-08",
@@ -155,7 +192,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das Kompendium verweist z. B. im Baustein APP.1.2 auf den Mindeststandard für Webbrowser nach § 8 Abs. 1 BSIG, der von Stellen der Bundesverwaltung umzusetzen ist.",
-      source: { doc: "kompendium", section: "APP.1.2 Webbrowser, Kap. 4.1" },
+      source: {
+        doc: "kompendium",
+        section: "APP.1.2 Webbrowser, Kap. 4.1",
+        quote:
+          "Die Mindeststandards sind von den in §8 Abs.1 Satz1 BSIG genannten Stellen der Bundesverwaltung umzusetzen",
+      },
     },
     {
       id: "p01-09",
@@ -173,7 +215,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Anwendung ist nicht wie vorgesehen nutzbar (Verfügbarkeit), Befunde wurden Unbefugten zugänglich (Vertraulichkeit) und die Daten wurden unerlaubt verändert (Integrität).",
-      source: { doc: "kompendium", section: "Glossar: Verfügbarkeit, Vertraulichkeit, Integrität" },
+      source: {
+        doc: "kompendium",
+        section: "Glossar: Verfügbarkeit, Vertraulichkeit, Integrität",
+        quote:
+          "von Informationen ist vorhanden, wenn diese von den Anwendenden stets wie vorgesehen genutzt werden können.",
+      },
     },
     {
       id: "p01-10",
@@ -194,13 +241,18 @@ export const pool: TopicQuestions = {
           correct: false,
         },
         {
-          text: "Leittechnik-Komponenten gelten im Sinne von BSI-Standard 200-1 nicht als IT-Systeme.",
+          text: "Etablierte betriebliche Abläufe der Office-IT lassen sich ohne Weiteres auf die Leittechnik übertragen.",
           correct: false,
         },
       ],
       explanation:
-        "IND.1 beschreibt die Gefährdung durch ungeeignete Einbindung der OT in Sicherheitsorganisation und betriebliche Abläufe; 200-1 schließt ICS in den Begriff IT-System ein.",
-      source: { doc: "kompendium", section: "IND.1, Kap. 2.2 und 2.3" },
+        "IND.1 beschreibt die Gefährdung durch ungeeignete Einbindung der OT in Sicherheitsorganisation und betriebliche Abläufe: Besonderheiten der OT erschweren das Übertragen etablierter Abläufe.",
+      source: {
+        doc: "kompendium",
+        section: "IND.1, Kap. 2.2 und 2.3",
+        quote:
+          "Auch wenn sich OT und IT zunehmend annähern, gibt es Besonderheiten, die das Übertragen etablierter betrieblicher Abläufe erschweren.",
+      },
     },
   ],
 };

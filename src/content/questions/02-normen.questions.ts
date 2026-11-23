@@ -16,7 +16,12 @@ export const pool: TopicQuestions = {
         { text: "ISO/IEC 27009", correct: false },
       ],
       explanation: "ISO/IEC 27000 („Overview and vocabulary“) liefert Überblick und Begriffe.",
-      source: { doc: "200-1", section: "Kap. 2.1.1", page: 9 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.1",
+        page: 9,
+        quote: "Hier finden sich außerdem die grundlegenden Begriffe und Definitionen für ISMS.",
+      },
     },
     {
       id: "p02-02",
@@ -40,7 +45,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "ISO/IEC 27002 enthält kaum konkrete technische Hinweise; zertifiziert wird nach ISO/IEC 27001.",
-      source: { doc: "200-1", section: "Kap. 2.1.1", page: 9 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.1",
+        page: 9,
+        quote:
+          "Die Empfehlungen sind in erster Linie für die Management-Ebene gedacht und enthalten daher kaum konkrete technische Hinweise.",
+      },
     },
     {
       id: "p02-03",
@@ -54,7 +65,13 @@ export const pool: TopicQuestions = {
         { text: "ISO/IEC 20000", correct: false },
       ],
       explanation: "ISO/IEC 27004 behandelt Monitoring, Messung, Analyse und Bewertung.",
-      source: { doc: "200-1", section: "Kap. 2.1.1", page: 9 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.1",
+        page: 9,
+        quote:
+          "Die ISO-Norm 27004 behandelt die Bewertung der Umsetzung und der Wirksamkeit eines ISMS anhand verschiedener Kenngrößen.",
+      },
     },
     {
       id: "p02-04",
@@ -71,7 +88,13 @@ export const pool: TopicQuestions = {
         { text: "COBIT 5 ist die Grundlage der Norm ISO/IEC 20000.", correct: false },
       ],
       explanation: "ISO/IEC 20000 basiert auf ITIL, nicht auf COBIT.",
-      source: { doc: "200-1", section: "Kap. 2.1.3", page: 13 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.3",
+        page: 13,
+        quote:
+          "Aus der Gesamtbetrachtung der Reife aller 37 Prozessgebiete, die in fünf Domänen unterteilt sind",
+      },
     },
     {
       id: "p02-05",
@@ -92,7 +115,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "PCI DSS gilt für alle, die Karteninhaberdaten verarbeiten – etwa Händler und Dienstleister. Für US-Behörden verpflichtend sind NIST-Standards.",
-      source: { doc: "200-1", section: "Kap. 2.1.3", page: 14 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.3",
+        page: 14,
+        quote:
+          "Die Anforderungen des PCI DSS müssen von allen Institutionen umgesetzt werden, die Karteninhaberdaten von Kreditkarten speichern, verarbeiten oder übertragen",
+      },
     },
     {
       id: "p02-06",
@@ -113,7 +142,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "200-3 beschreibt die Risikoanalyse auf Basis der elementaren Gefährdungen. BCM ist Thema von 200-4, Akkreditierung von ISO/IEC 27006.",
-      source: { doc: "200-1", section: "Kap. 2.1.2", page: 12 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.2",
+        page: 12,
+        quote:
+          "eine vereinfachte Analyse von Risiken für die Informationsverarbeitung durchgeführt werden kann. Diese basiert auf den elementaren Gefährdungen",
+      },
     },
     {
       id: "p02-07",
@@ -131,12 +166,19 @@ export const pool: TopicQuestions = {
           correct: false,
         },
         {
-          text: "Umsetzungshinweise sind für eine Zertifizierung verpflichtend umzusetzen.",
+          text: "Umsetzungshinweise werden nicht veröffentlicht, sondern nur an zertifizierte Institutionen ausgegeben.",
           correct: false,
         },
       ],
-      explanation: "Bausteine = Was, Umsetzungshinweise = Wie (Best Practices).",
-      source: { doc: "200-1", section: "Kap. 2.1.2", page: 12 },
+      explanation:
+        "Bausteine = Was, Umsetzungshinweise = Wie (Best Practices). Beide werden kostenfrei im Internet veröffentlicht (Kap. 2.1).",
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.2",
+        page: 12,
+        quote:
+          "Die Bausteine des IT-Grundschutz-Kompendiums erklären, was gemacht werden sollte, die Umsetzungshinweise geben sehr konkrete Hinweise",
+      },
     },
     {
       id: "p02-08",
@@ -163,7 +205,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das Zertifikat ersetzt keine VSA-Freigaben; CON.11.1 unterstützt Bundesbehörden und bundesunmittelbare Einrichtungen bei der Umsetzung.",
-      source: { doc: "kompendium", section: "CON.11.1, Kap. 1" },
+      source: {
+        doc: "kompendium",
+        section: "CON.11.1, Kap. 1",
+        quote:
+          "Der IT-Grundschutz dient der Umsetzung der Informationssicherheit und die VSA der Umsetzung des Geheimschutzes.",
+      },
     },
     {
       id: "p02-09",
@@ -190,7 +237,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "200-4 empfiehlt die frühe Festlegung der Schnittstellen und die gemeinsame Nutzung von Methoden und Parametern des Risikomanagements.",
-      source: { doc: "200-4", section: "Kap. 4.2", page: 75 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 4.2",
+        page: 75,
+        quote:
+          "ist es empfehlenswert, bereits in der Planung und Konzeptionsphase die Schnittstellen zwischen BCMS und ISMS festzulegen",
+      },
     },
     {
       id: "p02-10",
@@ -217,7 +270,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "27009 regelt sektorspezifische Erweiterungen, 27010–27019 sind sektorspezifische Normen; 27006 betrifft die Akkreditierung von Zertifizierungsstellen.",
-      source: { doc: "200-1", section: "Kap. 2.1.1", page: 10 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 2.1.1",
+        page: 10,
+        quote:
+          "Viele sektorspezifische Normen (z. B. ISO/IEC 27019 für den Energiesektor) werden basierend auf der ISO/IEC 27009 entwickelt.",
+      },
     },
   ],
 };

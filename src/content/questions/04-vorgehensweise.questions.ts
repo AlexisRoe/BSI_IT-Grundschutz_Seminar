@@ -25,7 +25,12 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Auf Basis der Basis-Absicherung ist keine ISO 27001-Zertifizierung möglich.",
-      source: { doc: "200-2", section: "Kap. 3.3.1", page: 29 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.3.1",
+        page: 29,
+        quote: "Die Umsetzung von Informationssicherheit steht noch am Anfang",
+      },
     },
     {
       id: "p04-02",
@@ -46,7 +51,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Kronjuwelen sind existenziell wichtige Assets; sie stehen im Fokus der Kern-Absicherung.",
-      source: { doc: "kompendium", section: "Glossar: Kronjuwelen" },
+      source: {
+        doc: "kompendium",
+        section: "Glossar: Kronjuwelen",
+        quote: "existenzbedrohenden Schaden für die Institution bedeuten würde",
+      },
     },
     {
       id: "p04-03",
@@ -73,6 +82,8 @@ export const pool: TopicQuestions = {
       source: {
         doc: "kompendium",
         section: "Anforderungen für jedes Sicherheitsbedürfnis; Aufbau der Bausteine",
+        quote:
+          "Basis-Anforderungen sind vorrangig umzusetzen, da sie mit geringem Aufwand den größtmöglichen Nutzen erzielen",
       },
     },
     {
@@ -88,7 +99,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der Verantwortliche für Informationssicherheit erarbeitet einen Vorschlag; das Management entscheidet.",
-      source: { doc: "200-2", section: "Kap. 3.3.5", page: 31 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.3.5",
+        page: 31,
+        quote:
+          "Das Management muss auf dieser Grundlage entscheiden, für welche Bereiche der Institution welche Vorgehensweise",
+      },
     },
     {
       id: "p04-05",
@@ -115,7 +132,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Kern-Absicherung passt zu den Kriterien; der Rest sollte mindestens basis-abgesichert werden. Ziel ist mittelfristig die Standard-Absicherung.",
-      source: { doc: "200-2", section: "Kap. 3.3.2 und 3.3.4", page: 29 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.3.2 und 3.3.4",
+        page: 31,
+        quote:
+          "Damit aber auch für die restliche Institution ein Mindestmaß an Sicherheit vorhanden ist, sollte dort die Basis-Absicherung garantiert werden",
+      },
     },
     {
       id: "p04-06",
@@ -124,7 +147,7 @@ export const pool: TopicQuestions = {
       stem: "Bei der Festlegung des Informationsverbunds werden Teile eines Geschäftsprozesses von einem externen Rechenzentrum erbracht. Was ist laut BSI-Standard 200-2 zu beachten?",
       options: [
         {
-          text: "Die Schnittstellen zum externen Partner müssen klar definiert werden.",
+          text: "Die Schnittstellen zum externen Partner sollten klar definiert werden.",
           correct: true,
         },
         {
@@ -142,7 +165,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Geschäftsprozesse sollen vollständig enthalten sein; Abhängigkeiten von Externen werden über klar definierte Schnittstellen berücksichtigt.",
-      source: { doc: "200-2", section: "Kap. 3.3.4", page: 30 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.3.4",
+        page: 31,
+        quote:
+          "sollten die Schnittstellen klar definiert werden, damit dies im Rahmen der Sicherheitskonzeption berücksichtigt werden kann",
+      },
     },
   ],
 };
