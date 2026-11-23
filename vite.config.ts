@@ -1,4 +1,6 @@
 /// <reference types="vitest/config" />
+import { execSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
@@ -6,8 +8,32 @@ import { VitePWA } from "vite-plugin-pwa";
 import { extractInlineFontsPlugin } from "./plugins/extract-inline-fonts.plugin.ts";
 
 const isTest = process.env.VITEST === "true";
+const APP_TITLE = "IT-Grundschutz-Praktiker";
+
+function gitCommit(): string {
+  try {
+    return execSync("git rev-parse --short HEAD", { stdio: ["ignore", "pipe", "ignore"] })
+      .toString()
+      .trim();
+  } catch {
+    return process.env.GITHUB_SHA?.slice(0, 7) ?? "unbekannt";
+  }
+}
+
+const pkg = JSON.parse(readFileSync(resolve(import.meta.dirname, "package.json"), "utf8")) as {
+  version: string;
+};
+const buildInfo = {
+  title: APP_TITLE,
+  version: pkg.version,
+  commit: gitCommit(),
+  builtAt: new Date().toISOString(),
+};
 
 export default defineConfig({
+  define: {
+    __BUILD_INFO__: JSON.stringify(buildInfo),
+  },
   plugins: [
     react(),
     extractInlineFontsPlugin(),
@@ -16,8 +42,8 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ["favicon.ico", "icons/*.png"],
       manifest: {
-        name: "IT-Grundschutz-Praktiker",
-        short_name: "IT-Grundschutz-Praktiker",
+        name: APP_TITLE,
+        short_name: APP_TITLE,
         description: "Vorbereitungskurs für die Prüfung zum IT-Grundschutz-Praktiker.",
         start_url: "/",
         scope: "/",

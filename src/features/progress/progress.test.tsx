@@ -50,6 +50,15 @@ describe("progress views", () => {
     expect(window.location.hash).toBe("#/pruefung/ergebnis/e1");
   });
 
+  it("settings show build information", () => {
+    renderWithProviders(<SettingsView />);
+    expect(screen.getByText("Über diese App")).toBeInTheDocument();
+    expect(screen.getByText("IT-Grundschutz-Praktiker")).toBeInTheDocument();
+    expect(screen.getByText(/^\d+\.\d+\.\d+$/)).toBeInTheDocument();
+    expect(screen.getByText("Commit")).toBeInTheDocument();
+    expect(screen.getByText("Build-Zeit")).toBeInTheDocument();
+  });
+
   it("settings export, import and reset progress", async () => {
     useProgressStore.getState().completeLesson("t01-l01");
     const createUrl = vi.fn(() => "blob:x");

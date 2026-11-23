@@ -1,7 +1,18 @@
 import { useState } from "react";
+import { BUILD_INFO } from "@/config/build-info.config";
 import { useExamStore } from "@/stores/exam.store";
 import { selectProgressData, useProgressStore } from "@/stores/progress.store";
-import { Button, FileUpload, Flex, Modal, Text, Title, useNotifications } from "@/ui";
+import {
+  Button,
+  Card,
+  Description,
+  FileUpload,
+  Flex,
+  Modal,
+  Text,
+  Title,
+  useNotifications,
+} from "@/ui";
 import { createExport, parseExport } from "./progress-transfer.utils";
 
 /** Export, import and reset of the locally stored progress. */
@@ -79,6 +90,20 @@ export function SettingsView() {
         <Modal.CloseButton>Abbrechen</Modal.CloseButton>
         <Modal.ActionButton>Löschen</Modal.ActionButton>
       </Modal>
+      <Card>
+        <Card.Header>
+          <Card.Title>Über diese App</Card.Title>
+        </Card.Header>
+        <Card.Content>
+          <Description label="Projekt" value={BUILD_INFO.title} />
+          <Description label="Version" value={BUILD_INFO.version} />
+          <Description label="Commit" value={BUILD_INFO.commit} />
+          <Description
+            label="Build-Zeit"
+            value={new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}
+          />
+        </Card.Content>
+      </Card>
     </Flex>
   );
 }
