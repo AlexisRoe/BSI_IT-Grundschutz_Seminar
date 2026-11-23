@@ -73,19 +73,19 @@ body,
 .course {
   display: flex;
   flex-direction: column;
-  gap: var(--eink-size-48);
+  gap: var(--eink-size-32);
 }
 
 .course__topic {
   display: flex;
   flex-direction: column;
-  gap: var(--eink-size-32);
-  padding-block: var(--eink-size-16);
+  gap: var(--eink-size-20);
+  padding-block: var(--eink-size-8);
 }
 
 .course__lessons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--eink-size-24);
+  gap: var(--eink-size-16);
 }
