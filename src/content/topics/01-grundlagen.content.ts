@@ -403,9 +403,9 @@ export const topic: TopicContent = {
         {
           type: "praxis",
           title: "NIS-2-Umsetzung in Deutschland",
-          text: 'Mit dem NIS-2-Umsetzungs- und Cybersicherheitsstärkungsgesetz wurde das BSIG umfassend neu gefasst. Deutlich mehr Unternehmen ("wichtige" und "besonders wichtige Einrichtungen") unterliegen nun Pflichten zu Risikomanagementmaßnahmen, Registrierung und Meldung erheblicher Sicherheitsvorfälle; Geschäftsleitungen tragen eine ausdrückliche Verantwortung. Die IT-Grundschutz-Methodik bleibt ein anerkannter Weg, solche Anforderungen strukturiert umzusetzen.',
+          text: "Mit der Umsetzung der NIS-2-Richtlinie unterliegen deutlich mehr Unternehmen Pflichten nach dem BSIG: Besonders wichtige und wichtige Einrichtungen müssen sich beim BSI registrieren (§ 33 Abs. 6 BSIG) und erhebliche Sicherheitsvorfälle melden. Laut BSI sind die Geschäftsführungen betroffener Einrichtungen verpflichtet, die Risikomanagementmaßnahmen umzusetzen. Die IT-Grundschutz-Methodik ist ein strukturierter Weg, solche Anforderungen umzusetzen.",
           source: {
-            label: "BSI: NIS-2 – was Unternehmen jetzt wissen müssen",
+            label: "BSI: NIS-2-regulierte Unternehmen",
             url: "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html",
             date: "2026",
           },
