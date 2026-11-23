@@ -82,6 +82,12 @@ export const SOURCES: Readonly<Record<SourceDocId, SourceDocument>> = {
     version: "Oktober 2017",
     file: "leitfaden_basis_absicherung.pdf",
   },
+  profil: {
+    id: "profil",
+    title: "IT-Grundschutz-Profile – Strukturbeschreibung",
+    version: "1.0 (28.09.2018)",
+    file: "it_grundschutz_profil_strukturbeschreibung.pdf",
+  },
 };
 
 /** Short German citation, e.g. "BSI-Standard 200-2, Kap. 8.2, S. 103". */

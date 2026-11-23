@@ -11,7 +11,7 @@ The course prepares for the IT-Grundschutz-Praktiker exam. The FAQ to the curric
   - Zertifizierungsschema v2.2 and Auditierungsschema v2.5 (both 01.02.2026)
   - Hinweise zur Bereitstellung der Referenzdokumente
   - Leitfaden zur Basis-Absicherung
-- I couldn't find a guide for creating IT-Grundschutz-Profile on bsi.bund.de. Topic 12 relies on 200-2 and the Kompendium.
+- The guide for IT-Grundschutz-Profile ("Strukturbeschreibung", Version 1.0, 28.09.2018) was found in a second search and added to `resources/`.
 - Every lesson block, quiz question, exam question and lab cites a registered source document (`src/content/sources.constants.ts`).
 - Real-world developments ("Praxis 2026", e.g. NIS2 implementation, Grundschutz++) appear only in callouts marked "nicht prüfungsrelevant". Each callout cites a public source and a date. They never feed exam or quiz questions. The FAQ requires this kind of labelling for additional content.
 - For authoring, text is extracted locally into the git-ignored `resources/.text/` with a throwaway tool. The tool is not part of the repo.

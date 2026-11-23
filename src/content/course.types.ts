@@ -17,7 +17,8 @@ export type SourceDocId =
   | "zert"
   | "audit"
   | "refdoc"
-  | "basis";
+  | "basis"
+  | "profil";
 
 /** Pointer into a source document. */
 export interface SourceRef {
