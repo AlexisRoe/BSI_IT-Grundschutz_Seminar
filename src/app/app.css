@@ -113,3 +113,9 @@ body,
 .table-wrap--title-col th:not(:first-child) {
   width: auto;
 }
+
+.build-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-16);
+}

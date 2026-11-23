@@ -95,13 +95,15 @@ export function SettingsView() {
           <Card.Title>Über diese App</Card.Title>
         </Card.Header>
         <Card.Content>
-          <Description label="Projekt" value={BUILD_INFO.title} />
-          <Description label="Version" value={BUILD_INFO.version} />
-          <Description label="Commit" value={BUILD_INFO.commit} />
-          <Description
-            label="Build-Zeit"
-            value={new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}
-          />
+          <div className="build-info">
+            <Description label="Projekt" value={BUILD_INFO.title} />
+            <Description label="Version" value={BUILD_INFO.version} />
+            <Description label="Commit" value={BUILD_INFO.commit} />
+            <Description
+              label="Build-Zeit"
+              value={new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}
+            />
+          </div>
         </Card.Content>
       </Card>
     </Flex>
