@@ -34,7 +34,7 @@ export function ClassifyTask({ task, onChecked }: ClassifyTaskProps) {
               <Select
                 label="Zuordnung"
                 placeholder="Bitte wählen"
-                value={answers[item.id] ?? ""}
+                {...(answers[item.id] ? { value: answers[item.id] } : {})}
                 disabled={checked}
                 onChange={(v) => setAnswers((a) => ({ ...a, [item.id]: String(v) }))}
               >
