@@ -19,7 +19,13 @@ export const pool: TopicQuestions = {
         { text: "Die Ausstellung eines Zertifikats für alle Anwender", correct: false },
       ],
       explanation: "Profile bereiten Prozessschritte auf; ein Zertifikat ersetzen sie nicht.",
-      source: { doc: "profil", section: "Kap. 1", page: 5 },
+      source: {
+        doc: "profil",
+        section: "Kap. 1",
+        page: 5,
+        quote:
+          "Durchführung einer verallgemeinerten Strukturanalyse, Schutzbedarfsfeststellung und Modellierung für diesen Bereich",
+      },
     },
     {
       id: "p12-02",
@@ -43,7 +49,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Profile liefern eine verallgemeinerte Schutzbedarfsfeststellung; Abweichungen sind trotzdem individuell zu prüfen.",
-      source: { doc: "profil", section: "Kap. 1 Vorteile", page: 6 },
+      source: {
+        doc: "profil",
+        section: "Kap. 1 Vorteile",
+        page: 6,
+        quote:
+          "Von der Zeitersparnis sowie den geschonten personellen und finanziellen Ressourcen können alle beteiligten Institutionen profitieren.",
+      },
     },
     {
       id: "p12-03",
@@ -58,7 +70,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Aufbau: formale Aspekte, Management Summary, Geltungsbereich, Bausteine/Anforderungen/Maßnahmen, Restrisiko, Anwendungshinweise, unterstützende Informationen, Anhang.",
-      source: { doc: "profil", section: "Kap. 2", page: 7 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2",
+        page: 7,
+        quote:
+          "Management Summary Geltungsbereich (Scope) Relevante Bausteine, Anforderungen und Maßnahmen Restrisikobetrachtung/Risikobehandlung",
+      },
     },
     {
       id: "p12-04",
@@ -81,7 +99,13 @@ export const pool: TopicQuestions = {
         { text: "Die Gehaltsstruktur der Anwenderinstitutionen", correct: false },
       ],
       explanation: "Die Referenzarchitektur beschreibt den Untersuchungsgegenstand.",
-      source: { doc: "profil", section: "Kap. 2.5", page: 11 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2.5",
+        page: 11,
+        quote:
+          "legt fest, auf welche Objekte die Anforderungen des IT-Grundschutzes im Kontext des IT-Grundschutz-Profils angewendet werden müssen",
+      },
     },
     {
       id: "p12-05",
@@ -101,7 +125,13 @@ export const pool: TopicQuestions = {
         { text: "Niemals, da Profile nicht auf ISO 27001 beruhen", correct: false },
       ],
       explanation: "Bei geringerem Erfüllungsgrad ist die Kompatibilität zu prüfen.",
-      source: { doc: "profil", section: "Kap. 2.3", page: 9 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2.3",
+        page: 9,
+        quote:
+          'Wird mindestens die IT-Grundschutz-Vorgehensweise "Standardabsicherung" umgesetzt, ist diese zu der ISO 27001 kompatibel.',
+      },
     },
     {
       id: "p12-06",
@@ -114,14 +144,22 @@ export const pool: TopicQuestions = {
           correct: true,
         },
         { text: "Bei positivem Ergebnis wird eine Registernummer vergeben.", correct: true },
-        { text: "Das Profil wird im IT-Grundschutz-Profil-Register gelistet.", correct: true },
+        {
+          text: "Bei positivem Abschluss der Prüfung wird das Profil im IT-Grundschutz-Profil-Register gelistet.",
+          correct: true,
+        },
         {
           text: "Jede Anwenderinstitution erhält automatisch ein ISO 27001-Zertifikat.",
           correct: false,
         },
       ],
       explanation: "Registrierung ist keine Zertifizierung der Anwender.",
-      source: { doc: "profil", section: "Kap. 3", page: 23 },
+      source: {
+        doc: "profil",
+        section: "Kap. 3",
+        page: 23,
+        quote: "Das BSI nimmt eine formale und stichprobenartige inhaltliche Prüfung vor.",
+      },
     },
     {
       id: "p12-07",
@@ -141,7 +179,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Alle vier Möglichkeiten werden genannt.",
-      source: { doc: "profil", section: "Kap. 2.6", page: 14 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2.6",
+        page: 14,
+        quote:
+          "nur bestimmte Anforderungen als relevant zu identifizieren (z. B. nur Basis-Anforderungen)",
+      },
     },
     {
       id: "p12-08",
@@ -158,7 +202,13 @@ export const pool: TopicQuestions = {
         { text: "Personenbezogene Daten aller Anwender", correct: false },
       ],
       explanation: "Der Anhang enthält Detailinformationen und ggf. benutzerdefinierte Bausteine.",
-      source: { doc: "profil", section: "Kap. 2.10", page: 21 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2.10",
+        page: 21,
+        quote:
+          "benutzerdefinierte Bausteine zu erstellen und diese in den Anhang des IT-Grundschutz-Profils aufzunehmen",
+      },
     },
     {
       id: "p12-09",
@@ -181,21 +231,27 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation:
-        "Verzicht auf Standard-Anforderungen erfordert eine stichhaltige Begründung; Restrisiken werden dokumentiert.",
-      source: { doc: "profil", section: "Kap. 2.6 und 2.7", page: 15 },
+        "Verzicht auf Standard-Anforderungen erfordert eine stichhaltige Begründung (Kap. 2.6); Restrisiken sind zu bewerten und zu dokumentieren (Kap. 2.7, S. 20).",
+      source: {
+        doc: "profil",
+        section: "Kap. 2.6 und 2.7",
+        page: 15,
+        quote:
+          "mit stichhaltiger Begründung (Risiko-Übernahme, Risiko-Reduktion durch Erfüllung alternativer Anforderungen, Risiko-Transfer)",
+      },
     },
     {
       id: "p12-10",
       topic: 12,
       level: "experte",
-      stem: "Der eigene Informationsverbund weicht stark von der Referenzarchitektur eines Profils ab. Was empfiehlt die Strukturbeschreibung?",
+      stem: "Der eigene Informationsverbund weicht von der Referenzarchitektur eines Profils ab. Was sagt die Strukturbeschreibung dazu?",
       options: [
         {
-          text: "Es kann zielführender sein, ein eigenes Profil zu erstellen, z. B. auf Basis des vorhandenen.",
+          text: "Bei großen Abweichungen kann es zielführender sein, ein eigenes Profil zu erstellen.",
           correct: true,
         },
         {
-          text: "Kleinere Abweichungen sind zu dokumentieren und mit passenden Bausteinen abzudecken.",
+          text: "Zusätzliche oder fehlende Objekte sind zu dokumentieren und geeigneten Bausteinen zuzuordnen.",
           correct: true,
         },
         {
@@ -205,7 +261,13 @@ export const pool: TopicQuestions = {
         { text: "Abweichende Objekte werden grundsätzlich nicht betrachtet.", correct: false },
       ],
       explanation: "Abweichungen sollten nicht zu groß sein; sonst eigenes Profil.",
-      source: { doc: "profil", section: "Kap. 2.5", page: 12 },
+      source: {
+        doc: "profil",
+        section: "Kap. 2.5",
+        page: 12,
+        quote:
+          "Diese Abweichungen sollten nicht zu groß sein, da es sonst zielführender wäre, ein eigenes IT-Grundschutz-Profil zu erstellen",
+      },
     },
   ],
 };

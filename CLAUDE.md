@@ -5,6 +5,7 @@ Guidance for Claude Code in this repository.
 ## Purpose
 PWA for the IT-Grundschutz Praktiker preparation course, built with `e-ink-ui-lib`. Reference material lives in `resources/` (PDFs).
 Course content is German and must be traceable to a document in `resources/` (ADR 0014); exam rules in ADR 0015.
+Every exam pool question needs a `source.quote` that CI finds verbatim on the cited page in `resources/.text/` (ADR 0017).
 
 ## Commands
 - `npm run dev` / `npm run build` / `npm run preview`

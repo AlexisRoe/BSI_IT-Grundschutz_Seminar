@@ -17,7 +17,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Alle Ergebnisse der Sicherheitskonzeption fließen in die Umsetzungsplanung ein.",
-      source: { doc: "200-2", section: "Kap. 9", page: 157 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9",
+        page: 158,
+        quote:
+          "Ebenso liegen zu diesem Zeitpunkt die Ergebnisse des IT-Grundschutz-Checks, also des daran anknüpfenden Soll-Ist-Vergleichs, vor",
+      },
     },
     {
       id: "p09-02",
@@ -35,7 +41,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Eigene Maßnahmen mit neuen Aspekten sollten dem IT-Grundschutz-Team des BSI mitgeteilt werden.",
-      source: { doc: "200-2", section: "Kap. 9", page: 157 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9",
+        page: 158,
+        quote:
+          "Die Maßnahmen aus den Umsetzungshinweisen sind jedoch nicht als verbindlich zu betrachten, sondern können und sollten durch eigene Maßnahmen ergänzt oder ersetzt werden",
+      },
     },
     {
       id: "p09-03",
@@ -53,7 +65,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Maßnahmen dürfen Organisationsabläufe nicht behindern oder andere Maßnahmen aushebeln.",
-      source: { doc: "200-2", section: "Kap. 9.1", page: 157 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.1",
+        page: 158,
+        quote:
+          "Sie müssen vor den möglichen Gefährdungen wirksam schützen, aber auch in der Praxis tatsächlich umsetzbar sein",
+      },
     },
     {
       id: "p09-04",
@@ -73,7 +91,12 @@ export const pool: TopicQuestions = {
         { text: "Bei Basis-Anforderungen das Restrisiko einfach akzeptieren", correct: false },
       ],
       explanation: "Bei Basis-Anforderungen ist eine Restrisiko-Akzeptanz nicht vorgesehen.",
-      source: { doc: "200-2", section: "Kap. 9.2", page: 159 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.2",
+        page: 159,
+        quote: "durch welche Ersatzmaßnahmen die Anforderungen dennoch erfüllt werden könnten",
+      },
     },
     {
       id: "p09-05",
@@ -91,7 +114,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Darstellung nach Schutzbedarf dient der Sensibilisierung; Kosten und Aufwand sind Entscheidungsgrundlage.",
-      source: { doc: "200-2", section: "Kap. 9.2", page: 159 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.2",
+        page: 159,
+        quote:
+          "der Leitungsebene die Ergebnisse der Sicherheitsuntersuchung darzustellen. Geordnet nach Schutzbedarf",
+      },
     },
     {
       id: "p09-06",
@@ -112,7 +141,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Kreuzreferenztabellen machen das Restrisiko bei nicht erfüllten Anforderungen sichtbar.",
-      source: { doc: "200-2", section: "Kap. 9.2", page: 160 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.2",
+        page: 160,
+        quote:
+          "gegen welche elementaren Gefährdungen kein ausreichender Schutz besteht, wenn Anforderungen aus den Bausteinen nicht erfüllt werden",
+      },
     },
     {
       id: "p09-07",
@@ -127,7 +162,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Genannt werden Lebenszyklus, Abhängigkeiten, Breitenwirkung, Einfluss des Bausteins und viele offene Anforderungen.",
-      source: { doc: "200-2", section: "Kap. 9.3", page: 160 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.3",
+        page: 160,
+        quote:
+          "Die Umsetzungsreihenfolge lässt sich daran festmachen, wann im Lebenszyklus eines Zielobjektes die jeweiligen Maßnahmen umzusetzen sind",
+      },
     },
     {
       id: "p09-08",
@@ -142,31 +183,42 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Quick Wins liefern schnell Sicherheitsgewinn, oft organisatorisch oder durch zentrale Einstellungen.",
-      source: { doc: "200-2", section: "Kap. 9.3", page: 161 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.3",
+        page: 161,
+        quote:
+          "Sogenannte „Quick Wins“ lassen sich häufig im organisatorischen Bereich finden oder durch zentrale Konfigurationseinstellungen erreichen",
+      },
     },
     {
       id: "p09-09",
       topic: 9,
       level: "basis",
-      stem: "Warum sollte die Entscheidung, welche Maßnahmen verschoben und welche Restrisiken akzeptiert werden, sorgfältig dokumentiert werden?",
+      stem: "Was sagt BSI-Standard 200-2 zur Dokumentation der Entscheidung, welche Maßnahmen verschoben und welche Restrisiken akzeptiert werden?",
       options: [
         {
-          text: "Auch aus juristischen Gründen, um die Einhaltung der Sorgfaltspflicht belegen zu können",
+          text: "Sie ist auch aus juristischen Gründen sorgfältig zu dokumentieren, um die Einhaltung der Sorgfaltspflicht belegen zu können.",
           correct: true,
         },
         {
-          text: "Damit in Zweifelsfällen eingeholte weitere Meinungen nachvollziehbar sind",
+          text: "In Zweifelsfällen sollten weitere Meinungen eingeholt und ebenfalls dokumentiert werden.",
           correct: true,
         },
         {
-          text: "Weil die Zertifizierungsstelle sonst automatisch das Zertifikat entzieht",
+          text: "Ohne Dokumentation entzieht die Zertifizierungsstelle automatisch das Zertifikat.",
           correct: false,
         },
-        { text: "Weil nur dokumentierte Risiken eintreten können", correct: false },
+        { text: "Nur dokumentierte Risiken können eintreten.", correct: false },
       ],
       explanation:
         "Die Dokumentation dient dem Nachweis der Sorgfaltspflicht in späteren Streitfällen.",
-      source: { doc: "200-2", section: "Kap. 9.3", page: 161 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.3",
+        page: 161,
+        quote: "sollte auch aus juristischen Gründen sorgfältig dokumentiert werden",
+      },
     },
     {
       id: "p09-10",
@@ -180,7 +232,12 @@ export const pool: TopicQuestions = {
         { text: "An den Datenschutzbeauftragten", correct: false },
       ],
       explanation: "Der ISB wird informiert und berichtet regelmäßig der Leitungsebene.",
-      source: { doc: "200-2", section: "Kap. 9.4", page: 161 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.4",
+        page: 161,
+        quote: "Typischerweise wird die Meldung an den ISB erfolgen",
+      },
     },
     {
       id: "p09-11",
@@ -194,7 +251,12 @@ export const pool: TopicQuestions = {
         { text: "Disziplinarmaßnahmen als erster Schritt", correct: false },
       ],
       explanation: "Ohne Sensibilisierung und Schulung verlieren Maßnahmen oft ihre Wirkung.",
-      source: { doc: "200-2", section: "Kap. 9.5", page: 162 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.5",
+        page: 162,
+        quote: "Zu diesen Maßnahmen gehören insbesondere Sensibilisierungsmaßnahmen",
+      },
     },
     {
       id: "p09-12",
@@ -218,13 +280,18 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Server vor Clients, Basis zuerst, Bausteine mit großem Einfluss auf hochschutzbedürftige Bereiche bevorzugen.",
-      source: { doc: "200-2", section: "Kap. 9.3", page: 161 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.3",
+        page: 161,
+        quote: "So sollten immer zunächst die Server abgesichert werden",
+      },
     },
     {
       id: "p09-13",
       topic: 9,
       level: "experte",
-      stem: "Ein Unternehmen spart bei der automatisierten Patchverteilung und lässt Updates manuell einspielen. Wie bewertet der BSI-Standard 200-2 solche Einsparungen grundsätzlich?",
+      stem: "Ein Unternehmen spart bei der automatisierten Patchverteilung und lässt Updates manuell einspielen. Was sagt BSI-Standard 200-2 grundsätzlich zum Zusammenhang zwischen Einsparungen und Personalaufwand?",
       options: [
         {
           text: "Einsparungen bei technischen Maßnahmen führen häufig zu einem hohen fortlaufenden Personaleinsatz.",
@@ -236,13 +303,19 @@ export const pool: TopicQuestions = {
         },
         { text: "Personalaufwand spielt bei der Kostenschätzung keine Rolle.", correct: false },
         {
-          text: "Einsparungen beim Personal führen schnell zu wachsenden Sicherheitsdefiziten.",
+          text: "Umgekehrt führen Einsparungen beim Personal schnell zu wachsenden Sicherheitsdefiziten.",
           correct: true,
         },
       ],
       explanation:
         "200-2 weist auf diese Wechselwirkungen zwischen technischen Einsparungen und Personaleinsatz hin.",
-      source: { doc: "200-2", section: "Kap. 9.2", page: 158 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.2",
+        page: 159,
+        quote:
+          "Einsparungen bei technischen oder infrastrukturellen Sicherheitsmaßnahmen dazu führen, dass sie einen hohen fortlaufenden Personaleinsatz verursachen",
+      },
     },
     {
       id: "p09-14",
@@ -269,7 +342,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Fehlende Ressourcen rechtfertigen kein „entbehrlich“; die Defizite werden vereinfacht risikoanalytisch bewertet.",
-      source: { doc: "200-2", section: "Kap. 9.3, Hinweis", page: 161 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.3, Hinweis",
+        page: 161,
+        quote:
+          "im Rahmen einer vereinfachten Risikoanalyse die entstandenen Defizite zu betrachten",
+      },
     },
     {
       id: "p09-15",
@@ -287,13 +366,19 @@ export const pool: TopicQuestions = {
         },
         { text: "Ausreichend, solange ein Name im Realisierungsplan steht.", correct: false },
         {
-          text: "Ohne verbindliche Festlegung verzögert sich die Realisierung erfahrungsgemäß erheblich.",
-          correct: true,
+          text: "Die Maßnahme gilt als umgesetzt, sobald eine verantwortliche Person benannt ist.",
+          correct: false,
         },
       ],
       explanation:
-        "Verantwortung braucht Kompetenz und Ressourcen; sonst unterbleibt die Umsetzung oft.",
-      source: { doc: "200-2", section: "Kap. 9.4", page: 161 },
+        "Verantwortliche müssen ausreichende Fähigkeiten und Kompetenzen besitzen und die erforderlichen Ressourcen erhalten (Kap. 9.4).",
+      source: {
+        doc: "200-2",
+        section: "Kap. 9.4",
+        page: 161,
+        quote:
+          "dass der als verantwortlich Benannte ausreichende Fähigkeiten und Kompetenzen zur Umsetzung der Maßnahmen besitzt",
+      },
     },
   ],
 };

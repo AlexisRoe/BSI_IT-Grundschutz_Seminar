@@ -17,7 +17,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "System-Schichten: INF, NET, SYS, APP, IND. CON gehört zu den Prozess-Schichten.",
-      source: { doc: "200-2", section: "Kap. 2.4", page: 13 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 2.4",
+        page: 13,
+        quote:
+          "Die systemorientierten Bausteine sind in die folgenden Schichten gruppiert: INF (Infrastruktur) NET (Netze und Kommunikation) SYS (IT-Systeme) APP (Anwendungen) IND (Industrielle IT)",
+      },
     },
     {
       id: "p03-02",
@@ -40,7 +46,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Die Gesamtverantwortung verbleibt bei der Leitungsebene.",
-      source: { doc: "200-2", section: "Kap. 4.4", page: 41 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 4.4",
+        page: 41,
+        quote:
+          "die Leitungsebene bei der Erstellung der Leitlinie zur Informationssicherheit zu unterstützen",
+      },
     },
     {
       id: "p03-03",
@@ -61,7 +73,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das IS-Management-Team entwickelt die Leitlinie; in Kraft gesetzt wird sie durch die Leitungsebene.",
-      source: { doc: "200-2", section: "Kap. 4.5", page: 43 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 4.5",
+        page: 43,
+        quote:
+          "Das IS-Management-Team unterstützt den Informationssicherheitsbeauftragten, indem es übergreifende Maßnahmen in der Gesamtorganisation koordiniert",
+      },
     },
     {
       id: "p03-04",
@@ -79,7 +97,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Rollen schließen sich nicht aus; Schnittstellen, direkte Berichtswege und Ressourcen müssen geklärt sein.",
-      source: { doc: "200-2", section: "Kap. 4.4", page: 43 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 4.4",
+        page: 42,
+        quote:
+          "Die beiden Rollen schließen sich nicht grundsätzlich aus, es sind allerdings einige Aspekte im Vorfeld zu klären",
+      },
     },
     {
       id: "p03-05",
@@ -100,7 +124,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der IT-Grundschutz-Check ist Teil der Sicherheitskonzeption, nicht der Leitlinie.",
-      source: { doc: "200-2", section: "Kap. 3.4", page: 32 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.4",
+        page: 32,
+        quote:
+          "für welche Zwecke, mit welchen Mitteln und mit welchen Strukturen Informationssicherheit innerhalb der Institution hergestellt werden soll",
+      },
     },
     {
       id: "p03-06",
@@ -114,7 +144,13 @@ export const pool: TopicQuestions = {
         { text: "Bei der nächsten jährlichen Schulung", correct: false },
       ],
       explanation: "Die Leitlinie ist vor dem Zugang zur Informationsverarbeitung zu erläutern.",
-      source: { doc: "200-2", section: "Kap. 3.4.4", page: 34 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 3.4.4",
+        page: 34,
+        quote:
+          "Neuen Mitarbeitern sollte die Sicherheitsleitlinie erläutert werden, bevor sie Zugang zur Informationsverarbeitung erhalten.",
+      },
     },
     {
       id: "p03-07",
@@ -137,7 +173,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Eine enge Kooperation zwischen ICS-ISB und ISB ist ausdrücklich gefordert.",
-      source: { doc: "200-2", section: "Kap. 4.7", page: 45 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 4.7",
+        page: 45,
+        quote:
+          "sollte die Institution einen ICS-Informationssicherheitsbeauftragten (ICS-ISB) benennen. Dieser sollte Mitglied im IS-Management-Team sein.",
+      },
     },
     {
       id: "p03-08",
@@ -164,7 +206,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Basis-Absicherung liegt unter der Standard-Absicherung; der IT-Grundschutz ist ganzheitlich.",
-      source: { doc: "200-2", section: "Kap. 2.4 und 2.6", page: 13 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 2.4 und 2.6",
+        page: 13,
+        quote:
+          "mit der Standard-Absicherung ein Sicherheitsniveau erreicht, das für den normalen Schutzbedarf angemessen und ausreichend ist",
+      },
     },
     {
       id: "p03-09",
@@ -191,7 +239,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Aufgabe kann delegiert werden, die Verantwortung nicht. Eine Zuordnung zur IT führt häufig zu Rollenkonflikten.",
-      source: { doc: "200-2", section: "Kap. 2.3, 3.1 und 4.4", page: 20 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 2.3, 3.1 und 4.4",
+        page: 20,
+        quote:
+          "Die Verantwortung für Informationssicherheit verbleibt dort. Die operative Aufgabe „Informationssicherheit“ wird allerdings typischerweise an einen Informationssicherheitsbeauftragten (ISB) delegiert.",
+      },
     },
     {
       id: "p03-10",
@@ -218,7 +272,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "In kleinen Institutionen kann der ISB alle Aufgaben übernehmen. Auch er benötigt aber eine qualifizierte Vertretung.",
-      source: { doc: "200-2", section: "Kap. 4.2 und 4.4", page: 38 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 4.2 und 4.4",
+        page: 37,
+        quote:
+          "eine Struktur für die IS-Organisation in einer kleinen Institution, in der alle Aufgaben vom Informationssicherheitsbeauftragten wahrgenommen werden",
+      },
     },
   ],
 };

@@ -16,7 +16,11 @@ export const pool: TopicQuestions = {
         { text: "Nur bei erhöhtem Schutzbedarf", correct: false },
       ],
       explanation: "DER.2.1 ist für den Informationsverbund einmal anzuwenden.",
-      source: { doc: "kompendium", section: "DER.2.1, Kap. 1.3" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1, Kap. 1.3",
+        quote: "ist für den Informationsverbund einmal anzuwenden",
+      },
     },
     {
       id: "p14-02",
@@ -30,7 +34,12 @@ export const pool: TopicQuestions = {
         { text: "Sie muss regelmäßig geprüft und aktualisiert werden.", correct: true },
       ],
       explanation: "Alle vier Punkte sind MUSS-Inhalte von A2.",
-      source: { doc: "kompendium", section: "DER.2.1.A2" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A2",
+        quote:
+          "Die Richtlinie MUSS allen Mitarbeitenden bekannt sein. Sie MUSS mit dem IT-Betrieb abgestimmt und durch die Institutionsleitung verabschiedet sein",
+      },
     },
     {
       id: "p14-03",
@@ -50,7 +59,12 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "A3 regelt Zuständigkeiten, Forensik-Entscheidungen und Ansprechpersonen.",
-      source: { doc: "kompendium", section: "DER.2.1.A3" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A3",
+        quote:
+          "wer die mögliche Entscheidung für eine forensische Untersuchung trifft, nach welchen Kriterien diese vorgenommen wird und wann sie erfolgen soll",
+      },
     },
     {
       id: "p14-04",
@@ -71,7 +85,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Wiederhergestellte Daten dürfen nicht kompromittiert sein; Benutzende sind in Funktionstests einzubeziehen.",
-      source: { doc: "kompendium", section: "DER.2.1.A6" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A6",
+        quote:
+          "Wenn Daten aus Datensicherungen wiedereingespieltwerden,MUSSsichergestelltsein,dassdiesevomSicherheitsvorfallnichtbetroffenwaren",
+      },
     },
     {
       id: "p14-05",
@@ -92,7 +111,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Es soll sichergestellt sein, dass keine Unautorisierten Informationen weitergeben.",
-      source: { doc: "kompendium", section: "DER.2.1.A9" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A9",
+        quote:
+          "Es SOLLTE definiert sein, wer Informationen über Sicherheitsvorfälle an Dritte weitergibt",
+      },
     },
     {
       id: "p14-06",
@@ -107,7 +131,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Jährliche Unterrichtung; bei sofortigem Handlungsbedarf MUSS sie umgehend informiert werden.",
-      source: { doc: "kompendium", section: "DER.2.1.A17" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A17",
+        quote:
+          "Die Institutionsleitung SOLLTE jährlich über die Sicherheitsvorfälle unterrichtet werden",
+      },
     },
     {
       id: "p14-07",
@@ -122,7 +151,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Aus den Erfahrungen werden Handlungsanweisungen für vergleichbare Vorfälle abgeleitet.",
-      source: { doc: "kompendium", section: "DER.2.1.A17" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A17",
+        quote:
+          "Sicherheitsvorfälle SOLLTEN standardisiert nachbereitet werden. Dabei SOLLTE untersucht werden, wie schnell die",
+      },
     },
     {
       id: "p14-08",
@@ -146,7 +180,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "DER.2.1 nennt genau dieses Szenario als Gefährdung durch Zerstörung von Beweisspuren.",
-      source: { doc: "kompendium", section: "DER.2.1, Kap. 2.2 und A5" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1, Kap. 2.2 und A5",
+        quote: "Eine mangelhafte Fehlerkultur hat somit eine Analyse des Problems verhindert",
+      },
     },
     {
       id: "p14-09",
@@ -170,7 +208,11 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "DER.2.1 beschreibt dieses Beispiel für ungeeigneten Umgang mit Sicherheitsvorfällen.",
-      source: { doc: "kompendium", section: "DER.2.1, Kap. 2.1" },
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1, Kap. 2.1",
+        quote: "Der oder die Informationssicherheitsbeauftragte (ISB) wird daher nicht informiert",
+      },
     },
     {
       id: "p14-10",
@@ -192,8 +234,14 @@ export const pool: TopicQuestions = {
           correct: false,
         },
       ],
-      explanation: "A19–A22 beschreiben diese Vorschläge; Dokumentation bleibt Pflicht.",
-      source: { doc: "kompendium", section: "DER.2.1.A19 bis A22" },
+      explanation:
+        "A19–A22 beschreiben diese Vorschläge; Dokumentation bleibt gefordert (DER.2.1.A16).",
+      source: {
+        doc: "kompendium",
+        section: "DER.2.1.A19 bis A22",
+        quote:
+          "Zusätzlich SOLLTE es möglich sein, dass Sicherheitsvorfälle auch außerhalb der üblichen Arbeitszeiten gemeldet werden können",
+      },
     },
   ],
 };

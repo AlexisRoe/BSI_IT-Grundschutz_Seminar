@@ -14,7 +14,7 @@ The course prepares for the IT-Grundschutz-Praktiker exam. The FAQ to the curric
 - The guide for IT-Grundschutz-Profile ("Strukturbeschreibung", Version 1.0, 28.09.2018) was found in a second search and added to `resources/`.
 - Every lesson block, quiz question, exam question and lab cites a registered source document (`src/content/sources.constants.ts`).
 - Real-world developments ("Praxis 2026", e.g. NIS-2 obligations, the new digital IT-Grundschutz) appear only in callouts marked "nicht prüfungsrelevant". Each callout cites a public source and a date. They never feed exam or quiz questions. The FAQ requires this kind of labelling for additional content.
-- For authoring, text is extracted locally into the git-ignored `resources/.text/` with a throwaway tool. The tool is not part of the repo.
+- For authoring, the text of each PDF was extracted into `resources/.text/` with a throwaway tool. Since ADR 0017 that text is committed and used in CI to check citation quotes.
 
 ## Consequences
 Exam-relevant content can be traced to a BSI document. The PDFs add about 27 MB to the repository, but they are not part of the app bundle.

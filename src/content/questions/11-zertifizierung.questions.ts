@@ -19,8 +19,14 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation:
-        "Standard- und Kern-Absicherung bilden die ISO/IEC 27001 ab; die Basis-Absicherung nicht.",
-      source: { doc: "200-1", section: "Kap. 9", page: 39 },
+        "Laut 200-1 bilden Standard- und Kern-Absicherung die ISO/IEC 27001 ab. Bei reiner Basis-Absicherung reichen die Maßnahmen für eine Zertifizierung nicht aus (200-2, Kap. 10).",
+      source: {
+        doc: "200-1",
+        section: "Kap. 9",
+        page: 39,
+        quote:
+          "Die Standard- und die Kern-Absicherung des IT-Grundschutzes bilden die Anforderungen der ISO/IEC 27001 ab.",
+      },
     },
     {
       id: "p11-02",
@@ -38,7 +44,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das Audit führt ein externer, vom BSI zertifizierter Auditteamleiter durch; die Zertifizierungsstelle prüft den Bericht.",
-      source: { doc: "zert", section: "Kap. 2.1", page: 8 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.1",
+        page: 8,
+        quote:
+          "Überprüfung des Informationsverbundes durch einen vom BSI zertifizierten Auditteamleiter",
+      },
     },
     {
       id: "p11-03",
@@ -61,7 +73,13 @@ export const pool: TopicQuestions = {
         { text: "Sie führt die Dokumentenprüfung anstelle des Auditteams durch.", correct: false },
       ],
       explanation: "Die Prüfungen vor Ort und die Dokumentenprüfung führt das Auditteam durch.",
-      source: { doc: "zert", section: "Kap. 2.2", page: 9 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.2",
+        page: 9,
+        quote:
+          "Die Zertifizierungsstelle übernimmt die Rolle einer unabhängigen dritten Instanz, welche die Gleichwertigkeit der Prüfungen und der Auditberichte gewährleistet.",
+      },
     },
     {
       id: "p11-04",
@@ -76,7 +94,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Mitarbeitende der auditierten Institution sind wegen der Unabhängigkeit ausgeschlossen.",
-      source: { doc: "zert", section: "Kap. 2.2", page: 9 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.2",
+        page: 9,
+        quote:
+          "Ein Auditteam kann aus einem oder mehreren Auditoren und darüber hinaus aus Fachexperten und Trainees bestehen.",
+      },
     },
     {
       id: "p11-05",
@@ -91,7 +115,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Der Antrag muss mindestens zwei Monate vor Beginn der Sichtung der Referenzdokumente vorliegen.",
-      source: { doc: "zert", section: "Kap. 2.3", page: 9 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.3",
+        page: 9,
+        quote:
+          "Der Zertifizierungsstelle muss der vollständige Zertifizierungsantrag mindestens zwei Monate vor Beginn des Audits",
+      },
     },
     {
       id: "p11-06",
@@ -111,7 +141,13 @@ export const pool: TopicQuestions = {
         { text: "Es ersetzt das Zertifizierungsaudit.", correct: false },
       ],
       explanation: "Das Voraudit ist optional und ersetzt das Zertifizierungsaudit nicht.",
-      source: { doc: "zert", section: "Kap. 2.8 und 2.9.1", page: 12 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.8 und 2.9.1",
+        page: 12,
+        quote:
+          "Dabei kann das Auditteam gezielt einzelne Aspekte aus Phase 1 und 2 auswählen und stichprobenartig prüfen.",
+      },
     },
     {
       id: "p11-07",
@@ -125,7 +161,13 @@ export const pool: TopicQuestions = {
         { text: "Nur auf Verlangen des Antragstellers", correct: false },
       ],
       explanation: "In die dreijährige Laufzeit sind jährliche Überwachungsaudits integriert.",
-      source: { doc: "zert", section: "Kap. 2.8", page: 12 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.8",
+        page: 12,
+        quote:
+          "In die dreijährige Laufzeit eines Zertifikates integriert sind jährliche Überwachungsaudits",
+      },
     },
     {
       id: "p11-08",
@@ -140,7 +182,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die elektronische Übermittlung muss aus Vertraulichkeitsgründen verschlüsselt erfolgen.",
-      source: { doc: "zert", section: "Kap. 2.6", page: 11 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.6",
+        page: 11,
+        quote: "an das BSI muss aus Gründen der Vertraulichkeit unbedingt verschlüsselt erfolgen",
+      },
     },
     {
       id: "p11-09",
@@ -158,7 +205,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Zertifikat, Zertifizierungsreport und Button werden mit dem Bescheid zugesandt.",
-      source: { doc: "zert", section: "Kap. 2.12", page: 15 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.12",
+        page: 15,
+        quote:
+          "einen Zertifizierungsreport mit zusätzlichen Informationen zum Zertifizierungsverfahren (z. B. Auflagen) sowie einen Zertifizierungsbutton für Werbezwecke",
+      },
     },
     {
       id: "p11-10",
@@ -179,7 +232,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Ein ordnungsgemäß gemeldeter Wechsel des Ansprechpartners ist kein Grund für eine Zurückziehung.",
-      source: { doc: "zert", section: "Kap. 2.13.2", page: 16 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.13.2",
+        page: 16,
+        quote: "Irreführungen und Täuschungen der Institution gegenüber dem Auditteam bzw. dem BSI",
+      },
     },
     {
       id: "p11-11",
@@ -197,7 +255,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Wiederherstellbar ist nur ein ausgesetztes Zertifikat; Urkunde und Report sind zurückzugeben.",
-      source: { doc: "zert", section: "Kap. 2.13.2", page: 17 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.13.2",
+        page: 17,
+        quote:
+          "Ein zurückgezogenes Zertifikat kann nicht wieder aktiviert und in einen gültigen Zustand versetzt werden.",
+      },
     },
     {
       id: "p11-12",
@@ -214,7 +278,13 @@ export const pool: TopicQuestions = {
         { text: "Das Zertifikat wird sofort endgültig zurückgezogen.", correct: false },
       ],
       explanation: "Abweichungen in Umsetzung führen zur Aussetzung, nicht zur Zurückziehung.",
-      source: { doc: "zert", section: "Kap. 2.13.1", page: 16 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.13.1",
+        page: 16,
+        quote:
+          "die vom Antragsteller innerhalb der vom Auditteam gesetzten Frist noch nicht behoben sind, sich aber in Umsetzung befinden",
+      },
     },
     {
       id: "p11-13",
@@ -229,7 +299,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Prüfungen nicht früher als vier Monate vor Ablauf des ersten Jahres; Auditbericht nicht später als zwei Monate vor diesem Zeitpunkt.",
-      source: { doc: "zert", section: "Kap. 2.9.2 und 3", page: 13 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.9.2 und 3",
+        page: 13,
+        quote:
+          "dürfen nicht früher als vier Monate vor Ablauf des ersten bzw. zweiten Jahres nach Zertifikatserteilung beginnen",
+      },
     },
     {
       id: "p11-14",
@@ -250,7 +326,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Änderungen im Outsourcing gelten als wesentliche Änderung und sind unverzüglich mitzuteilen.",
-      source: { doc: "zert", section: "Kap. 2.9.3", page: 14 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.9.3",
+        page: 14,
+        quote: "Das BSI entscheidet dann, ob eine vorzeitige Re-Zertifizierung erforderlich ist.",
+      },
     },
     {
       id: "p11-15",
@@ -268,7 +349,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Dokumenten- und Umsetzungsprüfung dürfen bei Übergabe nicht älter als drei Monate sein.",
-      source: { doc: "zert", section: "Kap. 2.9.1", page: 13 },
+      source: {
+        doc: "zert",
+        section: "Kap. 2.9.1",
+        page: 13,
+        quote:
+          "die zum Zeitpunkt der Übergabe des Auditberichts an die Zertifizierungsstelle nicht älter als drei Monate sind",
+      },
     },
   ],
 };

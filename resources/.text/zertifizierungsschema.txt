@@ -1,0 +1,677 @@
+
+===== Seite 1 =====
+ 
+ 
+Zertifizierung nach ISO 27001 auf der 
+Basis von IT-Grundschutz 
+Zertifizierungsschema 
+Version 2.2 
+ 
+===== Seite 2 =====
+ 
+ 
+Änderungshistorie 
+Version Datum Name Beschreibung 
+1.0 29.03.2011 BSI 1. veröffentlichte Version 
+1.1 12.03.2013 BSI Überarbeitung Kapitel 2.6 Vertraulichkeit von 
+Informationen: Ergänzung der 
+Verschlüsselungsprogramme GnuPG, Pretty Good Privacy 
+(PGP) und TrueCrypt 
+1.11 18.06.2013 BSI Editorelle Änderungen (Referatsbezeichnungen) 
+1.12 13.03.2013 BSI Editorelle Änderungen (E-Mail-Adresse, 
+Referatsbezeichnung) 
+1.2 22.05.2014 BSI Editorelle Änderungen (Kontaktadressen, Mailpostfächer, 
+Ersetzung Erfüllungsgehilfe durch Fachexperte) Ergänzung 
+Kapitel 2.4, Unabhängigkeitserklärung 
+Kapitel 2.8.3: Konkretisierung der Meldung ggü. BSI bei 
+wesentlichen Änderungen des Informationsverbundes 
+Kapitel 2.6: Streichung Verschlüsselungsprogramm 
+TrueCrypt 
+1.21 08.09.2016 BSI Editorelle Änderungen (Kontaktadressen) 
+2.0 29.09.2017 BSI Anpassung an GS-Kompendium 
+2.1 23.07.2019 BSI Editorelle Änderungen (Referatsbezeichnungen, 
+Kontaktadressen) 
+Kapitel 1.7: Redaktionelle Änderung 
+Kapitel 2.4: Konkretisierung zu 
+Unabhängigkeitserklärungen 
+Kapitel 2.8.3: Abstimmung Bausteinauswahl bei Re-
+Zertifizierung 
+Kapitel 2.10: Änderung Unterschriften Auditbericht 
+2.2 01.02.2026 BSI Anpassung der Fristen 
+Anpassung der Verschlüsselungsverfahren 
+Editorelle Änderungen 
+Redaktionelle Änderungen 
+Tabelle 1: Änderungshistorie 
+ 
+Bundesamt für Sicherheit in der Informationstechnik 
+Referat S 25 
+Postfach 20 03 63 
+53133 Bonn 
+E-Mail: gs-zert@bsi.bund.de 
+Internet: https://www.bsi.bund.de 
+© Bundesamt für Sicherheit in der Informationstechnik 2026 
+===== Seite 3 =====
+Vorwort 
+Bundesamt für Sicherheit in der Informationstechnik 3 
+Vorwort 
+ISO 27001-Zertifizierungen auf der Basis von IT-Grundschutz geben Behörden und Unternehmen die 
+Möglichkeit, ihre Bemühungen um Informationssicherheit und die erfolgreiche Umsetzung internationaler 
+Normen unter Anwendung der IT-Grundschutz-Methodik nach innen und außen zu dokumentieren. 
+Rechtliche Grundlagen des Verfahrens sind das Gesetz über das Bundesamt für Sicherheit in der 
+Informationstechnik (BSI-Gesetz – BSIG, [BSIG]) und die Zertifizierungsverordnung zum BSI-Gesetz [ZVO]. 
+Die für ISO 27001-Zertifizierungsverfahren auf der Basis von IT-Grundschutz relevanten Kriterienwerke 
+sind ISO/IEC 27001:2022 [27001] "Information security, cybersecurity and privacy protection — Information 
+security management systems — Requirements ", die BSI-Standards 200-2 „IT-Grundschutz-Methodik“ [200 
+2] und 200 3 „Risikoanalyse auf Basis von IT-Grundschutz“ [200 3] sowie das IT-Grundschutz-Kompendium 
+[GSK] des BSI. Für weitere Informationen sei auf das Literaturverzeichnis verwiesen. 
+Grundlage dieses Dokumentes bilden ferner die Normen DIN EN ISO/IEC 27006 [27006] 
+„Informationssicherheit, Cybersicherheit und Datenschutz – Anforderungen an Stellen, die 
+Informationssicherheitsmanagementsysteme auditieren und zertifizieren“ sowie DIN EN ISO/IEC 17021 
+[17021] "Konformitätsbewertung - Anforderungen an Stellen, die Managementsysteme auditieren und 
+zertifizieren", welche Anleitungen und Anforderungen für den Ablauf und die Durchführung von Audits 
+und Zertifizierungsverfahren enthalten. 
+===== Seite 4 =====
+Abbildungsverzeichnis 
+4  Bundesamt für Sicherheit in der Informationstechnik 
+Abbildungsverzeichnis 
+Abbildung 1: Rollen im Zertifizierungsverfahren ................................ ................................ ................................ ........................  8 
+Abbildung 2: Antrags- und Auditierungsphase ................................ ................................ ................................ ..........................  18 
+Abbildung 3: Fristen Überwachungsaudit ................................ ................................ ................................ ................................ .... 18 
+Abbildung 4: Fristen Re-Zertifizierung ................................ ................................ ................................ ................................ .......... 18 
+ 
+ 
+===== Seite 5 =====
+Inhalt 
+Bundesamt für Sicherheit in der Informationstechnik 5 
+Inhalt 
+1 Einleitung ................................ ................................ ................................ ................................ ................................ ............................  6 
+1.1 Zielsetzung ................................ ................................ ................................ ................................ ................................ ............... 6 
+1.2 Adressatenkreis ................................ ................................ ................................ ................................ ................................ ...... 6 
+1.3 Anwendungshinweis ................................ ................................ ................................ ................................ ...........................  6 
+1.4 Begriffe und Definitionen ................................ ................................ ................................ ................................ .................. 6 
+1.5 Kontakte ................................ ................................ ................................ ................................ ................................ ....................  7 
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz ................................ ................................ ............. 8 
+2.1 Überblick über den Zertifizierungsprozess ................................ ................................ ................................ ................ 8 
+2.2 Rollen und Zuständigkeiten im Zertifizierungsverfahren ................................ ................................ ................... 8 
+2.3 Zertifizierungsantrag ................................ ................................ ................................ ................................ ...........................  9 
+2.4 Unabhängigkeitserklärung ................................ ................................ ................................ ................................ .............. 10 
+2.5 Auswahl des Auditteams ................................ ................................ ................................ ................................ .................. 11 
+2.6 Vertraulichkeit von Informationen ................................ ................................ ................................ .............................  11 
+2.7 Ziel eines Audits und Auditphasen ................................ ................................ ................................ ..............................  12 
+2.8 Audittypen ................................ ................................ ................................ ................................ ................................ ............. 12 
+2.9 Zertifizierungsarten................................ ................................ ................................ ................................ ............................  12 
+2.9.1 Erstzertifizierung ................................ ................................ ................................ ................................ ............................  12 
+2.9.2 Überwachungsaudits ................................ ................................ ................................ ................................ ....................  13 
+2.9.3 Re-Zertifizierung ................................ ................................ ................................ ................................ ............................  14 
+2.10 Prüf- und Auditbegleitung der Zertifizierungsstelle ................................ ................................ ............................  15 
+2.11 Auditbericht................................ ................................ ................................ ................................ ................................ ........... 15 
+2.12 Zertifikatserteilung ................................ ................................ ................................ ................................ .............................  15 
+2.13 Aussetzung und Zurückziehung von Zertifikaten ................................ ................................ ................................  16 
+2.13.1 Aussetzung von Zertifikaten ................................ ................................ ................................ ................................  16 
+2.13.2 Zurückziehung von Zertifikaten ................................ ................................ ................................ .........................  16 
+2.14 Beschwerdeverfahren ................................ ................................ ................................ ................................ ........................  17 
+3 Übersicht über den Zeitverlauf der Zertifizierung ................................ ................................ ................................ ........... 18 
+Literaturverzeichnis ................................ ................................ ................................ ................................ ................................ ............... 19 
+ 
+===== Seite 6 =====
+1 Einleitung 
+6  Bundesamt für Sicherheit in der Informationstechnik 
+1 Einleitung 
+1.1 Zielsetzung 
+Das vorliegende Zertifizierungsschema beschreibt die grundsätzliche Vorgehensweise und die 
+Voraussetzungen für eine ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz. Das Dokument gibt 
+insbesondere Informationen zu den am Zertifizierungsverfahren beteiligten Parteien und deren 
+Verantwortlichkeiten, Aufgaben, Aktivitäten und Zusammenwirken. 
+1.2 Adressatenkreis 
+Dieses Dokument richtet sich an Institutionen, die eine ISO 27001-Zertifizierung auf der Basis von 
+IT-Grundschutz anstreben, sowie an ISO 27001-Auditoren auf der Basis von IT-Grundschutz, die ein 
+unabhängiges Audit durchführen, um die Konformität eines Managementsystems für 
+Informationssicherheit gemäß ISO 27001 auf der Basis von IT-Grundschutz in einer Einrichtung oder 
+Institution zu bestätigen. Insbesondere können sich Einrichtungen und Institutionen und deren 
+IT-Sicherheitsverantwortliche sowie Auditoren einen Überblick über die grundsätzlichen Anforderungen 
+an eine ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz verschaffen und über die 
+Vorgehensweise einer ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz informieren. 
+1.3 Anwendungshinweis 
+Im folgenden Dokument werden die grundsätzliche Vorgehensweise und die Voraussetzungen für eine 
+ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz beschrieben. 
+Detaillierte Informationen zur Zielsetzung und Durchführung von ISO 27001-Audits auf der Basis von 
+IT-Grundschutz und insbesondere eine detaillierte Beschreibung des Auditprozesses und seiner Phasen, der 
+Auditprinzipien, der Verantwortlichkeiten der Mitglieder des Auditteams und der im Einzelnen vom 
+Auditteam durchzuführenden Prüfaufgaben und -aktivitäten sowie der Mitwirkung des Antragstellers 
+werden im Rahmen eines eigenen Schemadokuments zum Auditierungsschema für ISO 27001-Audits auf 
+der Basis von IT-Grundschutz gegeben (siehe [AUD]). 
+1.4 Begriffe und Definitionen 
+Bei Aufbau eines Managementsystems für Informationssicherheit (ISMS) nach IT- Grundschutz ist der 
+Geltungsbereich des ISMS festzulegen. Das ist der Bereich einer Institution, auf den der IT-Grundschutz 
+angewendet wird. Der Geltungsbereich umfasst die Gesamtheit von infrastrukturellen, organisatorischen, 
+personellen und technischen Komponenten, die der Aufgabenerfüllung in einem bestimmten 
+Anwendungsbereich der Informationsverarbeitung dienen. Der Geltungsbereich kann dabei als Ausprägung 
+die gesamte Informationsverarbeitung einer Institution oder auch einzelne Bereiche umfassen, die durch 
+organisatorische oder technische Strukturen (z. B. Abteilungsnetz) oder Geschäftsprozesse bzw. 
+Anwendungen (z. B. Personalinformationssystem) gegliedert sind. Wichtig ist jedoch dabei, dass alle für die 
+Aufgabenerfüllung der einzelnen Bereiche notwendigen infrastrukturellen, organisatorischen, personellen 
+und technischen Komponenten komplett im Geltungsbereich enthalten sind. Der Geltungsbereich, der von 
+der Zertifizierung abgedeckt werden soll, wird im Folgenden Informationsverbund genannt. 
+Auditoren sind vom BSI zertifizierte Auditteamleiter für ISO 27001-Audits auf der Basis von 
+IT-Grundschutz. Der für die Durchführung eines Audits verantwortliche Auditor wird in diesem Dokument 
+Auditteamleiter genannt. Die Rollen der beteiligten Parteien im Zertifizierungsaudit sind in Kapitel 2.2 
+näher ausgeführt. 
+===== Seite 7 =====
+1 Einleitung 
+Bundesamt für Sicherheit in der Informationstechnik 7 
+1.5 Kontakte 
+Fragen und Anregungen rund um den Zertifizierungsprozess richten Sie bitte an: 
+Bundesamt für Sicherheit in der Informationstechnik 
+Referat S 25 
+Postfach 20 03 63 
+53133 Bonn 
+E-Mail: gs-zert@bsi.bund.de 
+Fragen und Anregungen rund um IT-Grundschutz richten Sie bitte an: 
+Bundesamt für Sicherheit in der Informationstechnik 
+Referat S 13 
+Postfach 20 03 63 
+53133 Bonn 
+E-Mail: grundschutz@bsi.bund.de 
+===== Seite 8 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+8  Bundesamt für Sicherheit in der Informationstechnik 
+2 Zertifizierung nach ISO 27001 auf der Basis von 
+IT-Grundschutz 
+2.1 Überblick über den Zertifizierungsprozess 
+Voraussetzung für die Vergabe eines ISO 27001-Zertifikats auf der Basis von IT-Grundschutz ist eine 
+Überprüfung des Informationsverbundes durch einen vom BSI zertifizierten Auditteamleiter für ISO 27001-
+Audits auf der Basis von IT-Grundschutz. Im Rahmen des Audits werden von der Institution erstellte 
+Referenzdokumente gesichtet, eine Vor-Ort-Prüfung durchgeführt und ein Auditbericht erstellt. Für die 
+Vergabe eines ISO 27001-Zertifikats auf der Basis von IT-Grundschutz wird dieser Auditbericht von der 
+Zertifizierungsstelle im BSI geprüft. Während der Gültigkeit des daraufhin ausgestellten Zertifikats werden 
+jährlich Überwachungsaudits durchgeführt. 
+2.2 Rollen und Zuständigkeiten im Zertifizierungsverfahren 
+In das Zertifizierungsverfahren für die ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz sind die 
+folgenden drei Rollen involviert: 
+• Antragsteller 
+• Auditor bzw. Auditteamleiter als befugter Vertreter des Auditteams 
+• Zertifizierungsstelle 
+Folgende Abbildung zeigt schematisch die den Rollen zugeordneten Aufgaben und das Zusammenwirken 
+der Rollen im Zertifizierungsverfahren: 
+ 
+Abbildung 1: Rollen im Zertifizierungsverfahren 
+Hat eine Institution ein ISMS nach ISO 27001 auf Basis der IT-Grundschutz-Methodik umgesetzt und liegen 
+alle erforderlichen Nachweise der Umsetzung (sog. Referenzdokumente [REFDOK]) vor, kann die Institution 
+ein Zertifizierungsverfahren für eine ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz bei der 
+Zertifizierungsstelle initiieren und einen Zertifizierungsantrag stellen. Zur Überprüfung des 
+Informationsverbundes beauftragt die Institution auf Grundlage des vorliegenden Zertifizierungsschemas 
+und des zugehörigen Auditierungsschemas ein Auditteam. 
+
+===== Seite 9 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+Bundesamt für Sicherheit in der Informationstechnik 9 
+Der Antragsteller ist Initiator des Zertifizierungsverfahrens und unterstützt das Auditteam bei der Sichtung 
+der Referenzdokumente und der Vor-Ort-Prüfung des Informationsverbundes. Das Auditteam 
+dokumentiert seine Prüfergebnisse in einem Auditbericht, der zusammen mit dem Zertifizierungsantrag der 
+Zertifizierungsstelle als Grundlage für ein ISO 27001-Zertifikat auf der Basis von IT-Grundschutz dient. 
+Ein Auditteam kann aus einem oder mehreren Auditoren und darüber hinaus aus Fachexperten und 
+Trainees bestehen. 
+Auditoren dürfen nur Themengebiete prüfen, für die sie das notwendige Fachwissen und Erfahrung 
+mitbringen. Falls weder der Auditteamleiter noch die anderen Auditoren des Teams über das nötige 
+Spezialwissen verfügen, muss der Auditteamleiter zur Unterstützung der Prüftätigkeiten und zur 
+Absicherung der Prüfaussagen einen oder mehrere Fachexperten hinzuziehen. Fachexperten besitzen 
+Branchenkenntnisse oder Kenntnisse und Erfahrungen hinsichtlich der im Informationsverbund 
+eingesetzten Informations- und Kommunikationstechnik. 
+Die Rollen und Zuständigkeiten der Auditteammitglieder sind zu Beginn des Zertifizierungsverfahrens 
+festzulegen. Vor Beginn der Auditierungstätigkeit muss für jedes Auditteammitglied die 
+Unabhängigkeitserklärung von der Zertifizierungsstelle freigegeben sein. Alle Mitglieder des Auditteams 
+müssen im Auditbericht aufgeführt sein. 
+Der Ansprechpartner der Zertifizierungsstelle ist der Auditteamleiter. Dieser sendet den Auditbericht 
+verschlüsselt an die Zertifizierungsstelle und ergänzt Nachforderungen. Je nach Vertragsinhalt kann der 
+Auditteamleiter dem Antragsteller den Auditbericht jederzeit zur Verfügung stellen. 
+Hilfskräfte für reine Verwaltungstätigkeiten, beispielsweise Schreibkräfte, können eingesetzt werden, wenn 
+diese vom Auditteamleiter entsprechend überwacht und kontrolliert werden. Für Hilfskräfte gelten keine 
+einschränkenden Bedingungen; sie müssen auch nicht im Auditbericht genannt werden. Die 
+Verantwortung für die Prüftätigkeiten verbleibt in jedem Fall beim Auditteamleiter. 
+Die Zertifizierungsstelle übernimmt die Rolle einer unabhängigen dritten Instanz, welche die 
+Gleichwertigkeit der Prüfungen und der Auditberichte gewährleistet. Sie veröffentlicht die Schemata und 
+Interpretationen zum Zertifizierungsverfahren. Die Zertifizierungsstelle prüft den Zertifizierungsantrag des 
+Antragstellers und den eingereichten Auditbericht des Auditteams auf Grundlage des vorliegenden 
+Zertifizierungsschemas und des zugehörigen Auditierungsschemas. Bei positivem Prüfergebnis erteilt die 
+Zertifizierungsstelle für den Informationsverbund des Antragstellers ein ISO 27001-Zertifikat auf der Basis 
+von IT-Grundschutz. 
+Antragsteller und Auditteamleiter sollten bei der Planung von Zertifizierungsverfahren darauf achten, dass 
+genügend Zeit und Ressourcen (Budget, Personal, ...) für Kommentierungszyklen von Auditberichten und 
+eventuelle Nachbesserungen bzw. Nachforderungen eingeplant werden. 
+2.3 Zertifizierungsantrag 
+Zur Initiierung des Zertifizierungsverfahrens ist vom Antragsteller ein Antrag auf eine ISO 27001-
+Zertifizierung auf der Basis von IT-Grundschutz bei der Zertifizierungsstelle zu stellen. 
+Hierbei sind folgende Anforderungen zu erfüllen: 
+• Der Zertifizierungsstelle muss der vollständige Zertifizierungsantrag mindestens zwei Monate vor 
+Beginn des Audits (d. h. vor Beginn der Sichtung der Referenzdokumente) vorliegen. In Einzelfällen 
+kann die Prüfung länger dauern, sodass evtl. Audittermine angepasst werden müssen. 
+• Der Zertifizierungsantrag enthält Angaben zum Antragsteller und verschiedene weitere 
+Informationen zum Informationsverbund. Insbesondere müssen die im Folgenden genannten 
+Angaben vollständig sein: 
+o Der Informationsverbund ist zu beschreiben. Ferner ist ein kurzes Behörden- bzw. Firmenprofil 
+beizufügen, aus dem u. a. die wesentlichen Tätigkeitsfelder der Institution sowie die Größe und 
+Bedeutung des Informationsverbundes für die Institution deutlich werden. 
+===== Seite 10 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+10  Bundesamt für Sicherheit in der Informationstechnik 
+o Bei einer Re-Zertifizierung sind die Änderungen des Informationsverbundes im Vergleich zum 
+Informationsverbund der Vorgängerzertifizierung anzugeben und kurz zu beschreiben. Bei der 
+Verwendung überarbeiteter oder neuer Bausteine sind diese im Antrag mit anzugeben und zu 
+beschreiben. Dabei werden nur große / gravierende Änderungen aufgeführt. 
+o Zeitplanung der Auditierung. 
+o Unabhängigkeitserklärungen der Auditteammitglieder (s. nächstes Kapitel). 
+Formulare zur Antragstellung sowie für die Unabhängigkeitserklärung sind auf den Internetseiten des BSI 
+zu finden. Als Prüfungsgrundlage für Auditierungen im Rahmen der ISO 27001-Zertifizierung auf der Basis 
+von IT-Grundschutz müssen die in „Prüfgrundlage für Zertifizierungen nach ISO 27001 auf der Basis von 
+IT-Grundschutz“ [PRÜFGR] aufgeführten Dokumente in der dort genannten Version verwendet werden. 
+Der Zertifizierungsantrag muss der Schriftform genügend bei der Zertifizierungsstelle eingereicht werden. 
+Entweder als digitaler Antrag mit einer qualifizierten elektronischen Signatur oder in Papierform mit 
+händischer Unterschrift im Original. 
+Die Zertifizierungsstelle prüft den eingereichten Zertifizierungsantrag auf Vollständigkeit, Konsistenz und 
+Erfüllung der o. g. Anforderungen. Ferner wird im Rahmen der Antragsprüfung die prinzipielle 
+Zertifizierbarkeit des Informationsverbundes, also die sinnvolle Abgrenzung geprüft. Bei positiver Prüfung 
+des Zertifizierungsantrags wird das Zertifizierungsverfahren in Reihenfolge der vollständig eingegangenen 
+Anträge offiziell eröffnet und eine Zertifizierungskennung vergeben. Die Verfahrenseröffnung und die 
+Zertifizierungskennung werden dem Antragsteller und dem Auditteamleiter per E-Mail mitgeteilt und 
+wenn gewünscht auf der BSI-Internetseite veröffentlicht. Mit der Sichtung der Referenzdokumente darf 
+nicht vor Verfahrenseröffnung begonnen werden, d. h., das Audit darf erst nach Mitteilung der 
+Zertifizierungskennung beginnen. 
+Änderungen der Antragsdaten, wie z. B. Änderung des Ansprechpartners, sind der Zertifizierungsstelle vor 
+und während der Zertifikatslaufzeit unverzüglich anzuzeigen. 
+2.4 Unabhängigkeitserklärung 
+Jedes Mitglied des Auditteams muss der Zertifizierungsstelle gegenüber eine Unabhängigkeitserklärung 
+abgeben. Eine Gefährdung der Unabhängigkeit kann z. B. bei folgenden Konstellationen auftreten, wobei 
+ein Zeitraum von drei Jahren betrachtet wird: 
+• Vorhergehende Beratung der zu auditierenden Institution durch das Auditteammitglied selbst oder 
+einen Kollegen / Vorgesetzten / Mitarbeiter des Auditteammitglieds. 
+• Geschäftliche Verbindungen des Auditteammitglieds oder seines Arbeitgebers / Auftraggebers zu der 
+zu auditierenden Institution. 
+• Geschäftliche Verbindungen des Auditteammitglieds oder seines Arbeitgebers / Auftraggebers zum 
+Berater des zu auditierenden Informationsverbundes. 
+• Verwandtschaftsverhältnis des Auditteammitglieds mit Mitgliedern / verantwortlichen Personen der 
+zu auditierenden Institution oder zum Berater des zu auditierenden Informationsverbundes. 
+Rein auditierende Tätigkeiten sind hiervon explizit ausgenommen. 
+Die Unabhängigkeitserklärung muss vom Antragsteller mit dem Zertifizierungsantrag eingereicht werden. 
+Alternativ kann die Unabhängigkeitserklärung auch direkt vom Auditor eingereicht werden. Solange der 
+Nachweis nicht vorliegt oder ungenügend ist, kann dieses Mitglied des Auditteams für das beantragte 
+Verfahren nicht eingesetzt werden. Nachmeldungen von Auditteammitgliedern müssen der 
+Zertifizierungsstelle formlos, gerne per E-Mail, mitgeteilt werden. 
+===== Seite 11 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+Bundesamt für Sicherheit in der Informationstechnik 11 
+Die Zertifizierungsstelle behält sich vor, zusätzliche Informationen zum Verhältnis zwischen Auditor und 
+Antragsteller bzw. beratender Institution einzufordern. Sieht sie die Unabhängigkeit von Mitgliedern des 
+Auditteams nicht gewährleistet, wird die entsprechende Unabhängigkeitserklärung nicht freigegeben. 
+Stellt das Auditteam z. B. bei der Vorbereitung auf die Phase 2 des Audits (Vor-Ort-Prüfung) fest, dass 
+weitere Auditteammitglieder benötigt werden, so müssen diese Unabhängigkeitserklärungen nachreichen1. 
+Das neue Auditteammitglied darf erst eingesetzt werden, nachdem dessen Unabhängigkeit durch das BSI 
+freigegeben wurde. 
+Formulare zur Antragstellung sowie für die Unabhängigkeitserklärung sind auf den Internetseiten des BSI 
+zu finden. 
+2.5 Auswahl des Auditteams 
+Für die Auditierung des Informationsverbundes beauftragt die Institution ein Auditteam damit, in einer 
+unabhängigen Prüfung den Status der Informationssicherheit im Informationsverbund zu prüfen und zu 
+verifizieren. Kontaktadressen der zertifizierten Auditoren finden sich auf den Internetseiten des BSI. 
+Das Auditteam wird von der antragstellenden Institution beauftragt und der Zertifizierungsstelle im 
+Zertifizierungsantrag bekannt gegeben. Bei der Auswahl des Auditteams müssen Besonderheiten im Aufbau 
+und in den Prozessen und Gegebenheiten der beauftragenden Institution berücksichtigt werden. Die 
+Mitglieder des Auditteams müssen die Fachkenntnisse besitzen, die sie zur Auditierung der Institution 
+benötigen. Da der Auditteamleiter durch sein positives oder negatives Votum für das Ergebnis des 
+Zertifizierungsaudits verantwortlich ist, muss er die Auditteammitglieder nach Qualifikation und Erfahrung 
+auswählen und einsetzen. 
+Wechselt das Auditteam, ist von der antragstellenden Institution dafür zu sorgen, dass (mindestens) die 
+Referenzdokumente sowie alle vorhergehenden Auditberichte aus der zugrundeliegenden Zertifizierung 
+(Auditbericht aus dem Zertifizierungsprozess selbst sowie ggf. der Auditbericht aus dem ersten 
+Überwachungsaudit, falls bereits erfolgt) dem Auditteam für das Überwachungsaudit zur Verfügung stehen. 
+Außerdem ist damit zu rechnen, dass die Aufwände des Auditteams wegen der erneuten Einarbeitung 
+deutlich höher sein können. 
+2.6 Vertraulichkeit von Informationen 
+Zur Gewährleistung der Vertraulichkeit zum Beispiel bei der Übergabe der Referenzdokumente müssen 
+geeignete Maßnahmen ergriffen werden. Zertifizierte Auditoren sind durch vertragliche Vereinbarungen 
+mit dem BSI verpflichtet, Details zum Zertifizierungsverfahren und zu im Rahmen des Audits gewonnenen 
+Informationen streng vertraulich zu behandeln sowie Kollegen und Dritten Informationen nur zu geben, 
+soweit ihre Kenntnis unbedingt notwendig und mit den vertraglichen Vereinbarungen mit dem BSI und der 
+auditierten Organisation vereinbar ist. 
+Die elektronische Übermittlung des Auditberichts und der Referenzdokumente durch den Auditteamleiter 
+an das BSI muss aus Gründen der Vertraulichkeit unbedingt verschlüsselt erfolgen. Der Auditbericht wird 
+unter Verweis auf die entsprechende Zertifizierungskennnummer (BSI-IGZ-xxxx) an das Postfach gs-
+zert@bsi.bund.de gesandt oder über den BSCW-Server bereitgestellt. 
+Zur Verschlüsselung muss einer der nachfolgenden Standards eingesetzt werden: 
+• OpenPGP (Public-Key-Verfahren) 
+• S/MIME 
+Die öffentlichen OpenPGP und S/MIME Schlüssel der Zertifizierungsstelle ist auf der BSI-Internetseite 
+unter https://www.bsi.bund.de/dok/6617408 zu finden. 
+ 
+1  Unabhängigkeitserklärungen sind unverzüglich der Zertifizierungsstelle vorzulegen. 
+===== Seite 12 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+12  Bundesamt für Sicherheit in der Informationstechnik 
+ 
+2.7 Ziel eines Audits und Auditphasen 
+Ziel des Audits ist die unabhängige Prüfung des ISMS nach ISO 27001 auf der Basis von IT-Grundschutz in 
+einem Informationsverbund. 
+Jedes Audit setzt sich grundsätzlich aus zwei getrennten, aufeinander aufbauenden Phasen zusammen: 
+• Phase 1: Dokumentenprüfung 
+Phase 1 umfasst zunächst die Dokumentenprüfung, d. h. die Prüfung der Referenzdokumente, die 
+von der zu auditierenden Institution erstellt und für die Zertifizierung eingereicht werden. 
+• Phase 2: Umsetzungsprüfung vor Ort 
+Auf der Grundlage der Dokumentenprüfung bereitet sich das Auditteam auf die Vor-Ort-Prüfung vor. 
+In Phase 2 schließt sich eine Vor-Ort-Prüfung des Informationsverbundes durch das Auditteam an, in 
+der im realen Informationsverbund die praktische Umsetzung der in den Referenzdokumenten 
+dokumentierten Sicherheitsmaßnahmen bzgl. ISO 27001 und IT-Grundschutz auf ihre 
+Angemessenheit, Korrektheit und die Wirksamkeit des ISMS hin überprüft wird 
+(Umsetzungsprüfung). 
+Details zur Planung und Durchführung von Audits sowie der Anfertigung von Auditberichten sind in den 
+Dokumenten [AUD] nachzulesen. 
+2.8 Audittypen 
+Für die ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz sind – bezogen auf die dreijährige 
+Laufzeit eines Zertifikates – verschiedene Typen von Audits zu unterscheiden: 
+• Zertifizierungsaudit: Im Rahmen eines Zertifizierungsaudits wird der gesamte Sicherheitsprozess 
+eines Informationsverbundes sowie die Überprüfung der Umsetzung der Anforderungen im Rahmen 
+einer Stichprobenprüfung auf der Basis von Bausteinen aus dem IT-Grundschutz-Kompendium 
+geprüft. Nach Ablauf der Zertifikatslaufzeit von drei Jahren wird eine Re-Zertifizierung des 
+Informationsverbundes erforderlich, sofern eine Zertifizierung des Informationsverbundes weiterhin 
+angestrebt wird. Im Rahmen einer Erstzertifizierung oder z. B. bei wesentlichen Erweiterungen oder 
+Veränderung des Informationsverbundes kann ein Voraudit durchgeführt werden. 
+• Überwachungsaudit: In die dreijährige Laufzeit eines Zertifikates integriert sind jährliche 
+Überwachungsaudits des zertifizierten Informationsverbundes, die auf die Kontrolle der für das 
+Zertifikat nachgewiesenen Informationssicherheit im Informationsverbund zielen. Das Audit dient 
+dem Nachweis, dass der zertifizierte Informationsverbund weiterhin den Anforderungen bzgl. 
+ISO 27001 und IT-Grundschutz genügt. 
+• Zertifizierungsaudit und Überwachungsaudit unterscheiden sich hinsichtlich ihrer Zielsetzung und 
+ihres Umfangs voneinander. 
+2.9 Zertifizierungsarten 
+2.9.1 Erstzertifizierung 
+Ein Erstzertifizierungsverfahren wird mit der Annahme des Zertifizierungsantrags durch die 
+Zertifizierungsstelle initialisiert. Erst nach Eröffnung des Zertifizierungsverfahrens durch Vergabe der 
+Zertifizierungskennung kann mit der Prüfung begonnen werden. 
+Im Rahmen eines Erstzertifizierungsverfahrens kann ein sogenanntes Voraudit durchgeführt werden. Dabei 
+kann das Auditteam gezielt einzelne Aspekte aus Phase 1 und 2 auswählen und stichprobenartig prüfen. 
+Außer intensiven Gesprächen mit dem Antragsteller hat das Auditteam die Möglichkeit, sich Dokumente, 
+===== Seite 13 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+Bundesamt für Sicherheit in der Informationstechnik 13 
+Prozeduren und Implementierungen anzusehen, um einen Eindruck davon zu bekommen, ob ein 
+Zertifizierungsaudit prinzipiell zu einem positiven Ergebnis führen könnte. 
+In der Dokumentenprüfung werden die vom Antragsteller vorgelegten Referenzdokumente durch das 
+Auditteam geprüft. Nach Abschluss der Dokumentenprüfung entscheidet das Auditteam auf Grundlage der 
+Ergebnisse aus dieser Auditphase, ob eine Fortsetzung des Audits mit der Umsetzungsprüfung vor Ort 
+sinnvoll ist und erweitert ggf. das Auditteam. Anschließend begutachtet das Auditteam in der 
+Umsetzungsprüfung vor Ort auf Basis seines Auditplans stichprobenartig die Umsetzung der 
+dokumentierten Sachverhalte. Die Prüfergebnisse werden im Auditbericht festgehalten. Teil des 
+Auditberichts ist der Auditplan, welcher eine erste, grobe Planung der Überwachungsaudits enthält. 
+Sobald der Auditbericht zu einem Zertifizierungsaudit in vollständiger Fassung bei der Zertifizierungsstelle 
+vorliegt, prüft die Zertifizierungsstelle diesen Auditbericht auf Einhaltung aller Vorgaben des 
+Auditierungsschemas für ISO 27001-Audits auf der Basis von IT-Grundschutz. Die Prüfung gegen das 
+Auditierungsschema erfolgt mit der Zielsetzung, ein einheitliches Niveau aller ISO 27001-Zertifizierungen 
+auf der Basis von IT-Grundschutz und die Vergleichbarkeit von Zertifizierungsaussagen zu gewährleisten. 
+Der Auditbericht darf sich nur auf Prüfungen des Auditteams (Dokumentenprüfungen und 
+Umsetzungsprüfung) stützen, die zum Zeitpunkt der Übergabe des Auditberichts an die Zertifizierungsstelle 
+nicht älter als drei Monate sind. Nachforderungen der Zertifizierungsstelle müssen innerhalb von einem 
+Monat durch das Auditteam erfüllt werden, diese dürfen maximal eine Nachbesserung durch den 
+Antragsteller nach sich ziehen. Dagegen sind mehrere Nachforderungen an den Auditbericht durch die 
+Zertifizierungsstelle möglich. Wenn drei Monate nach Abgabe des ersten Auditberichts das Verfahren noch 
+nicht abgeschlossen ist, prüft die Zertifizierungsstelle, ob auf der Basis des vorliegenden Berichts noch ein 
+Zertifikat erteilt werden kann. 
+Ist im Rahmen der Zertifizierung vom Antragsteller eine Pressemitteilung geplant, so sollte diese mit dem 
+BSI abgestimmt und rechtzeitig vor Veröffentlichung der Zertifizierungsstelle zur Kommentierung zur 
+Verfügung gestellt werden. 
+Ein im Rahmen einer Erstzertifizierung erteiltes Zertifikat ist drei Jahre gültig und mit jährlichen 
+Überwachungsaudits verbunden. Treten während der Zertifikatslaufdauer wesentliche Änderungen am 
+zertifizierten Informationsverbund auf (wie z. B. größere Änderungen im Managementsystem, Änderungen 
+in der Institution, Änderungen im Outsourcing, Standortwechsel, Änderungen von Tätigkeitsfeldern), muss 
+der Antragsteller diese der Zertifizierungsstelle unverzüglich formlos per E-Mail mitteilen, s. Kapitel 2.3. 
+2.9.2 Überwachungsaudits 
+Die Überwachungsaudits sind Teil des Erst- bzw. Re-Zertifizierungsverfahrens. Aus diesem Grund ist kein 
+erneuter Antrag notwendig. Nur bei Änderungen des Auditteams muss der Zertifizierungsstelle ein Monat 
+vor Auditbeginn eine Unabhängigkeitserklärung der hinzugekommenen Auditteammitgliedern vorgelegt 
+werden. 
+Für die beiden Überwachungsaudits ist der jeweilige Zeitplan mindestens ein Monat vor Beginn des Audits 
+bei der Zertifizierungsstelle einzureichen. 
+Das Überwachungsaudit sowie der zugehörige Auditbericht und dessen Prüfung durch die 
+Zertifizierungsstelle müssen ein Jahr bzw. zwei Jahre nach Ausstellung des Zertifikates abgeschlossen sein. 
+Dabei ist vom Auditteamleiter darauf zu achten, dass genügend Raum für die Beseitigung von im 
+Überwachungsaudit festgestellten Abweichungen sowie für die Erstellung des Auditberichts eingeplant 
+wird. 
+Die Prüfungen des Überwachungsaudits dürfen nicht früher als vier Monate vor Ablauf des ersten bzw. 
+zweiten Jahres nach Zertifikatserteilung beginnen und der Auditbericht darf nicht später als zwei Monate 
+vor diesem Zeitpunkt bei der Zertifizierungsstelle eingetroffen sein (Vergleich zusammenfassende 
+Darstellung in Kapitel 3). Ausnahmen sind rechtzeitig mit der Zertifizierungsstelle abzustimmen. Andere 
+Rahmenbedingungen wie z. B. ein Wechsel des Auditteams im Vergleich zum Erstaudit oder zum ersten 
+===== Seite 14 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+14  Bundesamt für Sicherheit in der Informationstechnik 
+Überwachungsaudit müssen frühzeitig (mind. einen Monat vorher) der Zertifizierungsstelle angezeigt 
+werden. Nachforderungen der Zertifizierungsstelle müssen innerhalb von einem Monat durch das 
+Auditteam erfüllt werden, diese dürfen maximal eine Nachbesserung durch den Antragsteller nach sich 
+ziehen. 
+Kommt das Auditteam insgesamt über beide Auditphasen zu einem positiven Prüfergebnis, sendet der 
+Auditteamleiter den Auditbericht an die Zertifizierungsstelle. Bei einem negativen Ergebnis muss das BSI 
+ebenfalls hierüber informiert werden. Die Zertifizierungsstelle überprüft den Auditbericht auf 
+Vollständigkeit, Nachvollziehbarkeit und Reproduzierbarkeit der Prüfergebnisse. Nachforderungen oder 
+Nachfragen werden an den Auditteamleiter gestellt, der die ggf. bestehenden Unklarheiten beseitigt. Nur bei 
+positivem Abschluss des Prüfprozesses bleibt das vom BSI erteilte ISO 27001-Zertifikat auf der Basis von 
+IT-Grundschutz weiterhin gültig. 
+Nach einem Überwachungsaudit erfolgt keine Neuausstellung der Zertifikatsurkunde oder Ergänzung des 
+zugehörigen Anhangs durch die Zertifizierungsstelle. Der Antragsteller erhält nach positiver Prüfung durch 
+Auditteam und Zertifizierungsstelle ein Schreiben über diese Tatsache, welches die Zertifikatsurkunde 
+ergänzt. 
+Bei nicht fristgerechter Einreichung des Auditberichts oder negativem Abschluss des Überwachungsaudits 
+wird, das bestehende Zertifikat ausgesetzt oder ggf. entzogen, s. Kapitel 2.13. 
+Außer den planmäßigen Überwachungsaudits, welche zweimal im Zertifizierungsverfahren durchgeführt 
+werden, können außerplanmäßige Audits notwendig werden. Ein außerplanmäßiges Audit kann 
+beispielsweise zur Überprüfung der Behebung festgestellter oder vermuteter schwerwiegender 
+Abweichungen oder durch die Änderung des Informationsverbundes notwendig werden. 
+2.9.3 Re-Zertifizierung 
+Die Gültigkeit von ISO 27001-Zertifikaten auf der Basis von IT-Grundschutz ist auf drei Jahre begrenzt. Sind 
+in dieser Zeit wesentliche Änderungen (wie z. B. größere Änderungen im Managementsystem, Änderungen 
+in der Institution, Änderungen im Outsourcing, Standortwechsel, Änderungen von Tätigkeitsfeldern) am 
+zertifizierten Informationsverbund geplant, muss der Antragsteller diese der Zertifizierungsstelle 
+unverzüglich schriftlich mitteilen. Das BSI entscheidet dann, ob eine vorzeitige Re-Zertifizierung 
+erforderlich ist. Im Falle einer Re-Zertifizierung ist immer ein Zertifizierungsantrag zu stellen. 
+Vor Ablauf des Gültigkeitszeitraums eines Zertifikats ist im Falle, dass der Antragsteller weiterhin ein 
+ISO 27001-Zertifikat auf der Basis von IT-Grundschutz für seinen Informationsverbund wünscht, stets eine 
+erneute Zertifizierung des Informationsverbundes erforderlich, um zu dokumentieren, dass die 
+Voraussetzungen für die Erfüllung der ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz noch 
+erfüllt sind. Dieses Zertifizierungsverfahren läuft als Re-Zertifizierungsverfahren, sofern sich der 
+ursprüngliche Informationsverbund nicht grundlegend geändert hat und die Re-Zertifizierung sich nahtlos 
+an die Zertifizierung anschließt oder innerhalb angemessener Zeit nach Ablauf der Gültigkeit gestartet wird 
+(ca. ein halbes Jahr). Um eine lückenlose Zertifizierung eines Informationsverbundes zu erreichen, muss die 
+Re-Zertifizierung vor Ablauf des Gültigkeitszeitraums des Erstzertifikats abgeschlossen sein. Ein Antrag auf 
+Re-Zertifizierung oder ein laufendes Re-Zertifizierungsverfahren verlängert die Gültigkeit des 
+Erstzertifikats nicht. 
+Das Re-Zertifizierungsverfahren, sein Ablauf und seine Rahmenbedingungen sind einer Erstzertifizierung 
+vergleichbar und sind sinngemäß zu übertragen, wobei der Bezug zum ablaufenden Zertifikat deutlich 
+gemacht werden muss (z. B. Erläuterung Bausteinauswahl, Darstellung Änderungen). Ein Voraudit kann bei 
+einer Re-Zertifizierung bei einer wesentlichen Erweiterung oder Veränderung des Informationsverbundes, 
+erfolgen. Ein Re-Zertifizierungsaudit darf frühestens vier Monate vor Ablauf des Zertifikates beginnen, der 
+Auditbericht muss der Zertifizierungsstelle spätestens zwei Monate vor Ablauf des Zertifikates vorliegen 
+(Vergleich zusammenfassende Darstellung in Kapitel 3). Nachforderungen der Zertifizierungsstelle müssen 
+innerhalb von einem Monat durch das Auditteam erfüllt werden. 
+===== Seite 15 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+Bundesamt für Sicherheit in der Informationstechnik 15 
+Ein im Rahmen einer Re-Zertifizierung erteiltes Zertifikat ist wie ein Erstzertifikat für drei Jahre gültig und 
+ebenfalls mit jährlichen Überwachungsaudits verknüpft. 
+2.10 Prüf- und Auditbegleitung der Zertifizierungsstelle  
+Die Prüfbegleitung durch die Zertifizierungsstelle erfolgt durch die intensive Prüfung des Auditberichts. 
+Dabei wird vor allem auf die Vergleichbarkeit zwischen den Zertifizierungsverfahren geachtet. 
+Die Zertifizierungsstelle kann in Absprache mit dem Antragsteller einen Teil des Audits begleiten. Die 
+Reisekosten werden dem Antragsteller in diesem Fall gemäß Gebührenverordnung [BMIBGebV] in 
+Rechnung gestellt. 
+Ergänzender Hinweis: Nicht Thema dieses Dokuments ist die Begleitung eines Mitgliedes des Auditteams 
+durch die Personenzertifizierungsstelle im Rahmen seines Vertrages mit dem BSI. Diese ist in der 
+Verfahrensbeschreibung zur Anerkennung von Prüfstellen und Zertifizierung von 
+IT-Sicherheitsdienstleistern und dem Programm zur Kompetenzfeststellung von Zertifizierung von 
+Personen im Detail geregelt [ZERTAUD]. 
+2.11 Auditbericht 
+Für jedes Audit ist zur Dokumentation aller Prüfaktivitäten und -ergebnisse vom Auditteamleiter ein 
+Auditbericht zu erstellen. Das Format und die Inhalte eines Auditberichts sind im Detail im 
+Auditierungsschema definiert. Die Referenzdokumente des Antragstellers sind als Anlagen dem 
+Auditbericht beizufügen und gelten als Bestandteil des Auditberichts. Vorversionen des Auditberichts, 
+welchen z. B. nur die Prüfergebnisse für Phase 1 enthalten, sind in der Regel nicht an die 
+Zertifizierungsstelle zu übersenden. 
+Der Auditbericht richtet sich ausschließlich an den Antragsteller und die Zertifizierungsstelle. Die 
+Ergebnisse des Auditberichts werden vom Auditteam und von der Zertifizierungsstelle vertraulich 
+behandelt und nicht an Dritte weitergegeben. Sofern ein anderes Auditteam als das im Zertifizierungsaudit 
+eingesetzte ein Überwachungsaudit durchführt, müssen vom Antragsteller die Auditdokumente, darunter 
+auch der Auditbericht des Zertifizierungsaudits und im Falle des zweiten Überwachungsaudits auch der 
+Auditbericht des ersten Überwachungsaudits an den neuen Auditteamleiter weitergegeben werden. 
+Im Falle eines Zertifizierungsaudits dient der zugehörige Auditbericht der Zertifizierungsstelle als 
+Grundlage für die Erteilung eines Zertifikats. Ein Auditbericht im Rahmen eines Überwachungsaudits bildet 
+für die Zertifizierungsstelle die Grundlage für die Aufrechterhaltung eines bereits erteilten Zertifikates. 
+Alle an die Zertifizierungsstelle gesandten Versionen des Auditberichts werden zur einfacheren Bearbeitung 
+in elektronischer Form zur Verfügung gestellt. Dabei müssen mindestens das Drucken und das Entnehmen 
+von Inhalt zulässig sein. Der nach Abnahme finalisierte und elektronisch signierte oder händisch 
+unterschriebene Auditbericht wird der Zertifizierungsstelle in verschlüsselter Form über die 
+Austauschplattform des BSCW-Servers oder per E-Mail zur Verfügung gestellt (s. Kapitel 2.6). 
+2.12 Zertifikatserteilung 
+Nach positiver Bewertung des Auditprozesses durch die Zertifizierungsstelle erteilt das BSI auf der 
+Grundlage des Zertifizierungsantrags und des abgenommenen Auditberichts für den vorliegenden 
+Informationsverbund ein ISO 27001-Zertifikat auf der Basis von IT-Grundschutz. Sie fertigt ein Zertifikat 
+und einen Zertifizierungsreport mit zusätzlichen Informationen zum Zertifizierungsverfahren (z. B. 
+Auflagen) sowie einen Zertifizierungsbutton für Werbezwecke an. Diese Dokumente werden mit dem 
+Zertifizierungsbescheid, dem Widerspruchsverzicht und ggf. den Verwendungsbedingungen für den 
+Zertifikatsbutton an den Antragsteller gesandt. 
+===== Seite 16 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+16  Bundesamt für Sicherheit in der Informationstechnik 
+Sofern der Antragsteller einer Veröffentlichung des Zertifikates nicht explizit widersprochen hat, wird die 
+Tatsache der Zertifizierung einen Monat nach Zustellung des Zertifikats oder nach Rücksendung des 
+Widerspruchsverzichts auf den Internetseiten des BSI veröffentlicht. 
+Die zertifizierte Institution darf das Zertifikat sowie einen vom BSI zur Verfügung gestellten 
+Zertifizierungsbutton nur unter der Bedingung verwenden, dass das Zertifikat und der zugehörige 
+Zertifizierungsreport jederzeit auf Nachfrage zur Verfügung gestellt werden sowie die mit dem 
+Zertifizierungsbutton verbundenen und der zertifizierten Institution mitgeteilten 
+Verwendungsbedingungen für den Zertifizierungsbutton beachtet werden. Ist das Zertifikat nicht mehr 
+gültig oder ist das Zertifikat ausgesetzt, darf weder mit dem Zertifizierungsbutton noch mit dem Zertifikat 
+geworben werden. 
+2.13 Aussetzung und Zurückziehung von Zertifikaten 
+2.13.1 Aussetzung von Zertifikaten 
+Die Zertifizierungsstelle behält sich vor, Zertifikate auszusetzen. Mögliche Gründe hierfür können sein: 
+• Das Überwachungsaudit wird nicht fristgerecht durchgeführt, die Zertifizierungsstelle ist über die 
+Planung informiert. 
+• Der Auditbericht zum Überwachungsaudit wird zu spät bei der Zertifizierungsstelle eingereicht, die 
+Zertifizierungsstelle ist über die Planung informiert. 
+• Im Überwachungsaudit werden schwerwiegende Abweichungen im Informationsverbund bzgl. 
+seiner Dokumentation und/oder Realisierung erkannt, die vom Antragsteller innerhalb der vom 
+Auditteam gesetzten Frist noch nicht behoben sind, sich aber in Umsetzung befinden. 
+Ausgesetzte Zertifikate werden aus der Liste der ISO 27001-Zertifikate auf der Basis von IT-Grundschutz auf 
+den Internetseiten des BSI entfernt. Mit ausgesetzten Zertifikaten und dem zugehörigen 
+Zertifizierungsbutton darf keine Werbung mehr betrieben werden. 
+Die Zertifizierungsstelle macht Vorgaben bezüglich des Umgangs mit den für die Aussetzung eines 
+Zertifikates festgestellten Gründen und bestimmt das weitere Vorgehen. Sind die Ursachen, die zur 
+Aussetzung eines Zertifikates geführt haben, den Vorgaben der Zertifizierungsstelle entsprechend beseitigt, 
+erhält das betreffende Zertifikat seine Gültigkeit zurück und wird unverändert wieder in die Liste der 
+ISO 27001-Zertifikate auf der Basis von IT-Grundschutz auf den Internetseiten des BSI aufgenommen. 
+2.13.2 Zurückziehung von Zertifikaten 
+Die Zertifizierungsstelle hat die Möglichkeit, Zertifikate zurückzuziehen. Mögliche Gründe hierfür können 
+sein: 
+• Das Überwachungsaudit wird nicht durchgeführt. 
+• Im Überwachungsaudit werden gravierende Abweichungen im ISMS bzgl. seiner 
+Dokumentation und / oder Realisierung erkannt, die vom Antragsteller nicht in einem 
+angemessenen Zeitraum behoben werden können. 
+• Ein Überwachungsaudit ergibt, dass der Informationsverbund die Anforderungen an ein ISMS 
+nicht mehr erfüllt bzw. den Anforderungen des IT-Grundschutzes nicht mehr gerecht wird. 
+• Der Verstoß gegen Auflagen aus der Zertifizierung wird bekannt (beispielsweise ein Verstoß 
+gegen die Verwendungsbedingungen für das Zertifikat, die Nichteinhaltung von Auflagen, die 
+sich aus dem Zertifizierungsreport oder Zertifizierungsbescheid ergeben, wie etwa wesentliche 
+Veränderungen am zertifizierten Informationsverbund ohne Information an die 
+Zertifizierungsstelle, Irreführungen und Täuschungen der Institution gegenüber dem Auditteam 
+bzw. dem BSI, begründete Beschwerden beim BSI über die Institution). 
+===== Seite 17 =====
+2 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz 
+Bundesamt für Sicherheit in der Informationstechnik 17 
+• Abweichungen und Empfehlungen aus dem Auditbericht werden ohne ausreichende 
+Begründung nicht behoben bzw. beachtet. 
+• Verletzung der Meldepflicht von Sicherheitsvorfällen innerhalb des Informationsverbundes. 
+Zurückgezogene Zertifikate werden aus der Liste der ISO 27001-Zertifikate auf der Basis von 
+IT-Grundschutz entfernt. Die Zertifikatsurkunde und der Zertifizierungsreport werden vom 
+Zertifikatsinhaber im Original zurückgefordert und sind an die Zertifizierungsstelle zurückzugeben. Mit 
+zurückgezogenen Zertifikaten und dem zugehörigen Zertifizierungsbutton darf keine Werbung mehr 
+betrieben werden. 
+Ein zurückgezogenes Zertifikat kann nicht wieder aktiviert und in einen gültigen Zustand versetzt werden. 
+Für den betreffenden Informationsverbund ist, falls vorgesehen, ein neues Zertifizierungsverfahren 
+aufzusetzen. 
+2.14 Beschwerdeverfahren 
+Beschwerden zum Zertifizierungsverfahren ISO 27001 auf der Basis von IT-Grundschutz können formlos 
+per Post oder elektronisch an das 
+Bundesamt für Sicherheit in der Informationstechnik 
+Referat S 25 
+Postfach 200363 
+53133 Bonn 
+referat-s25@bsi.bund.de 
+adressiert eingehen. 
+Eingang und Termin der Bearbeitung werden dem Beschwerdeführer daraufhin kurzfristig mitgeteilt. Die 
+Beschwerde wird registriert und anschließend geprüft. Sofern die Beschwerde nach Prüfung berechtigt ist, 
+werden entsprechende Korrektur- und Vorbeugungsmaßnahmen ergriffen, über die der Beschwerdeführer 
+benachrichtigt wird. 
+Sollte die Prüfung zum Ergebnis haben, dass die Beschwerde ungerechtfertigt ist, so wird der 
+Beschwerdeführer auch hierüber unterrichtet. 
+Gegen Bescheide der Zertifizierungsstelle ist das Rechtsmittel des Widerspruchs gegeben, der schriftlich 
+oder zur Niederschrift an das Bundesamt für Sicherheit in der Informationstechnik zu richten ist. 
+===== Seite 18 =====
+3 Übersicht über den Zeitverlauf der Zertifizierung 
+18  Bundesamt für Sicherheit in der Informationstechnik 
+3 Übersicht über den Zeitverlauf der Zertifizierung 
+Diese Zusammenfassung des Zeitverlaufs der Zertifizierung mit einzuhaltenden Fristen soll Antragsteller 
+und Auditteam einen Überblick über die in der Zertifizierung einzuhaltenden Zeiten geben. In diesem 
+Kapitel sind keine neuen Informationen enthalten, sondern nur in diesem Dokument bereits aufgeführte 
+Fristen noch einmal zusammengestellt. 
+  
+Abbildung 2: Antrags- und Auditierungsphase 
+Der vollständige Antrag inklusive der Unabhängigkeitserklärungen der Auditteammitglieder muss der 
+Zertifizierungsstelle mindestens zwei Monate vor Beginn des Audits, d. h. vor Beginn der Sichtung der 
+Referenzdokumente, vorliegen. In Einzelfällen kann die Prüfung länger dauern, sodass evtl. Audittermine 
+angepasst werden müssen. 
+Spätestens vier Monate nach dem Beginn der Sichtung der Referenzdokumente muss der Auditbericht der 
+Zertifizierungsstelle vorliegen. Nachforderungen der Zertifizierungsstelle müssen jeweils nach spätestens 
+einem Monat erfüllt sein. Wenn drei Monate nach Abgabe des ersten Auditberichts das Verfahren noch 
+nicht abgeschlossen ist, prüft die Zertifizierungsstelle, ob auf der Basis des vorliegenden Berichts noch ein 
+Zertifikat erteilt werden kann. 
+ 
+Abbildung 3: Fristen Überwachungsaudit 
+Das Überwachungsaudit sowie der zugehörige Auditbericht und dessen Prüfung durch die 
+Zertifizierungsstelle müssen ein Jahr bzw. zwei Jahre nach Ausstellung des Zertifikates abgeschlossen sein. 
+Dabei sollten die Prüfungen nicht früher als vier Monate vor Ablauf des ersten bzw. zweiten Jahres nach 
+Zertifikatserteilung beginnen und der Auditbericht sollte nicht später als zwei Monate vor diesem Zeitpunkt 
+bei der Zertifizierungsstelle eingetroffen sein. 
+Die Unabhängigkeitserklärungen für das Überwachungsaudit müssen der Zertifizierungsstelle mindestens 
+ein Monat vor Beginn der Auditierungstätigkeit vorliegen. 
+ 
+Abbildung 4: Fristen Re-Zertifizierung 
+Bei einer Re-Zertifizierung darf mit der Sichtung der Referenzdokumente frühestens vier Monate vor 
+Auslaufen des Zertifikates begonnen werden. Der Auditbericht muss der Zertifizierungsstelle mindestens 
+zwei Monate vor Gültigkeitsende des Zertifikates vorliegen. Darüber hinaus gelten die gleichen Fristen wie 
+für ein Erst-Zertifizierungsaudit (s. Abbildung 2: Antrags- und Auditierungsphase). 
+
+===== Seite 19 =====
+Literaturverzeichnis 
+19  Bundesamt für Sicherheit in der Informationstechnik 
+Literaturverzeichnis 
+[AUD] Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz, Auditierungsschema mit 
+Anlagen 
+[PRÜFGR] Prüfgrundlage für Zertifizierungen nach ISO 27001 auf der Basis von IT-Grundschutz 
+[REFDOK] Hinweise zur Bereitstellung der Referenzdokumente im Rahmen der Zertifizierung nach 
+ISO 27001 auf der Basis von IT-Grundschutz 
+[ZERTAUD] Verfahrensbeschreibung zur Kompetenzfeststellung und Zertifizierung von Personen 
+[17021] DIN EN ISO/IEC 17021-1 "Konformitätsbewertung - Anforderungen an Stellen, die 
+Managementsysteme auditieren und zertifizieren" 
+[19011] DIN EN ISO 19011 „Leitfaden zur Auditierung von Managementsystemen“ 
+[27001] ISO/IEC 27001:2022 „Information security, cybersecurity and privacy protection — 
+Information security management systems — Requirements " 
+[27002] DIN EN ISO/IEC 27002 "Informationssicherheit, Cybersicherheit und Schutz der Privatsphäre 
+– Informationssicherheitsmaßnahmen (ISO/IEC 27002:2022)" 
+[27006] ISO/IEC 27006 „Informationssicherheit, Cybersicherheit und Datenschutz – Anforderungen 
+an Stellen, die Informationssicherheitsmanagementsysteme auditieren und zertifizieren “ 
+[200 2] BSI-Standard 200 2 „IT-Grundschutz-Methodik“ 
+[200 3] BSI-Standard 200 3 „Risikoanalyse auf Basis von IT-Grundschutz“ 
+[GSK] IT-Grundschutz-Kompendium, BSI 
+[BSIG] BSI-Gesetz vom 14. August 2009 (BGBl. I S. 2821), das zuletzt durch Artikel 1 des Gesetzes vom 
+23. Juni 2017 (BGBl. I S. 1885) geändert worden ist 
+[ZVO] BSI-Zertifizierungs- und -Anerkennungsverordnung vom 17. Dezember 2014 (BGBl. I S. 2231), 
+die durch Artikel 40 des Gesetzes vom 29. März 2017 (BGBl. I S. 626) geändert worden ist" 
+[BMIBGebV] Besondere Gebührenverordnung des Bundesministeriums des Innern, für Bau und Heimat 
+für individuell zurechenbare öffentliche Leistungen in dessen Zuständigkeitsbereich 
+(Besondere Gebührenverordnung BMI - BMIBGebV) 
+ 

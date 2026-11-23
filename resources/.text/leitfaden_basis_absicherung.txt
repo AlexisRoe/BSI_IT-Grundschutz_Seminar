@@ -1,0 +1,2554 @@
+
+===== Seite 1 =====
+www.bsi.bund.de/grundschutz
+Leitfaden zur Basis-Absicherung 
+nach IT-Grundschutz
+In drei Schritten zur Informationssicherheit
+===== Seite 2 =====
+
+===== Seite 3 =====
+INHALT
+3
+Inhaltsverzeichnis
+Vorwort 5
+1 Einleitung 8
+2 Informationssicherheitsmanagement  
+mit IT-Grundschutz 14
+3 Erstellung einer Sicherheitskonzeption  
+nach der Basis-Absicherung 19
+3.1 Initiierung des Sicherheitsprozesses 19
+3.1.1 Management-Entscheidung:  
+Verantwortung der Leitungsebene 19
+3.1.2 Zentrale Rolle: Der Informations-
+sicherheitsbeauftragte (ISB) 22
+3.1.3 Geltungsbereich für die Sicherheits-
+konzeption: der Informationsverbund 26
+3.1.4 Erstellung einer Leitlinie zur 
+ Informationssicherheit 29
+3.2 Organisation des Sicherheitsprozesses 33
+3.2.1 Aufbau einer Organisation zur 
+ Informationssicherheit 34
+3.2.2 Konzeption und Planung des Sicherheits-
+prozesses 38
+3.3 Durchführung des Sicherheitsprozesses 46
+3.3.1 Auswahl und Priorisierung der Bausteine 
+(Modellierung) 48
+3.3.2 IT-Grundschutz-Check für Basis-Absicherung 52
+3.3.3 Umsetzung der Sicherheitskonzeption 59
+===== Seite 4 =====
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ 
+4
+4 Informationssicherheit ist ein Prozess:  
+Wie es weitergehen kann 71
+5 Anhang 76
+5.1 Das IT-Grundschutz-Kompendium – 
+Wissenswertes auf einen Blick 76
+5.2 Literaturverzeichnis 82
+5.3 Glossar 83
+===== Seite 5 =====
+VORWORT
+5
+Vorwort
+Cyber-Sicherheit ist ein großer, ein abstrakter Begriff. Ihn mit 
+Leben zu füllen, beginnt jedoch schon in der kleinsten Institu-
+tion. Zur Cyber-Sicherheit in Deutschland kann nicht nur der 
+Staat beitragen, auch jedes Unternehmen – unabhängig welcher 
+Größe – muss seinen Beitrag leisten. Mit dem IT-Grundschutz 
+stellt das BSI seit vielen Jahren eine bewährte Methode und ein 
+umfangreiches Angebot zur Verfügung, das in Verwaltung und 
+Wirtschaft erfolgreich zum Einsatz kommt. Viele Behörden und 
+große Unternehmen sind – auch aufgrund ihrer finanziellen 
+und personellen Ausstattung – insgesamt gut in puncto Infor-
+mationssicherheit aufgestellt. 
+Der Austausch mit kleinen und mittelständischen Unterneh-
+mern zeigt jedoch meist – noch – ein anderes Bild. Auch wenn 
+die Awareness für Fragen der Informationssicherheit vorhan-
+den ist, fehlt es häufig an geschultem Personal und finanziellen 
+Spielräumen, die notwendigen Maßnahmen nachhaltig und 
+sinnvoll umzusetzen. 
+Als nationale Cyber-Sicherheitsbehörde ist es unser Anspruch, 
+die Informationssicherheit in der Digitalisierung zu gestalten 
+und die Widerstandsfähigkeit Deutschlands gegen Cyber-
+Gefahren zu erhöhen. Zur Gestaltung gehört auch, praktikable 
+und zielgruppengerechte Lösungsangebote zu machen. Der 
+vorliegende Leitfaden „Basis-Absicherung“ setzt genau hier an: 
+Im Rahmen der gesamten IT-Grundschutz-Methodik stellt die 
+Basis-Absicherung einen Einstieg für alle Unternehmen dar, die 
+sich zum ersten Mal mit der Absicherung ihrer IT-Systeme und 
+Daten befassen wollen. Der Leitfaden erläutert verständlich 
+die erforderlichen Schritte zur Überprüfung des bestehenden 
+Informationssicherheitsniveaus sowie schnell realisierbare 
+Maßnahmen, die auch mit geringen finanziellen Mitteln und 
+===== Seite 6 =====
+wenigen Mitarbeitern umsetzbar sind. Neben technischen 
+Aspekten werden im Sinne eines ganzheitlichen Management
+-
+systems zur Informationssicherheit auch infrastrukturelle, 
+organisatorische und personelle Themen betrachtet. 
+Ich wünsche Ihnen eine anregende Lektüre und eine gute Aus-
+einandersetzung mit Ihren Fragen zur Informationssicherheit, 
+vor allem aber eine erfolgreiche Umsetzung der dort beschrie-
+benen Maßnahmen.
+Ihr 
+Arne Schönbo
+hm
+Präsident des Bundesamtes für Sicherheit in der 
+Informationstechnik
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ 
+6
+===== Seite 7 =====
+7
+1 Einleitung
+===== Seite 8 =====
+8
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+1 Einleitung
+Die Herausforderungen an Verwaltung und Unternehmen, 
+sensible Daten und Kommunikationsprozesse vor unbefugtem 
+Zugriff zu schützen, werden zunehmend größer. Aktuelle Tech-
+nologien wie Smart Home, Internet of Things sowie die weitere 
+Digitalisierung aller Arbeits- und Lebensbereiche führen dazu, 
+dass Institutionen jeder Größe künftig noch stärker Ressourcen 
+in die Aufrechterhaltung der Informationssicherheit investie-
+ren müssen. 
+Um ein bedarfsgerechtes Sicherheitsniveau für alle Geschäfts-
+prozesse, Informationen und IT-Systeme aufzubauen, ist mehr 
+als die Anschaffung von Virenschutzprogrammen, Firewalls 
+oder Datensicherungssystemen notwendig: Ein ganzheitliches 
+Konzept bildet die Basis und den Ausgangspunkt zum Aufbau 
+eines tragfähigen Sicherheitsmanagements. Informationssi-
+cherheitsmanagement, oder kurz IS-Management, ist der Teil 
+des allgemeinen Risikomanagements, der die Vertraulichkeit, 
+Integrität und Verfügbarkeit von Informationen, Geschäfts-
+prozessen, Anwendungen und IT-Systemen gewährleisten soll. 
+Dabei handelt es sich um einen kontinuierlichen Prozess, bei 
+dem Strategien und Maßnahmen stetig überprüft und an ver-
+änderte Anforderungen angepasst werden.
+Informationssicherheit ist nicht nur eine Frage der Technik, sie 
+ist in erheblichem Maße von den organisatorischen und per-
+sonellen Rahmenbedingungen abhängig. Der IT-Grundschutz 
+trägt diesen Bedingungen Rechnung, indem in Veröffentli-
+chungen sowohl technische als auch nicht-technische Sicher-
+heitsanforderungen für typische Geschäftsbereiche, Anwen-
+dungen und Systeme auf dem Stand der Technik beschrieben 
+werden. Im Vordergrund stehen dabei praxisnahe Sicherheits-
+anforderungen mit dem Ziel, die Einstiegshürde in den Sicher-
+===== Seite 9 =====
+ EINLEITUNG
+9
+heitsprozess so niedrig wie möglich zu halten und allzu kom-
+plexe Vorgehensweisen zu vermeiden.
+Leitfaden zum Einstieg in die Informationssicherheit
+Der vorliegende Leitfaden zur IT-Grundschutz-Vorgehensweise 
+„Basis-Absicherung“ liefert einen kompakten und übersichtli-
+chen Einstieg zum Aufbau eines Informationssicherheitsma-
+nagementsystems (ISMS) in einer Institution. Ein ISMS ist ein 
+geplantes und organisiertes Vorgehen, um ein angemessenes 
+Sicherheitsniveau für die Informationssicherheit zu erzielen 
+und aufrechtzuerhalten. Der Leitfaden basiert auf dem BSI-
+Standard 200-2 zur IT-Grundschutz-Methodik und erläutert 
+elementare Schritte zur Überprüfung und Steigerung des 
+Informationssicherheitsniveaus.
+Im BSI-Standard 200-2 wird dargestellt, wie mit dem IT-Grund-
+schutz ein effizientes Managementsystem für die Informations-
+sicherheit aufgebaut werden kann. Die Vorgehensweisen nach 
+IT-Grundschutz bieten zusammen mit dem IT-Grundschutz-
+Kompendium eine systematische Methodik zur Erarbeitung 
+von Sicherheitskonzepten und praxiserprobten Sicherheits-
+maßnahmen, die in zahlreichen Behörden und Unternehmen 
+erfolgreich seit vielen Jahren eingesetzt werden.
+Die Basis-Absicherung ermöglicht es, als Einstieg in den IT-
+Grundschutz zunächst eine breite, grundlegende Erst-Absi-
+cherung über alle Geschäftsprozesse bzw. Fachverfahren einer 
+Institution vorzunehmen. Die Vorgehensweise ist für Institutio-
+nen empfehlenswert, auf die folgende Punkte zutreffen:
+» Die Umsetzung von Informationssicherheit steht noch am 
+Anfang, sie hat ein eher niedriges Niveau.
+===== Seite 10 =====
+10
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» Di e Geschäftsprozesse haben kein deutlich erhöhtes Gefähr-
+dungspotential bezüglich der Informationssicherheit.
+» Das angestrebte Sicherheitsniveau ist normal.
+» Es sind keine Assets, also digitalen oder analogen Werte 
+vorhanden, deren Diebstahl, Zerstörung oder Kompromittie-
+rung einen existenzbedrohenden Schaden für die Institution 
+bedeutet.
+» Kleinere Sicherheitsvorfälle können toleriert werden – das 
+heißt solche, die zwar Geld kosten oder anderweitig Schaden 
+verursachen, aber in der Summe nicht existenzbedrohend 
+sind.
+Mit der Basis-Absicherung können zeitnah die wichtigsten 
+Sicherheitsanforderungen umgesetzt werden. Darauf aufbau-
+end kann das Sicherheitsniveau zu einem späteren Zeitpunkt 
+weiter erhöht werden, beispielsweise indem alle Bereiche mit 
+der Standard-Absicherung oder kritische Geschäftsprozesse mit 
+der Kern-Absicherung geschützt werden.
+Die Basis-Absicherung stellt damit – auch und besonders – für 
+kleine und mittelständische Unternehmen einen gut realisier-
+baren Einstieg in eine gelebte Praxis zur Informationssicherheit 
+dar. Mit einem verhältnismäßig geringen Aufwand ist sehr 
+schnell eine grundlegende Erst-Absicherung erzielbar. 
+Entscheidung für die Basis-Absicherung
+Die IT-Grundschutz-Methodik stellt neben der Basis-Absiche-
+rung zwei weitere Vorgehensweisen zur Verfügung, die abhän-
+gig von den individuellen Sicherheitsanforderungen einer 
+Institution eingesetzt werden können. Verantwortliche für die 
+===== Seite 11 =====
+ EINLEITUNG
+11
+Informationssicherheit können daher zwischen der Basis-, der 
+Standard- und der Kern-Absicherung wählen.
+Mit der Basis-Absicherung kann ein erster Einstieg in ein 
+Sicherheitsmanagement vollzogen werden, um schnellstmög-
+lich die größten Risiken zu senken. Im Vergleich dazu dient die 
+Kern-Absicherung dem Schutz elementarer Geschäftsprozesse 
+und Ressourcen.
+Wenn die Basis-Absicherung in einer Institution erfolgreich 
+umgesetzt wurde, kann und sollte als nächster Schritt für eine 
+solide Informationssicherheit mit der Standard- oder Kern-
+Absicherung fortgefahren werden. Im besten Fall wird mit 
+der Zeit eine vollständige Standard-Absicherung auf Basis des 
+BSI-Standards 200-2 umgesetzt, damit ein dem Schutzbedarf 
+angemessenes Sicherheitsniveau erreicht wird. 
+Zielgruppe
+Grundsätzlich richtet sich der Leitfaden Basis-Absicherung an 
+diejenigen Personen in Unternehmen, die Informationssicher-
+heit umsetzen. Typischerweise sind das Informationssicher-
+heitsbeauftragte (ISB). Bei kleineren Institutionen, in denen 
+der Bereich Informationssicherheit bislang (noch) nicht so 
+professionell aufgestellt ist, können auch andere Mitarbeiter 
+zunächst diese Aufgabe übernehmen. Geeignet sind beispiels-
+weise Mitarbeiter aus den Bereichen Finanzen und Control-
+ling, IT-Betrieb oder der betriebliche Datenschutzbeauftragte, 
+allerdings aufgrund ihrer originären Aufgaben und möglicher 
+Rollenkonflikte nur mit Einschränkungen. 
+===== Seite 12 =====
+12
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Basis-Absicherung: Mehrwert für die Informationssicherheit
+Der Leitfaden Basis-Absicherung gibt Verantwortlichen das 
+notwendige Rüstzeug an die Hand, um das Niveau der Infor-
+mationssicherheit in einer Institution zu überprüfen, Schwach-
+stellen zu identifizieren und mit geeigneten Maßnahmen zu 
+verbessern. Die Basis-Absicherung ermöglicht dabei ein über-
+schaubares und sehr praktikables Vorgehen für eine Erstabsi-
+cherung. Mit dem ganzheitlichen Ansatz der IT-Grundschutz-
+Methodik, bei der neben technischen auch infrastrukturelle, 
+organisatorische und personelle Aspekte betrachtet werden, 
+können geschäftlich relevante Informationen und Daten vor 
+Missbrauch und fremdem Zugriff geschützt werden.
+===== Seite 13 =====
+13
+2 Informationssicher-
+heitsmanagement 
+mit IT-Grundschutz
+===== Seite 14 =====
+14
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+2 Informationssicher-
+heitsmanagement mit 
+IT-Grundschutz
+Im BSI-Standard 200-2 wird dargestellt, wie ein effizientes 
+Managementsystem für die Informationssicherheit aufgebaut 
+und wie das IT-Grundschutz-Kompendium im Rahmen dieser 
+Aufgabe verwendet werden kann. Die Vorgehensweisen nach 
+IT-Grundschutz in Kombination mit den Bausteinen des IT-
+Grundschutz-Kompendiums bieten eine systematische Metho-
+dik zur Erarbeitung von Sicherheitskonzepten und praxiser-
+probten Sicherheitsmaßnahmen, die in zahlreichen Behörden 
+und Unternehmen erfolgreich eingesetzt werden. Der vorlie-
+gende Leitfaden erläutert unter Anwendung der Basis-Absi-
+cherung aus dem BSI-Standard 200-2 schematisch den Prozess 
+zur Etablierung eines ISMS und wie dieser fortgeführt werden 
+kann.
+Übersicht über den Informationssicherheitsprozess
+Für die Gestaltung des Sicherheitsprozesses ist ein systemati-
+sches Vorgehen erforderlich, damit ein angemessenes Sicher-
+heitsniveau erreicht werden kann. 
+Die ganzheitliche Umsetzung von Informationssicherheit in 
+einem einzelnen großen Schritt hat sich schon oft als ein zu 
+ehrgeiziges Ziel erwiesen. Viele kleine Schritte und ein lang-
+fristiger, kontinuierlicher angelegter Prozess sind oft Erfolg 
+versprechender.
+===== Seite 15 =====
+ INFORMATIONSSICHERHEITSMANAGEMENT MIT IT-GRUNDSCHUTZ
+15
+Auch hohe Investitionskosten zu Beginn sind meist nicht erfor-
+derlich. So kann es besser sein, zunächst nur in ausgewählten 
+Bereichen die dringend erforderlichen Sicherheitsvorkehrun-
+gen umzusetzen. Dieser Ansatz entspricht der Basis-Absiche-
+rung. Sind die dringendsten Sicherheitsfragen geklärt, können 
+im Anschluss alle weiteren Aspekte in der Gesamtorganisation 
+überprüft und verbessert werden.
+Abbildung 1: In drei Schritten zur Informationssicherheit
+Der vorliegende Leitfaden zeigt, wie die Basis-Absicherung in 
+drei Schritten umgesetzt werden kann. Die Schritte orientieren 
+sich dabei stark an den Phasen des Sicherheitsprozesses gemäß 
+der IT-Grundschutz-Methodik.
+Einige dieser Phasen können parallel durchgeführt werden, 
+zum Beispiel können Konzeption und Planung des Sicherheits-
+prozesses gleichzeitig zur Etablierung der Informationssicher-
+===== Seite 16 =====
+16
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+heitsorganisation erfolgen. In diesem Fall müssen die vorgezo-
+genen Phasen mit den neuen Ergebnissen zeitnah aktualisiert 
+werden.
+Im Folgenden wird eine kurze Darstellung über die Schritte des 
+Sicherheitsprozesses gegeben.
+1. Initiierung des Sicherheitsprozesses
+Die Leitungsebene muss den Sicherheitsprozess initiieren, 
+steuern und kontrollieren. Hierfür sind einerseits strategische 
+Leitaussagen zur Informationssicherheit und andererseits 
+organisatorische Rahmenbedingungen erforderlich. Der Infor-
+mationssicherheitsbeauftragte (ISB) spielt die zentrale Rolle in 
+diesem Prozess.
+Eine wesentliche Grundlage für die Ausgestaltung des Sicher-
+heitsprozesses ist die Leitlinie zur Informationssicherheit. Sie 
+beschreibt, für welchen Geltungsbereich die Institution welche 
+Sicherheitsziele und welches Sicherheitsniveau anstrebt, was 
+die Motivation hierfür ist und mit welchen Maßnahmen und 
+mit welchen Strukturen dies erreicht werden soll.
+2. Organisation des Sicherheitsprozesses
+Für das Informationssicherheitsmanagement muss eine für 
+Größe und Art der Institution geeignete Organisationsstruktur 
+aufgebaut werden. Hierzu müssen Schnittstellen, Kommunika-
+tionswege und Prozesse zur Zusammenarbeit festgelegt werden. 
+Bei sehr kleinen Unternehmen kann dies in einem möglichst 
+überschaubaren Rahmen erfolgen. 
+===== Seite 17 =====
+ INFORMATIONSSICHERHEITSMANAGEMENT MIT IT-GRUNDSCHUTZ
+17
+3. Durchführung des Sicherheitsprozesses
+Nachdem ein Informationssicherheitsprozess initiiert und die 
+Sicherheitsleitlinie und Informationssicherheitsorganisation 
+definiert wurden, kann im nächsten Schritt die Sicherheitskon-
+zeption für die Institution erstellt werden. Als Grundlage gibt 
+es in den Bausteinen des IT-Grundschutz-Kompendiums für 
+typische Komponenten von Geschäftsprozessen, Anwendun-
+gen, IT-Systeme und weitere Objekte entsprechende Sicher-
+heitsanforderungen gemäß dem Stand der Technik. Diese sind 
+thematisch strukturiert und setzen modular aufeinander auf.
+Bei der IT-Grundschutz-Methodik reduziert sich der Analyse-
+aufwand auf einen Soll-Ist-Vergleich zwischen den Sicherheits-
+anforderungen aus den relevanten Bausteinen und den in der 
+Institution bereits realisierten Maßnahmen. Dabei festgestellte 
+fehlende oder nur unzureichend erfüllte Anforderungen zeigen 
+die Sicherheitsdefizite auf, die es durch die konsequente Umset-
+zung von abgeleiteten Maßnahmen zu beheben gilt.
+Aufrechterhaltung und Verbesserung der Informationssicherheit
+Ziel des Sicherheitsmanagements ist es, ein angestrebtes 
+Sicherheitsniveau zu erreichen und dieses dauerhaft aufrecht-
+zuerhalten sowie bestenfalls stetig zu verbessern. Daher müssen 
+der Prozess selbst und die Organisationsstrukturen für Infor-
+mationssicherheit regelmäßig daraufhin überprüft werden, ob 
+sie angemessen, wirksam und effizient sind. Dasselbe gilt für die 
+gewählten Maßnahmen. Nach Abschluss einer initialen Basis-
+Absicherung sollte die Vorgehensweise ergänzt oder erweitert 
+werden, beispielsweise von Basis- auf Standard-Absicherung 
+oder durch Anwendung der Kern-Absicherung.
+===== Seite 18 =====
+18
+3 Erstellung einer 
+Sicherheitskonzeption 
+nach der Basis-
+Absicherung
+===== Seite 19 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+19
+3 Erstellung einer 
+Sicherheitskonzeption nach 
+der Basis-Absicherung
+Dieses Kapitel beschreibt im Detail, wie eine Sicherheitskon-
+zeption in drei Schritten nach der Basis-Absicherung umgesetzt 
+werden kann.
+3.1 Initiierung des Sicherheitsprozesses
+In diesem Kapitel werden die ersten Schritte zur Umsetzung 
+einer Basis-Absicherung in einer Institution beschrieben. Die 
+Verantwortung tragen dabei die Leitung oder Geschäftsfüh-
+rung. Zudem nimmt der Informationssicherheitsbeauftragte 
+(ISB) eine zentrale Rolle ein, schließlich geht es bereits zu die-
+sem Zeitpunkt um die Festlegung der Sicherheitsziele in Form 
+einer Leitlinie.
+3.1.1 Management-Entscheidung: 
+Verantwortung der Leitungsebene
+Die oberste Leitungsebene ist dafür verantwortlich, dass alle 
+Geschäftsbereiche reibungslos und ordnungsgemäß funktio-
+nieren und Risiken frühzeitig erkannt und minimiert werden. 
+Mit der zunehmenden Abhängigkeit der Geschäftsprozesse von 
+der Informationsverarbeitung steigen damit auch die Anfor-
+derungen daran, dass Informationssicherheit nach innen und 
+außen gewährleistet ist.
+===== Seite 20 =====
+20
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Die Leitung muss den Sicherheitsprozess initiieren, steuern und 
+kontrollieren. Sie entscheidet über den Umgang mit Risiken 
+und stellt Ressourcen zur Verfügung. Die Verantwortung für 
+die Informationssicherheit verbleibt dort. Die operative Auf-
+gabe „Informationssicherheit“ wird allerdings üblicherweise an 
+einen Informationssicherheitsbeauftragten delegiert. 
+In der Einstiegsphase in den Sicherheitsprozess ist meist noch 
+keine Sicherheitsorganisation aufgebaut und häufig auch noch 
+nicht der spätere ISB benannt. Für die Initiierung des Sicher-
+heitsprozesses muss aber zumindest ein Verantwortlicher für 
+Informationssicherheit benannt werden, der die ersten Schritte 
+zur Konzeption und Planung durchführt.
+Für die Verantwortlichen ist es empfehlenswert, die oberste 
+Leitungsebene stets über mögliche Risiken und Konsequen-
+zen aufgrund fehlender Informationssicherheit aufzuklären. 
+Nach einem Sicherheitsvorfall muss die Geschäftsführung oder 
+Behördenleitung zeitnah über mögliche Risiken unterrichtet 
+werden. Auf der anderen Seite muss die Leitung sicherstellen, 
+dass ihr alle entscheidungsrelevanten Informationen rechtzei-
+tig vorliegen.
+===== Seite 21 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+21
+A uf einen Blick: Sicherheitsrelevante Themen für die  
+ Leitungsebene
+» Sicherheitsrisiken für die Institution und deren 
+Informationen
+» Auswirkungen und Kosten im Schadensfall
+» Auswirkungen von Sicherheitsvorfällen auf kritische 
+Geschäftsprozesse
+» Sicherheitsanforderungen, die sich aus gesetzlichen und 
+vertraglichen Vorgaben ergeben
+» die für eine Branche typischen Vorgehensweisen zur 
+Informationssicherheit
+» der aktuelle Stand der Informationssicherheit in der Ins-
+titution mit abgeleiteten Handlungsempfehlungen
+Die Leitungsebene trägt die Verantwortung für die Erreichung 
+der S
+icherheitsziele, die operative Umsetzung und Steuerung 
+des Sicherheitsprozesses obliegt einem verantwortlichen ISB. 
+Alle Beschäftigten in einer Institution müssen ihren Teil dazu 
+beitragen, die Sicherheitsziele zu erreichen. 
+Die Leitungsebene muss sich vor allem dafür einsetzen, dass 
+Informationssicherheit in alle relevanten Geschäftsprozesse 
+bzw. Fachverfahren und Projekte integriert wird. Der ISB 
+braucht hierbei erfahrungsgemäß die volle Unterstützung der 
+Behörden- oder Unternehmensleitung, um von den jeweiligen 
+Fachverantwortlichen eingebunden zu werden.
+===== Seite 22 =====
+22
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Die Leitungsebene muss die Ziele sowohl für das Informati-
+onssicherheitsmanagement als auch für alle anderen Berei-
+che so setzen, dass das angestrebte Sicherheitsniveau in allen 
+Bereichen mit den bereitgestellten Ressourcen (Personal, Zeit, 
+Finanzmittel) erreichbar ist.
+A uf einen Blick: Verantwortung durch die Leitungsebene
+» Die Leitungsebene trägt die Gesamtverantwortung für 
+Informationssicherheit.
+» Die Leitungsebene muss jederzeit über mögliche Risiken 
+und Konsequenzen für die Informationssicherheit infor-
+miert sein. 
+» Die Leitungsebene initiiert den Informationssicherheits-
+prozess innerhalb der Institution und benennt einen Ver-
+antwortlichen Informationssicherheitsbeauftragten (ISB).
+» Die Leitungsebene unterstützt den ISB vollständig und 
+stellt ausreichende Ressourcen bereit, um die gesetzten 
+Ziele erreichen zu können.
+3.1.2 
+Zentrale Rolle: Der Informations-
+sicherheitsbeauftragte (ISB)
+In einer Institution muss es einen Ansprechpartner für alle 
+Aspekte rund um das Thema Informationssicherheit geben. 
+Nur ein zentraler Ansprechpartner kann ein gängiges Problem 
+lösen: Im geschäftlichen Alltag werden Aspekte der Informa-
+tionssicherheit häufig vernachlässigt, sie gehen in manchen 
+Institutionen schlichtweg unter. Dadurch besteht bei fehlender 
+oder unklarer Aufteilung der Zuständigkeit die Gefahr, dass 
+===== Seite 23 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+23
+Informationssicherheit grundsätzlich zu einem „Problem ande-
+rer Leute“ wird. 
+Die Rolle des Informationssicherheitsbeauftragten setzt hier 
+an. Der ISB koordiniert die Aufgabe „Informationssicherheit“, 
+identifiziert Schwachstellen und arbeitet daran, das Sicherheits-
+niveau zu erhöhen. Für die Funktion gibt es in Wirtschaft und 
+Verwaltung diverse Bezeichnungen: Häufige Titel sind auch 
+Chief Information Security Officer (CISO) oder Informationssi-
+cherheitsmanager (ISM). In einigen Institutionen wird auch die 
+Bezeichnung IT-Sicherheitsbeauftragter (IT-SiBe) verwendet. 
+ISB ist hier jedoch die treffendere Bezeichnung. Sie verdeut-
+licht, dass der Verantwortliche sich nicht nur um die Absiche-
+rung IT-bezogener Aspekte kümmert, sondern um den Schutz 
+aller Arten von Informationen. 
+Es ist abhängig von der Art und Größe der Institution, ob oder 
+wie viele weitere Mitarbeiter Sicherheitsaufgaben übernehmen. 
+Zuständigkeiten und Aufgaben
+Der ISB ist zuständig für die Wahrnehmung aller Belange 
+der Informationssicherheit innerhalb der Institution. Seine 
+Hauptaufgabe besteht darin, die Behörden- bzw. Unterneh-
+mensleitung bei deren Aufgabenwahrnehmung bezüglich der 
+Informationssicherheit zu beraten und sie bei der Umsetzung 
+zu unterstützen.
+Der ISB ist bei allen größeren Projekten, die deutliche Auswir-
+kungen auf die Informationsverarbeitung haben könnten, zu 
+beteiligen, um die Beachtung von Sicherheitsaspekten in den 
+verschiedenen Projektphasen zu gewährleisten. So sollte der 
+ISB bei der Planung und Einführung neuer Anwendungen und 
+IT-Systeme ebenso beteiligt sein wie bei wesentlichen Ände-
+===== Seite 24 =====
+24
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+rungen der Infrastruktur oder der Auslagerung von Geschäfts-
+prozessen (Outsour
+cing). Auch Produktionsanlagen und andere 
+Geräte mit IT- oder Internet-Funktionalität dürfen nicht 
+vergessen werden. Zur Erfüllung dieser Aufgaben ist es wün-
+schenswert, dass der Informationssicherheitsbeauftragte über 
+Wissen und Erfahrung in den Gebieten Informationssicherheit 
+und IT verfügt. Ebenso sollte er Kenntnisse über die Geschäfts-
+prozesse der Institution mitbringen. 
+Personalunion mit dem Datenschutzbeauftragten
+Eine häufige Frage ist, ob die Position des Informationssicher-
+heitsbeauftragten gleichzeitig vom Datenschutzbeauftragten 
+wahrgenommen werden kann. Die beiden Rollen schließen sich 
+nicht grundsätzlich aus, es sind allerdings einige Aspekte im 
+Vorfeld zu klären:
+» Die Schnittstellen zwischen den beiden Rollen sollten klar 
+definiert und dokumentiert werden. 
+» Für beide Rollen sollte es direkte Berichtswege zur Leitungs-
+ebene geben.
+» Es muss sichergestellt sein, dass es ausreichend Ressourcen 
+für die Wahrnehmung beider Rollen gibt. Gegebenenfalls 
+muss durch entsprechendes Personal unterstützt werden.
+Es darf nicht vergessen werden, dass auch der Informationssi-
+cherheitsbeauftragte einen qualifizierten Vertreter benötigt.
+Generell ist empfehlenswert, für beide Themen – Informations-
+sicherheit und Datenschutz – jeweils einen verantwortlichen 
+Ansprechpartner zu benennen. Der Datenschutzbeauftragte 
+sollte vergleichbar dem ISB alle Aspekte des Datenschutzes 
+===== Seite 25 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+25
+innerhalb der Institution begleiten und angemessene Kontroll-
+mechanismen einführen. In ihren Funktionen arbeiten beide 
+eng zusammen und berichten an die Leitungsebene.
+Auf einen Blick: Zuständigkeiten und Aufgaben des ISB
+» Inf
+ormationssicherheitsprozess steuern und bei allen 
+damit zusammenhängenden Aufgaben mitwirken
+» die Leitungsebene bei der Erstellung der Leitlinie zur 
+Informationssicherheit unterstützen
+» die Erstellung des Sicherheitskonzepts, des Notfall-
+vorsorgekonzepts und Sicherheitsrichtlinien koordi-
+nieren sowie weitere Richtlinien und Regelungen zur 
+Informationssicherheit erlassen
+» die Realisierung von Sicherheitsmaßnahmen initiieren 
+und überprüfen
+» der Leitungsebene über den Status quo der Informations-
+sicherheit berichten
+» sicherheitsrelevante Projekte koordinieren
+» Sicherheitsvorfälle untersuchen
+» Sensibilisierungs- und Schulungsmaßnahmen zur Infor-
+mationssicherheit initiieren und koordinieren
+===== Seite 26 =====
+26
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+3.1.3 Geltungsbereich für die Sicherheitskonzeption: 
+der Informationsverbund
+Der Bereich der Institution, für den die Basis-Absicherung 
+umgesetzt werden soll, wird Geltungsbereich oder „Informa-
+tionsverbund“ genannt. Ein Informationsverbund umfasst die 
+Gesamtheit von infrastrukturellen, organisatorischen, perso-
+nellen und technischen Komponenten, die der Aufgabenerfül-
+lung in einem bestimmten Anwendungsbereich der Informati-
+onsverarbeitung dienen. Ein Informationsverbund kann dabei 
+die gesamte Informationsverarbeitung einer Institution oder 
+auch einzelne Bereiche umfassen, die durch organisatorische 
+bzw. technische Strukturen (z. B. Abteilungsnetz) oder gemein-
+same Geschäftsprozesse bzw. Anwendungen (z. B. Personal-
+informationssystem) gegliedert sind. Für die Anwendung der 
+Basis-Absicherung muss festgelegt werden, wie der zu schüt-
+zende Informationsverbund aussehen soll. Wichtig ist, dass die 
+betrachteten Geschäftsaufgaben und -prozesse in dem Gel-
+tungsbereich komplett enthalten sind. Insbesondere bei größe-
+ren Institutionen ist es keine triviale Aufgabe, den Geltungsbe-
+reich festzulegen. Eine Orientierung nach Verantwortlichkeiten 
+kann bei der Festlegung des Geltungsbereichs behilflich sein. 
+Bei der Basis-Absicherung umfasst der Geltungsbereich in der 
+Regel die gesamte Institution.
+Es sollten nicht nur technische, sondern auch organisatorische 
+Aspekte bei der Abgrenzung des Geltungsbereichs berücksich-
+tigt werden, damit die Verantwortlichkeiten und die Zuständig-
+keiten eindeutig festgelegt werden können. In jedem Fall sollte 
+klar sein, welche Informationen, Fachaufgaben oder Geschäfts-
+prozesse in der Sicherheitskonzeption explizit betrachtet 
+werden.
+Bei der Abgrenzung des Informationsverbundes müssen fol-
+gende Faktoren berücksichtigt werden:
+===== Seite 27 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+27
+Der Geltungsbereich sollte möglichst alle Bereiche, Aspekte und 
+Komponenten umfassen, die zur Unterstützung der Fachauf-
+gaben, Geschäftsprozesse oder Organisationseinheiten dienen 
+und deren Verwaltung innerhalb der Institution stattfindet.
+Wenn dies nicht möglich ist, weil Teile der betrachteten Fach-
+aufgaben oder Geschäftsprozesse organisatorisch von externen 
+Partnern abhängig sind, beispielsweise im Rahmen von Out-
+sourcing, sollten die Schnittstellen klar definiert werden, damit 
+dies im Rahmen der Sicherheitskonzeption berücksichtigt 
+werden kann.
+Ein wichtiger Aspekt: Outsourcing
+Die Auslagerung von Geschäfts- und unterstützenden Prozes-
+sen, wie beispielsweise dem IT-Betrieb, wird von vielen Exper-
+ten weiterhin recht kritisch gesehen. In kleineren Institutionen 
+kann ein gut geplantes Outsourcing-Projekt dennoch dazu bei-
+tragen, das Niveau der Informationssicherheit anzuheben. Dies 
+trifft besonders dann zu, wenn Outsourcing-Lösungen oder der 
+Einkauf externer Dienstleistungen dazu genutzt werden, um 
+in der Institution fehlendes Know-how auszugleichen. Damit 
+Outsourcing-Lösungen sich positiv auf die Informationssi-
+cherheit auswirken können, müssen allerdings einige Regeln 
+beachtet werden: Bevor Geschäftsprozesse ausgelagert werden 
+können, muss zunächst geklärt werden, ob aus Sicherheitssicht-
+gründen etwas dagegen spricht. Dies könnte zum Beispiel ein 
+nicht ausreichend garantierter Schutz von vertraulichen Daten 
+sein.
+Sobald eine Entscheidung für eine Outsourcing-Lösung getrof-
+fen wurde, müssen die wesentlichen Sicherheitsanforderungen 
+für das Vorhaben festgelegt werden. Diese bilden unter ande-
+rem die Basis für die Auswahl eines Outsourcing-Dienstleisters. 
+===== Seite 28 =====
+28
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Bei der Auswahl sind Nachweise über die Informationssicher-
+heit in der Institution und die Qualifikationen der Mitarbeiter 
+einzuholen. Dabei können Zertifikate wie IT-Grundschutz bzw. 
+ISO 27001 hilfreiche Indikatoren für ein gewisses Sicherheitsni-
+veau sein.
+Bei der Vertragsgestaltung mit einem Outsourcing-Dienstleis-
+ter müssen die Sicherheitsanforderungen und die Kriterien zu 
+Servicequalität und Sicherheit möglichst detailliert beschrieben 
+werden. Im Vertrag müssen zudem Auskunfts-, Mitwirkungs- 
+und Revisionspflichten geregelt sein.
+Auftraggeber und Outsourcing-Dienstleister müssen darüber 
+hinaus ein detailliertes Sicherheitskonzept inklusive eines 
+Notfallvorsorgekonzepts abstimmen. Bei der Übertragung der 
+Aufgaben müssen Verantwortlichkeiten festgelegt und auf 
+beiden Seiten Ansprechpartner benannt werden. Der Auf-
+traggeber muss außerdem auch während des Outsourcing-
+Vorhabens regelmäßige Kontrollen zur Aufrechterhaltung der 
+Informationssicherheit beim Dienstleister durchführen (lassen). 
+Vor Abschluss eines Outsourcing-Projekts sollten die Eigen-
+tumsrechte an der Hard- und Software sowie die Rückgabe der 
+Datenbestände vom Dienstleister geklärt sein. 
+Informationssicherheit ist ein elementares Thema, das frühzei-
+tig bei der Auswahl von möglichem Outsourcing-Dienstleistern 
+angesprochen werden sollte. In mehrstufig angelegten Ver-
+handlungen mit den unterschiedlichen Anbietern können 
+interne Risikobewertungen die Auswahl erleichtern. Allerdings 
+wird sich nicht jedes Sicherheitsmerkmal aus dem Pflichtenheft 
+zu einem angemessenen Preis realisieren lassen. Weitere Infor-
+mationen zum Thema Outsourcing sind im IT-Grundschutz-
+Kompendium insbesondere im Baustein OPS.2 „Betrieb von 
+Dritten“ zu finden.
+===== Seite 29 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+29
+Auf einen Blick: Definition des Informationsverbundes
+» F
+estlegen, welche kritischen Geschäftsprozesse, Fach-
+aufgaben oder Teile der Institution der Geltungsbereich 
+beinhalten soll.
+» Den Geltungsbereich eindeutig abgrenzen.
+» Schnittstellen zu externen Partnern beschreiben.
+3.1.4 Erstellung einer Leitlinie zur Informationssicherheit
+Die Leitlini
+e zur Informationssicherheit dient als Ausgangs-
+punkt für die geplante Auseinandersetzung mit den Anforde-
+rungen an Informationssicherheit in der eigenen Institution. 
+In ihr sind allgemeinverständlich die Ziele und Mittel zur 
+Erreichung eines höheren Sicherheitsniveaus festzuschreiben. 
+Neben den angestrebten Informationssicherheitszielen ent-
+hält sie auch die grundlegende Sicherheitsstrategie. Die Leit-
+linie beschreibt über die Sicherheitsziele auch das angestrebte 
+Sicherheitsniveau in einer Behörde oder einem Unternehmen. 
+Sie ist somit Anspruch und Aussage zugleich, dass ein bestimm-
+tes Sicherheitsniveau auf allen Ebenen der Institution erreicht 
+werden soll.
+Verantwortung der Institutionsleitung für die Sicherheitsleitlinie
+Mit der Leitlinie zur Informationssicherheit wird dokumen-
+tiert, welche strategische Position die Institutionsleitung zur 
+Erreichung der Informationssicherheitsziele vorgibt.
+Da die Sicherheitsleitlinie ein zentrales Strategiepapier für die 
+Informationssicherheit einer Institution darstellt, muss sie so
+===== Seite 30 =====
+30
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+formuliert und aufbereitet sein, dass sich alle Adressaten mit 
+ihr identifizieren können. Der ISB sollte daher an der Erstellung 
+der Leitlinie möglichst viele Bereiche beteiligen. Folgende Orga-
+nisationseinheiten können zum Beispiel einbezogen werden: 
+Fachverantwortliche für wichtige Anwendungen, IT-Betrieb, 
+Sicherheit (Informations-, IT- und Infrastruktur-Sicherheit), 
+Datenschutzbeauftragter, Produktion und Fertigung, Personal-
+abteilung, Personalvertretung, Revision, Vertreter für Finanz-
+fragen oder die Rechtsabteilung.
+Formulierung von allgemeinen Informationssicherheitszielen
+Zu Beginn jedes Sicherheitsprozesses sollten die Informations-
+sicherheitsziele sorgfältig gemäß der konkreten Anforderungen 
+bestimmt werden. Aus diesen werden bei der Erstellung der 
+Sicherheitsleitlinie und später bei der Erstellung des Sicher-
+heitskonzeptes und bei der Ausgestaltung der Informationssi-
+cherheitsorganisation konkrete Sicherheitsanforderungen an 
+den Umgang mit Informationen abgeleitet. 
+Um die Sicherheitsziele definieren zu können, sollte zunächst 
+abgeschätzt werden, welche Geschäftsprozesse bzw. Fachver-
+fahren und Informationen für die Aufgabenerfüllung notwen-
+dig sind und welcher Wert diesen beigemessen wird. Dabei 
+ist es wichtig, klarzustellen, wie stark die Aufgabenerfüllung 
+innerhalb der Institution von den Grundwerten Vertraulichkeit, 
+Integrität und Verfügbarkeit von Informationen und von der 
+eingesetzten IT abhängt. Diese Aussagen werden im Lauf des 
+Sicherheitsprozesses bei der Wahl der Sicherheitsmaßnahmen 
+und Strategien eine entscheidende Rolle spielen.
+An diesem Prozessschritt ist keine detaillierte Analyse des 
+Informationsverbundes erforderlich. Als Ergebnis sollte eine 
+===== Seite 31 =====
+ 
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+31
+Aussage möglich sein, welche Werte oder Prozesse für die Insti-
+tution besonders wichtig sind, sowie die Gründe dafür.
+Auf einen Blick: Beispiele für Sicherheitsziele 
+ 
+» hohe Verlässlichkeit des Handelns, auch in Bezug auf den 
+Umgang mit Informationen (Verfügbarkeit, Integrität, 
+Vertraulichkeit)
+» Gewährleistung der guten Reputation der Institution in 
+der Öffentlichkeit
+» Erhaltung der in Technik, Informationen, Arbeitsprozesse 
+und Wissen investierten Werte
+» Sicherung der hohen, möglicherweise unwiederbring-
+lichen Werte der verarbeiteten Informationen
+» Gewährleistung der aus gesetzlichen Vorgaben resultie-
+renden Anforderungen
+» Schutz von natürlichen Personen hinsichtlich ihrer 
+ körperlichen und geistigen Unversehrtheit
+Inhalt der Sicherheitsleitlinie
+Di
+e Sicherheitsleitlinie sollte kurz und bündig formuliert sein. 
+Mehr als zehn Seiten sind selten erforderlich. Die zwischen ISB 
+und Leitung abgestimmte, finale Version der Leitlinie sollte 
+allen Mitarbeitern zur Kenntnis gegeben und an einer zentralen 
+Stelle, zum Beispiel im Intranet, veröffentlicht werden. An der 
+Aufgabe „Informationssicherheit“ muss schließlich jeder Mitar-
+beiter aktiv mitwirken. Die Sicherheitsleitlinie liefert hier einen 
+===== Seite 32 =====
+32
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+wichtigen Beitrag zur Steigerung der Awareness zur Informati-
+onssicherheit in einer Institution. 
+In der folgenden Übersicht sind die grundlegenden Inhalte für 
+eine Sicherheitsleitlinie dargestellt:
+» Stellenwert der Informationssicherheit und Bedeutung der 
+wesentlichen Informationen, Geschäftsprozesse und der IT 
+für die Aufgabenerfüllung
+» Bezug der Informationssicherheitsziele zu den Geschäfts-
+zielen oder Aufgaben der Institution
+» Sicherheitsziele und die Kernelemente der Sicherheitsstrate-
+gie für die Geschäftsprozesse und die eingesetzte IT
+» Zusicherung, dass die Sicherheitsleitlinie von der Instituti-
+onsleitung durchgesetzt wird
+» Leitaussagen zur Erfolgskontrolle
+» Beschreibung der geplanten Organisationsstruktur
+» Aufgaben und Zuständigkeiten im Sicherheitsprozess sollten 
+aufgezeigt werden
+» Programme zur Förderung der Informationssicherheit durch 
+Schulungs- und Sensibilisierungsmaßnahmen können ange-
+kündigt werden
+» wichtige Gefährdungen, relevante gesetzliche Regelungen etc. 
+können eingangs skizziert werden.
+===== Seite 33 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+33
+Aufgrund sich verändernder Geschäftsziele und -prozesse ist es 
+ratsam, die Sicherheitslinie regelmäßig bzw. anlassbezogen auf 
+den Prüfstand zu stellen und zu aktualisieren.
+Auf einen Blick: Erstellung einer Sicherheitsleitlinie
+» zu beteiligende Organisati
+onseinheiten für die Sicher-
+heitsleitlinie identifizieren
+» gemeinsam Geltungsbereich und Inhalte festlegen
+» Inkraftsetzung der Sicherheitsleitlinie durch die Leitungs-
+ebene veranlassen
+» Sicherheitsleitlinie bekannt geben
+» Sicherheitsleitlinie regelmäßig überprüfen und gegebe-
+nenfalls aktualisieren
+3.2 Organisation des Sicherheitspr
+ozesses
+Um ein angemessenes und ausreichendes Niveau der Infor-
+mationssicherheit in der Institution zu erzielen bzw. dieses 
+aufrechtzuerhalten, sind ein geplantes Vorgehen und eine 
+adäquate Organisationsstruktur unerlässlich. Darüber hin-
+aus ist es notwendig, Sicherheitsziele und eine Strategie zur 
+Erreichung dieser Ziele zu definieren sowie letztendlich einen 
+kontinuierlichen Sicherheitsprozess zur Aufrechterhaltung des 
+einmal erreichten Sicherheitsniveaus einzurichten.
+===== Seite 34 =====
+34
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+3.2.1 Aufbau einer Organisation zur Informationssicherheit
+Das angestrebte Sicherheitsniveau kann nur erreicht werden, 
+wenn die Anforderungen aus dem Informationssicherheits-
+prozess im gesamten Geltungsbereich der Leitlinie gleichmä-
+ßig umgesetzt werden. Diese Bedingung macht es notwendig, 
+Rollen innerhalb der Institution festzulegen, die die Umsetzung 
+des Prozesses verantwortlich übernehmen. Die Mitarbeiter 
+sollten in allen Fragen der Informationstechnik sowie Infor-
+mationssicherheit angemessen qualifiziert sein. Nur so kann 
+gewährleistet werden, dass alle wichtigen Aspekte berücksich-
+tigt und sämtliche Aufgaben bewältigt werden.
+Die Aufbauorganisation, die zur Förderung und Durchsetzung 
+des Informationssicherheitsprozesses erforderlich ist, wird als 
+Informationssicherheitsorganisation oder kurz IS-Organisation 
+bezeichnet. Die Zusammensetzung einer IS-Organisation hängt 
+von der Größe, Beschaffenheit und Struktur der jeweiligen Ins-
+titution ab. Als zentraler Ansprechpartner für die Koordination, 
+Verwaltung und Kommunikation des Prozesses Informationssi-
+cherheit sollte grundsätzlich der ISB benannt sein. In größeren 
+Institutionen gibt es darüber hinaus häufig weitere Mitarbei-
+ter, die Teilaufgaben im Bereich der Informationssicherheit 
+übernehmen.
+Die Rollen sollten einen direkten Zugang zur Geschäftsfüh-
+rung haben und dieser unmittelbar unterstellt sein. Auf der 
+Leitungsebene sollte die Aufgabe Informationssicherheit von 
+einem verantwortlichen Manager übernommen werden, an 
+den der ISB berichtet.
+Unabhängig davon, wie eine optimale Struktur für die eigene 
+IS-Organisation zu gestalten ist, sind die folgenden Grundre-
+geln dabei unbedingt zu beachten.
+===== Seite 35 =====
+ 
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+35
+Grundregeln bei der Definition von Rollen im  
+ Informati
+onssicherheitsmanagement 
+» Die Gesamtverantwortung für die ordnungsgemäße und 
+sichere Aufgabenerfüllung obliegt der Leitungsebene.
+» Es ist mindestens eine Person zum ISB zu ernennen, die 
+den Informationssicherheitsprozess koordiniert und 
+steuert.
+» Alle Mitarbeiter sind gleichermaßen sowohl für ihre ori-
+ginären Aufgaben als auch für die Aufrechterhaltung der 
+Informationssicherheit an ihrem Arbeitsplatz und in ihrer 
+Umgebung verantwortlich.
+» Informationssicherheit muss in Abläufe und Prozesse 
+innerhalb der gesamten Institution integriert und 
+Ansprechpartner müssen festgelegt werden. Ziel ist es, 
+dass bei allen strategischen Entscheidungen die not-
+wendigen Sicherheitsaspekte frühzeitig berücksichtigt 
+werden.
+Da Risiken für die Informationssicherheit ebenso wie IT-Risi-
+k
+en zu den wichtigsten Gefährdungen für das operationelle 
+Tagesgeschäft gehören, sollten die Methoden zum Informa-
+tionssicherheitsmanagement mit den bereits vorhandenen 
+zum Umgang mit Risiken in anderen Bereichen abgestimmt 
+werden. Detailliertere Informationen hierzu finden sich 
+auch im BSI-Standard 200-3 „Risikoanalyse auf der Basis von 
+IT-Grundschutz“.
+===== Seite 36 =====
+36
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Aufbau der Informationssicherheitsorganisation
+Abhängig von der Größe einer Institution gibt es unterschiedli-
+che Möglichkeiten zur Ausgestaltung einer Aufbauorganisation 
+für ein Informationssicherheitsmanagement. Die folgende 
+Abbildung zeigt den Aufbau einer IS-Organisation in einer 
+kleinen Institution. Hier steht der ISB in engem Austausch mit 
+der Leitung, den jeweiligen Fachverantwortlichen und dem 
+betrieblichen Datenschutzbeauftragten (bDSB). Der ISB fungiert 
+als Schnittstelle zwischen den anderen Beteiligten. Die IS-
+Leitlinien und Vorgaben sind unter der Leitung des ISB mit den 
+anderen Verantwortlichen abgestimmt und veröffentlicht wor-
+den. Sie bilden die Grundlage für den Umgang aller Beschäftig-
+ten mit den Themen der Informationssicherheit.
+Abbildung 2: Aufbau der IS-Organisation in einer kleinen Institution
+Zusammenspiel mit anderen Organisationseinheiten 
+und Managementdisziplinen
+In den meisten Institutionen gibt es neben dem Informations-
+sicherheitsmanagement auch andere Bereiche, die Aufgaben 
+zur Informationssicherheit wahrnehmen oder mit vergleich-
+baren Themen betraut sind. Ein koordiniertes Vorgehen und 
+die Festlegung von Schnittstellen sind unerlässlich, zumal diese 
+Bereiche häufig als getrennte Disziplinen und teilweise auch in 
+===== Seite 37 =====
+ERSTELL UNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+37
+anderen Organisationseinheiten organisiert sind. Gemeinsam 
+ist ihnen, dass sie das Ziel verfolgen, Werte der Institution zu 
+schützen. Beispielsweise gehören hierzu neben dem Informa-
+tionssicherheitsmanagement die Themenfelder Datenschutz, 
+Objektschutz, Personenschutz, Geheimschutz, Notfallmanage-
+ment oder Risikomanagement. In Institutionen mit einem 
+Produktionsbereich ist darüber hinaus die Zusammenarbeit mit 
+den Verantwortlichen für die Produkt- und Anlagensicherheit 
+wichtig.
+Zusammenarbeit mit dem IT-Betrieb
+Viele Teilaufgaben des Sicherheitsmanagements hängen 
+unmittelbar mit Aufgaben des IT-Betriebs zusammen. Der ISB 
+erstellt Vorgaben für den sicheren Betrieb von IT-Systemen und 
+Netzen, der IT-Betrieb muss diese umsetzen. Daher müssen das 
+Sicherheitsmanagement und der IT-Betrieb eng zusammen-
+arbeiten und sich regelmäßig über Vorgehensweisen, aktuelle 
+Gefährdungen und neue Sicherheitsanforderungen austau-
+schen. In größeren Institutionen kann es daher sinnvoll sein, 
+einen dedizierten Ansprechpartner des ISB im IT-Betrieb zu 
+ernennen.
+===== Seite 38 =====
+38
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Auf einen Blick: Organisation des Sicherheitsprozesses 
+ » R
+ollen für die Gestaltung des Informationssicherheitspro-
+zesses festlegen
+ » Aufgaben und Verantwortungsbereiche den Rollen 
+zuordnen
+ » Personelle Ausstattung der Rollen festlegen
+ » IS-Organisation dokumentieren
+ » Informationssicherheitsmanagement in die Abläufe und 
+Prozesse integrieren
+3.2.2 Konzeption und Planung des Sicherheitsprozesses
+Für di
+e weiteren Schritte im Sicherheitsprozess sollten alle rele-
+vanten Rahmenbedingungen identifiziert werden. Dafür sollten 
+die wichtigsten Geschäftsprozesse und Fachaufgaben sowie 
+deren Bedarf an Informationssicherheit ermittelt werden. 
+Die Ermittlung der Rahmenbedingungen ist eine wichtige 
+Grundlage für die weiteren Betrachtungen zur Informations-
+sicherheit: Bereits an dieser Prozessstelle kann auffallen, wenn 
+relevante Informationen fehlen, und eine erste Einschätzung 
+des angestrebten Sicherheitsniveaus wird möglich. Bei der 
+Überprüfung des aktuellen Niveaus der Informationssicherheit 
+durch Mitarbeiter der Institution wird neben den technischen 
+Anforderungen meist auch zugleich ersichtlich, in welchen 
+organisatorischen und infrastrukturellen Bereichen Optimie-
+rungsbedarf besteht.
+===== Seite 39 =====
+ERSTELL UNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+39
+Allgemeine Einflussfaktoren
+Informationssicherheit auf einem angemessenen Niveau trägt 
+einen elementaren Anteil daran, dass eine Institution ihre 
+Geschäftsziele erreichen kann. Daher müssen die folgenden 
+Einflussfaktoren betrachtet werden:
+ » Geschäftsziele: Welche Faktoren sind wesentlich für den 
+Erfolg des Unternehmens oder der Behörde? Welche Pro-
+dukte, Angebote und Aufträge bilden die Grundlage der 
+Geschäftstätigkeit? Was sind die generellen Ziele der Institu-
+tion? Welche Rolle spielt Informationssicherheit hierbei?
+ » Organisationsstruktur: Wie ist die Institution orga-
+nisiert und strukturiert? Welche Managementsysteme 
+sind vorhanden (beispielsweise Risikomanagement oder 
+Qualitätsmanagement)?
+ » Zusammenarbeit mit Externen: Wer sind die wichtigsten 
+Kunden, Partner und Gremien? Welche grundlegenden 
+Anforderungen und Erwartungen an die Informationssicher-
+heit der Institution bringen sie mit? Wer sind die wichtigsten 
+Dienstleister und Zulieferer? Welche Rolle spielen diese für 
+die Informationssicherheit der Institution?
+ » Strategischer Kontext: Was sind die wesentlichen 
+Herausforderungen für die Institution? Wie ist die 
+Wettbewerbsposition? 
+===== Seite 40 =====
+40
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Rahmenbedingungen – intern und extern 
+Viele interne und externe Rahmenbedingungen können Aus-
+wirkungen auf die Informationssicherheit haben und müssen 
+folglich ermittelt werden. Über die Analyse der Geschäfts-
+prozesse (einschließlich Fachaufgaben) lassen sich Aussagen 
+über die möglichen Auswirkungen von Sicherheitsvorfällen 
+auf die Geschäftstätigkeit und die Aufgabenerfüllung ablei-
+ten. In vielen Institutionen existieren bereits Übersichten zu 
+Geschäftsprozessen, Objekten oder Datensammlungen, die für 
+betriebliche Aspekte oder die Verwaltung benötigt werden. Falls 
+vorhanden, können vorliegende Prozesslandkarten, Geschäfts-
+verteilungspläne, Datenbanken, Übersichten, Netzpläne und 
+Inventarisierungstools genutzt werden, um die wesentlichen 
+Geschäftsprozesse zu identifizieren. Werden diese Übersichten 
+berücksichtigt, sollte darauf geachtet werden, dass die Erfas-
+sung nicht zu detailliert gerät. Ziel ist ein erster grober Über-
+blick, welche Informationen für einen Geschäftsprozess mit 
+welchen Anwendungen und IT-Systemen verarbeitet werden. 
+Auf dieser Grundlage können weitere Entscheidungen getrof-
+fen werden.
+===== Seite 41 =====
+ 
+ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+41
+Auf einen Blick: Wichtige interne und externe  
+ Rahmenbedingungen ab
+klären 
+ » Welche Geschäftsprozesse gibt es in der Institution und 
+wie hängen diese mit den Geschäftszielen zusammen?
+ » Welche Geschäftsprozesse hängen von einer funktionie-
+renden Informationstechnik ab?
+ » Welche Informationen werden bei diesen Geschäftspro-
+zessen verarbeitet?
+ » Welche Informationen sind besonders wichtig und damit 
+in Bezug auf Vertraulichkeit, Integrität und Verfügbar-
+keit schützenswert, und warum (z. B. personenbezogene 
+Daten, Kundendaten, sensible Firmeninterna)?
+ » Zu jedem Geschäftsprozess und zu jeder Fachaufgabe 
+muss ein verantwortlicher Ansprechpartner benannt 
+werden.
+ » Was sind die gesetzlichen Rahmenbedingungen (natio-
+nale und internationale Gesetze und Bestimmungen)?
+ » Wie sehen Anforderungen von Kunden, Lieferanten und 
+Geschäftspartnern, die aktuelle Marktlage, Wettbewerbs-
+situation und weitere relevante marktspezifische Abhän-
+gigkeiten aus?
+ » Was sind branchenspezifische Sicherheitsstandards?
+===== Seite 42 =====
+42
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Brainstorming: Ermittlung der Rahmenbedingungen
+Um alle Rahmenbedingungen für die wesentlichen Geschäfts-
+prozesse möglichst schnell und umfassend zu ermitteln, emp-
+fiehlt es sich, zu jedem Geschäftsprozess ein kurzes Brainstor-
+ming durchzuführen. Diese Gespräche sollten unter der Leitung 
+des ISB mit den jeweiligen Fachverantwortlichen sowie dem 
+entsprechenden IT-Verantwortlichen durchgeführt werden.
+Im Fokus der internen Erhebung sollten vorrangig geschäfts-
+kritische Informationen und Kernprozesse stehen sowie die 
+zugehörigen Anwendungen, IT-Systeme, Netze und Räume. 
+Ausgehend von den Kernprozessen sollten zudem die wesentli-
+chen unterstützenden Prozesse und die hauptsächlich betroffe-
+nen Objekte ermittelt werden.
+Ersterfassung der Prozesse, Anwendungen und IT-Systeme
+Die Ergebnisse der vorherigen Schritte, das heißt die Ermittlung 
+von Rahmenbedingungen und die Formulierung von Informa-
+tionssicherheitszielen, sollten als nächstes in einer Übersicht 
+mit den vorhandenen Werten der Institution konsolidiert 
+werden.
+Da ein Informationsverbund meist aus vielen Einzelobjekten 
+besteht, ist es häufig nicht zweckmäßig, jedes Objekt einzeln zu 
+erfassen. Stattdessen hat es sich in der Praxis als hilfreich erwie-
+sen, ähnliche Objekte zu Gruppen zusammenzufassen. Möglich 
+ist auch, zunächst eine grafische Netzübersicht zu erstellen und 
+ausgehend von dieser die IT-Systeme zu erfassen. Die Darstel-
+lung der Netzübersicht kann dabei stark vereinfacht sein. Auch 
+IT-Systeme oder Prozesse, die etwa im Rahmen eines Outsour-
+cings ausgelagert wurden oder in der Cloud betrieben werden, 
+sollten hier aufgeführt werden.
+===== Seite 43 =====
+ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+43
+Bei der Ersterfassung sollten nur die wesentlichen Objekte 
+erfasst werden. Beispielsweise sollten Serverräume mit einem 
+meist höheren Sicherheitsniveau aufgenommen werden, die 
+klassischen Büroräume eher nicht. Als Ergebnis der Ersterfas-
+sung sollte eine Übersicht vorliegen, die mit überschaubaren 
+Ressourcen herstellbar ist.
+Auf einen Blick: Erfassung der relevanten Objekte 
+ » Geschäftsprozess oder F
+achaufgabe: 
+Name und (falls erforderlich) Beschreibung, 
+Fachverantwortlicher
+ » Anwendung: 
+Name, (falls erforderlich) Beschreibung und dazugehöri-
+ger Geschäftsprozess
+ » IT-, ICS-Systeme und sonstige Objekte: 
+Name, Plattform und sofern sinnvoll Aufstellungsort
+ » Betriebsrelevante Räume, die ein höheres Sicherheitsni-
+veau erfordern (z.B. Serverräume): 
+Art, Raumnummer und Gebäude
+Abschätzung des Sicherheitsniveaus
+F
+ür spätere Betrachtungen kann es sich als sinnvoll erweisen, 
+schon zu einem frühen Zeitpunkt das angestrebte Sicherheits-
+niveau der einzelnen Assets, also der Zielobjekte, abzuschätzen. 
+Diese erste Abschätzung des Sicherheitsniveaus bietet eine 
+grobe Orientierung für den zu erwartenden Aufwand und 
+erleichtert eine geeignete Gruppenbildung der identifizierten 
+Assets.
+===== Seite 44 =====
+44
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Die bisher identifizierten Objekte, bei denen ein höheres 
+Sicherheitsniveau als „normal“ angestrebt wird, sollten in der 
+bereits erstellten Tabelle gekennzeichnet werden.
+Erstellung eines grafischen Netzplans
+Auf Grundlage der erfassten Informationen sollte zur besseren 
+Übersicht ein rudimentärer Netzplan erstellt werden. Diese 
+Netzübersicht dient als Überblick, der die weitere Diskus-
+sion vereinfachen und zeigen kann, ob essentielle IT-Systeme 
+übersehen wurden. Der Plan sollte mindestens die folgenden 
+Objekte beinhalten:
+ » IT-Systeme, d. h. Clients und Server sowie aktive 
+Netzkomponenten,
+ » Netzverbindungen zwischen diesen Systemen,
+ » Verbindungen des betrachteten Bereichs nach außen.
+Die grafische Netzübersicht sollte nicht nur physische Kom-
+ponenten enthalten, sondern auch virtualisierte Strukturen. 
+Hierbei können entweder virtuelle Strukturen direkt in die 
+Netzübersicht aufgenommen oder bei unübersichtlicheren 
+Architekturen in eine separate Netzübersicht eingetragen 
+werden. Dies gilt ebenfalls für solche IT-Systeme und Prozesse, 
+die ausgelagert sind. Ein Beispiel für eine Ersterfassung ein-
+schließlich einer Netzübersicht ist in den Hilfsmitteln zum IT-
+Grundschutz auf den Webseiten des BSI zu finden. In der später 
+durchzuführenden Strukturanalyse werden die hier gewonne-
+nen Ergebnisse präzisiert und vervollständigt.
+===== Seite 45 =====
+ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+45
+Auf einen Blick: Konzeption und Planung des  
+ Si
+cherheitsprozesses 
+ » Ansprechpartner für alle Geschäftsprozesse und Fachauf-
+gaben benennen
+ » Grobeinschätzung der Wertigkeit und des Sicherheits-
+niveaus von Informationen, Geschäftsprozessen und 
+Fachaufgaben durchführen
+ » Interne und externe Rahmenbedingungen ermitteln
+ » Bedeutung der Geschäftsprozesse, Fachaufgaben und 
+Informationen abschätzen
+ » Allgemeine Informationssicherheitsziele festlegen
+ » Konsolidierte Übersicht der vorhandenen Assets mit den 
+zuvor gewonnenen Erkenntnissen erstellen
+Dokumentation im Sicherheitsprozess
+Entscheidungen sollten stets nach
+vollziehbar und wiederhol-
+bar sein. Vor und während des Sicherheitsprozesses wird daher 
+eine Vielzahl unterschiedlicher Dokumente erstellt. Hierbei 
+sollte immer darauf geachtet werden, dass der Aufwand für 
+die Erstellung von Dokumentationen in einem angemessenen 
+Rahmen bleibt. Wenn bei der Umsetzung der IT-Grundschutz-
+Methodik etwas dokumentiert werden muss, ist es dafür 
+meistens nicht erforderlich, neue Dokumente zu erstellen. 
+Im Allgemeinen reicht es, die notwendigen Informationen an 
+geeigneter Stelle zu sammeln bzw. zu notieren.
+===== Seite 46 =====
+46
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Besonders bei der Basis-Absicherung sollte der Dokumen-
+tationsprozess möglichst einfach und zweckmäßig gehalten 
+werden.
+3.3 Durchführung des Sicherheitsprozesses
+Nachdem der Sicherheitsprozess initiiert worden ist und alle 
+organisatorischen Aufgaben abgearbeitet wurden, beginnt mit 
+der eigentlichen Durchführung bereits die wichtige letzte Phase 
+im Rahmen der Basis-Absicherung: die Erstellung und Umset-
+zung der Sicherheitskonzeption.
+Für die Sicherheitskonzeption sollten für typische Komponen-
+ten von Geschäftsprozessen, Anwendungen und IT-Systemen 
+organisatorische, personelle, infrastrukturelle und technische 
+Anforderungen aus dem IT-Grundschutz-Kompendium erfüllt 
+werden. Diese sind nach unterschiedlichen Themen struk-
+turiert in den Bausteinen beschrieben, mit denen modular 
+gearbeitet werden kann. Im Rahmen einer Basis-Absicherung 
+müssen lediglich die Basisanforderungen betrachtet werden.
+===== Seite 47 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+47
+Abbildung 3: Schematisches Vorgehen nach der Basis-Absicherung
+Nachdem im vorherigen Schritt zur Organisation des Sicher-
+heitsprozesses der Geltungsbereich festgelegt wurde, gliedert 
+sich die Erstellung einer Sicherheitskonzeption nach der Basis-
+Absicherung nun in folgende Aktionsfelder, die anschließend 
+detailliert vorgestellt werden:
+» Auswahl und Priorisierung: 
+Der betrachtete Informationsverbund muss mit Hilfe der vor-
+handenen Bausteine aus dem IT-Grundschutz-Kompendium 
+nachgebildet werden. 
+» IT-Grundschutz-Check:  
+In diesem Schritt wird überprüft, ob oder inwieweit die in 
+den Basisanforderungen nach IT-Grundschutz formulierten 
+Vorgaben bereits erfüllt sind und welche Sicherheitsmaßnah-
+men noch fehlen.
+» Realisierung: 
+Für die bisher nicht erfüllten Basisanforderungen müssen 
+geeignete Sicherheitsmaßnahmen festgelegt und umgesetzt 
+werden.
+===== Seite 48 =====
+48
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» A uswahl der folgenden Vorgehensweise: 
+Die Basis-Absicherung dient als Einstiegsvorgehensweise. Es 
+muss daher festgelegt werden, zu welchem Zeitpunkt und mit 
+welcher IT-Grundschutz-Vorgehensweise das Sicherheitsni-
+veau weiter angehoben werden soll.
+3.3.1 Auswahl und Priorisierung der Bausteine (Modellierung)
+Zunächst wird der betrachtete Informationsverbund auf Basis 
+der in der Ersterfassung identifizierten Prozesse, Anwendungen, 
+IT-Systeme, Kommunikationsverbindungen und Räume sowie 
+den vorhandenen Bausteinen aus dem IT-Grundschutz-Kom-
+pendium nachgebildet. Das Ergebnis ist ein IT-Grundschutz-
+Modell des Informationsverbunds, das aus unterschiedlichen, 
+gegebenenfalls mehrfach verwendeten Bausteinen besteht und 
+dadurch die sicherheitsrelevanten Aspekte des Informations-
+verbunds beinhaltet.
+Modellierung nach IT-Grundschutz
+Um einen meist komplexen Informationsverbund nach IT-
+Grundschutz zu modellieren, müssen die passenden Bausteine 
+aus dem IT-Grundschutz-Kompendium ausgewählt und umge-
+setzt werden. Zur besseren Handhabbarkeit sind die Bausteine 
+im IT-Grundschutz-Kompendium in prozess- und systemo-
+rientierte Bausteine sowie verschiedene Schichten aufgeteilt. 
+Nähere Details zum Aufbau und zu den Inhalten finden sich im 
+Anhang „Das IT-Grundschutz-Kompendium – Wissenswertes 
+auf einen Blick“.
+Die Modellierung nach IT-Grundschutz besteht nun darin, 
+Bausteine oder einzelne Aspekte zur Abbildung des Infor-
+mationsverbunds auszuwählen. Je nach Baustein können die
+===== Seite 49 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+49
+Zielobjekte unterschiedlich sein: einzelne Geschäftsprozesse 
+oder Komponenten, Gruppen von Komponenten, Gebäude, 
+Liegenschaften, Organisationseinheiten usw. Können einzelne 
+Zielobjekte nicht mit den Bausteinen abgebildet werden, müs-
+sen stattdessen vergleichbare oder übergeordnete Bausteine 
+herangezogen werden.
+Reihenfolge der Baustein-Umsetzung
+Um grundlegende Risiken zu minimieren und Informations-
+sicherheit ganzheitlich aufzubauen, müssen die essentiellen 
+Sicherheitsanforderungen frühzeitig erfüllt und entsprechende 
+Sicherheitsmaßnahmen umgesetzt werden. Die IT-Grund-
+schutz-Methodik rät daher zu einer bestimmten Reihenfolge 
+bei der Umsetzung der Bausteine. Im IT-Grundschutz-Kom-
+pendium wird im Kapitel „Schichtenmodell und Modellierung“ 
+beschrieben, wann ein einzelner Baustein sinnvollerweise 
+eingesetzt werden soll und auf welche Zielobjekte er anzuwen-
+den ist. Die Bausteine sind entsprechend gekennzeichnet, ob sie 
+vor- oder nachrangig umgesetzt werden sollten.
+Diese Kennzeichnung zeigt eine sinnvolle zeitliche Reihen-
+folge für die Umsetzung der jeweiligen Anforderungen auf, sie 
+gewichtet die Bausteine jedoch nicht untereinander. Grund-
+sätzlich müssen alle relevanten Bausteine aus dem IT-Grund-
+schutz-Kompendium für einen Informationsverbund umge-
+setzt werden. Jede Institution kann eine abweichende, für sich 
+sinnvolle Reihenfolge festlegen.
+Das erstellte IT-Grundschutz-Modell ist unabhängig davon, ob 
+der Informationsverbund aus bereits im Einsatz befindlichen 
+Komponenten besteht oder ob es sich um einen Informati-
+onsverbund handelt, der geplant wird. Das Modell kann daher 
+unterschiedlich verwendet werden:
+===== Seite 50 =====
+50
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» Der ISB kann mit dem IT -Grundschutz-Modell eines beste-
+henden Informationsverbundes auf Basis der Bausteine 
+relevante Sicherheitsanforderungen identifizieren. Es kann 
+in Form eines Prüfplans benutzt werden, um einen Soll-Ist-
+Vergleich durchzuführen.
+» Das IT-Grundschutz-Modell eines geplanten Informations-
+verbundes stellt hingegen einen Entwicklungsplan dar. Es 
+beschreibt mit den ausgewählten Bausteinen, welche Sicher-
+heitsanforderungen bei der Realisierung des Informations-
+verbunds erfüllt werden müssen.
+Die Einordnung der Modellierung und die möglichen Ergeb-
+nisse verdeutlicht die folgende schematische Darstellung:
+Abbildung 4: Ergebnis der Modellierung nach IT-Grundschutz
+In der Regel enthält ein Informationsverbund sowohl bereits 
+existierende als auch geplante Anteile, so dass das resultierende 
+IT-Grundschutz-Modell sowohl einen Prüfplan als auch Anteile 
+eines Entwicklungsplans enthält. Alle Sicherheitsanforderun-
+gen bilden damit gemeinsam die Basis für die Erstellung des 
+Sicherheitskonzepts:
+===== Seite 51 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+51
+» ber eits erfüllte Sicherheitsanforderungen,
+» die bei Durchführung des Soll-Ist-Vergleichs als unzurei-
+chend oder gar nicht erfüllt identifizierten Anforderungen 
+sowie
+» Anforderungen, die sich für die in Planung befindlichen 
+Anteile des Informationsverbunds ergeben.
+Zuordnung von Bausteinen
+Die Zuordnung von Bausteinen zu Zielobjekten sollte in Form 
+einer Tabelle mit folgenden Spalten dokumentiert werden:
+» Vollständiger Titel und Nummer des Bausteins (z. B. SYS.3.1 
+Laptop)
+» Zielobjekt oder Zielgruppe: Dies kann z. B. die Identifikati-
+onsnummer einer Komponente oder einer Gruppe bzw. der 
+Name eines Gebäudes oder einer Organisationseinheit sein.
+» Ansprechpartner: Diese Spalte dient zunächst nur als Platz-
+halter. Der Ansprechpartner wird nicht im Rahmen der 
+Modellierung, sondern erst bei der Planung des eigentlichen 
+Soll-Ist-Vergleichs im IT-Grundschutz-Check ermittelt.
+» Reihenfolge: Es sollte die Umsetzungsreihenfolge (R1, R2, R3) 
+des Bausteins eingetragen werden.
+» Hinweise: In dieser Spalte können ergänzende Informatio-
+nen oder Begründungen für die Modellierung dokumentiert 
+werden.
+===== Seite 52 =====
+52
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+ Auf einen Blick: Modellierung eines  
+ Informationsverbunds 
+» Kapitel „Schichtenmodell und Modellierung“ aus dem IT-
+Grundschutz-Kompendium systematisch durcharbeiten.
+» Für jeden Baustein des IT-Grundschutz-Kompendiums 
+ermitteln, auf welche Zielobjekte er im betrachteten 
+Informationsverbund anzuwenden ist.
+» Zuordnung von Bausteinen zu Zielobjekten („IT-Grund-
+schutz-Modell“) sowie die entsprechenden Ansprechpart-
+ner dokumentieren.
+» Zielobjekte, die nicht geeignet modelliert werden können, 
+vormerken.
+» Reihenfolge für die Umsetzung der Bausteine festlegen.
+3.3.2 IT-Grundschutz-Check für Basis-Absicherung
+Die 
+Auswahl und Priorisierung der IT-Grundschutz-Bausteine 
+wird beim weiteren Vorgehen als Prüfplan bezeichnet. Anhand 
+eines Soll-Ist-Vergleichs gilt es herauszufinden, welche Basisan-
+forderungen ausreichend oder nur unzureichend bzw. gar nicht 
+erfüllt sind.
+Bei einem IT-Grundschutz-Check für die Basis-Absicherung 
+müssen lediglich die Basisanforderungen erfüllt sein. Für eine 
+möglicherweise spätere Standard- oder Kern-Absicherung ist 
+dann ein separater IT-Grundschutz-Check durchzuführen, bei 
+dem die Standard-Anforderungen der betreffenden Bausteine 
+hinzukommen. Um Mehraufwand zu vermeiden und Synergie-
+effekte nutzen zu können, sollten die Ergebnisse des IT-Grund-
+===== Seite 53 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+53
+schutz-Checks für die Basis-Absicherung so aufbereitet sein, 
+dass sie zu einem späteren Zeitpunkt direkt in die Standard- 
+oder Kern-Absicherung integriert werden können.
+Der IT-Grundschutz-Check besteht aus drei unterschiedlichen 
+Schritten: Im ersten Schritt werden die organisatorischen 
+Vorbereitungen getroffen und relevante Ansprechpartner für 
+den Soll-Ist-Vergleich ausgewählt. Im zweiten Schritt wird der 
+eigentliche Soll-Ist-Vergleich mittels Interviews und Stich-
+proben durchgeführt. Im letzten Schritt werden die erzielten 
+Ergebnisse des Soll-Ist-Vergleichs einschließlich der erhobenen 
+Begründungen dokumentiert.
+Schritt 1: Organisatorische Vorbereitungen
+Für die reibungslose Durchführung des Soll-Ist-Vergleichs sind 
+einige Vorarbeiten erforderlich. Zunächst sollten alle hausin-
+ternen Papiere, z. B. Organisationsverfügungen, Arbeitshin-
+weise, Sicherheitsanweisungen, Handbücher und „informelle“ 
+Vorgehensweisen, die die sicherheitsrelevanten Abläufe regeln, 
+gesichtet werden. Diese Dokumente können bei der Ermittlung 
+des Umsetzungsgrades hilfreich sein, insbesondere bei Fragen 
+nach bestehenden organisatorischen Regelungen. Weiterhin ist 
+zu klären, wer gegenwärtig für deren Inhalt zuständig ist, um 
+später die richtigen Ansprechpartner bestimmen zu können.
+Als Nächstes sollte festgestellt werden, ob und in welchem 
+Umfang externe Stellen bei der Ermittlung des Umsetzungs-
+status beteiligt werden müssen. Dies kann beispielsweise bei 
+ausgelagerten Rechenzentren, vorgesetzten Behörden oder 
+Firmen, die Teile von Geschäftsprozessen oder des IT-Betriebes 
+als Outsourcing-Dienstleistung übernehmen, erforderlich sein.
+===== Seite 54 =====
+54
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Ein wichtiger Aspekt ist, geeignete Ansprechpartner für die 
+einzelnen Bausteine zu ermitteln, die für die Modellierung des 
+vorliegenden Informationsverbunds herangezogen wurden. 
+Bei den Anforderungen in den Bausteinen werden die Rol-
+len genannt, die für die jeweilige Umsetzung zuständig sind. 
+Hieraus können die Ansprechpartner für die jeweilige Thematik 
+in der Institution identifiziert werden. Im Folgenden finden 
+sich einige Beispiele für Ansprechpartner der verschiedenen 
+Bereiche:
+» Bei den Bausteinen der Schicht ORP, CON und OPS ergibt 
+sich ein geeigneter Ansprechpartner in der Regel direkt aus 
+der im Baustein behandelten Thematik. Beispielsweise sollte 
+für den Baustein ORP.2 „Personal“ ein Mitarbeiter der zustän-
+digen Personalabteilung als Ansprechpartner ausgewählt 
+werden. Bei den konzeptionellen Bausteinen sollte derjenige 
+Mitarbeiter befragt werden, zu dessen Aufgabengebiet die 
+Fortschreibung von Regelungen in dem betrachteten Bereich 
+gehören.
+» Im Bereich der Schicht INF „Infrastruktur“ sollte die Auswahl 
+geeigneter Ansprechpartner in Abstimmung mit der Haus-
+technik vorgenommen werden. Je nach Größe der betrach-
+teten Institution können beispielsweise unterschiedliche 
+Ansprechpartner für die Infrastrukturbereiche Gebäude und 
+Technikräume zuständig sein. In kleinen Institutionen kann 
+in vielen Fällen der Hausmeister Auskunft geben.
+» In den systemorientierten Bausteinen der Schichten SYS, 
+NET und IND werden in den zu prüfenden Sicherheitsmaß-
+nahmen verstärkt technische Aspekte behandelt. In der Regel 
+kommt daher die Administratoren dieser Komponenten bzw. 
+Gruppen von Komponenten als Ansprechpartner in Frage.
+===== Seite 55 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+55
+» Für die Bausteine der Schicht APP „Anwendungen“ sollten die 
+V
+erantwortlichen für die einzelnen Anwendungen als Haupt-
+ansprechpartner ausgewählt werden.
+Übersicht: Organisatorische Vorarbeiten des  
+ IT-Grundschutz-Checks
+» H
+ausinterne Dokumente mit Verfügungen und Regelun-
+gen sichten und Zuständigkeiten für diese Unterlagen 
+klären.
+» Feststellen, in welchem Umfang externe Stellen beteiligt 
+werden müssen.
+» Hauptansprechpartner für jeden in der Modellierung 
+angewandten Baustein festlegen.
+Schritt 2: Durchführung des Soll
+-Ist-Vergleichs
+Sind alle erforderlichen Vorarbeiten erledigt, werden die 
+Sicherheitsanforderungen des jeweiligen Bausteins, für den die 
+Ansprechpartner zuständig sind, gemeinsam mit diesen der 
+Reihe nach durchgearbeitet. Den Befragten sollte zudem der 
+Zweck des IT-Grundschutz-Checks kurz vorgestellt werden. 
+Falls Bedarf besteht, die gemachten Aussagen zu verifizieren, 
+bietet es sich an, stichprobenartig die entsprechenden Regelun-
+gen und Konzepte zu sichten. Im Bereich Infrastruktur könnten 
+beispielsweise die zu untersuchenden Objekte gemeinsam mit 
+dem Ansprechpartner vor Ort besichtigt werden. Außerdem 
+könnten z. B. Client- bzw. Servereinstellungen an ausgewählten 
+IT-Systemen gemeinsam überprüft werden.
+===== Seite 56 =====
+56
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Am Ende sollte zwischen dem ISB und dem jeweiligen 
+Ansprechpartner Einvernehmen über den Umsetzungsstatus 
+bestehen.
+Als Antworten bezüglich des Umsetzungsstatus der einzelnen 
+Anforderungen kommen folgende Aussagen in Betracht:
+„entbehrlich“  Die Erfüllung der Anforderung ist in der vor-
+geschlagenen Art nicht notwendig, weil die 
+Anforderung im betrachteten Informationsver-
+bund nicht relevant ist (z. B. weil Dienste nicht 
+aktiviert wurden) oder bereits durch Alternativ-
+maßnahmen erfüllt wurde. 
+Wird der Umsetzungsstatus einer Anforderung 
+auf „entbehrlich“ gesetzt, müssen über die 
+Kreuzreferenztabelle des jeweiligen Bausteins 
+die zugehörigen elementaren Gefährdungen 
+identifiziert werden. Wurden Alternativmaß-
+nahmen ergriffen, muss begründet werden, dass 
+das Risiko, das von allen betreffenden elementa-
+ren Gefährdungen ausgeht, angemessen mini-
+miert wurde. Wenn Basisanforderungen nicht 
+erfüllt werden, bleibt grundsätzlich ein erhöhtes 
+Risiko bestehen. 
+Anforderungen dürfen nicht auf „entbehrlich“ 
+gesetzt werden, indem das Risiko für eine im 
+Baustein identifizierte elementare Gefährdung 
+über die Kreuzreferenztabelle pauschal akzep-
+tiert oder ausgeschlossen wird.
+„ja“  Zu der Anforderung wurden geeignete Maß-
+nahmen vollständig, wirksam und angemessen 
+umgesetzt.
+„teilweise“  Die Anforderung wurde nur teilweise umgesetzt.
+===== Seite 57 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+57
+„nein“  Die Anforderung wurde noch nicht erfüllt, also 
+geeignete Maßnahmen sind größtenteils noch 
+nicht umgesetzt worden.
+Es ist sinnvoll, bei den Interviews nicht nur die Bausteintexte, 
+sondern auch die Umsetzungshinweise oder andere ergänzende 
+Materialien griffbereit zu haben.
+Übersicht: Durchführung des Soll-Ist-Vergleichs 
+» Je nach F
+achgebiet vorab Checklisten erstellen.
+ »Umsetzungsstatus der einzelnen Anforderungen mit dem 
+Ansprechpartner erarbeiten.
+» Falls erforderlich, Umsetzungsstatus anhand von Stich-
+proben am Objekt verifizieren.
+Schritt 3: Dokumentationen der Ergebnisse
+Di
+e Ergebnisse des IT-Grundschutz-Checks sollten so doku-
+mentiert werden, dass sie für alle Beteiligten nachvollziehbar 
+sind und als Grundlage für die Umsetzungsplanung der identi-
+fizierten Maßnahmen genutzt werden können.
+Zur Dokumentation des IT-Grundschutz-Checks sollten erfasst 
+werden:
+» Die Nummer und die Bezeichnung des Objektes oder der 
+Gruppe von Objekten, welcher der Baustein bei der Modellie-
+rung zugeordnet wurde,
+===== Seite 58 =====
+58
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» der S tandort der zugeordneten Objekte bzw. Gruppe von 
+Objekten,
+» das Erfassungsdatum und der Name des Erfassers und
+» die befragten Ansprechpartner.
+Die Ergebnisse des Soll-Ist-Vergleichs sollten tabellarisch erfasst 
+werden. Dabei sollten zu jeder Anforderung des jeweiligen Bau-
+steins folgende Informationen festgehalten werden:
+ »Umsetzungsgrad (entbehrlich/ja/teilweise/nein) 
+Der im Interview ermittelte Umsetzungsstatus der jeweiligen 
+Anforderung ist zu erfassen.
+» Termin für die Umsetzung  
+Ein solches Feld ist sinnvoll, auch wenn es während eines IT-
+Grundschutz-Checks im Allgemeinen nicht ausgefüllt wird. 
+Es dient als Platzhalter, um in der Realisierungsplanung an 
+dieser Stelle zu dokumentieren, bis zu welchem Termin die 
+Anforderung vollständig umgesetzt sein soll.
+» Verantwortliche 
+Falls es bei der Durchführung des Soll-Ist-Vergleichs eindeu-
+tig ist, welche Mitarbeiter für die vollständige Umsetzung 
+einer noch nicht erfüllten Anforderung oder Maßnahme 
+verantwortlich sind, sollte das namentlich in diesem Feld 
+dokumentiert werden. Andernfalls ist im Zuge der späteren 
+Realisierungsplanung ein Verantwortlicher zu bestimmen.
+» Bemerkungen/Begründungen 
+Ein solches Feld ist wichtig, um getroffene Entscheidungen 
+später nachvollziehen zu können. Bei Anforderungen, deren 
+Umsetzung entbehrlich erscheint, ist hier die Begründung zu 
+nennen. Bei Anforderungen, die noch nicht oder nur teilweise
+===== Seite 59 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+59
+umgesetzt sind, sollte in diesem Feld dokumentiert werden, 
+welche Maßnahmen noch umgesetzt werden müssen. In die-
+ses Feld sollten auch alle anderen Bemerkungen eingetragen 
+werden, die bei der Beseitigung von Defiziten hilfreich oder 
+im Zusammenhang mit der Anforderung zu berücksichtigen 
+sind.
+» Defizite/Kostenschätzung 
+Für Anforderungen, die nicht oder nur teilweise erfüllt wur-
+den, ist das damit verbundene Risiko in geeigneter Form zu 
+ermitteln und zu dokumentieren. Bei solchen Maßnahmen 
+sollte außerdem geschätzt werden, welchen finanziellen und 
+personellen Aufwand die Beseitigung der Defizite erfordert.
+Auf den Webseiten des BSI stehen für alle Bausteine des IT-
+Grundschutz-Kompendiums Formulare zur Verfügung, die als 
+Hilfsmittel für die Dokumentation des IT-Grundschutz-Checks 
+verwendet werden können.
+ Übersicht: Dokumentation der Ergebnisse 
+» Stamminf
+ormationen über jedes Zielobjekt erfassen
+» Informationen zum IT-Grundschutz-Check und zum 
+Umsetzungsstatus dokumentieren
+» Felder beziehungsweise Platzhalter für die Realisierungs-
+planung vorsehen
+3.3.3 U
+msetzung der Sicherheitskonzeption
+Zu diesem Zeitpunkt liegen die Ergebnisse des IT-Grundschutz-
+Checks, also ein Soll-Ist-Vergleich, vor. In diesem Kapitel wird 
+===== Seite 60 =====
+60
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+beschrieben, wie die Umsetzung der notwendigen Sicherheits-
+maßnahmen geplant, durchgeführt, begleitet und überwacht 
+werden kann. Zu vielen Bausteinen des IT-Grundschutzes 
+existieren Umsetzungshinweise mit beispielhaften Empfehlun-
+gen für Sicherheitsmaßnahmen, mit denen die Anforderungen 
+der Bausteine umgesetzt werden können. Diese basieren auf 
+Best Practices und langjähriger Erfahrung von Experten aus 
+dem Bereich der Informationssicherheit. Die Maßnahmen aus 
+den Umsetzungshinweisen sind jedoch nicht als verbindlich zu 
+betrachten, sie können auch durch eigene Maßnahmen ergänzt 
+oder ersetzt werden.
+Für die Realisierung der Maßnahmen stehen in der Regel nur 
+begrenzte finanzielle und personelle Ressourcen zur Verfü-
+gung. Ziel der nachfolgend beschriebenen Schritte ist daher, 
+die geplanten Sicherheitsmaßnahmen möglichst effizient 
+umzusetzen.
+Festlegung konkreter Maßnahmen zu den Anforderungen
+In einer Gesamtsicht sollte auf Basis des IT-Grundschutz-
+Checks ausgewertet werden, welche Anforderungen aus den 
+IT-Grundschutz-Bausteinen nicht oder nur teilweise umgesetzt 
+wurden.
+Bei der Modellierung wurden diejenigen Bausteine ausgewählt, 
+die für die einzelnen Zielobjekte des betrachteten Informa-
+tionsverbunds umzusetzen sind. In den Bausteinen sind die 
+Anforderungen beschrieben, die typischerweise für diese Kom-
+ponenten für ein angemessenes Sicherheitsniveau umgesetzt 
+werden müssen. Im Rahmen einer Basis-Absicherung müssen 
+lediglich die Basisanforderungen betrachtet werden. Diese sind 
+so elementar, dass sie für eine grundlegende Absicherung des 
+Informationsverbundes umgesetzt werden müssen. Zudem 
+===== Seite 61 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+61
+bringt die Erfüllung der Basisanforderungen in der Regel gute 
+Ergebnisse bei vergleichsweise niedrigem Einsatz von R
+essour-
+cen, sogenannte Quick Wins. Die Standardanforderungen sowie 
+die Anforderungen bei erhöhtem Schutzbedarf sind für die 
+Vorgehensweisen der Standard- und Kern-Absicherung rele-
+vant. Aber auch im Rahmen der Basis-Absicherung kann es sich 
+lohnen, einen Blick auf diese Anforderungen zu werfen, um das 
+Sicherheitsniveau weiter zu erhöhen.
+Die Anforderungen in den Bausteinen sind knapp und präzise 
+formuliert. Sie müssen passend zu den organisatorischen und 
+technischen Gegebenheiten der Institution in konkrete Sicher-
+heitsmaßnahmen umgesetzt werden, welche die jeweiligen 
+Anforderungen erfüllen. 
+Die Maßnahmen dienen als Handlungsvorgaben für die ver-
+schiedenen Akteure im Sicherheitsprozess. Sie müssen daher 
+» an die jeweiligen Rahmenbedingungen und den Sprachge-
+brauch einer Institution angepasst sein und
+» ausreichend konkret sein, um im betrachteten Informations-
+verbund angewendet werden zu können, also z. B. technische 
+Details enthalten.
+Generell sollten die Anforderungen der IT-Grundschutz-Bau-
+steine immer sinngemäß umgesetzt werden. Alle Änderungen 
+zum IT-Grundschutz-Kompendium sollten zur besseren Nach-
+vollziehbarkeit dokumentiert werden.
+Zu vielen Bausteinen des IT-Grundschutz-Kompendiums gibt 
+es Umsetzungshinweise, in denen zu den Sicherheitsanforde-
+rungen bereits detailliertere und praxiserprobte Maßnahmen 
+beschrieben sind. Diese Maßnahmen sind einerseits so allge-
+mein formuliert, dass sie in möglichst vielen Umgebungen 
+===== Seite 62 =====
+62
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+anwendbar sind, und andererseits so ausführlich, dass die Maß-
+nahmenbeschreibungen als Umsetzungshilfe dienen können.
+Auch die in den Umsetzungshinweisen vorgeschlagenen Maß-
+nahmen sollten noch an die jeweiligen Rahmenbedingungen 
+einer Institution angepasst werden. Es kann beispielsweise 
+sinnvoll sein,
+» Maßnahmen weiter zu konkretisieren, also z. B. um techni-
+sche Details zu ergänzen,
+» Maßnahmen dem Sprachgebrauch der Institution anzupas-
+sen, also z. B. andere Rollenbezeichnungen zu verwenden und
+» aus Maßnahmen, die im betrachteten Bereich nicht relevan-
+ten Empfehlungen zu streichen.
+Wichtig ist außerdem, realisierungsbegleitende Maßnahmen 
+mit einzuplanen. Hierzu gehören z. B. Maßnahmen zur Sensi-
+bilisierung der Mitarbeiter, um die Belange der Informations-
+sicherheit sowie die Notwendigkeit und die Konsequenzen der 
+Maßnahmen zu verdeutlichen.
+In seltenen Fällen kann es sich auch bei den elementaren Basi-
+sanforderungen ergeben, dass einzelne Anforderungen unter 
+den konkreten Rahmenbedingungen nicht umgesetzt werden 
+können, etwa wenn deren Umsetzung essentielle Schwierig-
+keiten in anderen Bereichen mit sich bringen würde. Dies kann 
+beispielsweise der Fall sein, wenn sich Anforderungen des 
+Brand- und des Einbruchschutzes nicht miteinander vereinba-
+ren lassen. Dann müssen andere Lösungen gefunden und dies 
+nachvollziehbar dokumentiert werden. 
+Um auch später noch nachvollziehen zu können, wie die 
+konkrete Maßnahmenliste erstellt und angepasst wurde, sollte 
+===== Seite 63 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+63
+sie dokumentiert werden. Werden Sicherheitsanforderun-
+gen zusätzlich aufgenommen oder geändert, ist auch dies im 
+Sicherheitskonzept zu dokumentieren. Bei der Auswahl und 
+Anpassung der Sicherheitsmaßnahmen auf Basis der Anfor-
+derungen ist zu beachten, dass diese immer angemessen sein 
+müssen. Angemessen bedeutet:
+» Wirksamkeit (Effektivität): Die Maßnahmen müssen vor den 
+möglichen Gefährdungen wirksam schützen, also den identi-
+fizierten Schutzbedarf abdecken.
+» Eignung: Sie müssen in der Praxis umsetzbar sein, dürfen also 
+z. B. die Organisationsabläufe nicht zu stark behindern oder 
+andere Sicherheitsmaßnahmen aushebeln.
+» Praktikabilität: Sie sollen leicht verständlich, einfach anzu-
+wenden und wenig fehleranfällig sein.
+» Akzeptanz: Sie müssen für alle Benutzer einfach anwend-
+bar sein und dürfen niemanden diskriminieren oder 
+beeinträchtigen.
+» Wirtschaftlichkeit: Mit den eingesetzten Mitteln sollte ein 
+möglichst gutes Ergebnis erreicht werden. Die Sicherheits-
+maßnahmen sollten also einerseits das Risiko bestmöglich 
+minimieren und andererseits in geeignetem Verhältnis zu 
+den zu schützenden Werten stehen.
+Kosten- und Aufwandsschätzung
+Da das Budget zur Umsetzung von Sicherheitsmaßnahmen 
+praktisch immer begrenzt ist, sollte für jede zu realisierende 
+Maßnahme festgehalten werden, welche Investitionskosten 
+und welcher Personalaufwand dafür benötigt werden. Hierbei 
+===== Seite 64 =====
+64
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+sollte zwischen einmaligen und wiederkehrenden Investitions-
+kosten bzw. Personalaufwand unterschieden werden. An dieser 
+Stelle zeigt sich häufig, dass Einsparungen bei technischen oder 
+infrastrukturellen Sicherheitsmaßnahmen dazu führen, dass 
+sie einen hohen fortlaufenden Personaleinsatz verursachen. 
+Umgekehrt führen Einsparungen beim Personal schnell zu 
+kontinuierlich größer werdenden Sicherheitsdefiziten.
+In diesem Zusammenhang ist zu ermitteln, ob alle identifi-
+zierten Maßnahmen wirtschaftlich umsetzbar sind. Falls es 
+Maßnahmen gibt, die nicht wirtschaftlich sind, sollte überlegt 
+werden, durch welche Ersatzmaßnahmen die Anforderungen 
+dennoch erfüllt werden können. Oftmals gibt es verschie-
+dene Optionen, Anforderungen mit geeigneten Maßnahmen 
+zu erfüllen. Dabei ist zu beachten, dass Basisanforderungen 
+im Normalfall immer erfüllt werden müssen, die Akzeptanz 
+eines Restrisikos ist aufgrund ihrer elementaren Natur nicht 
+vorgesehen.
+Liegen Einschätzungen für Kosten und Personaleinsatz vor, 
+muss meist noch im Detail entschieden werden, wie viel 
+Ressourcen für die Umsetzung der Sicherheitsmaßnahmen ein-
+gesetzt werden sollen. Die Ergebnisse der Sicherheitsuntersu-
+chung sollten daher der Institutionsleitung vorgestellt werden. 
+Dazu zählen die festgestellten Schwachstellen (also nicht oder 
+unzureichend erfüllte Sicherheitsanforderungen) sowie die zu 
+erwartenden Kosten und Aufwände für Umsetzung der not-
+wendigen Maßnahmen. Die Leitung kann auf dieser Basis über 
+das freizugebende Budget entscheiden.
+Sofern kein ausreichendes Budget für die Realisierung aller 
+fehlenden Maßnahmen bereitgestellt werden kann, sollte 
+das verbleibende Restrisiko aufgezeigt werden. Dazu können 
+die sogenannten Kreuzreferenztabellen aus den einzelnen 
+Bausteinen hinzugezogen werden. Die Kreuzreferenztabellen 
+===== Seite 65 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+65
+geben eine Übersicht darüber, welche Anforderungen gegen 
+welche elementaren Gefährdungen wirken. Umgekehrt lässt 
+sich anhand dieser Tabellen ebenfalls ermitteln, gegen welche 
+elementaren Gefährdungen kein ausreichender Schutz besteht, 
+wenn Anforderungen aus den Bausteinen nicht erfüllt werden. 
+Das entstehende Restrisiko sollte transparent beschrieben und 
+der Leitungsebene zur Entscheidung vorgelegt werden. Die 
+Leitungsebene muss die Verantwortung für die Konsequenzen 
+tragen.
+Festlegung der Umsetzungsreihenfolge der Maßnahmen
+Das IT-Grundschutz-Kompendium beschreibt eine Reihenfolge, 
+in der Bausteine umgesetzt werden sollten, von grundlegenden 
+und übergreifenden Bausteinen bis hin zu solchen, die speziel-
+lere Themen abdecken und daher in der zeitlichen Reihenfolge 
+eher nachrangig betrachtet werden können. Diese Reihenfolge 
+der Baustein-Umsetzung ist vor allem bei der Basis-Absiche-
+rung wichtig. Für jeden Baustein sind alle aus den Basisanforde-
+rungen abgeleiteten Maßnahmen umzusetzen. Ein Blick in die 
+jeweiligen Standard-Anforderungen sowie die Anforderungen 
+für den erhöhten Schutzbedarf kann jedoch ebenfalls sinnvoll 
+sein, da diese häufig ergänzenden Aspekte beschreiben und 
+abdecken.
+Wenn das vorhandene Budget oder die personellen Ressourcen 
+nicht ausreichen, um sämtliche noch notwendigen Maßnah-
+men sofort umsetzen zu können, muss hier eine Priorisierung 
+festgelegt werden.
+Die weitere Umsetzungsreihenfolge orientiert sich daran, was 
+für die jeweilige Institution am sinnvollsten ist. Hierzu einige 
+Tipps:
+===== Seite 66 =====
+66
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» Bei einigen Maßnahmen ergibt sich dur ch Abhängigkeiten 
+und logische Zusammenhänge eine zwingende zeitliche 
+Reihenfolge.
+» Die Umsetzungsreihenfolge kann darauf basieren, wann die 
+jeweiligen Maßnahmen im Lebenszyklus eines Zielobjektes 
+umzusetzen sind. Bei neuen Zielobjekten sind beispielsweise 
+Maßnahmen aus den Bereichen Planung und Konzeption vor 
+solchen umzusetzen, bei denen es um den sicheren Betrieb 
+geht. Bei schon länger im Informationsverbund vorhandenen 
+Zielobjekten sollte zunächst die Absicherung des Betriebs im 
+Vordergrund stehen.
+» Manche Maßnahmen erzielen eine große Breitenwirkung, 
+manche eine stärkere lokale Wirkung. Oft ist es sinnvoll, 
+zuerst auf die Breitenwirkung zu achten. Es lohnt sich aber 
+auch durchaus, die Maßnahmen aus den verschiedenen 
+Bereichen danach zu gewichten, wie schnell sie sich umsetzen 
+lassen und welchen Sicherheitsgewinn sie liefern. Quick Wins 
+lassen sich häufig im organisatorischen Bereich finden oder 
+durch zentrale Konfigurationseinstellungen erreichen.
+» Es gibt Bausteine, deren Umsetzung auf das angestrebte 
+Sicherheitsniveau einen größeren Einfluss hat als andere. So 
+sollten beispielsweise immer zunächst die Server abgesichert 
+werden und dann erst die angeschlossenen Clients.
+» Bausteine, bei denen im Rahmen des Soll-Ist-Vergleichs 
+auffallend viele Anforderungen als nicht erfüllt identifiziert 
+wurden, repräsentieren Bereiche mit vielen Schwachstellen. 
+Sie sollten ebenfalls bevorzugt behandelt werden.
+===== Seite 67 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+67
+Festlegung der Aufgaben und der Verantwortung
+Nachdem die Reihenfolge für die Umsetzung der Maßnahmen 
+bestimmt wurde, muss festgelegt werden, wer bis wann welche 
+Maßnahmen realisieren muss. Den Verantwortlichen müssen 
+dazu die nötigen Fähigkeiten, Kompetenzen und Ressourcen 
+zur Verfügung stehen.
+Ebenso ist festzulegen, wer für die Überwachung der Realisie-
+rung verantwortlich ist bzw. an wen der Abschluss der Realisie-
+rung der einzelnen Maßnahmen zu melden ist. Die Meldungen 
+laufen beim ISB zusammen, der kontinuierlich über den Fort-
+schritt der Realisierung und die Ergebnisse informiert wird. Der 
+ISB wiederum muss regelmäßig die Leitungsebene über den 
+Fortschritt und die damit verbundene Absenkung vorhandener 
+Risiken informieren. 
+Der Realisierungsplan sollte mindestens folgende Informatio-
+nen umfassen:
+» Beschreibung des Zielobjektes (Einsatzumfeld),
+» Nummer bzw. Titel des betrachteten Bausteins,
+» Titel bzw. Beschreibung der zu erfüllenden Anforderung
+» Beschreibung der umzusetzenden Maßnahme bzw. Verweis 
+auf die Beschreibung im Sicherheitskonzept,
+» Terminplanung für die Umsetzung,
+» falls vorhanden: Abhängigkeiten und Querbeziehungen zu 
+anderen Maßnahmen,
+» verfügbares Budget,
+===== Seite 68 =====
+68
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+» Verantwortliche für die Umsetzung und
+» V
+erantwortliche für die Überwachung der Realisierung.
+ Aktionspunkte zu Umsetzung der Sicherheitskonzeption 
+» Fehl
+ende oder nur teilweise umgesetzte IT-Grundschutz-
+Anforderungen sowie ergänzende Sicherheitsmaßnah-
+men zusammenfassen
+» Sicherheitsmaßnahmen formulieren, welche die Basisan-
+forderungen erfüllen
+» Sicherheitsmaßnahmen konsolidieren, das heißt, über-
+flüssige Maßnahmen streichen, allgemeine Maßnahmen 
+an die Gegebenheiten anpassen und alle Maßnahmen auf 
+Eignung prüfen
+» Einmalige und wiederkehrende Kosten und Aufwand für 
+die umzusetzenden Maßnahmen ermitteln
+» Geeignete Ersatzmaßnahmen für nicht finanzierbare oder 
+nicht leistbare Maßnahmen ermitteln
+» Entscheidung herbeiführen, welche Ressourcen für die 
+Umsetzung der Maßnahmen eingesetzt werden sollen
+» Gegebenenfalls Restrisiko aufzeigen und Entscheidung 
+der Leitungsebene darüber einholen
+» Umsetzungsreihenfolge für die Maßnahmen festlegen, 
+begründen und dokumentieren
+===== Seite 69 =====
+ ERSTELLUNG EINER SICHERHEITSKONZEPTION NACH DER BASIS-ABSICHERUNG
+69
+» T ermine für die Umsetzung festlegen und Verantwortung 
+zuweisen
+» Verlauf der Umsetzung und Einhaltung der Termine 
+überwachen
+» Betroffene Mitarbeiter schulen und sensibilisieren
+===== Seite 70 =====
+70
+4 Informationssicherheit 
+ist ein Prozess: Wie es 
+weitergehen kann
+===== Seite 71 =====
+ INFORMATIONSSICHERHEIT IST EIN PROZESS: WIE ES WEITERGEHEN KANN
+71
+4 Informationssicherheit 
+ist ein Prozess: Wie es 
+weitergehen kann
+Mit der Umsetzung der Basis-Absicherung ist ein wichtiger 
+erster Schritt geschafft worden, das Niveau der Informations-
+sicherheit in der Institution maßgeblich zu steigern. Damit 
+wurde auch das Managementsystem für Informationssicherheit 
+auf eine erste solide Basis gebracht. Die ausgewählten Sicher-
+heitsmaßnahmen müssen weiter umgesetzt und Vorgaben wie 
+die Sicherheitsleitlinie fortlaufend aktualisiert werden, um den 
+nun begonnenen Informationssicherheitsprozess aufrecht zu 
+erhalten und kontinuierlich verbessern zu können. Dazu gehört 
+auch, den IS-Prozess selbst regelmäßig auf seine Wirksamkeit 
+und Effizienz hin zu überprüfen. 
+Eine regelmäßige Erfolgskontrolle und Bewertung des Prozes-
+ses sollte auch durch die Leitung erfolgen. Häufen sich zum 
+Beispiel Sicherheitsvorfälle oder gibt es gravierende Änderun-
+gen bei den Rahmenbedingungen, so muss eine Überprüfung 
+auch zwischen den Routineterminen durchgeführt werden. Alle 
+Ergebnisse und Beschlüsse müssen nachvollziehbar dokumen-
+tiert werden. Es ist Aufgabe des ISB, diese Informationen zu 
+sammeln, zu verarbeiten und die Leitung zu informieren.
+Mit der Basis-Absicherung kann eine Institution das Informa-
+tionssicherheitsniveau bereits auf ein gutes Level anheben. Bei 
+diesem initialen Prozess sind in der Institution viele Aspekte 
+betrachtet, Fachverantwortliche beteiligt und Mitarbeiter 
+sensibilisiert worden. Dennoch ist die Informationssicherheit 
+ein so vielschichtiges wie dynamisches Aufgabengebiet, dass die 
+Basis-Absicherung lediglich ein erster Einstieg in die Auseinan-
+===== Seite 72 =====
+72
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+dersetzung mit der Thematik sein kann: Im besten Fall setzt die 
+Institution den Prozess mit den beiden weiteren Vorgehenswei-
+sen aus der IT-Grundschutz-Methodik fort.
+Kern-Absicherung
+Im Fokus der Kern-Absicherung stehen zunächst die besonders 
+gefährdeten Geschäftsprozesse und Assets. Diese Vorgehens-
+weise ist empfehlenswert, wenn für eine Institution folgende 
+Punkte überwiegend zutreffen:
+» Die Anzahl der Geschäftsprozesse mit deutlich erhöhtem 
+Schutzbedarf ist überschaubar bzw. umfasst nur einen klei-
+nen Anteil aller Geschäftsprozesse der Institution.
+» Die Institution kann die Geschäftsprozesse, die ein deutlich 
+erhöhtes Gefährdungspotential bezüglich der Informationssi-
+cherheit haben, zügig identifizieren und eindeutig abgrenzen.
+» Die Institution besitzt eindeutig benennbare Assets, deren 
+Diebstahl, Zerstörung oder Kompromittierung einen exis-
+tenzbedrohenden Schaden für die Institution bedeuten 
+würde (sogenannte Kronjuwelen). Diese sollen vorrangig 
+geschützt werden.
+ »Kleinere Sicherheitsvorfälle, die Geld kosten oder anderwei-
+tig Schaden verursachen, aber keinen existenzbedrohenden 
+Schaden verursachen, sind für die Institution akzeptabel.
+Standard-Absicherung
+Die Standard-Absicherung entspricht im Wesentlichen der 
+klassischen IT-Grundschutz-Vorgehensweise. Mit der Standard-
+===== Seite 73 =====
+ INFORMATIONSSICHERHEIT IST EIN PROZESS: WIE ES WEITERGEHEN KANN
+73
+Absicherung kann ein ISB die Assets und Prozesse einer Insti-
+tution sowohl umfassend als auch in der Tiefe absichern. Eine 
+Aufnahme des Sicherheitsprozesses mit der Standard-Absiche-
+rung ist empfehlenswert, wenn für die Institution die folgenden 
+Punkte überwiegend zutreffen:
+» Die Umsetzung von Informationssicherheit hat in der Insti-
+tution bereits einen ausreichenden Reifegrad erreicht, so dass 
+in wesentlichen Bereichen bereits Sicherheitsmaßnahmen 
+vorhanden sind und keine grundlegende Erst-Absicherung 
+mehr notwendig ist.
+» Es besteht kein Handlungsbedarf, einzelne Geschäftsprozesse 
+vordringlich abzusichern, die ein deutlich höheres Gefähr-
+dungspotential bezüglich der Informationssicherheit besitzen 
+(siehe Kern-Absicherung).
+» Die Institution hat keine Assets, deren Diebstahl, Zerstörung 
+oder Kompromittierung einen unmittelbar existenzbedro-
+henden Schaden nach sich ziehen könnte und die daher 
+vorrangig abgesichert werden sollten. 
+» Sicherheitsvorfälle, die wahrnehmbar die Aufgabenerfüllung 
+beeinträchtigen, Geld kosten oder anderweitig erkennbaren 
+Schaden verursachen, sind für die Institution nicht akzepta-
+bel, auch wenn sie noch keinen existenzbedrohenden Scha-
+den verursachen.
+Die Standard-Absicherung stellt innerhalb der IT-Grundschutz-
+Methodik diejenige Vorgehensweise dar, die grundsätzlich 
+angestrebt werden sollte, um alle Bereiche einer Institution 
+angemessen und umfassend zu schützen.
+Jede Institution liefert mit der Erhöhung ihres Informations-
+sicherheitsniveaus einen wichtigen Baustein zur Verbesserung 
+===== Seite 74 =====
+74
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+der Cyber-Sicherheit in Deutschland. Je mehr Verantwortli-
+che in Unternehmen und Behörden sich mit den elementar 
+wichtigen Fragen zur Informationssicherheit sowie Maßnah-
+men zu Schutz und Abwehr befassen, desto mehr profitiert 
+der Wirtschaftsstandort Deutschland insgesamt davon. Der 
+IT-Grundschutz bietet mit den modernisierten Inhalten in 
+den BSI-Standards und im IT-Grundschutz-Kompendium ein 
+umfangreiches und praktikables Angebot für Unternehmen 
+und Behörden jeder Größenordnung.
+===== Seite 75 =====
+75
+5 Anhang
+===== Seite 76 =====
+76
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+5 Anhang
+5.1 Das IT-Grundschutz-Kompendium – 
+Wissenswertes auf einen Blick
+Das IT-Grundschutz-Kompendium enthält die IT-Grund-
+schutz-Bausteine, in denen unterschiedliche Themen der 
+Informationssicherheit im Hinblick auf die jeweils spezifische 
+Gefährdungslage sowie Sicherheitsanforderungen aufbereitet 
+sind. Es wird als Nachfolger der bisherigen IT-Grundschutz-
+Kataloge jährlich in Form einer aktualisierten Edition online 
+zur Verfügung gestellt.
+Die IT-Grundschutz-Bausteine
+Das IT-Grundschutz-Kompendium enthält für unterschiedliche 
+Prozesse, Komponenten und IT-Systeme Erläuterungen zur 
+Gefährdungslage, Sicherheitsanforderungen und weiterfüh-
+rende Informationen, die jeweils in einem Baustein zusam-
+mengefasst sind. Das Kompendium ist aufgrund der Baustein-
+Struktur modular aufgebaut und legt einen Fokus auf die 
+Darstellung der wesentlichen Sicherheitsanforderungen in den 
+Bausteinen. Ziel ist es, durch diese Struktur neue technische 
+Entwicklungen und Versionswechsel zeitnah berücksichtigen 
+zu können. Einzelne Bausteine können so zeitnah erweitert und 
+aktualisiert werden. Die grundlegende Struktur der Bausteine 
+sieht eine Unterteilung in prozess- und systemorientierte Bau-
+steine vor, zudem sind sie nach Themen in ein Schichtenmodell 
+einsortiert.
+===== Seite 77 =====
+ ANHANG
+77
+Abbildung 5: Das Schichtenmodell des IT-Grundschutz-Kompendiums
+Prozess-Bausteine:
+» Die Schicht ISMS enthält als Grundlage für alle wei-
+teren Aktivitäten im Sicherheitsprozess den Baustein 
+Sicherheitsmanagement.
+» In der Schicht ORP finden sich Bausteine, die organisatori-
+sche und personelle Sicherheitsaspekte abdecken.
+» Die Schicht CON enthält Bausteine, die sich mit Konzepten 
+und Vorgehensweisen befassen. 
+» Die Schicht OPS umfasst alle Sicherheitsaspekte betrieblicher 
+Art. Insbesondere sind dies die Sicherheitsaspekte des opera-
+tiven IT-Betriebs, aber auch solche, die bei einem IT-Betrieb 
+für Dritte zu beachten sind. 
+» In der Schicht DER finden sich alle Bausteine, die für die 
+Überprüfung der umgesetzten Sicherheitsmaßnahmen und 
+===== Seite 78 =====
+78
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+insbesondere für die Detektion von Sicherheitsvorfällen 
+sowie die geeigneten Reaktionen darauf relevant sind. 
+System-Bausteine:
+» Die Schicht APP beschäftigt sich mit der Absicherung von 
+Anwendungen und Diensten, unter anderem in den Berei-
+chen Kommunikation, Verzeichnisdienste, Netzbasierte 
+Dienste sowie Business- und Client-Anwendungen. 
+» Die Schicht SYS betrifft die einzelnen IT-Systeme des Infor-
+mationsverbunds, die falls erforderlich in Gruppen zusam-
+mengefasst wurden. 
+» Die Schicht NET betrachtet die Vernetzungsaspekte, die sich 
+nicht auf bestimmte IT-Systeme, sondern auf die Netzverbin-
+dungen und die Kommunikation beziehen.
+» Die Schicht INF befasst sich mit den baulich-technischen 
+Gegebenheiten, hier werden Aspekte der infrastrukturellen 
+Sicherheit zusammengeführt. 
+» Die Schicht IND befasst sich mit Sicherheitsaspekten indust-
+rieller IT.
+Die Aufteilung in Prozess- und System-Bausteine bietet den 
+Vorteil, dass übergeordnete Aspekte und gemeinsame infra-
+strukturelle Fragestellungen getrennt von den IT-Systemen 
+betrachtet werden können. Redundanzen werden vermieden, 
+weil einzelne Aspekte nur jeweils einmal bearbeitet werden 
+müssen und nicht für jedes IT-System noch einmal separat. 
+Zudem können aufgrund der Aufteilung der Sicherheitsaspekte 
+in Schichten Einzelaspekte in resultierenden Sicherheitskon-
+===== Seite 79 =====
+ ANHANG
+79
+zepten leichter aktualisiert und erweitert werden, ohne dass 
+andere Schichten umfangreich betroffen sind.
+Reihenfolge der Baustein-Umsetzung
+Ziel der IT-Grundschutz-Methodik ist es, dass essentielle 
+Sicherheitsanforderungen frühzeitig erfüllt und entsprechende 
+Sicherheitsmaßnahmen umgesetzt werden. Daher wird für die 
+Umsetzung der Bausteine folgende Reihenfolge vorgeschlagen:
+» R1: Diese Bausteine sollten vorrangig umgesetzt werden, da 
+sie die Grundlage für einen effektiven Sicherheitsprozess 
+bilden.
+» R2: Diese Bausteine sollten als nächstes umgesetzt werden, 
+da sie in wesentlichen Teilen des Informationsverbundes für 
+nachhaltige Sicherheit erforderlich sind.
+» R3: Diese Bausteine werden zur Erreichung des angestrebten 
+Sicherheitsniveaus ebenfalls benötigt und müssen umgesetzt 
+werden, es wird aber empfohlen, diese erst nach den anderen 
+Bausteinen zu betrachten.
+Mit R1 sind diejenigen Bausteine gekennzeichnet, die notwen-
+dig sind, um ein grundlegendes Sicherheitsgerüst zu erreichen. 
+Dabei handelt es sich um folgende Schichten: 
+» ISMS Sicherheitsmanagement
+» ORP Organisation und Personal
+» OPS.1.1 Kern-IT-Betrieb
+===== Seite 80 =====
+80
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Die Kennzeichnung der Reihenfolge stellt lediglich eine Emp-
+fehlung dar. Jede Institution kann eine abweichende, für ihre 
+Belange sinnvolle Reihenfolge festlegen.
+Gefährdungen
+In jedem Baustein wird zunächst die spezifische Gefährdungs-
+lage für eine Thematik beschrieben. Dazu ergänzend befindet 
+sich im jeweiligen Anhang eine Liste der elementaren Gefähr-
+dungen, die bei der Erstellung des Bausteins berücksichtigt 
+wurden. Die Gefährdungsliste gehört zur ersten Stufe der 
+vereinfachten Risikoanalyse für typische Umgebungen der 
+Informationsverarbeitung und bildet die Grundlage, auf der das 
+BSI spezifische Anforderungen zusammengestellt hat, deren 
+Umsetzung ein angemessenes Niveau der Informationssicher-
+heit in einer Institution gewährleisten kann. Der Vorteil ist, dass 
+die Anwender bei typischen Szenarien keine aufwändigen oder 
+weiterführenden Analysen durchführen müssen, um das für 
+einen normalen Schutzbedarf notwendige Sicherheitsniveau zu 
+erreichen. Es reicht aus, die für die betrachteten Geschäftspro-
+zesse und ihrer notwendigen Ressourcen relevanten Bausteine 
+zu identifizieren und die darin empfohlenen Anforderungen 
+konsequent und vollständig umzusetzen.
+Sicherheitsanforderungen
+In jedem Baustein werden die Sicherheitsanforderungen, die 
+für den Schutz des betrachteten Gegenstands relevant sind, 
+aufgeführt. Sie beschreiben, was zu dessen Schutz zu tun ist. Die 
+Anforderungen sind in drei Kategorien eingruppiert:
+» Basisanforderungen müssen vorrangig erfüllt werden, da 
+bei diesen Empfehlungen mit (relativ) geringem Aufwand
+===== Seite 81 =====
+ 
+ ANHANG
+81
+der größtmögliche Nutzen erzielt werden kann. Es handelt 
+sich um uneingeschränkte Anforderungen. Die Basisan-
+forderungen bilden die Grundlage für die Vorgehensweise 
+„Basis-Absicherung“.
+» Standardanforderungen bauen auf den Basisanforderungen 
+auf und adressieren einen normalen Schutzbedarf. Sie sollten 
+grundsätzlich erfüllt werden, aber nicht vorrangig. Die Ziele 
+der Standardanforderungen müssen erreicht werden, um eine 
+Standard-Absicherung zu erzielen. Es können sich aber durch 
+die jeweiligen Rahmenbedingungen der Institution auch 
+Gründe ergeben, warum eine Standardanforderung nicht wie 
+beschrieben umgesetzt wird, sondern die Sicherheitsziele auf 
+andere Weise erreicht werden. Wenn eine Standardanfor-
+derung durch andere Sicherheitsmaßnahmen erfüllt wird, 
+müssen die dadurch entstehenden Auswirkungen sorgfältig 
+abgewogen und geeignet dokumentiert werden.
+» Anforderungen für einen hohen Schutzbedarf sind eine 
+Auswahl von Vorschlägen für eine weitergehende Absiche-
+rung, die bei erhöhten Sicherheitsanforderungen oder unter 
+bestimmten Rahmenbedingungen als Grundlage für die 
+Erarbeitung geeigneter Anforderungen und Maßnahmen 
+berücksichtigt werden können.
+Umsetzungshinweise
+Zu vielen Bausteinen des IT-Grundschutz-Kompendiums gibt 
+es detaillierte Umsetzungshinweise. Diese beschreiben, wie die 
+Anforderungen der Bausteine umgesetzt werden können und 
+erläutern passende Sicherheitsmaßnahmen mit einer detail-
+lierten Beschreibung. Die Sicherheitsmaßnahmen können als 
+Grundlage für Sicherheitskonzeptionen verwendet werden, sie
+===== Seite 82 =====
+82
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+sollten aber an die Rahmenbedingungen der jeweiligen Institu-
+tion angepasst werden. 
+Die Umsetzungshinweise adressieren jeweils die Personen-
+gruppen, die für die Umsetzung der Baustein-Anforderun-
+gen zuständig sind, beispielsweise den IT-Betrieb oder die 
+Haustechnik.
+5.2 Literaturverzeichnis
+[BSI1]  Managementsysteme für Informationssicherheit 
+(ISMS), BSI-Standard 200-1, Version 1.0, Oktober 2017,  
+https:/ /www.bsi.bund.de/grundschutz
+[BSI2]  IT-Grundschutz-Methodik, BSI-Standard 200-2,  
+Version 1.0, Oktober 2017,  
+https:/ /www.bsi.bund.de/grundschutz
+[BSI3]  Risikoanalyse auf der Basis von IT-Grundschutz,  
+BSI-Standard 200-3, Version 1.0, Oktober 2017,  
+https:/ /www.bsi.bund.de/grundschutz
+[GSK]  IT-Grundschutz-Kompendium – Standard-Sicherheits-
+maßnahmen, BSI, jährlich neu,  
+https:/ /www.bsi.bund.de/grundschutz
+===== Seite 83 =====
+ ANHANG
+83
+5.3 Glossar 
+In diesem Glossar werden die wichtigsten Begriffe für Manage-
+mentsysteme für Informationssicherheit (ISMS) aufgeführt. Ein 
+hierzu ergänzendes Glossar zur Cyber-Sicherheit ist auf den 
+Webseiten des BSI unter http:/ /www.bsi.bund.de/cyberglossar 
+zu finden.
+Anforderungen bei erhöhtem Schutzbedarf
+Siehe Sicherheitsanforderung.
+Assets
+Als Assets werden Bestände von Objekten bezeichnet, die 
+für einen bestimmten Zweck, besonders zur Erreichung von 
+Geschäftszielen, benötigt werden. Der englische Begriff „asset“ 
+wird häufig mit „Wert“ übersetzt. „Wert“ ist allerdings im Deut-
+schen ein mit vielen Bedeutungen belegter Begriff – von der 
+gesellschaftlichen Bedeutung, die einer Sache zukommt, bis hin 
+zur inneren Qualität eines Objekts. Im IT-Grundschutz wird 
+der Begriff „Assets“ in der Bedeutung von „werthaltigen bzw. 
+wertvollen Zielobjekten“ verwendet.
+Basis-Absicherung
+Die Basis-Absicherung ermöglicht es, als Einstieg in den IT-
+Grundschutz zunächst eine breite, grundlegende Erst-Absi-
+cherung über alle Geschäftsprozesse bzw. Fachverfahren einer 
+Institution vorzunehmen. 
+Basis-Anforderung
+Siehe Sicherheitsanforderung.
+Bausteine
+Das IT-Grundschutz-Kompendium enthält für unterschiedli-
+che Vorgehensweisen, Komponenten und IT-Systeme Erläute-
+rungen zur Gefährdungslage, Sicherheitsanforderungen und 
+===== Seite 84 =====
+84
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+weiterführende Informationen, die jeweils in einem Baustein 
+zusammengefasst sind. Das Kompendium ist aufgrund der 
+Baustein-Struktur modular aufgebaut und legt einen Fokus auf 
+die Darstellung der wesentlichen Sicherheitsanforderungen in 
+den Bausteinen. Die grundlegende Struktur der Bausteine sieht 
+eine Unterteilung in prozess- und systemorientierte Bausteine 
+vor, zudem sind sie nach Themen in ein Schichtenmodell 
+einsortiert.
+Cyber-Sicherheit
+Cyber-Sicherheit befasst sich mit allen Aspekten der Sicherheit 
+in der Informations- und Kommunikationstechnik. Das Akti-
+onsfeld der Informationssicherheit wird dabei auf den gesam-
+ten Cyber-Raum ausgeweitet. Dieser umfasst sämtliche mit 
+dem Internet und vergleichbaren Netzen verbundene Informa-
+tionstechnik und schließt darauf basierende Kommunikation, 
+Anwendungen, Prozesse und verarbeitete Informationen mit 
+ein. Häufig wird bei der Betrachtung von Cyber-Sicherheit auch 
+ein spezieller Fokus auf Angriffe aus dem Cyber-Raum gelegt.
+Datenschutz
+Datenschutz soll den Einzelnen davor schützen, dass er durch 
+den Umgang mit seinen personenbezogenen Daten in seinen 
+Persönlichkeitsrechten beeinträchtigt wird. Mit Datenschutz 
+wird daher der Schutz personenbezogener Daten vor etwaigem 
+Missbrauch durch Dritte bezeichnet (nicht zu verwechseln mit 
+Datensicherheit).
+Für den Begriff „Datenschutz“ existieren zwei englische Über-
+setzungen: Dabei bezeichnet „data protection“ den Datenschutz 
+als Rechtsbegriff. „Privacy“ zielt dagegen auf die gesellschaftli-
+che Lebensweise ab (Schutz der Privatsphäre) und wird über-
+wiegend im amerikanischen Sprachumfeld und mittlerweile 
+auch im EU-Raum vermehrt genutzt.
+===== Seite 85 =====
+ANHANG
+85
+Fachaufgabe
+Fachaufgaben sind Aufgaben, die aus der Zweckbestimmung 
+einer Institution bzw. deren Auftrag folgen. Als Fachaufgaben 
+werden im IT-Grundschutz Geschäftsprozesse in Behörden 
+bezeichnet. 
+Gefährdung 
+Eine Gefährdung ist eine Bedrohung, die konkret über eine 
+Schwachstelle auf ein Objekt einwirkt. Eine Bedrohung wird 
+somit erst durch eine vorhandene Schwachstelle zur Gefähr-
+dung für ein Objekt.
+Geschäftsprozess
+Ein Geschäftsprozess ist eine Menge logisch verknüpfter Einzel-
+tätigkeiten (Aufgaben, Arbeitsabläufe), die ausgeführt werden, 
+um ein bestimmtes geschäftliches oder betriebliches Ziel zu 
+erreichen. 
+Grundwerte der Informationssicherheit
+Der IT-Grundschutz betrachtet die drei Grundwerte der Infor-
+mationssicherheit: Vertraulichkeit, Verfügbarkeit und Integrität.
+Jedem Anwender steht es natürlich frei, bei der Schutzbedarfs-
+feststellung weitere Grundwerte zu betrachten, wenn dies in 
+seinem individuellem Anwendungsfall hilfreich ist. Weitere 
+generische Oberbegriffe der Informationssicherheit sind 
+zum Beispiel: Authentizität, Verbindlichkeit, Zuverlässigkeit, 
+Nichtabstreitbarkeit.
+Informationssicherheit
+Informationssicherheit hat den Schutz von Informationen 
+als Ziel. Dabei können Informationen sowohl auf Papier, in 
+Rechnern oder auch in Köpfen gespeichert sein. IT-Sicherheit 
+beschäftigt sich an erster Stelle mit dem Schutz elektronisch 
+gespeicherter Informationen und deren Verarbeitung. Der 
+Begriff „Informationssicherheit“ statt IT-Sicherheit ist daher 
+===== Seite 86 =====
+86
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+umfassender und wird zunehmend verwendet. Da aber in der 
+Literatur noch überwiegend der Begriff „IT-Sicherheit“ zu fin-
+den ist, wird er auch in dieser sowie in anderen Publikationen 
+des IT-Grundschutzes weiterhin verwendet, allerdings werden 
+die Texte sukzessive stärker auf die Betrachtung von Informati-
+onssicherheit ausgerichtet.
+Informationssicherheitsbeauftragter (ISB)
+Ein Informationssicherheitsbeauftragter (kurz IS-Beauftragter 
+oder ISB) ist für die operative Erfüllung der Aufgabe „Infor-
+mationssicherheit“ zuständig. Andere Bezeichnungen sind 
+CISO (Chief Information Security Officer) oder Informations-
+sicherheitsmanager (ISM). Informationssicherheit umfasst den 
+umfangreicheren Bereich des Schutzes von Informationen, 
+zwar in und mit IT, aber auch ohne IT bzw. über IT hinaus. 
+Somit ist IT-Sicherheit ein Teilbereich der Informationssicher-
+heit und beschäftigt sich gezielt mit dem Schutz der eingesetz-
+ten IT. Neben dem ISB kann es auch einen dedizierten Beauf-
+tragten für IT-Sicherheit geben. Dieser ist dann typischerweise 
+im IT-Bereich tätig, während der ISB unmittelbar der Leitungs-
+ebene zuarbeitet.
+Informationssicherheitsmanagement (IS-Management)
+Die Planungs-, Lenkungs- und Kontrollaufgabe, die erforder-
+lich ist, um einen durchdachten und wirksamen Prozess zur 
+Herstellung von Informationssicherheit aufzubauen und kon-
+tinuierlich umzusetzen, wird als Informationssicherheitsma-
+nagement bezeichnet. Dabei handelt es sich um einen kontinu-
+ierlichen Prozess, dessen Strategien und Konzepte ständig auf 
+ihre Leistungsfähigkeit und Wirksamkeit zu überprüfen und bei 
+Bedarf fortzuschreiben sind.
+Aus den gleichen Gründen, die oben für die Begriffe „Infor-
+mationssicherheit“ und „IT-Sicherheit“ genannt sind, wird im 
+IT-Grundschutz noch häufig der Begriff „IT-Sicherheitsma-
+nagement“ verwendet.
+===== Seite 87 =====
+ANHANG
+87
+Informationstechnik (IT)
+Informationstechnik (IT) umfasst alle technischen Mittel, die 
+der Verarbeitung oder Übertragung von Informationen die-
+nen. Zur Verarbeitung von Informationen gehören Erhebung, 
+Erfassung, Nutzung, Speicherung, Übermittlung, programmge-
+steuerte Verarbeitung, interne Darstellung und die Ausgabe von 
+Informationen.
+Informationsverbund
+Unter einem Informationsverbund (oder auch IT-Verbund) 
+ist die Gesamtheit von infrastrukturellen, organisatorischen, 
+personellen und technischen Objekten zu verstehen, die der 
+Aufgabenerfüllung in einem bestimmten Anwendungsbereich 
+der Informationsverarbeitung dienen. Ein Informationsver-
+bund kann dabei als Ausprägung die gesamte Institution oder 
+auch einzelne Bereiche, die durch organisatorische Strukturen 
+(z. B. Abteilungen) oder gemeinsame Geschäftsprozesse bzw. 
+Anwendungen (z. B. Personalinformationssystem) gegliedert 
+sind, umfassen.
+Institutionen
+Mit dem Begriff Institutionen werden in diesem Dokument 
+Unternehmen, Behörden und sonstige öffentliche oder private 
+Organisationen bezeichnet.
+Integrität
+Integrität bezeichnet die Sicherstellung der Korrektheit (Unver-
+sehrtheit) von Daten und der korrekten Funktionsweise von 
+Systemen. Wenn der Begriff Integrität auf „Daten“ angewendet 
+wird, drückt er aus, dass die Daten vollständig und unverän-
+dert sind. In der Informationstechnik wird er in der Regel aber 
+weiter gefasst und auf „Informationen“ angewendet. Der Begriff 
+„Information“ wird dabei für „Daten“ verwendet, denen je nach 
+Zusammenhang bestimmte Attribute wie z. B. Autor oder Zeit-
+punkt der Erstellung zugeordnet werden können. Der Verlust 
+===== Seite 88 =====
+88
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+der Integrität von Informationen kann daher bedeuten, dass 
+diese unerlaubt verändert, Angaben zum Autor verfälscht oder 
+Zeitangaben zur Erstellung manipuliert wurden.
+IT-Grundschutz-Check
+Der Begriff bezeichnet im IT-Grundschutz die Überprüfung, 
+ob die nach IT-Grundschutz empfohlenen Anforderungen 
+in einer Institution bereits erfüllt sind und welche grund-
+legenden Sicherheitsanforderungen noch fehlen (früher: 
+Basis-Sicherheitscheck).
+IT-Grundschutz-Kompendium
+Die Bausteine des IT-Grundschutzes sind im IT-Grundschutz-
+Kompendium zusammengefasst. Es stellt den Nachfolger der 
+bis zur 15. Ergänzungslieferung verfügbaren IT-Grundschutz-
+Kataloge dar.
+IT-Sicherheitsbeauftragter (IT-SiBe)
+Person mit Fachkompetenz zur IT-Sicherheit, die für Aspekte 
+rund um die IT-Sicherheit zuständig ist, in enger Abstimmung 
+mit dem IT-Betrieb. Die Rolle des Verantwortlichen für Infor-
+mationssicherheit wird je nach Art und Ausrichtung der Insti-
+tution anders genannt. Im IT-Grundschutz wird die Bezeich-
+nung Informationssicherheitsbeauftragter (ISB) verwendet.
+Kern-Absicherung
+Im Fokus der Kern-Absicherung stehen zunächst die besonders 
+gefährdeten Geschäftsprozesse und Assets.
+Kronjuwelen
+Als Kronjuwelen werden solche Assets bezeichnet, deren Dieb-
+stahl, Zerstörung oder Kompromittierung einen existenzbedro-
+henden Schaden für die Institution bedeuten würde.
+===== Seite 89 =====
+ANHANG
+89
+Leitlinie zur Informationssicherheit
+Die Leitlinie ist ein zentrales Dokument für die Informations-
+sicherheit einer Institution. In ihr wird beschrieben, für welche 
+Zwecke, mit welchen Mitteln und mit welchen Strukturen 
+Informationssicherheit innerhalb der Institution hergestellt 
+werden soll. Sie beinhaltet die von der Institution angestrebten 
+Informationssicherheitsziele sowie die verfolgte Sicherheits-
+strategie. Die Sicherheitsleitlinie beschreibt damit auch über 
+die Sicherheitsziele das angestrebte Sicherheitsniveau in einer 
+Behörde oder einem Unternehmen.
+Risiko
+Risiko wird häufig definiert als die Kombination (also dem 
+Produkt) aus der Häufigkeit, mit der ein Schaden auftritt und 
+dem Ausmaß dieses Schadens. Der Schaden wird häufig als 
+Differenz zwischen einem geplanten und ungeplanten Ergebnis 
+dargestellt. Risiko ist eine spezielle Form der Unsicherheit oder 
+besser Unwägbarkeit.
+In der ISO 31000 wird Risiko auch als das Ergebnis von Unwäg-
+barkeiten auf Zielobjekte definiert. In diesem Sinne wird daher 
+auch von Konsequenzen statt von Schaden gesprochen, wenn 
+Ereignisse anders eintreten als erwartet. Hierbei kann eine 
+Konsequenz negativ (Schaden) oder positiv (Chance) sein. Die 
+obige Definition hat sich allerdings als gängiger in der Praxis 
+durchgesetzt.
+Im Unterschied zu „Gefährdung“ umfasst der Begriff „Risiko“ 
+bereits eine Bewertung, inwieweit ein bestimmtes Schadenssze-
+nario im jeweils vorliegenden Fall relevant ist. 
+Risikoanalyse 
+Als Risikoanalyse wird der komplette Prozess bezeichnet, um 
+Risiken zu beurteilen (identifizieren, einschätzen und bewer-
+ten) sowie zu behandeln. Risikoanalyse bezeichnet nach den 
+einschlägigen ISO-Normen ISO 31000 und ISO 27005 nur einen 
+===== Seite 90 =====
+90
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Schritt im Rahmen der Risikobeurteilung, die aus den folgen-
+den Schritten besteht:
+ » Identifikation von Risiken (Risk Identification)
+ » Analyse von Risiken (Risk Analysis)
+ » Evaluation oder Bewertung von Risiken (Risk Evaluation)
+Im deutschen Sprachgebrauch hat sich allerdings der Begriff 
+Risikoanalyse für den kompletten Prozess der Risikobeur-
+teilung und Risikobehandlung etabliert. Daher wird auch in 
+diesem Dokument weiter der Begriff Risikoanalyse für den 
+umfassenden Prozess benutzt.
+Risikomanagement 
+Als Risikomanagement werden alle Aktivitäten mit Bezug 
+auf die strategische und operative Behandlung von Risiken 
+bezeichnet, also alle Tätigkeiten, um Risiken für eine Institution 
+zu identifizieren, zu steuern und zu kontrollieren.
+Das strategische Risikomanagement beschreibt die wesentli-
+chen Rahmenbedingungen, wie die Behandlung von Risiken 
+innerhalb einer Institution, die Kultur zum Umgang mit Risi-
+ken und die Methodik ausgestaltet sind. Diese Grundsätze für 
+die Behandlung von Risiken innerhalb eines ISMS müssen mit 
+den Rahmenbedingungen des organisationsweiten Risikoma-
+nagements übereinstimmen bzw. aufeinander abgestimmt sein.
+Die Rahmenbedingungen des operativen Risikomanagements 
+umfassen den Regelprozess aus 
+ » Identifikation von Risiken,
+ » Einschätzung und Bewertung von Risiken,
+ » Behandlung von Risiken,
+ » Überwachung von Risiken und
+ » Risikokommunikation.
+Schaden/Konsequenz 
+Eine Abweichung von einem erwarteten Ergebnis führt zu 
+einer Konsequenz (häufig „Schaden“ genannt). Hierbei kann es 
+===== Seite 91 =====
+ANHANG
+91
+sich grundsätzlich um eine positive oder negative Abweichung 
+handeln. 
+Eine positive Konsequenz/positiver Schaden im Sinne der 
+Chancen- und Risikoanalyse wird auch als Chance bezeichnet. 
+Meistens werden in der Risikoanalyse jedoch die negativen 
+Konsequenzen, also die Schäden, betrachtet. 
+Das Ausmaß eines Schadens wird als Schadenshöhe definiert 
+und kann als bezifferbar oder nicht direkt bezifferbar betitelt 
+werden. Die bezifferbaren Schäden können in der Regel mit 
+direkten Aufwänden (z. B. finanzieller Art) dargestellt werden. 
+Zu den nicht direkt bezifferbaren Schäden gehören z. B. Ima-
+geschäden oder Opportunitätskosten. Bei diesen lässt sich die 
+tatsächliche Schadenshöhe häufig nur vermuten oder schätzen. 
+Alle Angaben werden in der Regel aufgrund von Erfahrungs- 
+oder Branchenwerten in Kategorien klassifiziert.
+Schwachstelle
+Eine Schwachstelle ist ein sicherheitsrelevanter Fehler eines IT-
+Systems oder einer Institution. Ursachen können in der Kon-
+zeption, den verwendeten Algorithmen, der Implementation, 
+der Konfiguration, dem Betrieb sowie der Organisation liegen. 
+Eine Schwachstelle kann dazu führen, dass eine Bedrohung 
+wirksam wird und eine Institution oder ein System geschädigt 
+wird. Durch eine Schwachstelle wird ein Objekt (eine Institu-
+tion oder ein System) anfällig für Bedrohungen.
+Sicherheitsanforderung
+Als Sicherheitsanforderungen werden Anforderungen für den 
+organisatorischen, personellen, infrastrukturellen und tech-
+nischen Bereich bezeichnet, deren Erfüllung zur Erhöhung 
+der Informationssicherheit notwendig ist bzw. dazu beiträgt. 
+Eine Sicherheitsanforderung beschreibt also, was getan werden 
+muss, um ein bestimmtes Niveau bezüglich der Informations-
+sicherheit zu erreichen. Wie die Anforderungen im konkreten 
+Fall erfüllt werden können, ist in entsprechenden Sicherheits-
+===== Seite 92 =====
+92
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+maßnahmen beschrieben (siehe dort). Im englischen Sprach-
+raum wird für Sicherheitsanforderungen häufig der Begriff 
+„control“ verwendet.
+Der IT-Grundschutz unterscheidet zwischen Basisanforderun-
+gen, Standardanforderungen und Anforderungen bei erhöhtem 
+Schutzbedarf. Basisanforderungen sind fundamental und stets 
+umzusetzen, sofern nicht gravierende Gründe dagegen spre-
+chen. Standardanforderungen sind für den normalen Schutzbe-
+darf grundsätzlich umzusetzen, sofern sie nicht durch mindes-
+tens gleichwertige Alternativen oder die bewusste Akzeptanz 
+des Restrisikos ersetzt werden. Anforderungen bei erhöhtem 
+Schutzbedarf sind exemplarische Vorschläge, was bei entspre-
+chendem Schutzbedarf zur Absicherung sinnvoll umzusetzen 
+ist.
+Sicherheitskonzept
+Ein Sicherheitskonzept dient zur Umsetzung der Sicherheits-
+strategie und beschreibt die geplante Vorgehensweise, um die 
+gesetzten Sicherheitsziele einer Institution zu erreichen. Das 
+Sicherheitskonzept ist das zentrale Dokument im Sicherheits-
+prozess eines Unternehmens bzw. einer Behörde. Jede konkrete 
+Sicherheitsmaßnahme muss sich letztlich darauf zurückführen 
+lassen.
+Sicherheitskonzeption
+Die Erstellung einer Sicherheitskonzeption ist eine der zen-
+tralen Aufgaben des Informationssicherheitsmanagements. 
+Aufbauend auf den Ergebnissen von Strukturanalyse und 
+Schutzbedarfsfeststellung werden hier die erforderlichen 
+Sicherheitsmaßnahmen identifiziert und im Sicherheitskon-
+zept dokumentiert.
+Sicherheitsmaßnahme
+Mit Sicherheitsmaßnahme (kurz Maßnahme) werden alle 
+Aktionen bezeichnet, die dazu dienen, um Sicherheitsrisiken 
+===== Seite 93 =====
+ANHANG
+93
+zu steuern und um diesen entgegenzuwirken. Dies schließt 
+sowohl organisatorische, als auch personelle, technische oder 
+infrastrukturelle Sicherheitsmaßnahmen ein. Sicherheitsmaß-
+nahmen dienen zur Erfüllung von Sicherheitsanforderungen 
+(siehe dort). Synonym werden auch die Begriffe Sicherheitsvor-
+kehrung oder Schutzmaßnahme benutzt. Als englische Über-
+setzung wurde „saf
+eguard“, „security measure“ oder „measure“ 
+gewählt.
+Sicherheitsrichtlinie
+In einer Sicherheitsrichtlinie werden Schutzziele und allge-
+meine Sicherheitsanforderung im Sinne offizieller Vorgaben 
+eines Unternehmens oder einer Behörde formuliert. Detail-
+lierte Sicherheitsmaßnahmen sind in einem umfangreicheren 
+Sicherheitskonzept enthalten.
+Standard-Absicherung
+Die Standard-Absicherung entspricht im Wesentlichen der 
+klassischen IT-Grundschutz-Vorgehensweise. Mit der Standard-
+Absicherung kann ein ISB die Assets und Prozesse einer Institu-
+tion sowohl umfassend als auch in der Tiefe absichern. 
+Standardanforderung
+Siehe Sicherheitsanforderung.
+Strukturanalyse
+In einer Strukturanalyse werden die erforderlichen Informatio-
+nen über den ausgewählten Informationsverbund, die Anwen-
+dungen, IT-Systeme, Netze, Räume, Gebäude und Verbindun-
+gen erfasst und so aufbereitet, dass sie die weiteren Schritte 
+gemäß IT-Grundschutz unterstützen.
+Verfügbarkeit
+Die Verfügbarkeit von Dienstleistungen, Funktionen eines 
+IT-Systems, IT-Anwendungen oder IT-Netzen oder auch von 
+===== Seite 94 =====
+94
+LEITFADEN ZUR BASIS-ABSICHERUNG NACH IT-GRUNDSCHUTZ
+Informationen ist vorhanden, wenn diese von den Anwendern 
+stets wie vorgesehen genutzt werden können.
+Vertraulichkeit
+Vertraulichkeit ist der Schutz vor unbefugter Preisgabe von 
+Informationen. Vertrauliche Daten und Informationen dürfen 
+ausschließlich Befugten in der zulässigen Weise zugänglich 
+sein.
+Wert
+Werte (engl. „assets“) sind alles, was wichtig für eine Institution 
+ist (Vermögen, Wissen, Gegenstände, Gesundheit).
+Zielobjekte
+Zielobjekte sind Teile des Informationsverbunds, denen im 
+Rahmen der Modellierung ein oder mehrere Bausteine aus dem 
+IT-Grundschutz-Kompendium zugeordnet werden können. 
+Zielobjekte können dabei physische Objekte sein, wie beispiels-
+weise Netze oder IT-Systeme. Häufig sind Zielobjekte jedoch 
+logische Objekte, wie beispielsweise Organisationseinheiten, 
+Anwendungen oder der gesamte Informationsverbund.
+===== Seite 95 =====
+Impressum
+Herausgeber
+Bundesamt für Sicherheit in der Informationstechnik – BSI
+Godesberger All
+ee 185–189
+53175 Bonn
+E-Mail: grundschutz@bsi.bund.de
+Internet: www.bsi.bund.de/grundschutz
+Bezugsquelle
+Bundesamt für Sicherheit in der Informationstechnik – BSI
+Godesberger Allee 185–189
+53175 Bonn
+E-Mail: bsi@bsi.bund.de
+Internet: www.bsi.bund.de
+Telefon +49 (0) 22899 9582-0
+Telefax +49 (0) 22899 9582-5400
+Stand
+Oktober 2017
+Druck
+Druck- und Verlagshaus Zarbock GmbH & Co. KG
+Sontraer Straße 6
+63086 Frankfurt am Main
+Internet: www.zarbock.de
+Texte und Redaktion
+Bundesamt für Sicherheit in der Informationstechnik – BSI
+Bildnachweis
+Titelbild: kran 77, Fotolia
+Artikelnummer
+BSI-Bro17/CK02
+Diese Broschüre ist Teil der Öffentlichkeitsarbeit des BSI; sie wird 
+kostenlos abgegeben und ist nicht zum Verkauf bestimmt.
+===== Seite 96 =====
+Leitfaden zur Basis-Absicherung 
+nach IT-Grundschutz
+In drei Schritten zur Informationssicherheit
+www.bsi.bund.de/grundschutz

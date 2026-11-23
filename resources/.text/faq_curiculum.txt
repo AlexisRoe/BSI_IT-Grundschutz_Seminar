@@ -1,0 +1,234 @@
+
+===== Seite 1 =====
+Fragen und Antworten zum 
+Schulungskonzept IT-Grundschutz-
+Berater 
+Inhalt 
+Welche möglichen Qualifikationsformen gibt es? .................................................................................. 2 
+An wen richtet sich die Qualifikation IT-Grundschutz-Praktiker? ......................................................... 2 
+An wen richtet sich die Qualifikation IT-Grundschutz-Berater? ............................................................ 2 
+Welche Voraussetzungen müssen erfüllt sein, um die Qualifikationen zu erlangen? ............................ 2 
+Wie lange sind die Qualifikationen gültig und was ist für die Aufrechterhaltung erforderlich? ............ 3 
+Wie viel Zeit darf zwischen der Schulung und der Prüfung liegen? ....................................................... 3 
+Welche Dokumentation und Inhalte liegen der jeweiligen IT-Grundschutz-Schulung und Prüfung zu 
+Grunde? ................................................................................................................................................... 3 
+Wann und wo finden die IT-Grundschutz-Praktiker-Prüfungen statt? ................................................. 4 
+Wann und wo finden die IT-Grundschutz-Berater-Prüfungen statt? .................................................... 4 
+Welchen Zeitumfang haben die Schulungen? ........................................................................................ 4 
+Wie sind die Vertiefungsstufen definiert? ............................................................................................... 4 
+Wie hoch ist der Praxisanteil in den jeweiligen Schulungen? ................................................................. 5 
+Sind die Vorgaben zum zeitlichen und inhaltlichen Schulungsumfang verpflichtend? ......................... 5 
+Wie kann ich mich als Schulungsanbieter für die Schulungen zum IT-Grundschutz-Praktiker 
+und/oder –Berater anmelden? ................................................................................................................ 5 
+Welche Voraussetzungen müssen erfüllt sein, damit meine Schulungen vom BSI anerkannt werden? 6 
+Welche Voraussetzungen und Qualifikationen müssen die Trainer/Dozenten erfüllen? ...................... 6 
+Wie kann mein Schulungsangebot auf der BSI-Webseite gelistet werden? .......................................... 6 
+An wen kann ich mich wenden, wenn ich weitere Fragen habe? ........................................................... 7 
+===== Seite 2 =====
+Version 1.1 vom 24.09.2024 
+Welche möglichen Qualifikationsformen gibt es? 
+Im Rahmen des Qualifizierungskonzepts für den IT-Grundschutz-Berater gibt zwei unterschiedliche 
+Qualifikationsformen: 
+ IT-Grundschutz-Praktiker und 
+ IT-Grundschutz-Berater. 
+Das BSI bietet darüber hinaus noch die Personenzertifizierung zum Auditteamleiter für ISO 27001-
+Audits auf der Basis von IT-Grundschutz an. Nähere Informationen hierzu finden sich auf den 
+Webseiten des BSI. (LINK: 
+https://www.bsi.bund.de/DE/Themen/ZertifizierungundAnerkennung/Personenzertifizierung/Audit
+teamleiter/auditteamleiter_node.html) 
+An wen richtet sich die Qualifikation IT-Grundschutz-
+Praktiker? 
+Die Qualifikation zum IT-Grundschutz-Praktiker richtet sich an alle Anwender und Anwenderinnen 
+sowie Interessierte rund um das Thema Informationssicherheit und IT-Grundschutz. Aber auch 
+Administratoren und Administratorinnen sowie Informationssicherheitsbeauftragte (ISB) können sich 
+mit der Schulung zum IT-Grundschutz-Praktiker fortbilden und Fachwissen aneignen. 
+Ein IT-Grundschutz-Praktiker ist in der Lage wesentlich bei der Implementierung und 
+kontinuierlichen Verbesserung eines ISMS nach IT-Grundschutz mitzuwirken. Ebenso kann ein IT-
+Grundschutz-Praktiker bei der Erstellung von Sicherheitskonzepten und Durchführung von 
+Risikoanalysen mitwirken. 
+An wen richtet sich die Qualifikation IT-Grundschutz-
+Berater? 
+Die Personenzertifizierung zum IT-Grundschutz-Berater richtet sich an Personen, die als Berater 
+andere Institutionen wie Behörden und Unternehmen zu Fragen rund um das Thema IT-Grundschutz 
+Informationssicherheit beraten. Hierbei kann es sich zum Beispiel um die Implementierung eines 
+ISMS auf Basis von IT-Grundschutz handeln oder um die Vorbereitung auf ein ISO 27001-Audit auf 
+Basis von IT-Grundschutz, aber auch um allgemeine Beratungsleistungen zum IT-Grundschutz oder 
+die Erstellung von Sicherheitskonzepten. 
+Welche Voraussetzungen müssen erfüllt sein, um die 
+Qualifikationen zu erlangen? 
+Um die Qualifikation zum IT-Grundschutz-Praktiker zu erlangen, ist 
+ eine Teilnahme an einer Basisschulung (zum IT-Grundschutz-Praktiker) empfehlenswert und 
+  eine Prüfung erfolgreich zu absolvieren. 
+Die Teilnahme an der Basisschulung ist nicht verpflichtend. Weisen Interessierte bereits eine 
+langjährige Berufs- und Praxiserfahrung sowie ein umfangreiches Fachwissen zum IT-Grundschutz 
+auf, können sie sich dazu entscheiden, auf eine Teilnahme an der Basisschulung zu verzichten. Sie 
+können auch ohne vorherige Schulung an der Prüfung zum IT-Grundschutz-Praktiker teilnehmen. 
+Um die Zertifizierung IT-Grundschutz-Berater zu erlangen, ist Folgendes nachzuweisen: 
+===== Seite 3 =====
+Version 1.1 vom 24.09.2024 
+ die Qualifikation zum IT-Grundschutz-Praktiker (bestandene Prüfung), 
+ die Teilnahmebestätigung an einer Aufbauschulung (zum IT-Grundschutz-Berater), 
+ umfangreiche Berufs- und Praxiserfahrungen (siehe Programm IT-Grundschutz-Berater) und 
+ die erfolgreiche Teilnahme an der IT-Grundschutz-Berater-Prüfung. 
+Sowohl die Basisschulung und Aufbauschulung als auch die Prüfung zum IT-Grundschutz-Praktiker 
+werden von verschiedenen Schulungsanbietern angeboten und durchgeführt. Das BSI hat eine Liste 
+mit entsprechenden Schulungsanbietern veröffentlicht. 
+Die Prüfung zum IT-Grundschutz-Berater wird ausschließlich vom BSI durchgeführt. 
+Wie lange sind die Qualifikationen gültig und was ist für die 
+Aufrechterhaltung erforderlich? 
+Die Qualifizierung zum IT-Grundschutz-Praktiker (erfolgreiche Teilnahme an der Prüfung zum IT-
+Grundschutz-Praktiker) hat keine Gültigkeitsdauer und gilt damit zeitlich unbeschränkt. 
+IT-Grundschutz-Praktiker sind angehalten, sich über den aktuellen Stand zum IT-Grundschutz zu 
+informieren. Hier eignet sich unter anderem die regelmäßige Teilnahme an IT-Grundschutz-Tagen. 
+Die Zertifizierung zum IT-Grundschutz-Berater hat eine Gültigkeitsdauer von 3 Jahren. Wenn die 
+Zertifizierung aufrecht erhalten bleiben soll, muss ein Antrag auf Re-Zertifizierung gestellt werden. 
+Die formalen Voraussetzungen für eine Re-Zertifizierung enthält das Programm zum IT-
+Grundschutz-Berater. 
+Wie viel Zeit darf zwischen der Schulung und der Prüfung 
+liegen? 
+Unabhängig davon, ob an der Basis- oder Aufbauschulung teilgenommen wurde, gibt es keine Frist 
+für die Teilnahme an der Prüfung zum IT-Grundschutz-Praktiker oder -Berater. Es obliegt jedem 
+bzw. jeder selber, ob und wann an der Prüfung zum IT-Grundschutz-Praktiker teilgenommen oder 
+ein Antrag auf Zertifizierung zum IT-Grundschutz-Berater beim BSI gestellt wird. 
+Welche Dokumentation und Inhalte liegen der jeweiligen 
+IT-Grundschutz-Schulung und Prüfung zu Grunde? 
+Die Inhalte der Basis- und Aufbauschulung ergeben sich u.a. aus folgenden Publikationen: 
+ BSI-Standard 200-1, 
+ BSI-Standard 200-2, 
+ BSI-Standard 200-3, 
+ BSI-Standard 200-4, 
+ IT-Grundschutz-Kompendium, 
+ Leitfaden zur Basis-Absicherung nach IT-Grundschutz, 
+ Anleitung zur Erstellung eines IT-Grundschutz-Profils (Strukturbeschreibung), 
+ Prüfgrundlage für Zertifizierungen nach ISO 27001 auf der Basis von IT-Grundschutz; 
+IT-Grundschutz-Zertifizierungsschema, 
+ Zertifizierung nach ISO 27001 auf der Basis des IT-Grundschutz-Auditierungsschemas, 
+ Hinweise zur Bereitstellung der Referenzdokumente im Rahmen der Zertifizierung nach ISO 
+27001 auf der Basis von IT-Grundschutz, 
+===== Seite 4 =====
+Version 1.1 vom 24.09.2024 
+ Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz – Outsourcing; 
+IT-Grundschutz-Methodik im Kontext von Outsourcing. 
+Die oben genannten veröffentlichten Dokumente eignen sich für die Vorbereitung auf die IT-
+Grundschutz-Praktiker und für die IT-Grundschutz-Berater-Prüfung. 
+Wann und wo finden die IT-Grundschutz-Praktiker-
+Prüfungen statt? 
+Die Prüfung zum IT-Grundschutz-Praktiker wird ausschließlich von entsprechenden 
+Schulungsanbietern angeboten und durchgeführt. 
+In den meisten Fällen findet die Prüfung im Anschluss an die Schulung zum IT-Grundschutz-
+Praktiker bei dem jeweiligen Schulungsanbieter statt. Da die Prüfung auch ohne vorherige Teilnahme 
+an der Schulung abgelegt werden kann, werden Prüfungen auch unabhängig von Schulungen 
+angeboten. 
+Einige Schulungsanbieter bieten die Prüfung auch online an. 
+Wann und wo finden die IT-Grundschutz-Berater-
+Prüfungen statt? 
+Die Prüfung zum IT-Grundschutz-Berater wird ausschließlich vom BSI angeboten und durchgeführt. 
+Erfüllen genügend Antragstellende alle Voraussetzungen, setzt das BSI einen Prüfungstermin fest 
+und informiert die Antragstellenden über den Prüfungszeitpunkt. Pro Prüfung werden bis zu 8 
+Personen eingeladen. 
+Kann der Prüfungstermin, beispielsweise aus gesundheitlichen Gründen nicht wahrgenommen 
+werden, ist die Zertifizierungsstelle unverzüglich darüber zu informieren, dass die Prüfung nicht 
+angetreten werden kann. Der Antragsteller, die Antragstellerin wird dann zum nächsten 
+Prüfungstermin eingeladen. Die Prüfungen werden nicht online angeboten. 
+Welchen Zeitumfang haben die Schulungen? 
+Die Schulungen müssen mindestens folgenden Zeitumfang zzgl. Pausen haben: 
+ IT-Grundschutz-Basisschulung: 24 UE 
+ IT-Grundschutz-Aufbauschulung: 16 UE 
+Eine Unterrichtseinheit (UE) entspricht 60 Minuten ohne Pausen. Die Anzahl der UE pro 
+Schulungstag wird vom Schulungsanbieter festgelegt. Die vorgegebene Gesamtzahl an UE ist vom 
+Schulungsanbieter in jedem Fall einzuhalten. 
+Wie sind die Vertiefungsstufen definiert? 
+Je nach Qualifikationsform unterschiedet das BSI zwischen drei Vertiefungsstufen: 
+I. „Kenntnisse, die verstanden sind und erläutert werden können“ (Reproduktion) 
+II. „Kenntnisse und Fertigkeiten, die auf eigene Prozesse und Komponenten angewendet und 
+umgesetzt werden können“ (Transfer) 
+III. „Analysen und Methoden, die auf andere Institutionen, Prozesse und Komponenten 
+angewendet und bewertet werden können“ (Reflexion) 
+===== Seite 5 =====
+Version 1.1 vom 24.09.2024 
+Im Curriculum ist für jedes Thema die angestrebte Vertiefungsstufe festgelegt. 
+Wie hoch ist der Praxisanteil in den jeweiligen Schulungen? 
+Das Verhältnis zwischen theoretischem und praktischem Anteil soll wie folgt aufgeteilt sein: 
+ IT-Grundschutz-Basisschulung: 50% Theorie und 50% Praxis 
+ IT-Grundschutz-Aufbauschulung: 25% Theorie und 75% Praxis 
+Jede theoretische Unterrichtseinheit sollte mindestens 1/3 Praxisanteil enthalten. 
+Voraussetzung für den Besuch der IT-Grundschutz-Aufbauschulung ist die bestandene Prüfung zum 
+IT-Grundschutz-Praktiker. 
+Die IT-Grundschutz-Aufbauschulung setzt Erfahrungen in der praktischen Anwendung des IT-
+Grundschutzes voraus. Die Schulung sollte mehr praxisbezogene Anteile (75%) enthalten und die 
+theoretischen Grundlagen im Überblick auffrischen. 
+Sind die Vorgaben zum zeitlichen und inhaltlichen 
+Schulungsumfang verpflichtend? 
+Die Inhalte des Curriculums sind als Mindestvorgaben zu verstehen. 
+Dem Schulungsanbieter steht es frei, zusätzliche Themen wie z. B. die Anwendung eines Tools oder 
+Datenschutzaspekte aufzunehmen oder Themenfelder intensiver zu vermitteln. Für die Teilnehmer 
+und Teilnehmerinnen muss dabei transparent sein, welche Themen prüfungsrelevant sind und wobei 
+es sich um zusätzliche Inhalte handelt. 
+Das Curriculum ist keine Agenda. Die Anbieter der Schulungen können die Reihenfolge der 
+Inhaltsvermittlung frei festlegen. Die Inhalte sollten aber immer mit den im Curriculum festgelegten 
+Vertiefungsstufen und Zeitanteilen vermittelt werden. 
+Die Vorgaben zum zeitlichen Umfang von 24 (Basisschulung) und 16 (Aufbauschulung) Zeitstunden 
+zzgl. Pausen können vom Schulungsanbieter auf beliebig viele Tage verteilt und erhöht werden. 
+Wie kann ich mich als Schulungsanbieter für die Schulungen 
+zum IT-Grundschutz-Praktiker und/oder –Berater 
+anmelden? 
+Für die Anmeldung als Schulungsanbieter für die Schulung zum IT-Grundschutz-Praktiker und/oder 
+–Berater ist die entsprechende formale Selbsterklärung ausgefüllt und unterschrieben an das BSI 
+Bundesamt für Sicherheit in der Informationstechnik 
+- S13 – IT-Grundschutz - 
+Godesberger Allee 87 
+53175 Bonn 
+oder 
+it-grundschutz@bsi.bund.de 
+zu übersenden. 
+===== Seite 6 =====
+Version 1.1 vom 24.09.2024 
+Die Schulungsanbieter verpflichten sich durch die Selbsterklärung, dass sie erfahrene Trainer und 
+Trainerinnen einsetzen, die über die nötige fachliche Qualifikation verfügen, d. h. konkret: 
+-  die nötige praktische Erfahrung und das nötige Know-how im Bereich 
+Informationssicherheit und IT-Grundschutz besitzen, und 
+- gemäß den Qualifizierungsprozessen und dem Curriculum des BSI Schulungen bzw. eine 
+Prüfung zum IT-Grundschutz-Praktiker anbieten. 
+Welche Voraussetzungen müssen erfüllt sein, damit meine 
+Schulungen vom BSI anerkannt werden? 
+Damit die Basis- und Aufbauschulung aber auch die Prüfung zum IT-Grundschutz-Praktiker für die 
+Personenzertifizierung anerkannt werden kann, muss sich der jeweilige Schulungsanbieter durch die 
+Abgabe der Selbsterklärung dazu verpflichten, sich an die Schulungs- und Prüfungsvorgaben des BSI 
+zu halten. 
+Welche Voraussetzungen und Qualifikationen müssen die 
+Trainer/Dozenten erfüllen? 
+Alle Schulungsanbieter, die einen kompetenten Trainer oder Trainerin einsetzen, können Schulungen 
+zum IT-Grundschutz-Praktiker bzw. zum IT-Grundschutz-Berater anbieten. Die IT-Grundschutz-
+Trainer/Dozenten müssen in folgenden Bereichen ihre Kompetenz gegenüber dem 
+Schulungsanbieter und dem BSI nachweisen können: 
+1. umfangreiche Kompetenz im Bereich Informationssicherheit (Nachweise über den Besuch 
+einschlägiger Schulungen oder Zertifikate), 
+2. ausreichend praktische und theoretische Erfahrung im IT-Grundschutz (mehrjährige 
+Erfahrung von mindestens 5 Jahren bei der Umsetzung von oder Beratung zur Umsetzung 
+des IT-Grundschutzes), 
+3. kooperative und kommunikative Geschicklichkeit, 
+4. didaktische Erfahrung sowie 
+5. umfangreiche Vortrags- bzw. Schulungserfahrung (ggf. durch entsprechende 
+Teilnahmebescheinigung oder Bestätigung durch Auftraggeber). 
+Der Kompetenzbereich „praktische und theoretische Erfahrung im IT-Grundschutz“ kann 
+beispielsweise durch eine Personenzertifizierung zum IT-Grundschutz-Berater, IS-Revisor oder ISO 
+27001-Auditor auf der Basis von IT-Grundschutz nachgewiesen werden. 
+Auf Nachfrage muss der Schulungsanbieter dem BSI die entsprechenden Nachweise über die 
+Qualifizierung des Trainers, der Trainerin vorlegen können. 
+Wie kann mein Schulungsangebot auf der BSI-Webseite 
+gelistet werden? 
+Für die Veröffentlichung eines Schulungsangebotes muss der Schulungsanbieter eine formale 
+Selbsterklärung gegenüber dem BSI abgeben sowie explizit den Wunsch nach Aufnahme in die Liste 
+der Schulungsanbieter äußern. 
+Die entsprechenden Links sind dem BSI zur Verfügung zu stellen. Hierbei ist darauf zu achten, dass 
+die Links nicht auf Übersichtsseiten verweisen dürfen, sondern ausschließlich auf das konkrete 
+Schulungsangebot. 
+===== Seite 7 =====
+Version 1.1 vom 24.09.2024 
+An wen kann ich mich wenden, wenn ich weitere Fragen 
+habe? 
+Weitere Fragen können an das Postfach 
+It-grundschutz@bsi.bund.de gestellt werden. 
+Bei Fragen zum Zertifizierungsverfahren sowie zur IT-Grundschutz-Berater-Prüfung wenden Sie sich 
+bitte an folgendes Postfach: 
+personenzertifizierung@bsi.bund.de 

@@ -22,7 +22,12 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Sicherheit ist kein unveränderbarer Zustand.",
-      source: { doc: "200-1", section: "Kap. 3.2.1", page: 17 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 3.2.1",
+        page: 17,
+        quote: "Jede Institution ist ständigen Veränderungen unterworfen.",
+      },
     },
     {
       id: "p10-02",
@@ -37,7 +42,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Phasen: Planung und Konzeption, Beschaffung, Umsetzung, Betrieb, Aussonderung, Notfallvorsorge.",
-      source: { doc: "200-1", section: "Kap. 3.2.1", page: 18 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 3.2.1",
+        page: 18,
+        quote: "Planung und Konzeption, Beschaffung (falls erforderlich), Umsetzung, Betrieb",
+      },
     },
     {
       id: "p10-03",
@@ -52,7 +62,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Kleinere Mängel werden umgehend beseitigt; bei grundlegenden Änderungen beginnt die Planung neu.",
-      source: { doc: "200-1", section: "Kap. 3.2.2", page: 18 },
+      source: {
+        doc: "200-1",
+        section: "Kap. 3.2.2",
+        page: 18,
+        quote:
+          "Bei grundlegenden oder umfangreichen Veränderungen ist natürlich wieder mit der Planungsphase zu beginnen.",
+      },
     },
     {
       id: "p10-04",
@@ -66,7 +82,13 @@ export const pool: TopicQuestions = {
         { text: "Grundsätzlich nie", correct: false },
       ],
       explanation: "Bei Bedarf muss auch zwischen den Routineterminen getagt werden.",
-      source: { doc: "200-2", section: "Kap. 10", page: 164 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10",
+        page: 164,
+        quote:
+          "bei der Häufung von Sicherheitsvorfällen oder gravierenden Änderungen der Rahmenbedingungen",
+      },
     },
     {
       id: "p10-05",
@@ -80,7 +102,13 @@ export const pool: TopicQuestions = {
         { text: "Zertifizierung nach festgelegten Sicherheitskriterien", correct: true },
       ],
       explanation: "Alle genannten Methoden werden ausdrücklich aufgeführt.",
-      source: { doc: "200-2", section: "Kap. 10.1", page: 164 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1",
+        page: 164,
+        quote:
+          "Beispiele für Methoden können sein: Definition, Dokumentation und Auswertung von Kennzahlen",
+      },
     },
     {
       id: "p10-06",
@@ -98,7 +126,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Kennzahlen unterstützen Steuerung und Kommunikation, ersetzen aber keine methodischen Schritte.",
-      source: { doc: "200-2", section: "Kap. 10.1.1", page: 165 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.1",
+        page: 165,
+        quote:
+          "Kennzahlen werden in der Informationssicherheit eingesetzt, um den IS-Prozess bzw. Teilaspekte davon messbar zu machen.",
+      },
     },
     {
       id: "p10-07",
@@ -112,7 +146,12 @@ export const pool: TopicQuestions = {
         { text: "Reifegrad 3", correct: false },
       ],
       explanation: "0 = nichts geplant; 1 = geplant, nicht etabliert; 2 = teilweise etabliert.",
-      source: { doc: "200-2", section: "Kap. 10.1.2", page: 166 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.2",
+        page: 166,
+        quote: "ISMS ist geplant, aber nicht etabliert.",
+      },
     },
     {
       id: "p10-08",
@@ -126,7 +165,12 @@ export const pool: TopicQuestions = {
         { text: "Automatische Erteilung eines ISO 27001-Zertifikats", correct: false },
       ],
       explanation: "Ein Reifegrad ersetzt keine Zertifizierung.",
-      source: { doc: "200-2", section: "Kap. 10.1.2", page: 166 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.2",
+        page: 167,
+        quote: "Erkennung von Verbesserungs- und Weiterentwicklungspotenzialen",
+      },
     },
     {
       id: "p10-09",
@@ -144,20 +188,26 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Für den Cyber-Sicherheits-Check gibt es keine obligatorischen Voraussetzungen an Dokumentation oder Umsetzungsstatus.",
-      source: { doc: "200-2", section: "Kap. 10.1.3", page: 167 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.3",
+        page: 168,
+        quote:
+          "Der Cyber-Sicherheits-Check richtet sich an Institutionen, die sich bislang weniger intensiv mit dem Thema der Cyber-Sicherheit beschäftigt haben.",
+      },
     },
     {
       id: "p10-10",
       topic: 10,
       level: "basis",
-      stem: "Was ist laut BSI-Standard 200-2 nach Einführung neuer Sicherheitsmaßnahmen durch den ISB zu prüfen?",
+      stem: "Was gehört laut BSI-Standard 200-2 zur Überprüfung der Umsetzung von Sicherheitsmaßnahmen?",
       options: [
         {
           text: "Ob die notwendige Akzeptanz seitens der Mitarbeitenden vorhanden ist",
           correct: true,
         },
         {
-          text: "Ursachen fehlender Akzeptanz sind herauszuarbeiten und abzustellen.",
+          text: "Welche Ursachen eine fehlende Akzeptanz hat, damit sie abgestellt werden können",
           correct: true,
         },
         { text: "Ob die Maßnahmen gemäß Realisierungsplan umgesetzt wurden", correct: true },
@@ -166,8 +216,15 @@ export const pool: TopicQuestions = {
           correct: false,
         },
       ],
-      explanation: "Akzeptanz ist entscheidend für die Wirksamkeit.",
-      source: { doc: "200-2", section: "Kap. 10.1.3", page: 167 },
+      explanation:
+        "Geprüft wird, ob der Realisierungsplan eingehalten wurde und ob die Maßnahmen akzeptiert werden; Akzeptanz ist entscheidend für die Wirksamkeit.",
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.3",
+        page: 167,
+        quote:
+          "ob die notwendige Akzeptanz seitens der Mitarbeiter vorhanden ist. Die Ursachen fehlender Akzeptanz sind herauszuarbeiten und abzustellen.",
+      },
     },
     {
       id: "p10-11",
@@ -181,13 +238,18 @@ export const pool: TopicQuestions = {
         { text: "Sie sind ausschließlich dem BSI vorzulegen.", correct: false },
       ],
       explanation: "Prüfergebnisse sind im Allgemeinen vertraulich.",
-      source: { doc: "200-2", section: "Kap. 10.3", page: 170 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.3",
+        page: 170,
+        quote: "Prüfergebnisse und -berichte sind im Allgemeinen als vertraulich zu betrachten",
+      },
     },
     {
       id: "p10-12",
       topic: 10,
       level: "experte",
-      stem: "Ein kleines Unternehmen mit 15 Beschäftigten möchte den Status seiner Informationssicherheit ohne großen Aufwand überprüfen. Was ist laut BSI-Standard 200-2 bereits ausreichend für einen Überblick?",
+      stem: "Ein kleines Unternehmen mit 15 Beschäftigten möchte den Status seiner Informationssicherheit ohne großen Aufwand überprüfen. Welche Mittel nennt BSI-Standard 200-2 dafür?",
       options: [
         { text: "Durchsicht vorhandener Dokumentationen auf Aktualität", correct: true },
         {
@@ -199,7 +261,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "200-2 zeigt, dass die Anforderungen auch für kleine Institutionen gut umsetzbar sind.",
-      source: { doc: "200-2", section: "Kap. 10.1", page: 164 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1",
+        page: 165,
+        quote:
+          "kann in kleinen Institutionen bereits ein ausreichender Überblick über den Status der Informationssicherheit gewonnen werden",
+      },
     },
     {
       id: "p10-13",
@@ -222,7 +290,13 @@ export const pool: TopicQuestions = {
         { text: "Das Störungsmanagement ist für das ISMS ohne Bedeutung.", correct: false },
       ],
       explanation: "Der Reifegrad der Informationssicherheit ist keine selbstständige Größe.",
-      source: { doc: "200-2", section: "Kap. 10.1.2", page: 166 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.2",
+        page: 166,
+        quote:
+          "Wenn kein Störungsmanagement vorhanden ist, werden Sicherheitsvorfälle nicht erkannt bzw. nicht an die korrekte Stelle gemeldet.",
+      },
     },
     {
       id: "p10-14",
@@ -246,7 +320,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Betriebliche und organisatorische Änderungen müssen schon in der Planungsphase berücksichtigt werden.",
-      source: { doc: "200-2", section: "Kap. 10.2", page: 168 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.2",
+        page: 168,
+        quote:
+          "müssen schon bei ihrer Planungsphase mit in die Sicherheitskonzeption einbezogen werden",
+      },
     },
     {
       id: "p10-15",
@@ -267,7 +347,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Die Richtlinie regelt insbesondere interne Audits und den Weg der Ergebnisse in den Änderungsprozess.",
-      source: { doc: "200-2", section: "Kap. 10.3", page: 170 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.3",
+        page: 170,
+        quote:
+          "wie interne Audits im Bereich der Informationssicherheit durchzuführen sind und wie die Ergebnisse in den Änderungsprozess einfließen",
+      },
     },
   ],
 };

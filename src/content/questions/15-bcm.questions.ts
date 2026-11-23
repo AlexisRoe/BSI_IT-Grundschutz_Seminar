@@ -22,7 +22,13 @@ export const pool: TopicQuestions = {
         { text: "Wenn er im Jahresabschluss eine Rolle spielt", correct: false },
       ],
       explanation: "Wichtige Prozesse sind nicht automatisch zeitkritisch.",
-      source: { doc: "200-4", section: "Kap. 2.1", page: 19 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 2.1",
+        page: 19,
+        quote:
+          "Als zeitkritisch gelten alle Geschäftsprozesse, deren Ausfall innerhalb eines zuvor",
+      },
     },
     {
       id: "p15-02",
@@ -42,7 +48,12 @@ export const pool: TopicQuestions = {
         { text: "Sie wird zur Bewältigung von Notfällen und Krisen eingesetzt.", correct: true },
       ],
       explanation: "Die ständige Organisationsform ist die AAO.",
-      source: { doc: "200-4", section: "Kap. 2.1", page: 20 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 2.1",
+        page: 20,
+        quote: "Die BAO ist eine zeitlich begrenzte Organisationsform, die auf außergewöhnliche",
+      },
     },
     {
       id: "p15-03",
@@ -66,7 +77,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Störungen sind nicht Betrachtungsgegenstand von 200-4; dort geht es um Notfälle und Krisen.",
-      source: { doc: "200-4", section: "Kap. 2.1", page: 20 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 2.1",
+        page: 20,
+        quote:
+          "Eine Störung ist eine Situation, in der Prozesse oder Ressourcen nicht wie vorgesehen zur Verfügung stehen",
+      },
     },
     {
       id: "p15-04",
@@ -89,7 +106,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Vollständige Absicherung bietet nur das Standard-BCMS.",
-      source: { doc: "200-4", section: "Kap. 2.6.1", page: 43 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 2.6.1",
+        page: 43,
+        quote:
+          "Das Reaktiv-BCMS ist besonders für Institutionen geeignet, die sich möglichst schnell in die Lage versetzen möchten",
+      },
     },
     {
       id: "p15-05",
@@ -106,7 +129,13 @@ export const pool: TopicQuestions = {
         { text: "Die Dauer einer Notfallübung", correct: false },
       ],
       explanation: "Die MTPD wird über das Schadenspotenzial je Geschäftsprozess ermittelt.",
-      source: { doc: "200-4", section: "Kap. 7", page: 159 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 7",
+        page: 159,
+        quote:
+          "legt fest, wie lange ein Geschäftsprozess maximal ausfallen darf, bevor nicht tolerierbare Auswirkungen für die Institution auftreten",
+      },
     },
     {
       id: "p15-06",
@@ -123,8 +152,12 @@ export const pool: TopicQuestions = {
         { text: "Verzicht auf jede Dokumentation im Notfall", correct: false },
       ],
       explanation:
-        "DER.4 hat keine Basis-Anforderungen; Tests und Übungen sind eine Anforderung bei erhöhtem Schutzbedarf.",
-      source: { doc: "kompendium", section: "DER.4, Kap. 3" },
+        "DER.4 hat keine Basis-Anforderungen. A1 verlangt bereits Tests des Notfallhandbuchs; die eigenständige Anforderung A10 Tests und Notfallübungen gilt bei erhöhtem Schutzbedarf.",
+      source: {
+        doc: "kompendium",
+        section: "DER.4, Kap. 3",
+        quote: "DER.4.A1 Erstellung eines Notfallhandbuchs (S)",
+      },
     },
     {
       id: "p15-07",
@@ -139,7 +172,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Nutzen mehrere Geschäftsprozesse dieselbe Ressource, muss die kleinste RTO gewählt werden.",
-      source: { doc: "200-4", section: "Kap. 7.2 Durchführung der BIA", page: 189 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 7.2 Durchführung der BIA",
+        page: 188,
+        quote:
+          "dieselbe(n) Ressourcen(cluster) zurückgreifen, muss die kleinste RTO für diese Ressource gewählt werden",
+      },
     },
     {
       id: "p15-08",
@@ -160,7 +199,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Gesetzliche oder regulatorische Anforderungen sind ein Kriterium gegen den Einstieg über das Reaktiv-BCMS.",
-      source: { doc: "200-4", section: "Kap. 2.6.1", page: 44 },
+      source: {
+        doc: "200-4",
+        section: "Kap. 2.6.1",
+        page: 44,
+        quote:
+          "Die im Folgenden aufgeführten Kriterien behandeln besondere Situationen, in denen eher die beiden weiteren Stufen",
+      },
     },
   ],
 };

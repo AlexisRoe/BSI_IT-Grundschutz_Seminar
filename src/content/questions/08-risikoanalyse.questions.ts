@@ -23,7 +23,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Für normalen Schutzbedarf reichen die Basis- und Standard-Anforderungen in der Regel aus.",
-      source: { doc: "200-2", section: "Kap. 8.2.9", page: 130 },
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.9",
+        page: 130,
+        quote:
+          "Außer bei hohem oder sehr hohem Schutzbedarf muss eine Risikoanalyse auch dann durchgeführt werden",
+      },
     },
     {
       id: "p08-02",
@@ -40,7 +46,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Es gibt 47 elementare Gefährdungen G 0.1 bis G 0.47.",
-      source: { doc: "200-3", section: "Kap. 3", page: 12 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 3",
+        page: 13,
+        quote:
+          "in 47 elementare Gefährdungen überführt, die im IT-Grundschutz-Kompendium aufgelistet sind",
+      },
     },
     {
       id: "p08-03",
@@ -55,7 +67,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Indirekte Auswirkungen auf Vertraulichkeit oder Integrität sind denkbar, direkt betroffen ist nur die Verfügbarkeit.",
-      source: { doc: "200-3", section: "Kap. 3", page: 13 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 3",
+        page: 13,
+        quote:
+          "So wird z. B. zu G 0.1 Feuer als einziger betroffener Grundwert „Verfügbarkeit“ genannt",
+      },
     },
     {
       id: "p08-04",
@@ -70,7 +88,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "G 0.40 betrifft nur die Verfügbarkeit; G 0.42 betrifft Vertraulichkeit und Integrität.",
-      source: { doc: "200-3", section: "Kap. 3, Tabelle 1", page: 14 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 3, Tabelle 1",
+        page: 14,
+        quote: "G 0.19 Offenlegung schützenswerter Informationen C",
+      },
     },
     {
       id: "p08-05",
@@ -93,7 +116,13 @@ export const pool: TopicQuestions = {
         },
       ],
       explanation: "Alle genannten Punkte gehören zu den Inhalten der Richtlinie.",
-      source: { doc: "200-3", section: "Kap. 2", page: 10 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 2",
+        page: 10,
+        quote:
+          "Unter welchen Voraussetzungen muss in jedem Fall eine Risikoanalyse durchgeführt werden?",
+      },
     },
     {
       id: "p08-06",
@@ -111,7 +140,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Das Brainstorming sollte von einem Experten für Informationssicherheit moderiert werden.",
-      source: { doc: "200-3", section: "Kap. 4.2", page: 23 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 4.2",
+        page: 24,
+        quote:
+          "Es sollten Informationssicherheitsbeauftragte, Fachverantwortliche, Administratoren und Benutzer des jeweils betrachteten Zielobjekts und gegebenenfalls auch externe Sachverständige beteiligt werden",
+      },
     },
     {
       id: "p08-07",
@@ -138,7 +173,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Im dynamischen Umfeld der Informationssicherheit fehlen meist ausreichende Erfahrungswerte.",
-      source: { doc: "200-3", section: "Kap. 5.1", page: 26 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 5.1",
+        page: 26,
+        quote:
+          "Die quantitative Risikobetrachtung ist sehr aufwändig und setzt umfangreiches statistisches Datenmaterial voraus",
+      },
     },
     {
       id: "p08-08",
@@ -152,7 +193,12 @@ export const pool: TopicQuestions = {
         { text: "Beliebig viele, je feiner desto besser", correct: false },
       ],
       explanation: "Pro Dimension sollten nicht mehr als fünf Kategorien gewählt werden.",
-      source: { doc: "200-3", section: "Kap. 5.1", page: 26 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 5.1",
+        page: 26,
+        quote: "Pro Dimension sollten dabei nicht mehr als fünf Kategorien gewählt werden",
+      },
     },
     {
       id: "p08-09",
@@ -170,7 +216,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "selten ≤ alle 5 Jahre; mittel 5 Jahre–1 Jahr; häufig 1 Jahr–1 Monat; sehr häufig mehrmals im Monat.",
-      source: { doc: "200-3", section: "Kap. 5.1, Tabelle 8", page: 27 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 5.1, Tabelle 8",
+        page: 27,
+        quote: "häufig Ereignis tritt einmal im Jahr bis einmal pro Monat ein",
+      },
     },
     {
       id: "p08-10",
@@ -197,7 +248,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Eine generelle Empfehlung zur Behandlungsstrategie gibt das BSI nicht; sie hängt vom Risikoappetit ab.",
-      source: { doc: "200-3", section: "Kap. 5.2", page: 28 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 5.2",
+        page: 27,
+        quote:
+          "Sie dient lediglich dazu, die nachfolgenden Beispiele zu veranschaulichen, und sollte auf die eigenen Bedürfnisse angepasst werden",
+      },
     },
     {
       id: "p08-11",
@@ -220,7 +277,13 @@ export const pool: TopicQuestions = {
         { text: "Die möglichen Schäden sind rein finanzieller Art.", correct: false },
       ],
       explanation: "Rein finanzielle Schäden sind ein typischer Grund für den Risikotransfer.",
-      source: { doc: "200-3", section: "Kap. 6.1", page: 33 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 6.1",
+        page: 33,
+        quote:
+          "Die Umstrukturierung bietet sich ohnehin aus anderen Gründen an, z. B. zur Kostensenkung",
+      },
     },
     {
       id: "p08-12",
@@ -247,7 +310,12 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "H-Anforderungen sind empfehlenswerte Beispiele, aber auch bei hohen Sicherheitsanforderungen nicht automatisch verbindlich.",
-      source: { doc: "200-3", section: "Kap. 6.1, Hinweis", page: 35 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 6.1, Hinweis",
+        page: 35,
+        quote: "auch bei hohen Sicherheitsanforderungen nicht automatisch verbindlich werden",
+      },
     },
     {
       id: "p08-13",
@@ -274,7 +342,13 @@ export const pool: TopicQuestions = {
       ],
       explanation:
         "Transfer und Vermeidung verändern den Informationsverbund; die Konzeption ist ab der Strukturanalyse zu aktualisieren.",
-      source: { doc: "200-3", section: "Kap. 6.1", page: 34 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 6.1",
+        page: 34,
+        quote:
+          "Beim Risikotransfer ist die sachgerechte Vertragsgestaltung einer der wichtigsten Aspekte",
+      },
     },
     {
       id: "p08-14",
@@ -288,7 +362,13 @@ export const pool: TopicQuestions = {
         { text: "Angemessenheit der Sicherheitsmaßnahmen", correct: true },
       ],
       explanation: "Alle vier Kriterien werden in Kapitel 7 des BSI-Standards 200-3 genannt.",
-      source: { doc: "200-3", section: "Kap. 7", page: 39 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 7",
+        page: 39,
+        quote:
+          "die Sicherheitsmaßnahmen für jedes Zielobjekt anhand folgender Kriterien überprüft werden",
+      },
     },
     {
       id: "p08-15",
@@ -305,7 +385,13 @@ export const pool: TopicQuestions = {
         { text: "Sie werden ohne Zustimmung der Leitung transferiert.", correct: false },
       ],
       explanation: "Risiken unter Beobachtung werden dokumentiert, z. B. in einem Risikoregister.",
-      source: { doc: "200-3", section: "Kap. 6.2", page: 35 },
+      source: {
+        doc: "200-3",
+        section: "Kap. 6.2",
+        page: 35,
+        quote:
+          "Diese ergänzenden Sicherheitsmaßnahmen sind zu dokumentieren und vorzumerken. Die Risiken werden beobachtet",
+      },
     },
   ],
 };
