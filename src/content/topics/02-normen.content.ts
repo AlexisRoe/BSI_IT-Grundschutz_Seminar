@@ -206,8 +206,8 @@ export const topic: TopicContent = {
         },
         {
           type: "praxis",
-          title: "Vom Kompendium zu Grundschutz++",
-          text: "Das IT-Grundschutz-Kompendium Edition 2023 ist die letzte Ausgabe im bisherigen Format. Das BSI überführt den IT-Grundschutz in ein modernisiertes, maschinenlesbares Regelwerk („Grundschutz++“). Für die Praktiker-Prüfung bleiben die in diesem Kurs genutzten Dokumente maßgeblich.",
+          title: "Der neue IT-Grundschutz",
+          text: "Das BSI baut den IT-Grundschutz neu auf: vollständig prozessorientiert und auf Basis eines digitalen Regelwerks (JSON), das das IT-Grundschutz-Kompendium ablösen soll. Für die Praktiker-Prüfung bleiben die in diesem Kurs genutzten Dokumente maßgeblich; das Kompendium liegt in der Edition 2023 vor.",
           source: {
             label: "BSI: IT-Grundschutz",
             url: "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html",
@@ -351,7 +351,7 @@ export const topic: TopicContent = {
         {
           type: "praxis",
           title: "C5 und HV-Benchmark",
-          text: "Das Curriculum nennt außerdem den **C5** (Cloud Computing Compliance Criteria Catalogue des BSI) – einen Kriterienkatalog, mit dem Cloud-Anbieter die Informationssicherheit ihrer Dienste durch eine Prüfung nachweisen können – und den **HV-Benchmark**, ein Reifegradmodell des BSI zur Bewertung der Hochverfügbarkeit. Beide sind nicht Teil der in diesem Kurs verwendeten Quelldokumente; merken Sie sich ihren Zweck.",
+          text: "Das Curriculum nennt außerdem den **C5** (Cloud Computing Compliance Criteria Catalogue) – einen Kriterienkatalog des BSI mit Mindestanforderungen an die Informationssicherheit von Cloud-Diensten; die Erfüllung kann durch Wirtschaftsprüfer testiert und so gegenüber Kunden nachgewiesen werden. Ebenfalls genannt wird der **HV-Benchmark** zur Hochverfügbarkeit. Beide sind nicht Teil der in diesem Kurs verwendeten Quelldokumente; merken Sie sich ihren Zweck.",
           source: {
             label: "BSI: Kriterienkatalog C5",
             url: "https://www.bsi.bund.de/C5",

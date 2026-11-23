@@ -72,10 +72,10 @@ export const topic: TopicContent = {
         {
           type: "praxis",
           title: "Gestufte Meldepflichten unter NIS-2",
-          text: "Für Einrichtungen, die unter die NIS-2-Regelungen fallen, gelten gestufte Meldepflichten für erhebliche Sicherheitsvorfälle an das BSI: eine frühe Erstmeldung binnen 24 Stunden, eine Meldung binnen 72 Stunden und ein Abschlussbericht. DER.2.1.A4 verlangt allgemein, Meldepflichten für Behörden und regulierte Branchen zu berücksichtigen – die konkreten Fristen ergeben sich aus dem jeweils geltenden Recht.",
+          text: "Besonders wichtige und wichtige Einrichtungen sowie Betreiber kritischer Anlagen müssen dem BSI erhebliche Sicherheitsvorfälle gestuft melden: frühe Erstmeldung innerhalb von 24 Stunden nach Kenntniserlangung, Folgemeldung innerhalb von 72 Stunden, Abschlussmeldung spätestens einen Monat nach der Meldung. DER.2.1.A4 verlangt allgemein, Meldepflichten für Behörden und regulierte Branchen zu berücksichtigen.",
           source: {
-            label: "BSI: NIS-2-regulierte Unternehmen",
-            url: "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html",
+            label: "BSI: NIS-2-Meldepflicht",
+            url: "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Infopakete/NIS-2-Meldepflicht/NIS-2-Meldepflicht_node.html",
             date: "2026",
           },
         },
