@@ -101,10 +101,15 @@ body,
 /* Let table text wrap instead of truncating (the lib truncates by default). */
 .table-wrap :is(th, td) {
   white-space: normal;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-/* Wider first column for tables whose first column holds topic titles. */
+/* Topic-title tables: wide first column, the remaining columns share the rest evenly. */
 .table-wrap--title-col th:first-child {
   width: 55%;
+}
+
+.table-wrap--title-col th:not(:first-child) {
+  width: auto;
 }
