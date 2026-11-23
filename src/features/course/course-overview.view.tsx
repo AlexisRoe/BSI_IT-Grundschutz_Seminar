@@ -13,7 +13,7 @@ export function CourseOverviewView() {
   if (!course) return <Loading />;
 
   return (
-    <Flex column gap="xl">
+    <div className="course">
       <Title size="1">Kurs</Title>
       <Text>
         Die 15 Themenfelder folgen dem Curriculum v1.1 des BSI (24 Unterrichtseinheiten). Jede
@@ -29,7 +29,7 @@ export function CourseOverviewView() {
               id={`topic-${topic.id}`}
               summary={`${topic.id}. ${topic.title}`}
             >
-              <Flex column gap="md">
+              <div className="course__topic">
                 <Flex row gap="sm" wrap>
                   <Pill>{topic.ue} UE</Pill>
                   <Pill>Vertiefungsgrad {topic.depth}</Pill>
@@ -40,7 +40,7 @@ export function CourseOverviewView() {
                   label={`${done} von ${total} Lektionen abgeschlossen`}
                 />
                 {lessons.length === 0 && <Text>Inhalte folgen.</Text>}
-                <Flex column align="start" gap="sm">
+                <div className="course__lessons">
                   {lessons.map((lesson, i) => (
                     <Button.Naked
                       key={lesson.id}
@@ -51,12 +51,12 @@ export function CourseOverviewView() {
                       {`${topic.id}.${i + 1} ${lesson.title}`}
                     </Button.Naked>
                   ))}
-                </Flex>
-              </Flex>
+                </div>
+              </div>
             </Accordion.Item>
           );
         })}
       </Accordion>
-    </Flex>
+    </div>
   );
 }
