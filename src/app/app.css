@@ -1,0 +1,121 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  height: 100%;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  gap: var(--eink-size-16);
+}
+
+.app__main {
+  box-sizing: border-box;
+  max-width: 60rem;
+  padding: var(--eink-size-16) var(--eink-size-32);
+}
+
+.app__notice {
+  display: flex;
+  align-items: center;
+  gap: var(--eink-size-16);
+  margin-bottom: var(--eink-size-16);
+}
+
+.app__notice > :first-child {
+  flex: 1;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-16);
+}
+
+.option-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--eink-size-16);
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr));
+  gap: var(--eink-size-10);
+}
+
+.scroll-x {
+  overflow-x: auto;
+}
+
+.grow {
+  flex: 1;
+}
+
+@media (max-width: 40rem) {
+  .app__main {
+    padding: var(--eink-size-16);
+  }
+}
+
+.lesson-link {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-32);
+}
+
+.course__topic {
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-20);
+  padding-block: var(--eink-size-8);
+}
+
+.course__lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--eink-size-16);
+}
+
+:is(h2, h3).section-title {
+  margin-top: var(--eink-size-24);
+}
+
+.lab-task {
+  margin-top: var(--eink-size-16);
+}
+
+/* Let table text wrap instead of truncating (the lib truncates by default). */
+.table-wrap :is(th, td) {
+  white-space: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Topic-title tables: wide first column, the remaining columns share the rest evenly. */
+.table-wrap--title-col th:first-child {
+  width: 55%;
+}
+
+.table-wrap--title-col th:not(:first-child) {
+  width: auto;
+}
+
+.build-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-16);
+}
