@@ -30,13 +30,11 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
     case "table":
       return (
         <div className="scroll-x">
-          <Table>
+          <Table className="table-wrap">
             <Table.Head>
-              <Table.Row>
-                {block.headers.map((h) => (
-                  <Table.HeaderCell key={h}>{h}</Table.HeaderCell>
-                ))}
-              </Table.Row>
+              {block.headers.map((h) => (
+                <Table.HeaderCell key={h}>{h}</Table.HeaderCell>
+              ))}
             </Table.Head>
             <Table.Body>
               {block.rows.map((row) => (

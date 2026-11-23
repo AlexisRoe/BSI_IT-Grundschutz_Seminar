@@ -41,12 +41,10 @@ export function ExamResultView({ examId }: { examId: string }) {
         title={`${record.passed ? "Bestanden" : "Nicht bestanden"}: ${record.score} von ${record.total} Punkten`}
         description={`${Math.round((record.score / Math.max(record.total, 1)) * 100)} % richtig.${record.timedOut ? " Die Bearbeitungszeit war abgelaufen; die Prüfung wurde automatisch abgegeben." : ""}`}
       />
-      <Table>
+      <Table className="table-wrap table-wrap--title-col">
         <Table.Head>
-          <Table.Row>
-            <Table.HeaderCell>Themenfeld</Table.HeaderCell>
-            <Table.HeaderCell>Punkte</Table.HeaderCell>
-          </Table.Row>
+          <Table.HeaderCell>Themenfeld</Table.HeaderCell>
+          <Table.HeaderCell>Punkte</Table.HeaderCell>
         </Table.Head>
         <Table.Body>
           {TOPICS.filter((t) => record.byTopic[t.id as TopicId]).map((t) => {

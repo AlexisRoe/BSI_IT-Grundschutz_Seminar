@@ -21,14 +21,12 @@ export function ProgressView() {
     <Flex column gap="md">
       <Title size="1">Lernfortschritt</Title>
       <div className="scroll-x">
-        <Table>
+        <Table className="table-wrap table-wrap--title-col">
           <Table.Head>
-            <Table.Row>
-              <Table.HeaderCell>Themenfeld</Table.HeaderCell>
-              <Table.HeaderCell>Lektionen</Table.HeaderCell>
-              <Table.HeaderCell>Labore</Table.HeaderCell>
-              <Table.HeaderCell>Trefferquote</Table.HeaderCell>
-            </Table.Row>
+            <Table.HeaderCell>Themenfeld</Table.HeaderCell>
+            <Table.HeaderCell>Lektionen</Table.HeaderCell>
+            <Table.HeaderCell>Labore</Table.HeaderCell>
+            <Table.HeaderCell>Trefferquote</Table.HeaderCell>
           </Table.Head>
           <Table.Body>
             {TOPICS.map((t) => {

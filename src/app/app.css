@@ -97,3 +97,14 @@ body,
 .lab-task {
   margin-top: var(--eink-size-16);
 }
+
+/* Let table text wrap instead of truncating (the lib truncates by default). */
+.table-wrap :is(th, td) {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Wider first column for tables whose first column holds topic titles. */
+.table-wrap--title-col th:first-child {
+  width: 55%;
+}
