@@ -46,9 +46,10 @@ export const lab: Lab = {
         {
           id: "f4",
           label:
-            "Die Leitung erhält seit über einem Jahr keine Berichte zur Informationssicherheit mehr.",
+            "Die Anforderungen des Bausteins ISMS.1 zur Verantwortung der Leitung und zu Managementberichten sind in wesentlichen Teilen nicht umgesetzt.",
           answer: "schwer",
-          explanation: "Gefährdet die Effektivität des ISMS erheblich.",
+          explanation:
+            "Anforderungen in wesentlichen Teilen nicht umgesetzt – die Effektivität des ISMS ist erheblich gefährdet.",
         },
       ],
     },
