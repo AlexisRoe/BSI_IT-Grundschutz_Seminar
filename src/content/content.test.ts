@@ -95,3 +95,16 @@ describe("course content integrity", () => {
     expect(counts.size).toBeGreaterThanOrEqual(3);
   });
 });
+
+describe("course completeness", () => {
+  it.each(TOPICS.map((t) => [t.id, t] as const))("topic %i has lessons and a full pool", (_, t) => {
+    expect(course.topics.find((c) => c.topic === t.id)?.lessons.length ?? 0).toBeGreaterThan(0);
+    expect(course.pool.filter((q) => q.topic === t.id).length).toBeGreaterThanOrEqual(t.poolTarget);
+  });
+
+  it("keeps the Basis share between 70 and 80 percent", () => {
+    const share = course.pool.filter((q) => q.level === "basis").length / course.pool.length;
+    expect(share).toBeGreaterThanOrEqual(0.7);
+    expect(share).toBeLessThanOrEqual(0.8);
+  });
+});
