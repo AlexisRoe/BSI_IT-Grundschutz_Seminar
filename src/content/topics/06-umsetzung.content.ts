@@ -536,7 +536,7 @@ export const topic: TopicContent = {
           type: "table",
           headers: ["Spalte", "Inhalt"],
           rows: [
-            ["Nummer und Titel des Bausteins", "z. B. SYS.1.3 Server unter Unix"],
+            ["Nummer und Titel des Bausteins", "z. B. SYS.1.3 Server unter Linux und Unix"],
             ["Relevanz", "ja/nein – schneller Überblick, dass kein Baustein vergessen wurde"],
             ["Zielobjekt", "Zielobjekt oder Zielobjektgruppe, z. B. S020"],
             ["Begründung", "Randinformationen; bei Nicht-Relevanz **explizit begründen**"],
@@ -555,7 +555,7 @@ export const topic: TopicContent = {
           title: "Modellierung bei Virtualisierung",
           text: [
             "Physischer Server S1 mit Linux und hostbasierter Virtualisierung, darauf VM1 und VM2 (Windows Server 2012) und VM3 (Linux).",
-            "Zuordnung: SYS.1.1 Allgemeiner Server auf S1, VM3 und die **Gruppe aus VM1 und VM2**; SYS.1.3 Server unter Unix auf S1 und VM3; SYS.1.2.2 Windows Server 2012 auf die Gruppe VM1/VM2.",
+            "Zuordnung: SYS.1.1 Allgemeiner Server auf S1, VM3 und die **Gruppe aus VM1 und VM2**; SYS.1.3 Server unter Unix (im Kompendium 2023: „Server unter Linux und Unix“) auf S1 und VM3; SYS.1.2.2 Windows Server 2012 auf die Gruppe VM1/VM2 (Beispiel aus BSI-Standard 200-2).",
             "Läuft der Hypervisor direkt auf der Hardware (Bare Metal), ist dafür eine **Risikoanalyse** nötig, deren Ergebnisse mit SYS.1.5 Virtualisierung konsolidiert werden.",
           ],
         },
