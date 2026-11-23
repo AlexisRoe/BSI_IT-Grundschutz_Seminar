@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--eink-size-16);
+  height: 100%;
+  padding: var(--eink-size-16) var(--eink-size-32);
+}
+
+.app__notice {
+  display: flex;
+  align-items: center;
+  gap: var(--eink-size-16);
+}
+
+.app__notice > :first-child {
+  flex: 1;
+}
+
+.app__main {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}

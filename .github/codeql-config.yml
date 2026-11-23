@@ -1,0 +1,3 @@
+name: IT-Grundschutz Seminar CodeQL config
+paths-ignore:
+  - resources
