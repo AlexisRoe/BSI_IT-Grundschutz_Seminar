@@ -13,7 +13,7 @@ export function CourseOverviewView() {
   if (!course) return <Loading />;
 
   return (
-    <Flex column gap="md">
+    <Flex column gap="xl">
       <Title size="1">Kurs</Title>
       <Text>
         Die 15 Themenfelder folgen dem Curriculum v1.1 des BSI (24 Unterrichtseinheiten). Jede
@@ -29,7 +29,7 @@ export function CourseOverviewView() {
               id={`topic-${topic.id}`}
               summary={`${topic.id}. ${topic.title}`}
             >
-              <Flex column gap="sm">
+              <Flex column gap="md">
                 <Flex row gap="sm" wrap>
                   <Pill>{topic.ue} UE</Pill>
                   <Pill>Vertiefungsgrad {topic.depth}</Pill>
@@ -40,15 +40,18 @@ export function CourseOverviewView() {
                   label={`${done} von ${total} Lektionen abgeschlossen`}
                 />
                 {lessons.length === 0 && <Text>Inhalte folgen.</Text>}
-                {lessons.map((lesson, i) => (
-                  <Button.Naked
-                    key={lesson.id}
-                    iconLeft={lessonsDone[lesson.id] ? "circle-check" : "circle-dashed"}
-                    onClick={() => navigate({ name: "lesson", lessonId: lesson.id })}
-                  >
-                    {`${topic.id}.${i + 1} ${lesson.title}`}
-                  </Button.Naked>
-                ))}
+                <Flex column align="start" gap="sm">
+                  {lessons.map((lesson, i) => (
+                    <Button.Naked
+                      key={lesson.id}
+                      className="lesson-link"
+                      iconLeft={lessonsDone[lesson.id] ? "circle-check" : "circle-dashed"}
+                      onClick={() => navigate({ name: "lesson", lessonId: lesson.id })}
+                    >
+                      {`${topic.id}.${i + 1} ${lesson.title}`}
+                    </Button.Naked>
+                  ))}
+                </Flex>
               </Flex>
             </Accordion.Item>
           );

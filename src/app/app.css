@@ -64,3 +64,8 @@ body,
     padding: var(--eink-size-16);
   }
 }
+
+.lesson-link {
+  justify-content: flex-start;
+  text-align: left;
+}
