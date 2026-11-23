@@ -2,23 +2,23 @@
 
 Herkunft und Inhalt der Dokumente in diesem Verzeichnis. Alle Dokumente sind Veröffentlichungen des BSI. Kursinhalte dürfen nur auf diese Dokumente gestützt werden (ADR 0014).
 
-**Abrufdatum** ist bei allen Dokumenten der 23.11.2026, der Tag, an dem sie ins Repository aufgenommen wurden. Bei den BSI-Standards 200-1 bis 200-3 und beim Kompendium wurde am selben Tag geprüft, dass die Datei unter der angegebenen URL byte-identisch ist. Für die drei Dokumente zum Schulungskonzept ist die Download-URL nicht dokumentiert. Sie wurden vom Repository-Inhaber bereitgestellt, und ihre Herkunftsseite war beim BSI nicht mehr auffindbar.
+**Abrufdatum** ist bei allen Dokumenten der 23.11.2026, der Tag, an dem sie ins Repository aufgenommen wurden. Bei den Dokumenten zum Schulungskonzept, den BSI-Standards 200-1 bis 200-3 und beim Kompendium wurde am selben Tag geprüft, dass die Datei unter der angegebenen URL byte-identisch ist.
 
 ## Schulungskonzept und Prüfung
 
 ### `curriculum_1_1.pdf`
 - **Titel:** Curriculum zum Schulungskonzept IT-Grundschutz-Praktiker und IT-Grundschutz-Berater, Version 1.1 vom 24.09.2024
-- **Quelle:** vom Repository-Inhaber bereitgestellt (Download-URL nicht dokumentiert); aufgenommen am 23.11.2026
+- **Quelle:** https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Berater/curriculum_1_1.pdf?__blob=publicationFile; abgerufen und auf Identität geprüft am 23.11.2026
 - **Inhalt:** Legt die Lerninhalte für die Praktiker-Schulung (24 Unterrichtseinheiten) und die Berater-Schulung fest. Für jedes der 15 Themenfelder nennt es Lerninhalte, Umfang und Vertiefungsgrad. Das Curriculum ist das Gerüst des gesamten Kurses.
 
 ### `faq_curiculum.pdf`
 - **Titel:** Fragen und Antworten zum Schulungskonzept IT-Grundschutz-Berater, Version 1.1 vom 24.09.2024
-- **Quelle:** vom Repository-Inhaber bereitgestellt (Download-URL nicht dokumentiert); aufgenommen am 23.11.2026
+- **Quelle:** https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Berater/faq_curiculum.pdf?__blob=publicationFile; abgerufen und auf Identität geprüft am 23.11.2026
 - **Inhalt:** Beantwortet häufige Fragen zu Qualifikationsformen, Zielgruppen, Schulungsanbietern und Prüfung. Es nennt die Dokumente, die als Grundlage der Prüfung gelten, und regelt die Kennzeichnung zusätzlicher Inhalte.
 
 ### `pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf`
 - **Titel:** Prüfungsbedingungen für den IT-Grundschutz-Praktiker, Version 2.2, Stand 23.06.2026
-- **Quelle:** vom Repository-Inhaber bereitgestellt (Download-URL nicht dokumentiert); aufgenommen am 23.11.2026
+- **Quelle:** https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Berater/pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf?__blob=publicationFile; abgerufen und auf Identität geprüft am 23.11.2026
 - **Inhalt:** Regelt Ablauf und Bewertung der Praktiker-Prüfung: 50 Multiple-Choice-Fragen mit je vier Aussagen, 60 Minuten, Bestehensgrenze 60 %. Tabelle 2 verteilt die Fragen auf die Themenfelder, und es gibt Vorgaben zu Basis- und Expertenfragen. Die Prüfungssimulation setzt diese Regeln um (ADR 0015).
 
 ## IT-Grundschutz-Kompendium und BSI-Standards
