@@ -41,7 +41,8 @@
   "dependencies": {
     "e-ink-ui-lib": "1.2.0",
     "react": "19.3.1",
-    "react-dom": "19.3.1"
+    "react-dom": "19.3.1",
+    "zustand": "5.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.8",

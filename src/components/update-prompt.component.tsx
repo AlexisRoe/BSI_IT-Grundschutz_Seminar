@@ -7,8 +7,8 @@ export function UpdatePrompt() {
   if (!updateAvailable) return null;
   return (
     <div className="app__notice">
-      <Alert variant="info" icon="refresh" title="A new version is available" />
-      <Button onClick={applyUpdate}>Reload</Button>
+      <Alert variant="info" icon="refresh" title="Eine neue Version ist verfügbar" />
+      <Button onClick={applyUpdate}>Neu laden</Button>
     </div>
   );
 }

@@ -4,6 +4,7 @@ Guidance for Claude Code in this repository.
 
 ## Purpose
 PWA for the IT-Grundschutz Praktiker preparation course, built with `e-ink-ui-lib`. Reference material lives in `resources/` (PDFs).
+Course content is German and must be traceable to a document in `resources/` (ADR 0014); exam rules in ADR 0015.
 
 ## Commands
 - `npm run dev` / `npm run build` / `npm run preview`
@@ -23,7 +24,7 @@ Use `npm ci` to install. Node version: `.nvmrc`.
 - Lib fonts only. No CSS transitions/animations (e-ink).
 
 ## File naming
-Suffix states the purpose: `*.view.tsx`, `*.component.tsx`, `*.hook.ts`, `*.store.ts`, `*.selectors.ts`, `*.utils.ts`, `*.constants.ts`, `*.config.ts`, `*.types.ts`, tests `*.test.ts(x)` co-located. Lowercase, dash-separated.
+Suffix states the purpose: `*.view.tsx`, `*.component.tsx`, `*.hook.ts`, `*.store.ts`, `*.selectors.ts`, `*.utils.ts`, `*.constants.ts`, `*.config.ts`, `*.types.ts`, tests `*.test.ts(x)` co-located. Course data: `*.content.ts` (lessons), `*.questions.ts` (exam pool), `*.lab.ts` (labs) in `src/content/` (ADR 0013). Lowercase, dash-separated.
 
 ## Documentation
 - JSDoc on every exported symbol (purpose, not internals). Comments only when necessary.

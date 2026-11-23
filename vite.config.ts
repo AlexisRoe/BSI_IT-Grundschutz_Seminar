@@ -16,9 +16,9 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ["favicon.ico", "icons/*.png"],
       manifest: {
-        name: "IT-Grundschutz Seminar",
-        short_name: "IT-Grundschutz Seminar",
-        description: "Preparation course for the IT-Grundschutz Praktiker certification.",
+        name: "IT-Grundschutz-Praktiker",
+        short_name: "IT-Grundschutz-Praktiker",
+        description: "Vorbereitungskurs für die Prüfung zum IT-Grundschutz-Praktiker.",
         start_url: "/",
         scope: "/",
         display: "standalone",

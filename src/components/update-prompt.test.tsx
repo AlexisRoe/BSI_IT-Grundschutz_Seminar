@@ -13,7 +13,7 @@ describe("UpdatePrompt", () => {
   it("renders nothing without an update", () => {
     updateAvailable = false;
     render(<UpdatePrompt />);
-    expect(screen.queryByRole("button", { name: "Reload" })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Neu laden" })).not.toBeInTheDocument();
   });
 
   it("offers a reload when an update is available", () => {
@@ -23,7 +23,7 @@ describe("UpdatePrompt", () => {
         <UpdatePrompt />
       </AppProviders>,
     );
-    fireEvent.click(screen.getByRole("button", { name: "Reload" }));
+    fireEvent.click(screen.getByRole("button", { name: "Neu laden" }));
     expect(applyUpdate).toHaveBeenCalled();
   });
 });
