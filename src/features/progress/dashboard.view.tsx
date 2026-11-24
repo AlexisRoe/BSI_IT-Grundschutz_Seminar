@@ -120,6 +120,7 @@ export function DashboardView() {
                 {section.action}
               </Button.Outlined>
             </Flex>
+            <Space size="24" />
           </Flex>
         ))}
       </Grid>
