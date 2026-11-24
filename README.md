@@ -115,7 +115,9 @@ Alle Dokumente stammen vom BSI. Sie sind aus Urheberrechtsgründen **nicht** im 
 | Leitfaden zur Basis-Absicherung | 10/2017 | `leitfaden_basis_absicherung.pdf` |
 | IT-Grundschutz-Profile – Strukturbeschreibung | 1.0 (28.09.2018) | `it_grundschutz_profil_strukturbeschreibung.pdf` |
 
-Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [RESSOURCES.md](RESSOURCES.md) beschrieben. `npm run verify:citations` lädt die Dokumente nach `resources/` (git-ignoriert), extrahiert den Text (Ghostscript nötig) und prüft alle Quellenzitate. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
+Ergänzend bietet das BSI einen kostenlosen [Online-Kurs IT-Grundschutz](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Zertifizierte-Informationssicherheit/IT-Grundschutzschulung/it-grundschutzschulung_node.html) mit Lektionen und Testfragen an. Er ist nur verlinkt, nicht in diesen Kurs übernommen (Stand 2018, siehe [RESSOURCES.md](RESSOURCES.md)).
+
+Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [RESSOURCES.md](RESSOURCES.md) beschrieben. `npm run verify:citations` lädt die Dokumente lokal herunter, extrahiert den Text (Ghostscript nötig) und prüft alle Quellenzitate. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
 
 ## Technologien
 
@@ -155,7 +157,7 @@ flowchart TB
         LS[("localStorage<br/>Lernfortschritt")]
     end
     Static["Statische Dateien<br/>Cloudflare, strikte CSP"]
-    Resources["resources/<br/>BSI-Dokumente (Quellen)"]
+    Resources["BSI-Dokumente<br/>(Quellen, nicht im Repository)"]
 
     Shell --> Features
     Features --> UI
@@ -164,7 +166,7 @@ flowchart TB
     Stores <-->|"persist"| LS
     SW -->|"liefert aus dem Cache"| App
     Static -->|"einmaliger Abruf"| SW
-    Content -. "Quellenangabe, Zitat per CI geprüft" .-> Resources
+    Content -. "Quellenangabe, Zitat manuell geprüft" .-> Resources
 ```
 
 Die App besteht nur aus statischen Dateien. Nach dem ersten Aufruf liefert der Service Worker alles aus dem Cache; es gibt kein Backend und keine Netzwerkanfragen mit Nutzerdaten.
@@ -209,7 +211,6 @@ src/
   hooks/        useHashRoute (typed über dem Router der UI-Bibliothek), useCourse
   stores/       progress.store (persistiert), exam.store (laufende Prüfung), Selektoren
   ui/           einziger Import-Punkt für e-ink-ui-lib
-resources/      BSI-Dokumente (lokal, git-ignoriert)
 scripts/        Download und Textextraktion der BSI-Dokumente
 docs/           Curriculum-Abdeckung und Architekturentscheidungen (ADRs)
 ```
@@ -266,4 +267,4 @@ Konventionen für Dateinamen, UI und Sicherheit stehen in [CLAUDE.md](CLAUDE.md)
 
 Der Quellcode und die selbst verfassten Kursinhalte stehen unter der [MIT-Lizenz](LICENSE) (© 2026 Alexis Roehrling).
 
-Die BSI-Dokumente (lokal in `resources/`) sind Veröffentlichungen des BSI und fallen **nicht** unter die MIT-Lizenz; es gelten die Nutzungsbedingungen des BSI. „IT-Grundschutz“ und „BSI“ sind Bezeichnungen des Bundesamts für Sicherheit in der Informationstechnik. Dieses Projekt steht in keiner Verbindung zum BSI.
+Die BSI-Dokumente sind Veröffentlichungen des BSI und fallen **nicht** unter die MIT-Lizenz; es gelten die Nutzungsbedingungen des BSI. „IT-Grundschutz“ und „BSI“ sind Bezeichnungen des Bundesamts für Sicherheit in der Informationstechnik. Dieses Projekt steht in keiner Verbindung zum BSI.

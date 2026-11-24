@@ -2,6 +2,14 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
+## [1.5.1] – 2026-11-24
+
+### Hinzugefügt
+- README und `RESSOURCES.md` verlinken den kostenlosen Online-Kurs IT-Grundschutz des BSI als ergänzendes Lernangebot. Er wird nur verlinkt, nicht übernommen (Nutzungsbedingungen des BSI, Stand 2018).
+
+### Geändert
+- README erwähnt den lokalen Ordner `resources/` nicht mehr; die Architekturgrafik zeigt, dass Quellenzitate manuell statt per CI geprüft werden.
+
 ## [1.5.0] – 2026-11-24
 
 ### Geändert

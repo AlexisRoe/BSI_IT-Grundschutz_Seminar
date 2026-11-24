@@ -76,3 +76,10 @@ Herkunft und Inhalt der BSI-Dokumente, die lokal in `resources/` liegen. Das Ver
 - **Titel:** IT-Grundschutz-Profile – Strukturbeschreibung, Version 1.0 vom 28.09.2018
 - **Quelle:** https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/Hilfsmittel/Profile/Strukturbeschreibung.pdf?__blob=publicationFile&v=1; abgerufen am 23.11.2026
 - **Inhalt:** Legt den einheitlichen Aufbau von IT-Grundschutz-Profilen fest, also von Musterlösungen für Institutionen mit vergleichbaren Rahmenbedingungen. Sie beschreibt die Pflicht- und optionalen Kapitel, darunter Geltungsbereich, Rahmenbedingungen, Vorgehensweise, Strukturanalyse, Schutzbedarf, Modellierung und Restrisiken.
+
+## Ergänzendes Lernangebot des BSI (nur verlinkt)
+
+Dieses Angebot ist **keine** Quelle im Sinne von ADR 0014: Es wird nicht heruntergeladen, nicht zitiert und nicht in Kursinhalte übernommen. Die Nutzungsbedingungen des BSI erlauben Links auf seine Webseiten ohne Zustimmung, aber nicht die Übernahme oder Bearbeitung der Inhalte.
+
+- **IT-Grundschutz-Schulung mit Online-Kurs IT-Grundschutz:** https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Zertifizierte-Informationssicherheit/IT-Grundschutzschulung/it-grundschutzschulung_node.html
+  Kostenloser Selbstlernkurs des BSI mit Lektionen und Testfragen zur IT-Grundschutz-Methodik am Beispielunternehmen RECPLAST. Die Druckversion hat den Stand 07.08.2018; Bausteinbezeichnungen und Anforderungen können vom Kompendium Edition 2023 abweichen. Geeignet als zusätzliche Übung neben diesem Kurs.
