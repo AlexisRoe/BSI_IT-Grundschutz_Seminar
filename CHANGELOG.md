@@ -9,7 +9,11 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 - Die Schriften liefert die Bibliothek nun selbst als Dateien aus; das Build-Plugin zum Auslagern entfällt (ADR 0010 ersetzt).
 - Fehlgeschlagene Importe zeigen eine deutsche Meldung statt der englischen Standardmeldung.
 - In der Ordnungsaufgabe bleiben die Pfeil-Schaltflächen nach dem Auswerten sichtbar, sind aber deaktiviert.
+- Einstellungen: „Über diese App“ ist nun eine Überschrift über der Karte, die Schaltfläche „Nach Update suchen“ steht unter der Karte.
 - Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
+
+### Behoben
+- Der Hinweis „Eine neue Version ist verfügbar“ blieb auch nach „Neu laden“ bestehen. Ursache: Der Service Worker konnte seine Laufzeitbibliothek wegen der Trusted-Types-Richtlinie (CSP) nicht laden und beantwortete die Aktivierungsanfrage nicht; auch Zwischenspeicher und Offline-Betrieb waren dadurch betroffen. Die Laufzeitbibliothek ist jetzt in `sw.js` eingebettet (ADR 0018).
 
 ### Entfernt
 - Eigene CSS-Regeln für Tabellen, Listenmarker, Antwortzeilen, Update-Hinweis und linksbündige Schaltflächen.

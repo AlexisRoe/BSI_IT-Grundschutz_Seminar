@@ -71,6 +71,7 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,ico,png,woff2,ttf}"],
         navigateFallback: "/index.html",
         cleanupOutdatedCaches: true,
+        inlineWorkboxRuntime: true,
         runtimeCaching: [],
       },
     }),
