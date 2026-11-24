@@ -280,5 +280,90 @@ export const pool: TopicQuestions = {
           "eine Struktur für die IS-Organisation in einer kleinen Institution, in der alle Aufgaben vom Informationssicherheitsbeauftragten wahrgenommen werden",
       },
     },
+    {
+      id: "p03-11",
+      topic: 3,
+      level: "basis",
+      stem: "Welche der folgenden Punkte sind nach BSI-Standard 200-1 grundlegende Komponenten eines ISMS?",
+      options: [
+        { text: "Managementprinzipien", correct: true },
+        { text: "Mitarbeiter", correct: true },
+        { text: "Ein Penetrationstest-Programm", correct: false },
+        { text: "Ressourcen", correct: true },
+      ],
+      explanation:
+        "Zu einem ISMS gehören Managementprinzipien, Ressourcen, Mitarbeiter und der Sicherheitsprozess (Leitlinie, Sicherheitskonzept, Sicherheitsorganisation). Penetrationstests sind ein mögliches Prüfverfahren, keine Komponente.",
+      source: {
+        doc: "200-1",
+        section: "Kap. 3.1",
+        page: 15,
+        quote: "Zu einem ISMS gehören folgende grundlegende Komponenten",
+      },
+    },
+    {
+      id: "p03-12",
+      topic: 3,
+      level: "experte",
+      stem: "Die Geschäftsführung verlangt von allen Beschäftigten eine Zwei-Faktor-Anmeldung, nutzt selbst aber weiterhin nur ein Passwort und lässt die Pflichtschulung ausfallen. Welche Aussagen treffen zu?",
+      options: [
+        {
+          text: "Die Leitungsebene verletzt ihre Vorbildfunktion.",
+          correct: true,
+        },
+        {
+          text: "Das ist zulässig, solange die Leitung die Gesamtverantwortung schriftlich übernommen hat.",
+          correct: false,
+        },
+        {
+          text: "Die Basis-Anforderung ISMS.1.A1 verlangt, dass die Institutionsleitung Informationssicherheit vorlebt.",
+          correct: true,
+        },
+        {
+          text: "Die Vorbildfunktion betrifft nur den ISB, nicht die Leitungsebene.",
+          correct: false,
+        },
+      ],
+      explanation:
+        "Zur Vorbildfunktion gehört, dass auch die Leitungsebene alle Sicherheitsregeln beachtet und selbst an Schulungen teilnimmt. ISMS.1.A1 fordert, dass die Institutionsleitung Informationssicherheit vorlebt.",
+      source: {
+        doc: "200-1",
+        section: "Kap. 4.1, 6. Vorbildfunktion",
+        page: 22,
+        quote:
+          "dass auch die Leitungsebene alle vorgegebenen Sicherheitsregeln beachtet, selbst an Schulungsveranstaltungen teilnimmt",
+      },
+    },
+    {
+      id: "p03-13",
+      topic: 3,
+      level: "basis",
+      stem: "Welche Aussagen zur Klassifikation von Informationen treffen nach BSI-Standard 200-2 zu?",
+      options: [
+        {
+          text: "Im Kontext der Basis-Absicherung kann anfangs eine zweistufige Klassifizierung (intern/öffentlich) ausreichen.",
+          correct: true,
+        },
+        {
+          text: "Die Vertraulichkeit wird häufig in offen, intern, vertraulich und streng vertraulich abgestuft.",
+          correct: true,
+        },
+        {
+          text: "Schwierig ist vor allem der Aufbau des Schemas, seine Anwendung im Betrieb gelingt meist problemlos.",
+          correct: false,
+        },
+        {
+          text: "Eine Klassifikation ist nur für Behörden vorgesehen, nicht für Unternehmen.",
+          correct: false,
+        },
+      ],
+      explanation:
+        "Zwei Stufen können zum Einstieg genügen; für die Vertraulichkeit sind vier Stufen üblich. Nach 200-2 ist ein Schema einfach aufzubauen, es im laufenden Betrieb konsequent anzuwenden ist dagegen schwierig.",
+      source: {
+        doc: "200-2",
+        section: "Kap. 5.1",
+        page: 53,
+        quote: "kann anfangs bereits eine zweistufige Klassifizierung ausreichend sein",
+      },
+    },
   ],
 };

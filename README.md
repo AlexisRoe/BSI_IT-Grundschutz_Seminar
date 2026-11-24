@@ -26,7 +26,7 @@ Die Anwendung ist von Anfang an auf Sicherheit ausgelegt, von der lokalen Entwic
 
 | Bereich | Umfang |
 |---|---|
-| **Kurs** | 37 Lektionen zu den 15 Themenfeldern des Curriculums v1.1 (24 UE), mit Lernzielen, Merke-Kästen, Beispielen, Quellenangaben und 116 Kontrollfragen |
+| **Kurs** | 37 Lektionen zu den 15 Themenfeldern des Curriculums v1.1 (24 UE), mit Lernzielen, Merke-Kästen, Beispielen, Quellenangaben und 121 Kontrollfragen |
 | **Labore** | 14 interaktive Übungen an der fiktiven „Rheintal Präzision GmbH“: Strukturanalyse, Schutzbedarf, Modellierung, IT-Grundschutz-Check, Risikoanalyse, Umsetzungsplanung, Audit, Vorfallbehandlung, BCM u. a. |
 | **Training** | Fragen aus dem Prüfungspool mit sofortiger Rückmeldung – nach Themenfeld, gemischt oder als Fehlertraining |
 | **Prüfungssimulation** | 50 Fragen, 60 Minuten, Verteilung nach Tabelle 2 der Prüfungsbedingungen, bestanden ab 30 Punkten |
@@ -89,7 +89,7 @@ Die Ansichten zeigen die App mit Beispielfortschritt im E-Ink-tauglichen Schwarz
 
 - **Curriculum als Gerüst**: Jedes Themenfeld des Curriculums hat eigene Lektionen; der Vertiefungsgrad (I = Kennen, II = Anwenden) bestimmt die Tiefe. Die Zuordnung steht in [docs/curriculum-coverage.md](docs/curriculum-coverage.md).
 - **Nachvollziehbare Quellen**: Jede prüfungsrelevante Aussage, jede Frage und jedes Labor verweist auf Dokument, Kapitel und Seite eines BSI-Dokuments ([ADR 0014](docs/decisions/0014-source-policy-and-praxis-2026.md)).
-- **Getrennte Fragenpools**: Kontrollfragen in den Lektionen dienen dem Verständnis. Training und Simulation nutzen einen eigenen Pool mit 184 Fragen, davon 75 % Basis- und 25 % Expertenfragen, wie es die Prüfungsbedingungen vorsehen.
+- **Getrennte Fragenpools**: Kontrollfragen in den Lektionen dienen dem Verständnis. Training und Simulation nutzen einen eigenen Pool mit 190 Fragen, davon 75 % Basis- und 25 % Expertenfragen, wie es die Prüfungsbedingungen vorsehen.
 - **Praxis 2026**: Aktuelle Entwicklungen (z. B. NIS-2-Pflichten, der neue digitale IT-Grundschutz, C5) stehen in eigenen Kästen mit dem Hinweis „nicht prüfungsrelevant“, öffentlicher Quelle und Datum. Sie fließen nie in Fragen ein.
 - **Ergänzungen außerhalb der Quellen**: Begriffe, die das Curriculum nennt, die BSI-Dokumente aber nicht erläutern (z. B. HV-Benchmark, Audit-Arten), sind ausdrücklich als Ergänzung gekennzeichnet und werden nicht abgefragt.
 - **Lernen durch Anwenden**: Die Labore spielen die Schritte der IT-Grundschutz-Methodik an einer durchgängigen Übungsorganisation durch.
@@ -118,6 +118,12 @@ Alle Dokumente stammen vom BSI. Sie sind aus Urheberrechtsgründen **nicht** im 
 Ergänzend bietet das BSI einen kostenlosen [Online-Kurs IT-Grundschutz](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/Zertifizierte-Informationssicherheit/IT-Grundschutzschulung/it-grundschutzschulung_node.html) mit Lektionen und Testfragen an. Er ist nur verlinkt, nicht in diesen Kurs übernommen (Stand 2018, siehe [RESSOURCES.md](RESSOURCES.md)).
 
 Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [RESSOURCES.md](RESSOURCES.md) beschrieben. `npm run verify:citations` lädt die Dokumente lokal herunter, extrahiert den Text (Ghostscript nötig) und prüft alle Quellenzitate. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
+
+### Weiterführende Literatur
+
+Zum Lernen neben diesem Kurs nutze ich folgendes Buch. Es ist **keine Quelle** des Kurses: Lektionen, Fragen und Labore verweisen nur auf die BSI-Dokumente oben ([ADR 0014](docs/decisions/0014-source-policy-and-praxis-2026.md)).
+
+- Groß, Markus (2026): *BSI IT-Grundschutz++. Alles was man wissen muss: Struktur. Absicherung. Nachweisbarkeit.* 1. Auflage. Deutschland: Independently published (Reihe: IT, KI, Governance & Management – Alles was man wissen muss). E-Book (Kindle), erschienen am 08.08.2026. ISBN: 979-8178846643, ASIN: B0HDHR5JT7. Online verfügbar unter: <https://www.amazon.de/dp/B0HDHR5JT7> [Zugriff am: 24.11.2026].
 
 ## Technologien
 

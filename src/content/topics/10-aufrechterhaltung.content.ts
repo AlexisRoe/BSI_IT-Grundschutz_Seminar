@@ -13,6 +13,7 @@ export const topic: TopicContent = {
         "Den Lebenszyklus der Informationssicherheit (PDCA) erklären",
         "Leitfragen für die Managementbewertung anwenden",
         "Geeignete Überprüfungsverfahren und die Unabhängigkeit der Prüfenden beachten",
+        "Zweck und Vorgehen der IS-Revision beschreiben",
       ],
       blocks: [
         {
@@ -73,6 +74,11 @@ export const topic: TopicContent = {
           ],
         },
         {
+          type: "definition",
+          term: "IS-Revision",
+          text: "Die **Informationssicherheitsrevision** überprüft regelmäßig die etablierten Sicherheitsmaßnahmen und den Sicherheitsprozess auf **wirksame Umsetzung, Aktualität, Vollständigkeit und Angemessenheit**. Sie ist ein Werkzeug, um ein angemessenes Sicherheitsniveau festzustellen, zu erreichen und aufrechtzuerhalten. Das BSI beschreibt das Verfahren im **Leitfaden für die IS-Revision auf Basis von IT-Grundschutz**. Für die Revision wird die gleiche Vorgehensweise wie beim **IT-Grundschutz-Check** empfohlen; hilfreich sind je Baustein auf die eigene Institution zugeschnittene **Checklisten**, die die Ergebnisse reproduzierbar machen.",
+        },
+        {
           type: "callout",
           variant: "merke",
           title: "Unabhängigkeit",
@@ -91,6 +97,7 @@ export const topic: TopicContent = {
           section: "Kap. 10.1 Überprüfung des Informationssicherheitsprozesses",
           page: 164,
         },
+        { doc: "200-2", section: "Kap. 10.1.3, Abschnitt Sicherheitsrevision", page: 167 },
       ],
       quiz: [
         {

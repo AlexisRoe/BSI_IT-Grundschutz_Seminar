@@ -355,5 +355,38 @@ export const pool: TopicQuestions = {
           "wie interne Audits im Bereich der Informationssicherheit durchzuführen sind und wie die Ergebnisse in den Änderungsprozess einfließen",
       },
     },
+    {
+      id: "p10-16",
+      topic: 10,
+      level: "basis",
+      stem: "Welche Aussagen zur Informationssicherheitsrevision (IS-Revision) treffen nach BSI-Standard 200-2 zu?",
+      options: [
+        {
+          text: "Sie ist ein Werkzeug zum Feststellen, Erreichen und Aufrechterhalten eines angemessenen Sicherheitsniveaus.",
+          correct: true,
+        },
+        {
+          text: "Für die Revision wird die gleiche Vorgehensweise wie beim IT-Grundschutz-Check empfohlen.",
+          correct: true,
+        },
+        {
+          text: "Sie ersetzt die Managementbewertung durch die Leitungsebene.",
+          correct: false,
+        },
+        {
+          text: "Sie ist nur im Rahmen einer ISO 27001-Zertifizierung zulässig.",
+          correct: false,
+        },
+      ],
+      explanation:
+        "Die IS-Revision prüft regelmäßig Umsetzung, Aktualität, Vollständigkeit und Angemessenheit der Maßnahmen. Empfohlen wird das Vorgehen des IT-Grundschutz-Checks mit institutionsspezifischen Checklisten. Sie ist ein eigenständiges Prüfverfahren und ersetzt weder die Managementbewertung noch setzt sie eine Zertifizierung voraus.",
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.3, Abschnitt Sicherheitsrevision",
+        page: 167,
+        quote:
+          "Die IS-Revision ist somit ein Werkzeug zum Feststellen, Erreichen und Aufrechterhalten eines angemessenen Sicherheitsniveaus in einer Institution",
+      },
+    },
   ],
 };
