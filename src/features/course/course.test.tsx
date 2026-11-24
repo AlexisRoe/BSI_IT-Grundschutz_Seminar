@@ -1,4 +1,5 @@
-import { fireEvent, screen } from "@testing-library/react";
+import { fireEvent, screen, waitFor } from "@testing-library/react";
+import { loadCourse } from "@/content/content.utils";
 import { useProgressStore } from "@/stores/progress.store";
 import { renderWithProviders } from "@/ui/testing";
 import { CourseOverviewView } from "./course-overview.view";
@@ -13,6 +14,20 @@ describe("course views", () => {
     expect(screen.getByText(/15\. BCM-Prozess/)).toBeInTheDocument();
     fireEvent.click(screen.getByText(/1\.1 Informationen, Grundwerte/));
     expect(window.location.hash).toBe("#/kurs/t01-l01");
+  });
+
+  it("opens the topic with the first unfinished lesson", async () => {
+    const course = await loadCourse();
+    const topics = course.topics.filter((t) => t.lessons.length > 0);
+    const [first, second] = topics;
+    for (const lesson of first?.lessons ?? [])
+      useProgressStore.getState().completeLesson(lesson.id);
+    const { container } = renderWithProviders(<CourseOverviewView />);
+    await screen.findByText(/1\. Einführung und Grundlagen/);
+    await waitFor(() =>
+      expect(container.querySelector("details[open]")?.id).toBe(`topic-${second?.topic}`),
+    );
+    expect(container.querySelectorAll("details[open]")).toHaveLength(1);
   });
 
   it("renders a lesson and marks it as read", async () => {

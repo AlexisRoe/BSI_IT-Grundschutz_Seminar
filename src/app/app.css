@@ -37,7 +37,7 @@ body,
   display: flex;
   flex-direction: column;
   gap: var(--eink-size-20);
-  padding-block: var(--eink-size-8);
+  padding: var(--eink-size-16) var(--eink-size-8) var(--eink-size-24);
 }
 
 .course__lessons {

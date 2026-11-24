@@ -12,6 +12,12 @@ export function CourseOverviewView() {
   const lessonsDone = useProgressStore((s) => s.lessons);
   if (!course) return <Loading />;
 
+  const firstOpenTopic = TOPICS.find((topic) =>
+    (course.topics.find((t) => t.topic === topic.id)?.lessons ?? []).some(
+      (lesson) => !lessonsDone[lesson.id],
+    ),
+  );
+
   return (
     <div className="course">
       <Title size="1">Kurs</Title>
@@ -19,7 +25,7 @@ export function CourseOverviewView() {
         Die 15 Themenfelder folgen dem Curriculum v1.1 des BSI (24 Unterrichtseinheiten). Jede
         Lektion endet mit Kontrollfragen; Labore vertiefen die praktische Anwendung.
       </Text>
-      <Accordion>
+      <Accordion {...(firstOpenTopic ? { defaultOpenId: `topic-${firstOpenTopic.id}` } : {})}>
         {TOPICS.map((topic) => {
           const lessons = course.topics.find((t) => t.topic === topic.id)?.lessons ?? [];
           const { done, total } = topicLessonProgress(course, { lessons: lessonsDone }, topic.id);

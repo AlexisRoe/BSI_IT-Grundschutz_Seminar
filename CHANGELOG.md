@@ -16,7 +16,8 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 - Karten auf Start und Laborseite: zwischen Text und Aktionsschaltfläche steht nun ein Abstand von 1 rem (`Space`).
 - Begriffsdefinitionen in den Lektionen stehen unter einer Überschrift (Ebene 4) statt unter einem winzigen Etikett. Dasselbe gilt für das Glossar (Begriff als Überschrift, Definition und Quelle als Text; die Definitionen wurden dort zuvor nicht angezeigt) und die Build-Informationen in den Einstellungen („Version: …“).
 - Tabellenzeilen (Fortschritt, Prüfungsergebnis, Lektionen) lassen sich nicht mehr anklicken und werden nicht mehr hervorgehoben.
-- Startseite: Abstand zwischen Fortschrittsbalken und Karte; Kurs, Labore, Training und Prüfungssimulation haben je eine Überschrift, eine Beschreibung und eine Schaltfläche.
+- Startseite: Abstand zwischen Fortschrittsbalken und Karte; Kurs, Labore, Training und Prüfungssimulation haben je eine Überschrift, eine Beschreibung und eine Schaltfläche, angeordnet in einem 2×2-Raster.
+- Kursübersicht: Das Themenfeld mit der ersten unerledigten Lektion ist beim Öffnen automatisch aufgeklappt (von oben beginnend); der Inhalt der Themenfelder hat mehr Innenabstand.
 - Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
 
 ### Behoben
