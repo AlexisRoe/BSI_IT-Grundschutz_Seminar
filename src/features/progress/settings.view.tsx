@@ -16,6 +16,7 @@ import {
   Modal,
   Text,
   Title,
+  useDownload,
   useNotifications,
 } from "@/ui";
 import { createExport, parseExport } from "./progress-transfer.utils";
@@ -27,6 +28,7 @@ export function SettingsView() {
   const [registration, setRegistration] = useState<CheckableRegistration>();
   const [updateReady, setUpdateReady] = useState(false);
   const { notify } = useNotifications();
+  const download = useDownload();
 
   const checkUpdate = async () => {
     setChecking(true);
@@ -55,15 +57,11 @@ export function SettingsView() {
 
   const exportProgress = () => {
     const data = selectProgressData(useProgressStore.getState());
-    const blob = new Blob([JSON.stringify(createExport(data), null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `grundschutz-fortschritt-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    download(
+      JSON.stringify(createExport(data), null, 2),
+      `grundschutz-fortschritt-${new Date().toISOString().slice(0, 10)}.json`,
+      "application/json",
+    );
   };
 
   const importProgress = async (file: File) => {
