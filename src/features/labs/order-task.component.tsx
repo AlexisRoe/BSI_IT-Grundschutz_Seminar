@@ -1,7 +1,18 @@
 import { useState } from "react";
 import type { LabTask } from "@/content/course.types";
-import { Alert, Button, Flex, List, ListItem, Pill, RichText, Text } from "@/ui";
-import { move, scoreOrder, scramble } from "./lab.utils";
+import {
+  Alert,
+  Button,
+  Flex,
+  List,
+  ListItem,
+  OrderList,
+  Pill,
+  RichText,
+  scramble,
+  Text,
+} from "@/ui";
+import { scoreOrder } from "./lab.utils";
 
 /** Props of {@link OrderTask}. */
 export interface OrderTaskProps {
@@ -23,35 +34,27 @@ export function OrderTask({ task, onChecked }: OrderTaskProps) {
       <Text>
         <RichText text={task.prompt} />
       </Text>
-      {order.map((item, i) => (
-        <Flex row gap="sm" align="center" key={item.id}>
-          <Pill>{i + 1}</Pill>
-          <Flex column className="grow">
+      <OrderList
+        items={order}
+        onChange={setOrder}
+        getKey={(item) => item.id}
+        disabled={checked}
+        labels={{
+          moveUp: (item) => `${item.label} nach oben`,
+          moveDown: (item) => `${item.label} nach unten`,
+        }}
+        renderItem={(item) => (
+          <Flex column>
             <Text>{item.label}</Text>
             {item.detail && <Text>{item.detail}</Text>}
           </Flex>
-          {checked ? (
-            <Pill icon={task.items[i]?.id === item.id ? "check" : "close"}>
-              {task.items[i]?.id === item.id ? "richtig" : "falsch"}
-            </Pill>
-          ) : (
-            <>
-              <Button.IconOutlined
-                icon="arrow-up"
-                aria-label={`${item.label} nach oben`}
-                disabled={i === 0}
-                onClick={() => setOrder((o) => move(o, i, -1))}
-              />
-              <Button.IconOutlined
-                icon="arrow-down"
-                aria-label={`${item.label} nach unten`}
-                disabled={i === order.length - 1}
-                onClick={() => setOrder((o) => move(o, i, 1))}
-              />
-            </>
-          )}
-        </Flex>
-      ))}
+        )}
+        renderSuffix={(item, i) => {
+          if (!checked) return null;
+          const right = task.items[i]?.id === item.id;
+          return <Pill icon={right ? "check" : "close"}>{right ? "richtig" : "falsch"}</Pill>;
+        }}
+      />
       {checked ? (
         <>
           <Alert

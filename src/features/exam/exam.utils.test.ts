@@ -1,7 +1,7 @@
 import { EXAM_DISTRIBUTION, EXAM_PASS_RATIO, EXAM_QUESTION_COUNT } from "@/config/exam.config";
 import type { TopicId } from "@/content/course.types";
 import { makeQuestion, seededRng } from "@/test/fixtures.utils";
-import { drawExam, evaluateExam, isAnsweredCorrectly, minutesLeft, shuffle } from "./exam.utils";
+import { drawExam, evaluateExam, isAnsweredCorrectly, minutesLeft } from "./exam.utils";
 
 const fullPool = Object.entries(EXAM_DISTRIBUTION).flatMap(([topic, count]) =>
   Array.from({ length: count * 3 }, (_, i) =>
@@ -107,10 +107,6 @@ describe("evaluateExam", () => {
 });
 
 describe("helpers", () => {
-  it("shuffle keeps all elements", () => {
-    expect(shuffle([1, 2, 3, 4], seededRng(5)).sort()).toEqual([1, 2, 3, 4]);
-  });
-
   it("minutesLeft rounds up and never goes negative", () => {
     expect(minutesLeft(60_000 * 10, 0)).toBe(10);
     expect(minutesLeft(60_000 * 10, 1)).toBe(10);

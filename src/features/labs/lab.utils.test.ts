@@ -1,5 +1,5 @@
 import type { LabTask } from "@/content/course.types";
-import { maxScore, move, scoreClassify, scoreOrder, scramble } from "./lab.utils";
+import { maxScore, scoreClassify, scoreOrder } from "./lab.utils";
 
 const classify: Extract<LabTask, { kind: "classify" }> = {
   kind: "classify",
@@ -32,16 +32,5 @@ describe("lab scoring", () => {
   it("scores order per position", () => {
     expect(scoreOrder(order, ["1", "2", "3", "4"])).toBe(4);
     expect(scoreOrder(order, ["2", "1", "3", "4"])).toBe(2);
-  });
-
-  it("move swaps neighbours and ignores out-of-range moves", () => {
-    expect(move([1, 2, 3], 0, 1)).toEqual([2, 1, 3]);
-    expect(move([1, 2, 3], 0, -1)).toEqual([1, 2, 3]);
-  });
-
-  it("scramble never returns the solution order", () => {
-    const s = scramble(order.items).map((i) => i.id);
-    expect(s).not.toEqual(["1", "2", "3", "4"]);
-    expect([...s].sort()).toEqual(["1", "2", "3", "4"]);
   });
 });
