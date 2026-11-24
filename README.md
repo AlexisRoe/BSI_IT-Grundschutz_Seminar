@@ -6,14 +6,21 @@ Progressive Web App zur Vorbereitung auf die Prüfung zum **IT-Grundschutz-Prakt
 
 ## Inhalt
 
+- [Security by Design](#security-by-design)
 - [Funktionen](#funktionen)
 - [Bedienung](#bedienung)
+- [Screenshots](#screenshots)
 - [Didaktisches Konzept](#didaktisches-konzept)
 - [Quelldokumente](#quelldokumente)
+- [Technologien](#technologien)
 - [Architektur](#architektur)
 - [Entwicklung](#entwicklung)
 - [Weitere Dokumentation](#weitere-dokumentation)
 - [Lizenz](#lizenz)
+
+## Security by Design
+
+Die Anwendung ist von Anfang an auf Sicherheit ausgelegt, von der lokalen Entwicklungsumgebung bis zur Auslieferung. Abhängigkeiten sind auf exakte Versionen festgelegt, werden mit `npm ci` und deaktivierten Lifecycle-Skripten installiert und per `npm audit`, Signaturprüfung und CodeQL kontrolliert; GitHub Actions sind auf Commit-SHAs gepinnt. Ausgeliefert werden nur statische Dateien über Cloudflare, abgesichert durch eine strikte Content-Security-Policy (nur eigener Ursprung, kein `eval`, Trusted Types) und weitere Sicherheits-Header. Es gibt kein Backend, keine Fremd-Origins und keine Übertragung von Nutzerdaten; der Lernfortschritt bleibt lokal und wird beim Laden validiert. Details: [SECURITY.md](SECURITY.md) und die [ADRs](docs/decisions).
 
 ## Funktionen
 
@@ -58,6 +65,26 @@ Die Simulation folgt den Prüfungsbedingungen v2.2 (Details in [ADR 0015](docs/d
 
 Alle Daten liegen im `localStorage` des Browsers. Wer den Browserspeicher löscht oder das Gerät wechselt, sollte vorher unter **Einstellungen → Exportieren** eine JSON-Datei sichern und sie auf dem neuen Gerät wieder importieren. Importierte Dateien werden vor der Übernahme geprüft.
 
+## Screenshots
+
+Die Ansichten zeigen die App mit Beispielfortschritt im E-Ink-tauglichen Schwarz-Weiß-Design.
+
+| Start | Kurs |
+|---|---|
+| [![Startseite mit Fortschritt, nächstem Schritt und Bereichen](screenshots/start.png)](screenshots/start.png) | [![Kursübersicht mit Themenfeldern](screenshots/kurs.png)](screenshots/kurs.png) |
+
+| Lektion | Labor |
+|---|---|
+| [![Lektion mit Lernzielen und Quellen](screenshots/lektion.png)](screenshots/lektion.png) | [![Labor an der Übungsorganisation](screenshots/labor.png)](screenshots/labor.png) |
+
+| Training | Fortschritt |
+|---|---|
+| [![Training aus dem Prüfungspool](screenshots/training.png)](screenshots/training.png) | [![Fortschritt je Themenfeld](screenshots/fortschritt.png)](screenshots/fortschritt.png) |
+
+| Glossar | Einstellungen |
+|---|---|
+| [![Glossar mit Suche](screenshots/glossar.png)](screenshots/glossar.png) | [![Einstellungen mit Export und Import](screenshots/einstellungen.png)](screenshots/einstellungen.png) |
+
 ## Didaktisches Konzept
 
 - **Curriculum als Gerüst**: Jedes Themenfeld des Curriculums hat eigene Lektionen; der Vertiefungsgrad (I = Kennen, II = Anwenden) bestimmt die Tiefe. Die Zuordnung steht in [docs/curriculum-coverage.md](docs/curriculum-coverage.md).
@@ -90,17 +117,78 @@ Alle Dokumente stammen vom BSI und liegen in [`resources/`](resources):
 
 Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [resources/RESSOURCES.md](resources/RESSOURCES.md) beschrieben. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
 
+## Technologien
+
+| Bereich | Technologie | Zweck |
+|---|---|---|
+| Sprache | TypeScript 6 (strict) | Typisierte Inhalte, Komponenten und Logik |
+| UI-Framework | React 19 | Oberfläche |
+| UI-Bibliothek | [`e-ink-ui-lib`](https://github.com/AlexisRoe/e-ink-ui-lib) | Alle Komponenten, Typografie und Design-Tokens für E-Ink-Displays |
+| Build | Vite 8 | Entwicklungsserver und Produktions-Build |
+| Offline / PWA | vite-plugin-pwa 2 (Workbox) | Service Worker, Precaching, Update-Hinweis, Installierbarkeit |
+| Zustand | zustand 5 mit `persist` | Lernfortschritt und laufende Prüfung in `localStorage` |
+| Routing | Eigener Hash-Router (`useHashRoute` der UI-Bibliothek) | Navigation ohne Router-Bibliothek |
+| Tests | Vitest 5, Testing Library, jsdom | Komponenten-, Logik- und Integritätstests mit Coverage |
+| Lint / Format | Biome 2 | Einheitlicher Code-Stil |
+| Sicherheit | Strikte Content-Security-Policy, Trusted Types, `npm audit` | Keine Fremd-Origins, kein `eval`, geprüfte Abhängigkeiten |
+| Deployment | Cloudflare (Wrangler), GitHub Actions | Automatisches Ausliefern von `main` |
+
+Alle Versionen sind exakt in [`package.json`](package.json) festgelegt. Gründe für einzelne Entscheidungen stehen in den [ADRs](docs/decisions).
+
 ## Architektur
 
-### Technik
+### Überblick
 
-- **React 19 + TypeScript** (strict) mit **Vite**; **vite-plugin-pwa** (Workbox) für Offline-Betrieb und Update-Hinweis
-- **UI** ausschließlich aus `e-ink-ui-lib`, eingebunden über `src/ui/index.ts`; eigenes CSS nur für Layout mit `var(--eink-*)`-Tokens
-- **Zustand** mit `zustand` + `persist` in `localStorage` ([ADR 0012](docs/decisions/0012-zustand-local-progress.md))
-- **Routing** über einen eigenen Hash-Router ohne Bibliothek ([ADR 0011](docs/decisions/0011-hash-router-without-dependency.md))
-- **Kursinhalte** als typisierte TypeScript-Daten, je Themenfeld per `import()` nachgeladen ([ADR 0013](docs/decisions/0013-content-as-typed-data.md))
-- **Tests** mit Vitest und Testing Library, **Lint/Format** mit Biome
-- **Deployment** auf Cloudflare über GitHub Actions; strikte Content-Security-Policy in `public/_headers`
+```mermaid
+flowchart TB
+    subgraph Browser["Browser / installierte PWA"]
+        direction TB
+        SW["Service Worker (Workbox)<br/>Precache, Offline, Update-Hinweis"]
+        subgraph App["React-App"]
+            direction TB
+            Shell["App-Rahmen<br/>Navigation, Hash-Router, Update-Hinweis"]
+            Features["Features<br/>Kurs, Labore, Training, Prüfung,<br/>Fortschritt, Glossar, Einstellungen"]
+            Stores["Stores (zustand)<br/>progress.store, exam.store"]
+            Content["Inhalte als Daten<br/>Lektionen, Fragenpool, Labore, Glossar"]
+            UI["src/ui<br/>e-ink-ui-lib"]
+        end
+        LS[("localStorage<br/>Lernfortschritt")]
+    end
+    Static["Statische Dateien<br/>Cloudflare, strikte CSP"]
+    Resources["resources/<br/>BSI-Dokumente (Quellen)"]
+
+    Shell --> Features
+    Features --> UI
+    Features --> Stores
+    Features -->|"import() je Themenfeld"| Content
+    Stores <-->|"persist"| LS
+    SW -->|"liefert aus dem Cache"| App
+    Static -->|"einmaliger Abruf"| SW
+    Content -. "Quellenangabe, Zitat per CI geprüft" .-> Resources
+```
+
+Die App besteht nur aus statischen Dateien. Nach dem ersten Aufruf liefert der Service Worker alles aus dem Cache; es gibt kein Backend und keine Netzwerkanfragen mit Nutzerdaten.
+
+### Datenfluss einer Lektion
+
+```mermaid
+sequenceDiagram
+    actor L as Lernende:r
+    participant R as Hash-Router
+    participant V as Lektionsansicht
+    participant C as Inhalte (import())
+    participant S as progress.store
+    participant LS as localStorage
+
+    L->>R: öffnet #/kurs/t01-l01
+    R->>V: Route "lesson"
+    V->>C: Themenfeld nachladen
+    C-->>V: typisierte Blöcke und Kontrollfragen
+    V-->>L: Lektion, Quellen, Kontrollfragen
+    L->>V: beendet die Kontrollfragen
+    V->>S: completeLesson, recordQuiz
+    S->>LS: persist
+```
 
 ### Verzeichnisse
 
