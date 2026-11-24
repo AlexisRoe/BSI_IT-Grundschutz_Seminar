@@ -1,5 +1,17 @@
 import type { ContentBlock } from "@/content/course.types";
-import { Alert, Card, Description, Link, List, ListItem, RichText, Table, Text, Title } from "@/ui";
+import {
+  Alert,
+  Card,
+  Description,
+  Flex,
+  Link,
+  List,
+  ListItem,
+  RichText,
+  Table,
+  Text,
+  Title,
+} from "@/ui";
 
 /** Renders one lesson content block with library components. */
 export function ContentBlockView({ block }: { block: ContentBlock }) {
@@ -28,8 +40,8 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
       );
     case "table":
       return (
-        <div className="scroll-x">
-          <Table className="table-wrap">
+        <Flex column gap="sm">
+          <Table wrap>
             <Table.Head>
               {block.headers.map((h) => (
                 <Table.HeaderCell key={h}>{h}</Table.HeaderCell>
@@ -49,7 +61,7 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
             </Table.Body>
           </Table>
           {block.caption && <Text>{block.caption}</Text>}
-        </div>
+        </Flex>
       );
     case "definition":
       return <Description label={block.term} value={<RichText text={block.text} />} />;

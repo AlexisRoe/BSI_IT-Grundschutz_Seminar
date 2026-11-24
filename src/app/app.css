@@ -28,10 +28,6 @@ body,
   gap: var(--eink-size-16);
 }
 
-.scroll-x {
-  overflow-x: auto;
-}
-
 .grow {
   flex: 1;
 }
@@ -73,22 +69,6 @@ body,
 
 .lab-task {
   margin-top: var(--eink-size-16);
-}
-
-/* Let table text wrap instead of truncating (the lib truncates by default). */
-.table-wrap :is(th, td) {
-  white-space: normal;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Topic-title tables: wide first column, the remaining columns share the rest evenly. */
-.table-wrap--title-col th:first-child {
-  width: 55%;
-}
-
-.table-wrap--title-col th:not(:first-child) {
-  width: auto;
 }
 
 .build-info {

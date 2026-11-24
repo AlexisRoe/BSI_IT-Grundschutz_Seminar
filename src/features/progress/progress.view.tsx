@@ -20,34 +20,32 @@ export function ProgressView() {
   return (
     <Flex column gap="md">
       <Title size="1">Lernfortschritt</Title>
-      <div className="scroll-x">
-        <Table className="table-wrap table-wrap--title-col">
-          <Table.Head>
-            <Table.HeaderCell>Themenfeld</Table.HeaderCell>
-            <Table.HeaderCell>Lektionen</Table.HeaderCell>
-            <Table.HeaderCell>Labore</Table.HeaderCell>
-            <Table.HeaderCell>Trefferquote</Table.HeaderCell>
-          </Table.Head>
-          <Table.Body>
-            {TOPICS.map((t) => {
-              const { done, total } = topicLessonProgress(course, { lessons }, t.id);
-              const topicLabs = course.labs.filter((l) => l.topic === t.id);
-              const labsDone = topicLabs.filter((l) => labs[l.id]).length;
-              const accuracy = topicAccuracy(course, { questions }, t.id);
-              return (
-                <Table.Row key={t.id}>
-                  <Table.Cell>{`${t.id}. ${t.title}`}</Table.Cell>
-                  <Table.Cell>{`${done} / ${total}`}</Table.Cell>
-                  <Table.Cell>
-                    {topicLabs.length ? `${labsDone} / ${topicLabs.length}` : "–"}
-                  </Table.Cell>
-                  <Table.Cell>{accuracy === undefined ? "–" : `${accuracy} %`}</Table.Cell>
-                </Table.Row>
-              );
-            })}
-          </Table.Body>
-        </Table>
-      </div>
+      <Table wrap>
+        <Table.Head>
+          <Table.HeaderCell width="55%">Themenfeld</Table.HeaderCell>
+          <Table.HeaderCell>Lektionen</Table.HeaderCell>
+          <Table.HeaderCell>Labore</Table.HeaderCell>
+          <Table.HeaderCell>Trefferquote</Table.HeaderCell>
+        </Table.Head>
+        <Table.Body>
+          {TOPICS.map((t) => {
+            const { done, total } = topicLessonProgress(course, { lessons }, t.id);
+            const topicLabs = course.labs.filter((l) => l.topic === t.id);
+            const labsDone = topicLabs.filter((l) => labs[l.id]).length;
+            const accuracy = topicAccuracy(course, { questions }, t.id);
+            return (
+              <Table.Row key={t.id}>
+                <Table.Cell>{`${t.id}. ${t.title}`}</Table.Cell>
+                <Table.Cell>{`${done} / ${total}`}</Table.Cell>
+                <Table.Cell>
+                  {topicLabs.length ? `${labsDone} / ${topicLabs.length}` : "–"}
+                </Table.Cell>
+                <Table.Cell>{accuracy === undefined ? "–" : `${accuracy} %`}</Table.Cell>
+              </Table.Row>
+            );
+          })}
+        </Table.Body>
+      </Table>
       <Text>Die Trefferquote bezieht sich auf beantwortete Fragen aus dem Prüfungsfragenpool.</Text>
 
       <Title size="2">Prüfungssimulationen</Title>
