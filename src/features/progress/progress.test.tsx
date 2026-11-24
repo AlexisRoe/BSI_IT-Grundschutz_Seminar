@@ -50,6 +50,15 @@ describe("progress views", () => {
     expect(window.location.hash).toBe("#/pruefung/ergebnis/e1");
   });
 
+  it("progress table rows are not selectable", async () => {
+    renderWithProviders(<ProgressView />);
+    await screen.findByText("Lernfortschritt");
+    for (const row of await screen.findAllByRole("row")) {
+      expect(row).not.toHaveAttribute("aria-selected");
+      expect(row).not.toHaveClass("eink-table-row--selectable");
+    }
+  });
+
   it("settings show build information", () => {
     renderWithProviders(<SettingsView />);
     expect(screen.getByText("Über diese App")).toBeInTheDocument();

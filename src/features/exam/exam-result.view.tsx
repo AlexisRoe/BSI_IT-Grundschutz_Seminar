@@ -50,7 +50,7 @@ export function ExamResultView({ examId }: { examId: string }) {
           {TOPICS.filter((t) => record.byTopic[t.id as TopicId]).map((t) => {
             const s = record.byTopic[t.id];
             return (
-              <Table.Row key={t.id}>
+              <Table.Row selectable={false} key={t.id}>
                 <Table.Cell>{`${t.id}. ${t.title}`}</Table.Cell>
                 <Table.Cell>{`${s?.correct ?? 0} / ${s?.total ?? 0}`}</Table.Cell>
               </Table.Row>

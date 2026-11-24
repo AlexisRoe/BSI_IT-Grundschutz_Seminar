@@ -34,7 +34,7 @@ export function ProgressView() {
             const labsDone = topicLabs.filter((l) => labs[l.id]).length;
             const accuracy = topicAccuracy(course, { questions }, t.id);
             return (
-              <Table.Row key={t.id}>
+              <Table.Row selectable={false} key={t.id}>
                 <Table.Cell>{`${t.id}. ${t.title}`}</Table.Cell>
                 <Table.Cell>{`${done} / ${total}`}</Table.Cell>
                 <Table.Cell>

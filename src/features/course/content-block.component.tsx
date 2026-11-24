@@ -37,7 +37,7 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
             </Table.Head>
             <Table.Body>
               {block.rows.map((row) => (
-                <Table.Row key={row.join("|")}>
+                <Table.Row selectable={false} key={row.join("|")}>
                   {row.map((cell, i) => (
                     // biome-ignore lint/suspicious/noArrayIndexKey: cells are positional
                     <Table.Cell key={i}>
