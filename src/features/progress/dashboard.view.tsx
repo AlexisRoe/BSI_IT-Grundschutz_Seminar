@@ -82,7 +82,7 @@ export function DashboardView() {
         value={overallLessonPercent(course, { lessons })}
         label="Lektionen abgeschlossen"
       />
-      <Space size="16" />
+      <Space size="4" />
       <Card>
         <Card.Header>
           <Card.Subtitle>Nächster Schritt</Card.Subtitle>
@@ -109,7 +109,7 @@ export function DashboardView() {
           </Card.Action>
         </Card>
       )}
-      <Space size="16" />
+      <Space size="24" />
       <Grid columns={2} gap="xl">
         {SECTIONS.map((section) => (
           <Flex column gap="sm" key={section.title}>
