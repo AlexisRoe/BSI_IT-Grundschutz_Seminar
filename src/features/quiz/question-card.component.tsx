@@ -1,8 +1,7 @@
-import { RichText } from "@/components/rich-text.component";
 import type { Question } from "@/content/course.types";
 import { formatSource } from "@/content/sources.constants";
 import { isAnsweredCorrectly } from "@/features/exam/exam.utils";
-import { Alert, Card, Checkbox, Flex, Pill, Text } from "@/ui";
+import { Alert, Card, Checkbox, Flex, Pill, RichText, Text } from "@/ui";
 
 /** Props of {@link QuestionCard}. */
 export interface QuestionCardProps {
@@ -38,21 +37,22 @@ export function QuestionCard({
       <Card.Content>
         <Flex column gap="md">
           {question.options.map((option, i) => (
-            <div key={LETTERS[i]} className="option-row">
-              <Checkbox
-                name={`${question.id}-${i}`}
-                checked={selected.includes(i)}
-                disabled={reveal}
-                onChange={() => onToggle(i)}
-              >
-                {LETTERS[i]}) {option.text}
-              </Checkbox>
-              {reveal && (
-                <Pill icon={option.correct ? "check" : "close"}>
-                  {option.correct ? "richtig" : "falsch"}
-                </Pill>
-              )}
-            </div>
+            <Checkbox
+              key={LETTERS[i]}
+              name={`${question.id}-${i}`}
+              checked={selected.includes(i)}
+              disabled={reveal}
+              onChange={() => onToggle(i)}
+              suffix={
+                reveal ? (
+                  <Pill icon={option.correct ? "check" : "close"}>
+                    {option.correct ? "richtig" : "falsch"}
+                  </Pill>
+                ) : undefined
+              }
+            >
+              {LETTERS[i]}) {option.text}
+            </Checkbox>
           ))}
           {reveal && (
             <>

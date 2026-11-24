@@ -4,10 +4,9 @@ import { EXAM_TIMER_TICK_MS } from "@/config/exam.config";
 import { QuestionCard } from "@/features/quiz/question-card.component";
 import { useCourse } from "@/hooks/course.hook";
 import { navigate } from "@/hooks/hash-route.hook";
-import { useNow } from "@/hooks/now.hook";
 import { useExamStore } from "@/stores/exam.store";
 import { useProgressStore } from "@/stores/progress.store";
-import { Button, Flex, Grid, Modal, Pill, State, Text, Title } from "@/ui";
+import { Button, Flex, Grid, Modal, Pill, State, Text, Title, useNow } from "@/ui";
 import { minutesLeft } from "./exam.utils";
 import { examQuestions, finishExam } from "./exam-session.utils";
 

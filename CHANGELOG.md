@@ -2,6 +2,32 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
+## [1.4.0] – 2026-11-24
+
+### Hinzugefügt
+- Lektionen enden mit der Schaltfläche „Nach oben“, die an den Seitenanfang springt.
+
+### Geändert
+- Aktualisierung auf `e-ink-ui-lib` 1.5.0. Die App nutzt nun die dort aufgenommenen Bausteine statt eigener Kopien: `EinkProvider`, `RichText`, `OrderList`, `Skeleton.Group`, `Alert` mit Aktionsbereich, `Checkbox` mit Ergebnis-Anzeige, `Table` mit Zeilenumbruch und Spaltenbreite, `Button` mit linker Ausrichtung, `useNow`, Hash-Router-Grundfunktionen, `useDownload` sowie `shuffle`, `move` und `scramble`. Testhilfen kommen aus `e-ink-ui-lib/testing`.
+- Die Schriften liefert die Bibliothek nun selbst als Dateien aus; das Build-Plugin zum Auslagern entfällt (ADR 0010 ersetzt).
+- Fehlgeschlagene Importe zeigen eine deutsche Meldung statt der englischen Standardmeldung.
+- In der Ordnungsaufgabe bleiben die Pfeil-Schaltflächen nach dem Auswerten sichtbar, sind aber deaktiviert.
+- Einstellungen: „Über diese App“ ist nun eine Überschrift über der Karte, die Schaltfläche „Nach Update suchen“ steht unter der Karte.
+- Karten auf Start und Laborseite: zwischen Text und Aktionsschaltfläche steht nun ein Abstand von 1 rem (`Space`).
+- Begriffsdefinitionen in den Lektionen stehen unter einer Überschrift (Ebene 4) statt unter einem winzigen Etikett. Dasselbe gilt für das Glossar (Begriff als Überschrift, Definition und Quelle als Text; die Definitionen wurden dort zuvor nicht angezeigt) und die Build-Informationen in den Einstellungen („Version: …“).
+- Tabellenzeilen (Fortschritt, Prüfungsergebnis, Lektionen) lassen sich nicht mehr anklicken und werden nicht mehr hervorgehoben.
+- Startseite: Abstand zwischen Fortschrittsbalken und Karte; Kurs, Labore, Training und Prüfungssimulation haben je eine Überschrift, eine Beschreibung und eine Schaltfläche, angeordnet in einem 2×2-Raster.
+- Kursübersicht: Das Themenfeld mit der ersten unerledigten Lektion ist beim Öffnen automatisch aufgeklappt (von oben beginnend); der Inhalt der Themenfelder hat mehr Innenabstand.
+- Einstellungen: Reihenfolge „Über diese App“, „Sichern“, „Zurücksetzen“, mit größerem Abstand zwischen den Abschnitten. „Fortschritt exportieren“ ist nun eine Umriss-Schaltfläche, „Gesamten Fortschritt löschen“ die primäre (gefüllte). Der Import hat statt eines Feldlabels eine Überschrift („Fortschritt importieren“) auf Ebene 2.
+- Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
+
+### Behoben
+- Beim Wechsel zur vorherigen oder nächsten Lektion blieb die Ansicht am Seitenende stehen; sie springt nun nach oben (Korrektur in `e-ink-ui-lib` 1.5.0: `navigate` setzte den Scrollbereich der Seite nicht zurück). Das doppelte `<main>`-Element der App ist entfernt.
+- Der Hinweis „Eine neue Version ist verfügbar“ blieb auch nach „Neu laden“ bestehen. Ursache: Der Service Worker konnte seine Laufzeitbibliothek wegen der Trusted-Types-Richtlinie (CSP) nicht laden und beantwortete die Aktivierungsanfrage nicht; auch Zwischenspeicher und Offline-Betrieb waren dadurch betroffen. Die Laufzeitbibliothek ist jetzt in `sw.js` eingebettet (ADR 0018).
+
+### Entfernt
+- Eigene CSS-Regeln für Tabellen, Listenmarker, Antwortzeilen, Update-Hinweis und linksbündige Schaltflächen.
+
 ## [1.3.3] – 2026-11-24
 
 ### Hinzugefügt
@@ -66,6 +92,7 @@ Erste Version der Progressive Web App zur Vorbereitung auf die Prüfung zum IT-G
 - Tabelle 2 der Prüfungsbedingungen ergibt 49 statt 50 Fragen; die 50. wird zufällig gezogen (ADR 0015).
 - `npm audit` meldet 4 mittlere Befunde in Build-Werkzeugen, nicht in der ausgelieferten App; bewusst zurückgestellt (ADR 0016).
 
+[1.4.0]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.3...v1.4.0
 [1.3.3]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.2...v1.3.3
 [1.3.2]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.1.2...v1.3.1

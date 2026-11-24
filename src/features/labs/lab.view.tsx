@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Loading } from "@/components/loading.component";
-import { RichText } from "@/components/rich-text.component";
 import { SourceList } from "@/components/source-list.component";
 import { getTopic } from "@/content/topics.constants";
 import { useCourse } from "@/hooks/course.hook";
 import { navigate } from "@/hooks/hash-route.hook";
 import { useProgressStore } from "@/stores/progress.store";
-import { Alert, Button, Divider, Flex, State, Text, Title } from "@/ui";
+import { Alert, Button, Divider, Flex, RichText, State, Text, Title } from "@/ui";
 import { ClassifyTask } from "./classify-task.component";
 import { maxScore } from "./lab.utils";
 import { OrderTask } from "./order-task.component";

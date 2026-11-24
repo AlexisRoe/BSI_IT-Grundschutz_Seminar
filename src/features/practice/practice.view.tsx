@@ -3,12 +3,11 @@ import { Loading } from "@/components/loading.component";
 import { TRAINING_ROUND_SIZE } from "@/config/exam.config";
 import type { Question, TopicId } from "@/content/course.types";
 import { TOPICS } from "@/content/topics.constants";
-import { shuffle } from "@/features/exam/exam.utils";
 import { Quiz } from "@/features/quiz/quiz.component";
 import { useCourse } from "@/hooks/course.hook";
 import { wrongQuestionIds } from "@/stores/progress.selectors";
 import { useProgressStore } from "@/stores/progress.store";
-import { Alert, Button, Flex, Segmented, Select, Text, Title } from "@/ui";
+import { Alert, Button, Flex, Segmented, Select, shuffle, Text, Title } from "@/ui";
 
 type Mode = "topic" | "mistakes" | "mixed";
 

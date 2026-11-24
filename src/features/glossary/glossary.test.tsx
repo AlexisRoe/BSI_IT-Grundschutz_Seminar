@@ -1,12 +1,19 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { GLOSSARY } from "@/content/glossary.content";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { GlossaryView } from "./glossary.view";
 
 describe("glossary", () => {
   it("is sorted alphabetically", () => {
     const terms = GLOSSARY.map((e) => e.term);
     expect(terms).toEqual([...terms].sort((a, b) => a.localeCompare(b, "de")));
+  });
+
+  it("shows term as heading, the definition and the source", () => {
+    renderWithProviders(<GlossaryView />);
+    const entry = GLOSSARY[0] as (typeof GLOSSARY)[number];
+    expect(screen.getByRole("heading", { level: 2, name: entry.term })).toBeInTheDocument();
+    expect(screen.getAllByText(/^Quelle: /).length).toBe(GLOSSARY.length);
   });
 
   it("filters by search term", () => {

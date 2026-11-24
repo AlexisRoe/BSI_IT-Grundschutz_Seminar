@@ -10,12 +10,13 @@ import { selectProgressData, useProgressStore } from "@/stores/progress.store";
 import {
   Button,
   Card,
-  Description,
   FileUpload,
   Flex,
   Modal,
+  Space,
   Text,
   Title,
+  useDownload,
   useNotifications,
 } from "@/ui";
 import { createExport, parseExport } from "./progress-transfer.utils";
@@ -27,6 +28,7 @@ export function SettingsView() {
   const [registration, setRegistration] = useState<CheckableRegistration>();
   const [updateReady, setUpdateReady] = useState(false);
   const { notify } = useNotifications();
+  const download = useDownload();
 
   const checkUpdate = async () => {
     setChecking(true);
@@ -55,15 +57,11 @@ export function SettingsView() {
 
   const exportProgress = () => {
     const data = selectProgressData(useProgressStore.getState());
-    const blob = new Blob([JSON.stringify(createExport(data), null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `grundschutz-fortschritt-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
+    download(
+      JSON.stringify(createExport(data), null, 2),
+      `grundschutz-fortschritt-${new Date().toISOString().slice(0, 10)}.json`,
+      "application/json",
+    );
   };
 
   const importProgress = async (file: File) => {
@@ -83,28 +81,64 @@ export function SettingsView() {
   };
 
   return (
-    <Flex column gap="md">
-      <Title size="1">Einstellungen</Title>
-      <Text>
-        Ihr Lernfortschritt wird ausschließlich lokal in diesem Browser gespeichert. Es werden keine
-        Daten an einen Server übertragen. Mit Export und Import können Sie den Stand sichern oder
-        auf ein anderes Gerät übertragen.
-      </Text>
-      <Title size="2">Sichern</Title>
-      <Button iconLeft="download" onClick={exportProgress}>
-        Fortschritt exportieren (JSON)
-      </Button>
-      <FileUpload
-        accept={[".json", "application/json"]}
-        placeholder="Exportdatei auswählen"
-        onUpload={importProgress}
-      >
-        Fortschritt importieren
-      </FileUpload>
-      <Title size="2">Zurücksetzen</Title>
-      <Button.Outlined iconLeft="trash" onClick={() => setConfirmReset(true)}>
-        Gesamten Fortschritt löschen
-      </Button.Outlined>
+    <Flex column gap="xl">
+      <Flex column gap="md">
+        <Title size="1">Einstellungen</Title>
+        <Text>
+          Ihr Lernfortschritt wird ausschließlich lokal in diesem Browser gespeichert. Es werden
+          keine Daten an einen Server übertragen. Mit Export und Import können Sie den Stand sichern
+          oder auf ein anderes Gerät übertragen.
+        </Text>
+        <Space size="4" />
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Über diese App</Title>
+        <Card>
+          <Card.Content>
+            <Flex column gap="sm">
+              <Text>{`Projekt: ${BUILD_INFO.title}`}</Text>
+              <Text>{`Version: ${BUILD_INFO.version}`}</Text>
+              <Text>{`Commit: ${BUILD_INFO.commit}`}</Text>
+              <Text>{`Build-Zeit: ${new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}`}</Text>
+            </Flex>
+          </Card.Content>
+        </Card>
+        {updateReady ? (
+          <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
+            Update installieren und neu laden
+          </Button>
+        ) : (
+          <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
+            {checking ? "Prüfe …" : "Nach Update suchen"}
+          </Button.Outlined>
+        )}
+        <Space size="4" />
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Sichern</Title>
+        <Button.Outlined iconLeft="download" onClick={exportProgress}>
+          Fortschritt exportieren (JSON)
+        </Button.Outlined>
+        <Space size="4" />
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Fortschritt importieren</Title>
+        <FileUpload
+          accept={[".json", "application/json"]}
+          placeholder="Exportdatei auswählen"
+          errorMessage="Import fehlgeschlagen: ungültige Exportdatei"
+          onUpload={importProgress}
+        >
+          {null}
+        </FileUpload>
+        <Space size="4" />
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Zurücksetzen</Title>
+        <Button iconLeft="trash" onClick={() => setConfirmReset(true)}>
+          Gesamten Fortschritt löschen
+        </Button>
+      </Flex>
       <Modal
         open={confirmReset}
         title="Fortschritt löschen?"
@@ -123,33 +157,6 @@ export function SettingsView() {
         <Modal.CloseButton>Abbrechen</Modal.CloseButton>
         <Modal.ActionButton>Löschen</Modal.ActionButton>
       </Modal>
-      <Card>
-        <Card.Header>
-          <Card.Title>Über diese App</Card.Title>
-        </Card.Header>
-        <Card.Content>
-          <Flex column gap="md">
-            {updateReady ? (
-              <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
-                Update installieren und neu laden
-              </Button>
-            ) : (
-              <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
-                {checking ? "Prüfe …" : "Nach Update suchen"}
-              </Button.Outlined>
-            )}
-          </Flex>
-          <div className="build-info">
-            <Description label="Projekt" value={BUILD_INFO.title} />
-            <Description label="Version" value={BUILD_INFO.version} />
-            <Description label="Commit" value={BUILD_INFO.commit} />
-            <Description
-              label="Build-Zeit"
-              value={new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}
-            />
-          </div>
-        </Card.Content>
-      </Card>
     </Flex>
   );
 }

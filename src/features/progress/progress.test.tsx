@@ -1,7 +1,7 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { useExamStore } from "@/stores/exam.store";
 import { type ExamRecord, useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { DashboardView } from "./dashboard.view";
 import { ProgressView } from "./progress.view";
 import { createExport } from "./progress-transfer.utils";
@@ -50,13 +50,37 @@ describe("progress views", () => {
     expect(window.location.hash).toBe("#/pruefung/ergebnis/e1");
   });
 
+  it("dashboard describes each section with a heading, text and a button", async () => {
+    renderWithProviders(<DashboardView />);
+    for (const [title, action] of [
+      ["Kurs", "Zum Kurs"],
+      ["Labore", "Labore öffnen"],
+      ["Training", "Training starten"],
+      ["Prüfungssimulation", "Simulation öffnen"],
+    ] as const) {
+      expect(await screen.findByRole("heading", { level: 2, name: title })).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: action })).toBeInTheDocument();
+    }
+    fireEvent.click(screen.getByRole("button", { name: "Labore öffnen" }));
+    expect(window.location.hash).toBe("#/labor");
+  });
+
+  it("progress table rows are not selectable", async () => {
+    renderWithProviders(<ProgressView />);
+    await screen.findByText("Lernfortschritt");
+    for (const row of await screen.findAllByRole("row")) {
+      expect(row).not.toHaveAttribute("aria-selected");
+      expect(row).not.toHaveClass("eink-table-row--selectable");
+    }
+  });
+
   it("settings show build information", () => {
     renderWithProviders(<SettingsView />);
     expect(screen.getByText("Über diese App")).toBeInTheDocument();
-    expect(screen.getByText("IT-Grundschutz-Praktiker")).toBeInTheDocument();
-    expect(screen.getByText(/^\d+\.\d+\.\d+$/)).toBeInTheDocument();
-    expect(screen.getByText("Commit")).toBeInTheDocument();
-    expect(screen.getByText("Build-Zeit")).toBeInTheDocument();
+    expect(screen.getByText("Projekt: IT-Grundschutz-Praktiker")).toBeInTheDocument();
+    expect(screen.getByText(/^Version: \d+\.\d+\.\d+$/)).toBeInTheDocument();
+    expect(screen.getByText(/^Commit: /)).toBeInTheDocument();
+    expect(screen.getByText(/^Build-Zeit: /)).toBeInTheDocument();
   });
 
   it("settings export, import and reset progress", async () => {

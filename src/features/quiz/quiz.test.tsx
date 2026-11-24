@@ -1,6 +1,6 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { makeQuestion } from "@/test/fixtures.utils";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { Quiz } from "./quiz.component";
 
 describe("Quiz", () => {

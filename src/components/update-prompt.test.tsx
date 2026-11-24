@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { AppProviders } from "@/app/app-providers.component";
 import { UpdatePrompt } from "@/components/update-prompt.component";
+import { renderWithProviders } from "@/ui/testing";
 
 const applyUpdate = vi.fn();
 let updateAvailable = false;
@@ -18,11 +18,7 @@ describe("UpdatePrompt", () => {
 
   it("offers a reload when an update is available", () => {
     updateAvailable = true;
-    render(
-      <AppProviders>
-        <UpdatePrompt />
-      </AppProviders>,
-    );
+    renderWithProviders(<UpdatePrompt />);
     fireEvent.click(screen.getByRole("button", { name: "Neu laden" }));
     expect(applyUpdate).toHaveBeenCalled();
   });

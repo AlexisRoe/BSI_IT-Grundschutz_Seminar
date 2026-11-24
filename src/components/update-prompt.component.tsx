@@ -6,9 +6,11 @@ export function UpdatePrompt() {
   const { updateAvailable, applyUpdate } = usePwaUpdate();
   if (!updateAvailable) return null;
   return (
-    <div className="app__notice">
-      <Alert variant="info" icon="refresh" title="Eine neue Version ist verfügbar" />
-      <Button onClick={applyUpdate}>Neu laden</Button>
-    </div>
+    <Alert
+      variant="info"
+      icon="refresh"
+      title="Eine neue Version ist verfügbar"
+      action={<Button onClick={applyUpdate}>Neu laden</Button>}
+    />
   );
 }

@@ -1,10 +1,8 @@
 import type { Question, TopicId } from "@/content/course.types";
+import { type Rng, shuffle } from "@/ui";
 
 /** Selected option indexes (0–3) per question id. */
 export type Answers = Readonly<Record<string, readonly number[]>>;
-
-/** Random number source in [0, 1); injectable for tests. */
-export type Rng = () => number;
 
 /** Indexes of the correct options of a question. */
 export function correctIndexes(question: Question): number[] {
@@ -19,16 +17,6 @@ export function isAnsweredCorrectly(question: Question, selected: readonly numbe
   const expected = correctIndexes(question);
   const chosen = new Set(selected);
   return chosen.size === expected.length && expected.every((i) => chosen.has(i));
-}
-
-/** Fisher–Yates shuffle returning a new array. */
-export function shuffle<T>(items: readonly T[], rng: Rng = Math.random): T[] {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(rng() * (i + 1));
-    [copy[i], copy[j]] = [copy[j] as T, copy[i] as T];
-  }
-  return copy;
 }
 
 /**

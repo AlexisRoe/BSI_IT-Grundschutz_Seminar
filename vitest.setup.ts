@@ -1,4 +1,4 @@
 import "@testing-library/jest-dom/vitest";
-import { stubMatchMedia } from "./src/test/match-media.utils";
+import { stubMatchMedia } from "./src/ui/testing";
 
 stubMatchMedia();

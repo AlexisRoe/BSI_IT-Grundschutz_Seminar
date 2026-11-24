@@ -5,7 +5,6 @@ import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import { extractInlineFontsPlugin } from "./plugins/extract-inline-fonts.plugin.ts";
 
 const isTest = process.env.VITEST === "true";
 const APP_TITLE = "IT-Grundschutz-Praktiker";
@@ -36,7 +35,6 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    extractInlineFontsPlugin(),
     VitePWA({
       registerType: "prompt",
       injectRegister: false,
@@ -73,6 +71,7 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,ico,png,woff2,ttf}"],
         navigateFallback: "/index.html",
         cleanupOutdatedCaches: true,
+        inlineWorkboxRuntime: true,
         runtimeCaching: [],
       },
     }),
@@ -105,6 +104,7 @@ export default defineConfig({
         "src/test/**",
         "src/main.tsx",
         "src/ui/index.ts",
+        "src/ui/testing.ts",
         "src/**/*.types.ts",
       ],
       thresholds: { lines: 80, statements: 80, functions: 80, branches: 70 },

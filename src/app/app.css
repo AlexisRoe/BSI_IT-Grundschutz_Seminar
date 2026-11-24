@@ -21,41 +21,10 @@ body,
   padding: var(--eink-size-16) var(--eink-size-32);
 }
 
-.app__notice {
-  display: flex;
-  align-items: center;
-  gap: var(--eink-size-16);
-  margin-bottom: var(--eink-size-16);
-}
-
-.app__notice > :first-child {
-  flex: 1;
-}
-
-.option-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--eink-size-16);
-}
-
-.scroll-x {
-  overflow-x: auto;
-}
-
-.grow {
-  flex: 1;
-}
-
 @media (max-width: 40rem) {
   .app__main {
     padding: var(--eink-size-16);
   }
-}
-
-.lesson-link {
-  justify-content: flex-start;
-  text-align: left;
 }
 
 .course {
@@ -68,7 +37,7 @@ body,
   display: flex;
   flex-direction: column;
   gap: var(--eink-size-20);
-  padding-block: var(--eink-size-8);
+  padding: var(--eink-size-16) var(--eink-size-8) var(--eink-size-24);
 }
 
 .course__lessons {
@@ -86,34 +55,7 @@ body,
   margin-top: var(--eink-size-16);
 }
 
-/* Let table text wrap instead of truncating (the lib truncates by default). */
-.table-wrap :is(th, td) {
-  white-space: normal;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Topic-title tables: wide first column, the remaining columns share the rest evenly. */
-.table-wrap--title-col th:first-child {
-  width: 55%;
-}
-
-.table-wrap--title-col th:not(:first-child) {
-  width: auto;
-}
-
-.build-info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--eink-size-16);
-}
-
-/* Lists: first text line aligns with its marker, even when items wrap. */
-.eink-list--unordered > .eink-list__item,
-.eink-list--ordered > .eink-list__item {
-  align-items: flex-start;
-}
-
-.eink-list--unordered > .eink-list__item::before {
-  margin-top: calc((1lh - var(--eink-size-10)) / 2);
+/* FileUpload without a label (the section title names it): hide the empty label element. */
+.eink-file-upload__label:empty {
+  display: none;
 }

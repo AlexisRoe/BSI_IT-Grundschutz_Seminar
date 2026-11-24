@@ -2,6 +2,8 @@
 
 Checked against `e-ink-ui-lib` **1.3.1** (matches `package-lock.json`). Date: 2026-11-24.
 
+> **Status (2026-11-24):** the gaps listed below were closed in `e-ink-ui-lib` 1.4.0 and the app adopted them in app version 1.4.0. Not taken over: `Page` full-height reset and `maxWidth`, `ClassifyTask`, `ContentBlockView`, PWA update logic and the Trusted Types policy (see README of the lib for the CSP notes). The text below is the original review.
+
 The app uses about 30 lib components, imports them only through `src/ui/index.ts`, and does not fork or re-implement any lib component. The gaps below are either small custom compositions or CSS workarounds.
 
 ## 1. Components built from scratch

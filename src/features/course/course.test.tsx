@@ -1,6 +1,7 @@
-import { fireEvent, screen } from "@testing-library/react";
+import { fireEvent, screen, waitFor } from "@testing-library/react";
+import { loadCourse } from "@/content/content.utils";
 import { useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { CourseOverviewView } from "./course-overview.view";
 import { LessonView } from "./lesson.view";
 
@@ -13,6 +14,20 @@ describe("course views", () => {
     expect(screen.getByText(/15\. BCM-Prozess/)).toBeInTheDocument();
     fireEvent.click(screen.getByText(/1\.1 Informationen, Grundwerte/));
     expect(window.location.hash).toBe("#/kurs/t01-l01");
+  });
+
+  it("opens the topic with the first unfinished lesson", async () => {
+    const course = await loadCourse();
+    const topics = course.topics.filter((t) => t.lessons.length > 0);
+    const [first, second] = topics;
+    for (const lesson of first?.lessons ?? [])
+      useProgressStore.getState().completeLesson(lesson.id);
+    const { container } = renderWithProviders(<CourseOverviewView />);
+    await screen.findByText(/1\. Einführung und Grundlagen/);
+    await waitFor(() =>
+      expect(container.querySelector("details[open]")?.id).toBe(`topic-${second?.topic}`),
+    );
+    expect(container.querySelectorAll("details[open]")).toHaveLength(1);
   });
 
   it("renders a lesson and marks it as read", async () => {
@@ -30,6 +45,25 @@ describe("course views", () => {
     renderWithProviders(<LessonView lessonId="t01-l03" />);
     expect(await screen.findByText(/Praxis 2026: NIS-2/)).toBeInTheDocument();
     expect(screen.getByText(/Nicht prüfungsrelevant/)).toBeInTheDocument();
+  });
+
+  it("renders definition terms as level-4 headings", async () => {
+    renderWithProviders(<LessonView lessonId="t01-l01" />);
+    expect(
+      await screen.findByRole("heading", { level: 4, name: "Vertraulichkeit" }),
+    ).toBeInTheDocument();
+  });
+
+  it("offers a button that scrolls the page body back to the top", async () => {
+    renderWithProviders(
+      <main data-testid="body">
+        <LessonView lessonId="t01-l02" />
+      </main>,
+    );
+    const body = screen.getByTestId("body");
+    body.scrollTop = 400;
+    fireEvent.click(await screen.findByRole("button", { name: "Nach oben" }));
+    expect(body.scrollTop).toBe(0);
   });
 
   it("shows an empty state for unknown lessons", async () => {
