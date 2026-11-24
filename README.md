@@ -88,7 +88,7 @@ Die Ansichten zeigen die App mit Beispielfortschritt im E-Ink-tauglichen Schwarz
 ## Didaktisches Konzept
 
 - **Curriculum als Gerüst**: Jedes Themenfeld des Curriculums hat eigene Lektionen; der Vertiefungsgrad (I = Kennen, II = Anwenden) bestimmt die Tiefe. Die Zuordnung steht in [docs/curriculum-coverage.md](docs/curriculum-coverage.md).
-- **Nachvollziehbare Quellen**: Jede prüfungsrelevante Aussage, jede Frage und jedes Labor verweist auf Dokument, Kapitel und Seite in `resources/` ([ADR 0014](docs/decisions/0014-source-policy-and-praxis-2026.md)).
+- **Nachvollziehbare Quellen**: Jede prüfungsrelevante Aussage, jede Frage und jedes Labor verweist auf Dokument, Kapitel und Seite eines BSI-Dokuments ([ADR 0014](docs/decisions/0014-source-policy-and-praxis-2026.md)).
 - **Getrennte Fragenpools**: Kontrollfragen in den Lektionen dienen dem Verständnis. Training und Simulation nutzen einen eigenen Pool mit 184 Fragen, davon 75 % Basis- und 25 % Expertenfragen, wie es die Prüfungsbedingungen vorsehen.
 - **Praxis 2026**: Aktuelle Entwicklungen (z. B. NIS-2-Pflichten, der neue digitale IT-Grundschutz, C5) stehen in eigenen Kästen mit dem Hinweis „nicht prüfungsrelevant“, öffentlicher Quelle und Datum. Sie fließen nie in Fragen ein.
 - **Ergänzungen außerhalb der Quellen**: Begriffe, die das Curriculum nennt, die BSI-Dokumente aber nicht erläutern (z. B. HV-Benchmark, Audit-Arten), sind ausdrücklich als Ergänzung gekennzeichnet und werden nicht abgefragt.
@@ -97,25 +97,25 @@ Die Ansichten zeigen die App mit Beispielfortschritt im E-Ink-tauglichen Schwarz
 
 ## Quelldokumente
 
-Alle Dokumente stammen vom BSI und liegen in [`resources/`](resources):
+Alle Dokumente stammen vom BSI. Sie sind aus Urheberrechtsgründen **nicht** im Repository enthalten ([ADR 0019](docs/decisions/0019-bsi-documents-not-in-repo.md)):
 
 | Dokument | Version | Datei |
 |---|---|---|
-| Curriculum IT-Grundschutz-Praktiker und -Berater | 1.1 (24.09.2024) | [curriculum_1_1.pdf](resources/curriculum_1_1.pdf) |
-| Fragen und Antworten zum Schulungskonzept | 1.1 (24.09.2024) | [faq_curiculum.pdf](resources/faq_curiculum.pdf) |
-| Prüfungsbedingungen IT-Grundschutz-Praktiker | 2.2 (23.06.2026) | [pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf](resources/pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf) |
-| IT-Grundschutz-Kompendium | Edition 2023 | [IT_Grundschutz_Kompendium_Edition2023.pdf](resources/IT_Grundschutz_Kompendium_Edition2023.pdf) |
-| BSI-Standard 200-1: Managementsysteme für Informationssicherheit | 1.0 (10/2017) | [standard_200_1.pdf](resources/standard_200_1.pdf) |
-| BSI-Standard 200-2: IT-Grundschutz-Methodik | 1.0 (10/2017) | [standard_200_2.pdf](resources/standard_200_2.pdf) |
-| BSI-Standard 200-3: Risikoanalyse auf der Basis von IT-Grundschutz | 1.0 (10/2017) | [standard_200_3.pdf](resources/standard_200_3.pdf) |
-| BSI-Standard 200-4: Business Continuity Management | 2023 | [standard_200_4.pdf](resources/standard_200_4.pdf) |
-| Zertifizierungsschema ISO 27001 auf Basis IT-Grundschutz | 2.2 | [zertifizierungsschema.pdf](resources/zertifizierungsschema.pdf) |
-| Auditierungsschema ISO 27001 auf Basis IT-Grundschutz | 2.5 | [auditierungsschema.pdf](resources/auditierungsschema.pdf) |
-| Hinweise zur Bereitstellung der Referenzdokumente | 2.1 | [hinweise_referenzdokumente.pdf](resources/hinweise_referenzdokumente.pdf) |
-| Leitfaden zur Basis-Absicherung | 10/2017 | [leitfaden_basis_absicherung.pdf](resources/leitfaden_basis_absicherung.pdf) |
-| IT-Grundschutz-Profile – Strukturbeschreibung | 1.0 (28.09.2018) | [it_grundschutz_profil_strukturbeschreibung.pdf](resources/it_grundschutz_profil_strukturbeschreibung.pdf) |
+| Curriculum IT-Grundschutz-Praktiker und -Berater | 1.1 (24.09.2024) | `curriculum_1_1.pdf` |
+| Fragen und Antworten zum Schulungskonzept | 1.1 (24.09.2024) | `faq_curiculum.pdf` |
+| Prüfungsbedingungen IT-Grundschutz-Praktiker | 2.2 (23.06.2026) | `pruefungsbedingungen_fuer_den_it_gs_praktiker.pdf` |
+| IT-Grundschutz-Kompendium | Edition 2023 | `IT_Grundschutz_Kompendium_Edition2023.pdf` |
+| BSI-Standard 200-1: Managementsysteme für Informationssicherheit | 1.0 (10/2017) | `standard_200_1.pdf` |
+| BSI-Standard 200-2: IT-Grundschutz-Methodik | 1.0 (10/2017) | `standard_200_2.pdf` |
+| BSI-Standard 200-3: Risikoanalyse auf der Basis von IT-Grundschutz | 1.0 (10/2017) | `standard_200_3.pdf` |
+| BSI-Standard 200-4: Business Continuity Management | 2023 | `standard_200_4.pdf` |
+| Zertifizierungsschema ISO 27001 auf Basis IT-Grundschutz | 2.2 | `zertifizierungsschema.pdf` |
+| Auditierungsschema ISO 27001 auf Basis IT-Grundschutz | 2.5 | `auditierungsschema.pdf` |
+| Hinweise zur Bereitstellung der Referenzdokumente | 2.1 | `hinweise_referenzdokumente.pdf` |
+| Leitfaden zur Basis-Absicherung | 10/2017 | `leitfaden_basis_absicherung.pdf` |
+| IT-Grundschutz-Profile – Strukturbeschreibung | 1.0 (28.09.2018) | `it_grundschutz_profil_strukturbeschreibung.pdf` |
 
-Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [resources/RESSOURCES.md](resources/RESSOURCES.md) beschrieben. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
+Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [RESSOURCES.md](RESSOURCES.md) beschrieben. `npm run verify:citations` lädt die Dokumente nach `resources/` (git-ignoriert), extrahiert den Text (Ghostscript nötig) und prüft alle Quellenzitate. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
 
 ## Technologien
 
@@ -209,7 +209,8 @@ src/
   hooks/        useHashRoute (typed über dem Router der UI-Bibliothek), useCourse
   stores/       progress.store (persistiert), exam.store (laufende Prüfung), Selektoren
   ui/           einziger Import-Punkt für e-ink-ui-lib
-resources/      BSI-Dokumente (PDF)
+resources/      BSI-Dokumente (lokal, git-ignoriert)
+scripts/        Download und Textextraktion der BSI-Dokumente
 docs/           Curriculum-Abdeckung und Architekturentscheidungen (ADRs)
 ```
 
@@ -265,4 +266,4 @@ Konventionen für Dateinamen, UI und Sicherheit stehen in [CLAUDE.md](CLAUDE.md)
 
 Der Quellcode und die selbst verfassten Kursinhalte stehen unter der [MIT-Lizenz](LICENSE) (© 2026 Alexis Roehrling).
 
-Die PDF-Dokumente in `resources/` sind Veröffentlichungen des BSI und fallen **nicht** unter die MIT-Lizenz; es gelten die Nutzungsbedingungen des BSI. „IT-Grundschutz“ und „BSI“ sind Bezeichnungen des Bundesamts für Sicherheit in der Informationstechnik. Dieses Projekt steht in keiner Verbindung zum BSI.
+Die BSI-Dokumente (lokal in `resources/`) sind Veröffentlichungen des BSI und fallen **nicht** unter die MIT-Lizenz; es gelten die Nutzungsbedingungen des BSI. „IT-Grundschutz“ und „BSI“ sind Bezeichnungen des Bundesamts für Sicherheit in der Informationstechnik. Dieses Projekt steht in keiner Verbindung zum BSI.

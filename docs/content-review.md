@@ -4,7 +4,7 @@ Unabhängige Prüfung der Pool-Fragen gegen die zitierten BSI-Dokumente (ergänz
 
 ## Methode
 
-Für jede Pool-Frage werden Fragestamm, **alle vier Aussagen** und die Erläuterung mit der zitierten Stelle in `resources/.text/` verglichen. Jede Aussage erhält ein Urteil:
+Für jede Pool-Frage werden Fragestamm, **alle vier Aussagen** und die Erläuterung mit der zitierten Stelle in `resources/.text/` (lokal, `npm run verify:citations`) verglichen. Jede Aussage erhält ein Urteil:
 
 - **belegt**: Die Quelle stützt die Aussage bzw. widerlegt den Distraktor eindeutig.
 - **zu frei paraphrasiert**: Die Aussage ist sinngemäß belegt, die Formulierung weicht aber so ab, dass die Bewertung strittig werden kann.
