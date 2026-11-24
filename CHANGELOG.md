@@ -14,6 +14,7 @@ Lücken, die ein Abgleich mit dem Online-Kurs IT-Grundschutz des BSI gezeigt hat
 - Themenfeld 9: Beispiele für Maßnahmen, die ohne Akzeptanz scheitern, und die Prüfung der Akzeptanz durch den ISB (200-2, Kap. 9.5 und 10.1.3).
 - Themenfeld 10: Begriff und Vorgehen der IS-Revision (200-2, Kap. 10.1.3).
 - 5 neue Kontrollfragen (jetzt 121) und 6 neue Prüfungsfragen (jetzt 190), alle mit wörtlichem Quellenzitat.
+- README: Abschnitt „Weiterführende Literatur“ mit einem Buch zu IT-Grundschutz++ (keine Kursquelle, ADR 0014).
 
 ## [1.5.1] – 2026-11-24
 
