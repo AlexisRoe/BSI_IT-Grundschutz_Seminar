@@ -13,9 +13,18 @@ export function useHashRoute(): Route {
   return parseHash(useSyncExternalStore(subscribe, getHash, getHash));
 }
 
+/** Scrolls the window and the page body (the app's scroll container) to the top. */
+function scrollToTop(): void {
+  window.scrollTo?.(0, 0);
+  const main = document.querySelector("main");
+  for (let el = main?.parentElement; el; el = el.parentElement) {
+    if (el.scrollTop > 0) el.scrollTop = 0;
+  }
+}
+
 /** Navigates to a route and scrolls to the top. */
 export function navigate(route: Route): void {
   const hash = toHash(route);
   if (window.location.hash !== hash) window.location.hash = hash;
-  window.scrollTo?.(0, 0);
+  scrollToTop();
 }

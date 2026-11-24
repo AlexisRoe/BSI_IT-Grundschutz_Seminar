@@ -119,3 +119,13 @@ body,
   flex-direction: column;
   gap: var(--eink-size-16);
 }
+
+/* Lists: first text line aligns with its marker, even when items wrap. */
+.eink-list--unordered > .eink-list__item,
+.eink-list--ordered > .eink-list__item {
+  align-items: flex-start;
+}
+
+.eink-list--unordered > .eink-list__item::before {
+  margin-top: calc((1lh - var(--eink-size-10)) / 2);
+}

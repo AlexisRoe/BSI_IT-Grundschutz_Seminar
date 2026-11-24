@@ -16,3 +16,6 @@ An installed app picks up a new release at the next start or within an hour whil
 
 ## Addendum: Trusted Types and service worker registration
 The CSP contains `require-trusted-types-for 'script'`. With it, Chrome rejects `navigator.serviceWorker.register("/sw.js")` with a plain string ("This document requires 'TrustedScriptURL' assignment"). The service worker was therefore never installed in production and the installed app needed a connection. `installTrustedTypesPolicy` (`src/hooks/trusted-types.utils.ts`, called from `src/main.tsx`) installs a Trusted Types `default` policy that accepts only `/sw.js`. The CSP stays unchanged.
+
+## Addendum: Manual update check in settings
+Settings has a "Nach Update suchen" button. `checkForUpdate` (`src/hooks/pwa-update.utils.ts`) calls `registration.update()` on the existing registration, waits for an installing worker to finish and reports `available`, `current`, `offline`, `unsupported` or `error`. If a version is waiting, the button becomes "Update installieren und neu laden": `activateWaitingUpdate` posts `SKIP_WAITING` and reloads on `controllerchange`. No cache has to be deleted by hand, because Workbox precaching replaces outdated entries (`cleanupOutdatedCaches`) when the new worker activates. Progress lives in localStorage and is untouched.
