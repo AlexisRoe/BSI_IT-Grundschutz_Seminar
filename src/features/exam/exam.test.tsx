@@ -2,7 +2,7 @@ import { act, fireEvent, screen } from "@testing-library/react";
 import { EXAM_DURATION_MIN, EXAM_QUESTION_COUNT } from "@/config/exam.config";
 import { useExamStore } from "@/stores/exam.store";
 import { useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { ExamResultView } from "./exam-result.view";
 import { ExamRunView } from "./exam-run.view";
 import { ExamStartView } from "./exam-start.view";

@@ -1,6 +1,6 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { CourseOverviewView } from "./course-overview.view";
 import { LessonView } from "./lesson.view";
 

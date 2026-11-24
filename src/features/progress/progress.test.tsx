@@ -1,7 +1,7 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { useExamStore } from "@/stores/exam.store";
 import { type ExamRecord, useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { DashboardView } from "./dashboard.view";
 import { ProgressView } from "./progress.view";
 import { createExport } from "./progress-transfer.utils";

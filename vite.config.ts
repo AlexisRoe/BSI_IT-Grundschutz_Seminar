@@ -105,6 +105,7 @@ export default defineConfig({
         "src/test/**",
         "src/main.tsx",
         "src/ui/index.ts",
+        "src/ui/testing.ts",
         "src/**/*.types.ts",
       ],
       thresholds: { lines: 80, statements: 80, functions: 80, branches: 70 },

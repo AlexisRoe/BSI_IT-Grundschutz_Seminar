@@ -1,6 +1,6 @@
 import { fireEvent, screen, within } from "@testing-library/react";
 import { useProgressStore } from "@/stores/progress.store";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { LabView } from "./lab.view";
 import { LabsOverviewView } from "./labs-overview.view";
 

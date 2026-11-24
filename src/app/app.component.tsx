@@ -1,5 +1,6 @@
 import "./app.css";
 import { UpdatePrompt } from "@/components/update-prompt.component";
+import { NOTIFICATION_DURATION_MS } from "@/config/app.config";
 import { CourseOverviewView } from "@/features/course/course-overview.view";
 import { LessonView } from "@/features/course/lesson.view";
 import { ExamResultView } from "@/features/exam/exam-result.view";
@@ -13,8 +14,7 @@ import { DashboardView } from "@/features/progress/dashboard.view";
 import { ProgressView } from "@/features/progress/progress.view";
 import { SettingsView } from "@/features/progress/settings.view";
 import { navigate, useHashRoute } from "@/hooks/hash-route.hook";
-import { Navigation, Page, State, Title } from "@/ui";
-import { AppProviders } from "./app-providers.component";
+import { EinkProvider, Navigation, Page, State, Title } from "@/ui";
 import { parseHash, type Route } from "./routes.constants";
 
 function Screen({ route }: { route: Route }) {
@@ -57,7 +57,7 @@ function Screen({ route }: { route: Route }) {
 export function App() {
   const route = useHashRoute();
   return (
-    <AppProviders>
+    <EinkProvider notificationDuration={NOTIFICATION_DURATION_MS}>
       <Page className="app">
         <Page.Header>
           <div className="app__header">
@@ -84,6 +84,6 @@ export function App() {
           </main>
         </Page.Body>
       </Page>
-    </AppProviders>
+    </EinkProvider>
   );
 }

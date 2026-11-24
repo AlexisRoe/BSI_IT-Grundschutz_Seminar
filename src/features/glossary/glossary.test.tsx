@@ -1,6 +1,6 @@
 import { fireEvent, screen } from "@testing-library/react";
 import { GLOSSARY } from "@/content/glossary.content";
-import { renderWithProviders } from "@/test/render.utils";
+import { renderWithProviders } from "@/ui/testing";
 import { GlossaryView } from "./glossary.view";
 
 describe("glossary", () => {
