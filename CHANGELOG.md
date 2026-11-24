@@ -2,6 +2,18 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
+## [1.4.0] – 2026-11-24
+
+### Geändert
+- Aktualisierung auf `e-ink-ui-lib` 1.4.0. Die App nutzt nun die dort aufgenommenen Bausteine statt eigener Kopien: `EinkProvider`, `RichText`, `OrderList`, `Skeleton.Group`, `Alert` mit Aktionsbereich, `Checkbox` mit Ergebnis-Anzeige, `Table` mit Zeilenumbruch und Spaltenbreite, `Button` mit linker Ausrichtung, `useNow`, Hash-Router-Grundfunktionen, `useDownload` sowie `shuffle`, `move` und `scramble`. Testhilfen kommen aus `e-ink-ui-lib/testing`.
+- Die Schriften liefert die Bibliothek nun selbst als Dateien aus; das Build-Plugin zum Auslagern entfällt (ADR 0010 ersetzt).
+- Fehlgeschlagene Importe zeigen eine deutsche Meldung statt der englischen Standardmeldung.
+- In der Ordnungsaufgabe bleiben die Pfeil-Schaltflächen nach dem Auswerten sichtbar, sind aber deaktiviert.
+- Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
+
+### Entfernt
+- Eigene CSS-Regeln für Tabellen, Listenmarker, Antwortzeilen, Update-Hinweis und linksbündige Schaltflächen.
+
 ## [1.3.3] – 2026-11-24
 
 ### Hinzugefügt
@@ -66,6 +78,7 @@ Erste Version der Progressive Web App zur Vorbereitung auf die Prüfung zum IT-G
 - Tabelle 2 der Prüfungsbedingungen ergibt 49 statt 50 Fragen; die 50. wird zufällig gezogen (ADR 0015).
 - `npm audit` meldet 4 mittlere Befunde in Build-Werkzeugen, nicht in der ausgelieferten App; bewusst zurückgestellt (ADR 0016).
 
+[1.4.0]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.3...v1.4.0
 [1.3.3]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.2...v1.3.3
 [1.3.2]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.1.2...v1.3.1
