@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { RichText } from "@/components/rich-text.component";
 import type { LabTask } from "@/content/course.types";
-import { Alert, Button, Card, Flex, Select, Text } from "@/ui";
+import { Alert, Button, Card, Flex, RichText, Select, Text } from "@/ui";
 import { scoreClassify } from "./lab.utils";
 
 /** Props of {@link ClassifyTask}. */

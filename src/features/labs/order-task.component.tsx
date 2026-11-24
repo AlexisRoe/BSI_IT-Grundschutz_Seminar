@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { RichText } from "@/components/rich-text.component";
 import type { LabTask } from "@/content/course.types";
-import { Alert, Button, Flex, List, ListItem, Pill, Text } from "@/ui";
+import { Alert, Button, Flex, List, ListItem, Pill, RichText, Text } from "@/ui";
 import { move, scoreOrder, scramble } from "./lab.utils";
 
 /** Props of {@link OrderTask}. */

@@ -1,6 +1,5 @@
-import { RichText } from "@/components/rich-text.component";
 import type { ContentBlock } from "@/content/course.types";
-import { Alert, Card, Description, Link, List, ListItem, Table, Text, Title } from "@/ui";
+import { Alert, Card, Description, Link, List, ListItem, RichText, Table, Text, Title } from "@/ui";
 
 /** Renders one lesson content block with library components. */
 export function ContentBlockView({ block }: { block: ContentBlock }) {

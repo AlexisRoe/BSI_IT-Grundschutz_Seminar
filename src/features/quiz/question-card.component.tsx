@@ -1,8 +1,7 @@
-import { RichText } from "@/components/rich-text.component";
 import type { Question } from "@/content/course.types";
 import { formatSource } from "@/content/sources.constants";
 import { isAnsweredCorrectly } from "@/features/exam/exam.utils";
-import { Alert, Card, Checkbox, Flex, Pill, Text } from "@/ui";
+import { Alert, Card, Checkbox, Flex, Pill, RichText, Text } from "@/ui";
 
 /** Props of {@link QuestionCard}. */
 export interface QuestionCardProps {

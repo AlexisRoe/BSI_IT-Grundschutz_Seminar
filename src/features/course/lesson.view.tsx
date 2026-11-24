@@ -1,5 +1,4 @@
 import { Loading } from "@/components/loading.component";
-import { RichText } from "@/components/rich-text.component";
 import { SourceList } from "@/components/source-list.component";
 import { allLessons, findLesson } from "@/content/content.utils";
 import { getTopic } from "@/content/topics.constants";
@@ -7,7 +6,19 @@ import { Quiz } from "@/features/quiz/quiz.component";
 import { useCourse } from "@/hooks/course.hook";
 import { navigate } from "@/hooks/hash-route.hook";
 import { useProgressStore } from "@/stores/progress.store";
-import { BreadCrumbs, Button, Divider, Flex, List, ListItem, Pill, State, Text, Title } from "@/ui";
+import {
+  BreadCrumbs,
+  Button,
+  Divider,
+  Flex,
+  List,
+  ListItem,
+  Pill,
+  RichText,
+  State,
+  Text,
+  Title,
+} from "@/ui";
 import { ContentBlockView } from "./content-block.component";
 
 /** One lesson: goals, content blocks, sources, Kontrollfragen and navigation. */
