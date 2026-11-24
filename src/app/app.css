@@ -54,3 +54,8 @@ body,
 .lab-task {
   margin-top: var(--eink-size-16);
 }
+
+/* FileUpload without a label (the section title names it): hide the empty label element. */
+.eink-file-upload__label:empty {
+  display: none;
+}

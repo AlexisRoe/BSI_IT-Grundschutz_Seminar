@@ -13,6 +13,7 @@ import {
   FileUpload,
   Flex,
   Modal,
+  Space,
   Text,
   Title,
   useDownload,
@@ -88,6 +89,7 @@ export function SettingsView() {
           keine Daten an einen Server übertragen. Mit Export und Import können Sie den Stand sichern
           oder auf ein anderes Gerät übertragen.
         </Text>
+        <Space size="4" />
       </Flex>
       <Flex column gap="md">
         <Title size="2">Über diese App</Title>
@@ -110,20 +112,26 @@ export function SettingsView() {
             {checking ? "Prüfe …" : "Nach Update suchen"}
           </Button.Outlined>
         )}
+        <Space size="4" />
       </Flex>
       <Flex column gap="md">
         <Title size="2">Sichern</Title>
         <Button.Outlined iconLeft="download" onClick={exportProgress}>
           Fortschritt exportieren (JSON)
         </Button.Outlined>
+        <Space size="4" />
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Fortschritt importieren</Title>
         <FileUpload
           accept={[".json", "application/json"]}
           placeholder="Exportdatei auswählen"
           errorMessage="Import fehlgeschlagen: ungültige Exportdatei"
           onUpload={importProgress}
         >
-          Fortschritt importieren
+          {null}
         </FileUpload>
+        <Space size="4" />
       </Flex>
       <Flex column gap="md">
         <Title size="2">Zurücksetzen</Title>

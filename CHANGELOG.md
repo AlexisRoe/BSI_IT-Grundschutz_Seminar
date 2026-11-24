@@ -18,7 +18,7 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 - Tabellenzeilen (Fortschritt, Prüfungsergebnis, Lektionen) lassen sich nicht mehr anklicken und werden nicht mehr hervorgehoben.
 - Startseite: Abstand zwischen Fortschrittsbalken und Karte; Kurs, Labore, Training und Prüfungssimulation haben je eine Überschrift, eine Beschreibung und eine Schaltfläche, angeordnet in einem 2×2-Raster.
 - Kursübersicht: Das Themenfeld mit der ersten unerledigten Lektion ist beim Öffnen automatisch aufgeklappt (von oben beginnend); der Inhalt der Themenfelder hat mehr Innenabstand.
-- Einstellungen: Reihenfolge „Über diese App“, „Sichern“, „Zurücksetzen“, mit größerem Abstand zwischen den Abschnitten. „Fortschritt exportieren“ ist nun eine Umriss-Schaltfläche, „Gesamten Fortschritt löschen“ die primäre (gefüllte).
+- Einstellungen: Reihenfolge „Über diese App“, „Sichern“, „Zurücksetzen“, mit größerem Abstand zwischen den Abschnitten. „Fortschritt exportieren“ ist nun eine Umriss-Schaltfläche, „Gesamten Fortschritt löschen“ die primäre (gefüllte). Der Import hat statt eines Feldlabels eine Überschrift („Fortschritt importieren“) auf Ebene 2.
 - Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
 
 ### Behoben
