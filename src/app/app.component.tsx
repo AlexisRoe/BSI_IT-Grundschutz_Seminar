@@ -14,7 +14,7 @@ import { DashboardView } from "@/features/progress/dashboard.view";
 import { ProgressView } from "@/features/progress/progress.view";
 import { SettingsView } from "@/features/progress/settings.view";
 import { navigate, useHashRoute } from "@/hooks/hash-route.hook";
-import { EinkProvider, Navigation, Page, State, Title } from "@/ui";
+import { EinkProvider, Flex, Navigation, Page, State, Title } from "@/ui";
 import { parseHash, type Route } from "./routes.constants";
 
 function Screen({ route }: { route: Route }) {
@@ -79,8 +79,10 @@ export function App() {
         </Page.Nav>
         <Page.Body>
           <main className="app__main">
-            <UpdatePrompt />
-            <Screen route={route} />
+            <Flex column gap="md">
+              <UpdatePrompt />
+              <Screen route={route} />
+            </Flex>
           </main>
         </Page.Body>
       </Page>

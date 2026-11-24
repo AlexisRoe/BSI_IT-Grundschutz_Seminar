@@ -59,7 +59,7 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
           variant={block.variant === "merke" ? "info" : "warning"}
           icon={block.variant === "merke" ? "star" : "info-circle"}
           title={`${block.variant === "merke" ? "Merke" : "Hinweis"}: ${block.title}`}
-          description={block.text.replaceAll("**", "")}
+          description={<RichText text={block.text} />}
         />
       );
     case "example": {

@@ -21,17 +21,6 @@ body,
   padding: var(--eink-size-16) var(--eink-size-32);
 }
 
-.app__notice {
-  display: flex;
-  align-items: center;
-  gap: var(--eink-size-16);
-  margin-bottom: var(--eink-size-16);
-}
-
-.app__notice > :first-child {
-  flex: 1;
-}
-
 .option-row {
   display: flex;
   align-items: flex-start;
