@@ -122,22 +122,9 @@ export function SettingsView() {
         <Modal.CloseButton>Abbrechen</Modal.CloseButton>
         <Modal.ActionButton>Löschen</Modal.ActionButton>
       </Modal>
+      <Title size="2">Über diese App</Title>
       <Card>
-        <Card.Header>
-          <Card.Title>Über diese App</Card.Title>
-        </Card.Header>
         <Card.Content>
-          <Flex column gap="md">
-            {updateReady ? (
-              <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
-                Update installieren und neu laden
-              </Button>
-            ) : (
-              <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
-                {checking ? "Prüfe …" : "Nach Update suchen"}
-              </Button.Outlined>
-            )}
-          </Flex>
           <div className="build-info">
             <Description label="Projekt" value={BUILD_INFO.title} />
             <Description label="Version" value={BUILD_INFO.version} />
@@ -149,6 +136,15 @@ export function SettingsView() {
           </div>
         </Card.Content>
       </Card>
+      {updateReady ? (
+        <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
+          Update installieren und neu laden
+        </Button>
+      ) : (
+        <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
+          {checking ? "Prüfe …" : "Nach Update suchen"}
+        </Button.Outlined>
+      )}
     </Flex>
   );
 }
