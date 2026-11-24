@@ -7,7 +7,7 @@ import { navigate } from "@/hooks/hash-route.hook";
 import { useNow } from "@/hooks/now.hook";
 import { useExamStore } from "@/stores/exam.store";
 import { useProgressStore } from "@/stores/progress.store";
-import { Button, Flex, Modal, Pill, State, Text, Title } from "@/ui";
+import { Button, Flex, Grid, Modal, Pill, State, Text, Title } from "@/ui";
 import { minutesLeft } from "./exam.utils";
 import { examQuestions, finishExam } from "./exam-session.utils";
 
@@ -88,7 +88,7 @@ export function ExamRunView() {
       </Flex>
 
       <Title size="2">Übersicht</Title>
-      <div className="question-grid">
+      <Grid minColumnWidth={72} gap="sm">
         {questions.map((q, i) => {
           const mark = `${active.answers[q.id]?.length ? "●" : "○"}${active.flagged.includes(q.id) ? "★" : ""}`;
           const label = `${i + 1} ${mark}`;
@@ -102,7 +102,7 @@ export function ExamRunView() {
             </Button.Outlined>
           );
         })}
-      </div>
+      </Grid>
       <Text>● Kreuz gesetzt · ○ kein Kreuz · ★ markiert</Text>
       <Button.Outlined onClick={() => setConfirmOpen(true)}>Prüfung abgeben</Button.Outlined>
 
