@@ -5,7 +5,6 @@ import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import { extractInlineFontsPlugin } from "./plugins/extract-inline-fonts.plugin.ts";
 
 const isTest = process.env.VITEST === "true";
 const APP_TITLE = "IT-Grundschutz-Praktiker";
@@ -36,7 +35,6 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    extractInlineFontsPlugin(),
     VitePWA({
       registerType: "prompt",
       injectRegister: false,

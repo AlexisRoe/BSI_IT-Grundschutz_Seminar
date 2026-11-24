@@ -121,7 +121,6 @@ src/
   hooks/        useHashRoute, useCourse, useNow
   stores/       progress.store (persistiert), exam.store (laufende Prüfung), Selektoren
   ui/           einziger Import-Punkt für e-ink-ui-lib
-plugins/        Vite-Plugin zum Auslagern eingebetteter Schriften
 resources/      BSI-Dokumente (PDF)
 docs/           Curriculum-Abdeckung und Architekturentscheidungen (ADRs)
 ```
@@ -165,7 +164,7 @@ Konventionen für Dateinamen, UI und Sicherheit stehen in [CLAUDE.md](CLAUDE.md)
 - Architekturentscheidungen:
   - [0003 Typografie nur aus e-ink-ui-lib](docs/decisions/0003-ui-lib-only-typography.md)
   - [0006 npm-Lifecycle-Skripte deaktiviert](docs/decisions/0006-ignore-scripts.md)
-  - [0010 Eingebettete Schriften beim Build auslagern](docs/decisions/0010-extract-inline-fonts.md)
+  - [0010 Eingebettete Schriften beim Build auslagern (ersetzt durch e-ink-ui-lib 1.4.0)](docs/decisions/0010-extract-inline-fonts.md)
   - [0011 Hash-Routing ohne Router-Bibliothek](docs/decisions/0011-hash-router-without-dependency.md)
   - [0012 zustand mit localStorage für den Lernfortschritt](docs/decisions/0012-zustand-local-progress.md)
   - [0013 Kursinhalte als typisierte Daten](docs/decisions/0013-content-as-typed-data.md)
