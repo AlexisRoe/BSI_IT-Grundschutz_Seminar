@@ -12,7 +12,7 @@ import { navigate } from "@/hooks/hash-route.hook";
 import { useExamStore } from "@/stores/exam.store";
 import { overallLessonPercent } from "@/stores/progress.selectors";
 import { useProgressStore } from "@/stores/progress.store";
-import { Alert, Button, Card, Flex, ProgressBar, Space, Text, Title } from "@/ui";
+import { Alert, Button, Card, Flex, Grid, ProgressBar, Space, Text, Title } from "@/ui";
 
 interface Section {
   title: string;
@@ -110,7 +110,7 @@ export function DashboardView() {
         </Card>
       )}
       <Space size="16" />
-      <Flex column gap="xl">
+      <Grid columns={2} gap="xl">
         {SECTIONS.map((section) => (
           <Flex column gap="sm" key={section.title}>
             <Title size="2">{section.title}</Title>
@@ -122,7 +122,7 @@ export function DashboardView() {
             </Flex>
           </Flex>
         ))}
-      </Flex>
+      </Grid>
     </Flex>
   );
 }
