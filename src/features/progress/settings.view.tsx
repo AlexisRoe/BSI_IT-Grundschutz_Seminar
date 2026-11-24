@@ -80,29 +80,57 @@ export function SettingsView() {
   };
 
   return (
-    <Flex column gap="md">
-      <Title size="1">Einstellungen</Title>
-      <Text>
-        Ihr Lernfortschritt wird ausschließlich lokal in diesem Browser gespeichert. Es werden keine
-        Daten an einen Server übertragen. Mit Export und Import können Sie den Stand sichern oder
-        auf ein anderes Gerät übertragen.
-      </Text>
-      <Title size="2">Sichern</Title>
-      <Button iconLeft="download" onClick={exportProgress}>
-        Fortschritt exportieren (JSON)
-      </Button>
-      <FileUpload
-        accept={[".json", "application/json"]}
-        placeholder="Exportdatei auswählen"
-        errorMessage="Import fehlgeschlagen: ungültige Exportdatei"
-        onUpload={importProgress}
-      >
-        Fortschritt importieren
-      </FileUpload>
-      <Title size="2">Zurücksetzen</Title>
-      <Button.Outlined iconLeft="trash" onClick={() => setConfirmReset(true)}>
-        Gesamten Fortschritt löschen
-      </Button.Outlined>
+    <Flex column gap="xl">
+      <Flex column gap="md">
+        <Title size="1">Einstellungen</Title>
+        <Text>
+          Ihr Lernfortschritt wird ausschließlich lokal in diesem Browser gespeichert. Es werden
+          keine Daten an einen Server übertragen. Mit Export und Import können Sie den Stand sichern
+          oder auf ein anderes Gerät übertragen.
+        </Text>
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Über diese App</Title>
+        <Card>
+          <Card.Content>
+            <Flex column gap="sm">
+              <Text>{`Projekt: ${BUILD_INFO.title}`}</Text>
+              <Text>{`Version: ${BUILD_INFO.version}`}</Text>
+              <Text>{`Commit: ${BUILD_INFO.commit}`}</Text>
+              <Text>{`Build-Zeit: ${new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}`}</Text>
+            </Flex>
+          </Card.Content>
+        </Card>
+        {updateReady ? (
+          <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
+            Update installieren und neu laden
+          </Button>
+        ) : (
+          <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
+            {checking ? "Prüfe …" : "Nach Update suchen"}
+          </Button.Outlined>
+        )}
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Sichern</Title>
+        <Button.Outlined iconLeft="download" onClick={exportProgress}>
+          Fortschritt exportieren (JSON)
+        </Button.Outlined>
+        <FileUpload
+          accept={[".json", "application/json"]}
+          placeholder="Exportdatei auswählen"
+          errorMessage="Import fehlgeschlagen: ungültige Exportdatei"
+          onUpload={importProgress}
+        >
+          Fortschritt importieren
+        </FileUpload>
+      </Flex>
+      <Flex column gap="md">
+        <Title size="2">Zurücksetzen</Title>
+        <Button iconLeft="trash" onClick={() => setConfirmReset(true)}>
+          Gesamten Fortschritt löschen
+        </Button>
+      </Flex>
       <Modal
         open={confirmReset}
         title="Fortschritt löschen?"
@@ -121,26 +149,6 @@ export function SettingsView() {
         <Modal.CloseButton>Abbrechen</Modal.CloseButton>
         <Modal.ActionButton>Löschen</Modal.ActionButton>
       </Modal>
-      <Title size="2">Über diese App</Title>
-      <Card>
-        <Card.Content>
-          <Flex column gap="sm">
-            <Text>{`Projekt: ${BUILD_INFO.title}`}</Text>
-            <Text>{`Version: ${BUILD_INFO.version}`}</Text>
-            <Text>{`Commit: ${BUILD_INFO.commit}`}</Text>
-            <Text>{`Build-Zeit: ${new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}`}</Text>
-          </Flex>
-        </Card.Content>
-      </Card>
-      {updateReady ? (
-        <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
-          Update installieren und neu laden
-        </Button>
-      ) : (
-        <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
-          {checking ? "Prüfe …" : "Nach Update suchen"}
-        </Button.Outlined>
-      )}
     </Flex>
   );
 }
