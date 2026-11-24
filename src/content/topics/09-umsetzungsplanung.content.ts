@@ -127,11 +127,12 @@ export const topic: TopicContent = {
       id: "t09-l02",
       title: "Umsetzungsreihenfolge, Verantwortung und begleitende Maßnahmen",
       depth: "II",
-      minutes: 30,
+      minutes: 35,
       goals: [
         "Eine begründete Umsetzungsreihenfolge festlegen",
         "Einen Realisierungsplan mit Verantwortlichen, Terminen und Budget erstellen",
         "Realisierungsbegleitende Maßnahmen einplanen",
+        "Erklären, warum Maßnahmen ohne Akzeptanz der Mitarbeitenden scheitern, und die Akzeptanz prüfen",
       ],
       blocks: [
         { type: "heading", text: "Umsetzungsreihenfolge" },
@@ -197,8 +198,30 @@ export const topic: TopicContent = {
           type: "paragraph",
           text: "Rechtzeitig einplanen: **Sensibilisierung** (Notwendigkeit und Konsequenzen neuer Maßnahmen erklären) und **Schulung** (Maßnahmen korrekt anwenden). Ohne Schulung können Maßnahmen oft nicht umgesetzt werden, verlieren ihre Wirkung und führen zu einer ablehnenden Haltung gegenüber Informationssicherheit.",
         },
+        {
+          type: "example",
+          title: "Wenn die Akzeptanz fehlt",
+          text: [
+            "Eine Zutrittskontrolle zum Serverraum wird eingeführt. Weil die Tür ständig für Lieferungen geöffnet werden muss, wird sie mit einem Keil offen gehalten. Die Maßnahme ist umgesetzt, wirkt aber nicht.",
+            "Für vertrauliche E-Mails wird eine Verschlüsselungslösung beschafft. Niemand hat erklärt, wann sie zu nutzen ist, also verschicken alle weiter unverschlüsselt. Das Budget ist ausgegeben, der Schutz bleibt aus.",
+            "Strenge Passwortregeln ohne Erklärung führen zu Zetteln am Bildschirm. Erst wenn die Betroffenen den Sinn verstehen und geschult sind, entfaltet die Maßnahme Wirkung.",
+          ],
+        },
+        {
+          type: "callout",
+          variant: "merke",
+          title: "Akzeptanz prüfen",
+          text: "Nach der Einführung neuer Sicherheitsmaßnahmen prüft der **ISB**, ob die notwendige **Akzeptanz** bei den Mitarbeitenden vorhanden ist. Ursachen fehlender Akzeptanz werden herausgearbeitet und abgestellt, z. B. durch zusätzliche Sensibilisierung oder eine praxistauglichere Lösung.",
+        },
       ],
-      sources: [{ doc: "200-2", section: "Kap. 9.3 bis 9.5", page: 160 }],
+      sources: [
+        { doc: "200-2", section: "Kap. 9.3 bis 9.5", page: 160 },
+        {
+          doc: "200-2",
+          section: "Kap. 10.1.3 Überprüfung der Umsetzung der Sicherheitsmaßnahmen",
+          page: 167,
+        },
+      ],
       quiz: [
         {
           id: "q-t09-l02-1",
@@ -263,6 +286,33 @@ export const topic: TopicContent = {
           ],
           explanation: "200-2 nennt genau dieses Beispiel für logische Abhängigkeiten.",
           source: { doc: "200-2", section: "Kap. 9.3", page: 160 },
+        },
+        {
+          id: "q-t09-l02-4",
+          topic: 9,
+          level: "basis",
+          stem: "Eine neue Regel zur Bildschirmsperre wird eingeführt, aber viele Beschäftigte umgehen sie. Was ist nach BSI-Standard 200-2 zu tun?",
+          options: [
+            {
+              text: "Der ISB prüft, ob die notwendige Akzeptanz bei den Mitarbeitenden vorhanden ist.",
+              correct: true,
+            },
+            {
+              text: "Die Ursachen der fehlenden Akzeptanz werden herausgearbeitet und abgestellt.",
+              correct: true,
+            },
+            {
+              text: "Die Maßnahme gilt als umgesetzt, da sie technisch eingerichtet wurde.",
+              correct: false,
+            },
+            {
+              text: "Sensibilisierung und Schulung hätten bereits bei der Realisierungsplanung eingeplant werden sollen.",
+              correct: true,
+            },
+          ],
+          explanation:
+            "Realisierungsbegleitende Maßnahmen (Sensibilisierung, Schulung) gehören in die Planung. Nach der Einführung prüft der ISB die Akzeptanz und lässt die Ursachen fehlender Akzeptanz abstellen.",
+          source: { doc: "200-2", section: "Kap. 9.5 und 10.1.3", page: 167 },
         },
       ],
     },

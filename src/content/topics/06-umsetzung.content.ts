@@ -297,6 +297,7 @@ export const topic: TopicContent = {
       goals: [
         "Die drei Schutzbedarfskategorien und die sechs Schadensszenarien anwenden",
         "Vererbung, Maximumprinzip, Abhängigkeiten, Kumulations- und Verteilungseffekt erklären und anwenden",
+        "Den Schutzbedarf von ICS-Systemen gemeinsam mit den Anlagenverantwortlichen feststellen",
         "Schlussfolgerungen für Risikoanalyse und Sicherheitszonen ziehen",
       ],
       blocks: [
@@ -405,6 +406,17 @@ export const topic: TopicContent = {
             "VMs mit hohem Verfügbarkeitsbedarf → Kumulation evtl. auf „sehr hoch“, durch **Hot-Standby** wieder auf „hoch“.",
           ],
         },
+        { type: "heading", text: "ICS-Systeme" },
+        {
+          type: "list",
+          items: [
+            "Der Schutzbedarf **aller** ICS-Systeme ist festzustellen – aber **nicht per se „sehr hoch“**.",
+            "Am besten im **Gespräch mit den Verantwortlichen der ICS-Systeme**: Sie wissen, welche Geräte welche Anforderungen an Vertraulichkeit, Integrität und Verfügbarkeit haben. Maßgeblich ist der **Anwendungszweck** der Anlage.",
+            "Eine Anlage kann wechselnd für unterschiedlich wichtige Produkte genutzt werden – dann gilt das **Maximumprinzip**.",
+            "Die Schutzbedarfskategorien können übernommen oder für die Produktion **angepasst** werden, z. B. eine kürzere tolerierbare Ausfallzeit für „normal“ als in der Büro-IT.",
+            "Wie überall: je Grundwert ermitteln und **kurz begründen**.",
+          ],
+        },
         { type: "heading", text: "Kritische Kommunikationsverbindungen" },
         {
           type: "list",
@@ -435,7 +447,14 @@ export const topic: TopicContent = {
           text: "Eine Risikoanalyse ist außerdem nötig, wenn Objekte nicht hinreichend modellierbar sind oder in nicht vorgesehenen Einsatzszenarien betrieben werden. Damit sich hoher Schutzbedarf nicht nach dem Maximumprinzip über die Vernetzung ausbreitet, sollten **Sicherheitszonen** eingerichtet werden – räumlich, technisch (Netzsegmentierung) oder personell (Rollentrennung).",
         },
       ],
-      sources: [{ doc: "200-2", section: "Kap. 8.2 Schutzbedarfsfeststellung", page: 104 }],
+      sources: [
+        { doc: "200-2", section: "Kap. 8.2 Schutzbedarfsfeststellung", page: 104 },
+        {
+          doc: "200-2",
+          section: "Kap. 8.2.5 Schutzbedarfsfeststellung für ICS-Systeme",
+          page: 119,
+        },
+      ],
       quiz: [
         {
           id: "q-t06-l03-1",
@@ -503,6 +522,33 @@ export const topic: TopicContent = {
           explanation:
             "Gesamtschutzbedarf = Maximum; die einzelnen Grundwerte bleiben unverändert und werden einzeln und begründet dokumentiert.",
           source: { doc: "200-2", section: "Kap. 8.2.4", page: 114 },
+        },
+        {
+          id: "q-t06-l03-5",
+          topic: 6,
+          level: "basis",
+          stem: "Wie wird der Schutzbedarf von ICS-Systemen nach BSI-Standard 200-2 festgestellt?",
+          options: [
+            {
+              text: "Alle ICS-Systeme erhalten pauschal den Schutzbedarf „sehr hoch“.",
+              correct: false,
+            },
+            {
+              text: "Im Gespräch mit den Verantwortlichen der ICS-Systeme, ausgehend vom Anwendungszweck der Anlage",
+              correct: true,
+            },
+            {
+              text: "Die Schutzbedarfskategorien dürfen für die Produktionsumgebung angepasst werden.",
+              correct: true,
+            },
+            {
+              text: "ICS-Systeme werden nicht betrachtet, wenn es einen ICS-ISB gibt.",
+              correct: false,
+            },
+          ],
+          explanation:
+            "ICS-Systeme haben nicht per se sehr hohen Schutzbedarf. Die Verantwortlichen der Anlagen kennen die Anforderungen; die Kategorien können angepasst werden.",
+          source: { doc: "200-2", section: "Kap. 8.2.5", page: 119 },
         },
       ],
     },

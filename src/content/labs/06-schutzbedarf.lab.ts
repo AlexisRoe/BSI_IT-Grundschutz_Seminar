@@ -125,6 +125,69 @@ export const lab: Lab = {
         },
       ],
     },
+    {
+      kind: "classify",
+      id: "verbindungen",
+      prompt:
+        "Welche Kommunikationsverbindungen sind nach BSI-Standard 200-2 als **kritisch** zu dokumentieren?",
+      categories: [
+        { id: "kritisch", label: "Kritisch" },
+        { id: "unkritisch", label: "Nicht kritisch" },
+      ],
+      items: [
+        {
+          id: "v1",
+          label: "Internetanbindung des Hauptsitzes über die Firewall",
+          answer: "kritisch",
+          explanation:
+            "Außenverbindung in einen unkontrollierten Bereich: Angriffe von außen und Abfluss von Informationen sind möglich, die Verfügbarkeit ist oft besonders gefährdet.",
+        },
+        {
+          id: "v2",
+          label: "Fernwartungszugang des CNC-Maschinenherstellers",
+          answer: "kritisch",
+          explanation:
+            "Außenverbindung für die Fernadministration. 200-2 betont ausdrücklich, diese nicht zu vergessen.",
+        },
+        {
+          id: "v3",
+          label:
+            "Firmen-WLAN im Verwaltungsgebäude, auch vom öffentlichen Parkplatz aus empfangbar",
+          answer: "kritisch",
+          explanation:
+            "Drahtlose Verbindungen können zu den Außenverbindungen gehören, weil der Zugriff von öffentlichem Gelände aus schwer zu verhindern ist.",
+        },
+        {
+          id: "v4",
+          label: "Verbindung der CAD-Arbeitsplätze zum Fileserver mit den Konstruktionsdaten",
+          answer: "kritisch",
+          explanation:
+            "Über die Verbindung werden hochschutzbedürftige Informationen übertragen (Vertraulichkeit sehr hoch). Sie kann Ziel von Abhören oder Manipulation sein.",
+        },
+        {
+          id: "v5",
+          label: "Übergang zwischen Büronetz und Fertigungsnetz mit dem SCADA-Leitsystem",
+          answer: "kritisch",
+          explanation:
+            "Verbindungen im produzierenden Bereich, insbesondere zwischen getrennten Netzen, sind im Netzplan als kritisch zu erfassen.",
+        },
+        {
+          id: "v6",
+          label:
+            "Anbindung des Info-Bildschirms in der Kantine, der nur den Speiseplan aus dem Intranet anzeigt",
+          answer: "unkritisch",
+          explanation:
+            "Interne Verbindung ohne hochschutzbedürftige Informationen; der Speiseplan hat normalen Schutzbedarf.",
+        },
+      ],
+    },
   ],
-  sources: [{ doc: "200-2", section: "Kap. 8.1.1 und 8.2", page: 79 }],
+  sources: [
+    { doc: "200-2", section: "Kap. 8.1.1 und 8.2", page: 79 },
+    {
+      doc: "200-2",
+      section: "Kap. 8.2.8 Schutzbedarfsfeststellung für Kommunikationsverbindungen",
+      page: 125,
+    },
+  ],
 };

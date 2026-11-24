@@ -591,5 +591,37 @@ export const pool: TopicQuestions = {
           "sollten daher Sicherheitszonen zur Trennung von Bereichen mit unterschiedlichem Schutzbedarf eingerichtet werden",
       },
     },
+    {
+      id: "p06-25",
+      topic: 6,
+      level: "basis",
+      stem: "Ein Hersteller betreibt mehrere speicherprogrammierbare Steuerungen (SPS). Welche Aussagen zur Schutzbedarfsfeststellung dieser ICS-Systeme treffen nach BSI-Standard 200-2 zu?",
+      options: [
+        {
+          text: "Die ICS-Systeme haben grundsätzlich einen sehr hohen Schutzbedarf.",
+          correct: false,
+        },
+        {
+          text: "Die Feststellung erfolgt sinnvollerweise im Gespräch mit den Verantwortlichen der ICS-Systeme.",
+          correct: true,
+        },
+        {
+          text: "Der Schutzbedarf leitet sich aus dem Anwendungszweck der Anlage ab.",
+          correct: true,
+        },
+        {
+          text: "Die Schutzbedarfskategorien der Büro-IT müssen unverändert übernommen werden.",
+          correct: false,
+        },
+      ],
+      explanation:
+        "Nicht alle ICS-Objekte haben per se sehr hohen Schutzbedarf. Die Verantwortlichen der Anlagen wissen, welche Anforderungen bestehen; maßgeblich ist der Anwendungszweck. Die Kategorien können übernommen oder angepasst formuliert werden.",
+      source: {
+        doc: "200-2",
+        section: "Kap. 8.2.5",
+        page: 119,
+        quote: "dass nicht per se alle Objekte einem sehr hohen Schutzbedarf unterliegen",
+      },
+    },
   ],
 };

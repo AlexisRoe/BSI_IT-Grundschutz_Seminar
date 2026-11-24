@@ -380,5 +380,38 @@ export const pool: TopicQuestions = {
           "dass der als verantwortlich Benannte ausreichende Fähigkeiten und Kompetenzen zur Umsetzung der Maßnahmen besitzt",
       },
     },
+    {
+      id: "p09-16",
+      topic: 9,
+      level: "basis",
+      stem: "Welche Aussagen zu realisierungsbegleitenden Maßnahmen und zur Akzeptanz neuer Sicherheitsmaßnahmen treffen nach BSI-Standard 200-2 zu?",
+      options: [
+        {
+          text: "Sensibilisierungsmaßnahmen sollen die Betroffenen über Notwendigkeit und Konsequenzen neuer Maßnahmen unterrichten.",
+          correct: true,
+        },
+        {
+          text: "Unterbleibt die Schulung, kann das zu einer ablehnenden Haltung gegenüber der Informationssicherheit führen.",
+          correct: true,
+        },
+        {
+          text: "Nach der Einführung neuer Sicherheitsmaßnahmen sollte der ISB prüfen, ob die notwendige Akzeptanz vorhanden ist.",
+          correct: true,
+        },
+        {
+          text: "Schulungen werden erst geplant, wenn eine Maßnahme nachweislich nicht akzeptiert wird.",
+          correct: false,
+        },
+      ],
+      explanation:
+        "Sensibilisierung und Schulung sind rechtzeitig einzuplanen (Kap. 9.5). Nach der Einführung prüft der ISB die Akzeptanz; Ursachen fehlender Akzeptanz werden abgestellt (Kap. 10.1.3).",
+      source: {
+        doc: "200-2",
+        section: "Kap. 10.1.3",
+        page: 167,
+        quote:
+          "Nach der Einführung von neuen Sicherheitsmaßnahmen sollte durch den ISB geprüft werden, ob die notwendige Akzeptanz seitens der Mitarbeiter vorhanden ist",
+      },
+    },
   ],
 };

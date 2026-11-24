@@ -8,13 +8,33 @@ export const topic: TopicContent = {
       id: "t03-l01",
       title: "Bestandteile des IT-Grundschutzes und der Sicherheitsprozess",
       depth: "II",
-      minutes: 35,
+      minutes: 45,
       goals: [
+        "Die Komponenten eines ISMS nach BSI-Standard 200-1 benennen",
         "Die Bestandteile des IT-Grundschutzes und das Schichtenmodell des Kompendiums benennen",
         "Die Phasen des Sicherheitsprozesses nach BSI-Standard 200-2 in die richtige Reihenfolge bringen",
         "Den Zweck eines Sicherheitskonzepts erklären",
+        "Zweck und Aufbau eines Klassifikationsschemas für Informationen erläutern",
       ],
       blocks: [
+        { type: "heading", text: "Komponenten eines ISMS" },
+        {
+          type: "paragraph",
+          text: "Ein **Informationssicherheitsmanagementsystem (ISMS)** ist der Teil des Managementsystems, mit dem die Leitungsebene die Informationssicherheit nachvollziehbar lenkt: planen, einsetzen, durchführen, überwachen und verbessern. Einzelne technische Maßnahmen ohne diesen Rahmen bleiben Stückwerk. Nach BSI-Standard 200-1 gehören zu einem ISMS vier grundlegende Komponenten:",
+        },
+        {
+          type: "list",
+          items: [
+            "**Managementprinzipien**, z. B. Verantwortung der Leitung, Ziele, Kommunikation, Erfolgskontrolle",
+            "**Ressourcen**: Budget, Zeit, Technik",
+            "**Mitarbeiter**: alle Beschäftigten, nicht nur die Sicherheitsorganisation",
+            "**Sicherheitsprozess** mit der **Leitlinie** (Sicherheitsziele und Strategie), dem **Sicherheitskonzept** und der **Sicherheitsorganisation**",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Die **Sicherheitsstrategie** gibt die Leitungsebene vor; ihre Kernaspekte stehen in der Leitlinie. Sicherheitskonzept und Sicherheitsorganisation sind die Werkzeuge, mit denen die Strategie umgesetzt wird.",
+        },
         { type: "heading", text: "Elemente des IT-Grundschutzes" },
         {
           type: "paragraph",
@@ -86,8 +106,46 @@ export const topic: TopicContent = {
           type: "paragraph",
           text: "Kern der Sicherheitskonzeption ist ein **Soll-Ist-Vergleich** zwischen den Anforderungen der relevanten Bausteine und den bereits realisierten Maßnahmen. Fehlende oder unzureichend erfüllte Anforderungen zeigen die Sicherheitsdefizite. **Nur bei signifikant höherem Schutzbedarf** ist zusätzlich eine Risikoanalyse (BSI-Standard 200-3) durchzuführen.",
         },
+        { type: "heading", text: "Klassifikation von Informationen" },
+        {
+          type: "paragraph",
+          text: "Informationen lassen sich nur angemessen schützen, wenn ihre Bedeutung für die Institution klar ist. Dafür beschreibt ein **Klassifikationsschema**, welche Stufen der Wertigkeit es gibt und wie sie voneinander abgegrenzt sind. Es soll so einfach sein, dass alle Mitarbeitenden daraus für jede Art von Information die richtige Einstufung ableiten können. Naheliegend ist eine Klassifikation entlang der **Grundwerte**:",
+        },
+        {
+          type: "table",
+          headers: ["Grundwert", "Typische Abstufung (Beispiel aus 200-2)"],
+          rows: [
+            ["Vertraulichkeit", "offen – intern – vertraulich – streng vertraulich"],
+            [
+              "Verfügbarkeit",
+              "tolerierbare Dauer bis zur Wiederherstellung, z. B. eine Stunde, ein Tag, eine Woche, ein Monat",
+            ],
+            ["Integrität", "z. B. essenziell – wichtig – normal (schwieriger abzugrenzen)"],
+          ],
+        },
+        {
+          type: "list",
+          items: [
+            "Zum Einstieg, etwa bei der Basis-Absicherung, kann eine **zweistufige** Klassifikation genügen: intern und öffentlich. Dann werden nur die zur Veröffentlichung vorgesehenen Informationen als „offen“ gekennzeichnet.",
+            "Ideal ist eine **Kennzeichnung schon bei der Entstehung**. Schwierig ist weniger der Aufbau des Schemas als die konsequente, einheitliche Anwendung im Betrieb.",
+            "Die Einstufung kann sich im **Lebenszyklus** einer Information ändern.",
+            "Für den Klassifikationsprozess braucht es mindestens eine **verantwortliche Rolle** und die Rollen derer, die ihn einhalten.",
+            "Nebeneffekt: Beim Klassifizieren fallen überflüssige und veraltete Daten auf.",
+          ],
+        },
+        {
+          type: "callout",
+          variant: "merke",
+          title: "Klassifikation und Schutzbedarf",
+          text: "Die Klassifikation ist eine wesentliche Voraussetzung, um später angemessene Sicherheitsmaßnahmen auszuwählen. Mehr Stufen oder zusätzliche Kriterien machen das Schema genauer, aber schwerer anwendbar und schwerer mit anderen Institutionen abzustimmen.",
+        },
       ],
       sources: [
+        {
+          doc: "200-1",
+          section: "Kap. 3.1 Komponenten eines Managementsystems für Informationssicherheit",
+          page: 15,
+        },
         { doc: "200-2", section: "Kap. 2.4 Elemente des IT-Grundschutzes", page: 12 },
         {
           doc: "200-2",
@@ -96,6 +154,7 @@ export const topic: TopicContent = {
         },
         { doc: "200-2", section: "Kap. 2.7 Anwendung des IT-Grundschutz-Kompendiums", page: 17 },
         { doc: "kompendium", section: "Glossar: Sicherheitskonzept" },
+        { doc: "200-2", section: "Kap. 5.1 Klassifikation von Informationen", page: 52 },
       ],
       quiz: [
         {
@@ -152,6 +211,51 @@ export const topic: TopicContent = {
             "Die Vorgehensweise wird in der Initiierung gewählt; parallele Phasen sind möglich, müssen aber nachgezogen werden.",
           source: { doc: "200-2", section: "Kap. 2.6", page: 15 },
         },
+        {
+          id: "q-t03-l01-4",
+          topic: 3,
+          level: "basis",
+          stem: "Welche Komponenten gehören nach BSI-Standard 200-1 zu einem ISMS?",
+          options: [
+            { text: "Managementprinzipien", correct: true },
+            { text: "Ressourcen und Mitarbeiter", correct: true },
+            {
+              text: "Ein Sicherheitsprozess mit Leitlinie, Sicherheitskonzept und -organisation",
+              correct: true,
+            },
+            { text: "Ein ISO 27001-Zertifikat", correct: false },
+          ],
+          explanation:
+            "Managementprinzipien, Ressourcen, Mitarbeiter und der Sicherheitsprozess bilden das ISMS. Ein Zertifikat ist ein möglicher Nachweis, keine Komponente.",
+          source: { doc: "200-1", section: "Kap. 3.1", page: 15 },
+        },
+        {
+          id: "q-t03-l01-5",
+          topic: 3,
+          level: "basis",
+          stem: "Welche Aussagen zur Klassifikation von Informationen nach BSI-Standard 200-2 treffen zu?",
+          options: [
+            {
+              text: "Das Klassifikationsschema sollte einfach verständlich und leicht anwendbar sein.",
+              correct: true,
+            },
+            {
+              text: "Je mehr Stufen und Kriterien, desto besser lässt sich das Schema im Alltag anwenden.",
+              correct: false,
+            },
+            {
+              text: "Für den Einstieg kann eine zweistufige Klassifikation (intern/öffentlich) ausreichen.",
+              correct: true,
+            },
+            {
+              text: "Eine einmal vergebene Einstufung gilt für den gesamten Lebenszyklus der Information.",
+              correct: false,
+            },
+          ],
+          explanation:
+            "Ein einfaches Schema wird eher konsequent angewendet; zwei Stufen können anfangs genügen. Die Einstufung kann sich im Lebenszyklus ändern.",
+          source: { doc: "200-2", section: "Kap. 5.1", page: 53 },
+        },
       ],
     },
     {
@@ -161,6 +265,7 @@ export const topic: TopicContent = {
       minutes: 40,
       goals: [
         "Die Verantwortung der Institutionsleitung von der delegierten Aufgabe des ISB unterscheiden",
+        "Die Vorbildfunktion der Leitungsebene begründen",
         "Aufgaben, Anforderungsprofil und organisatorische Einordnung des ISB beschreiben",
         "IS-Management-Team, Bereichs-/Projekt-ISB, ICS-ISB, IS-Koordinierungsausschuss und Datenschutzbeauftragte voneinander abgrenzen",
       ],
@@ -169,6 +274,10 @@ export const topic: TopicContent = {
         {
           type: "paragraph",
           text: "Die oberste Leitungsebene muss den Sicherheitsprozess **initiieren, steuern und kontrollieren**. Sie entscheidet über den Umgang mit Risiken und stellt die Ressourcen bereit. Die **Verantwortung für Informationssicherheit verbleibt bei der Leitungsebene**; die operative Aufgabe wird typischerweise an eine oder einen **Informationssicherheitsbeauftragten (ISB)** delegiert.",
+        },
+        {
+          type: "paragraph",
+          text: "Zu den Managementprinzipien gehört die **Vorbildfunktion**: Die Leitungsebene beachtet selbst alle Sicherheitsregeln, nimmt an Schulungen teil und unterstützt andere Führungskräfte darin, ebenfalls Vorbild zu sein. Das Kompendium fordert in der Basis-Anforderung **ISMS.1.A1**, dass die Institutionsleitung Informationssicherheit **vorlebt**. Regeln, die „oben“ nicht gelten, werden auch sonst nicht ernst genommen.",
         },
         {
           type: "callout",
@@ -244,6 +353,12 @@ export const topic: TopicContent = {
         },
         { doc: "200-2", section: "Kap. 4 Organisation des Sicherheitsprozesses", page: 36 },
         { doc: "200-2", section: "Kap. 4.4 bis 4.9", page: 40 },
+        {
+          doc: "200-1",
+          section: "Kap. 4.1 Verantwortung der Leitungsebene, 6. Vorbildfunktion",
+          page: 22,
+        },
+        { doc: "kompendium", section: "ISMS.1.A1 Übernahme der Gesamtverantwortung" },
       ],
       quiz: [
         {
@@ -326,6 +441,27 @@ export const topic: TopicContent = {
           explanation:
             "Projekt-ISB unterstützen; die Verantwortung bleibt bei Projektleitung bzw. Leitungsebene.",
           source: { doc: "200-2", section: "Kap. 4.6", page: 44 },
+        },
+        {
+          id: "q-t03-l02-5",
+          topic: 3,
+          level: "basis",
+          stem: "Was gehört nach BSI-Standard 200-1 zur Vorbildfunktion der Leitungsebene?",
+          options: [
+            { text: "Sie beachtet selbst alle vorgegebenen Sicherheitsregeln.", correct: true },
+            { text: "Sie nimmt selbst an Schulungsveranstaltungen teil.", correct: true },
+            {
+              text: "Sie ist von Sicherheitsregeln ausgenommen, die den Geschäftsbetrieb verlangsamen.",
+              correct: false,
+            },
+            {
+              text: "Sie unterstützt andere Führungskräfte bei der Ausübung ihrer Vorbildfunktion.",
+              correct: true,
+            },
+          ],
+          explanation:
+            "Die Leitung muss Informationssicherheit vorleben: Regeln selbst einhalten, an Schulungen teilnehmen und andere Führungskräfte unterstützen.",
+          source: { doc: "200-1", section: "Kap. 4.1", page: 22 },
         },
       ],
     },

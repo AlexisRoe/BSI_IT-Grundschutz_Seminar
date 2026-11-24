@@ -2,6 +2,19 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
+## [1.6.0] – 2026-11-24
+
+### Hinzugefügt
+Lücken, die ein Abgleich mit dem Online-Kurs IT-Grundschutz des BSI gezeigt hat. Alle Inhalte sind neu formuliert und auf die BSI-Standards bzw. das Kompendium gestützt; aus dem Online-Kurs wurde nichts übernommen.
+- Themenfeld 3: Komponenten eines ISMS nach BSI-Standard 200-1 (Managementprinzipien, Ressourcen, Mitarbeiter, Sicherheitsprozess).
+- Themenfeld 3: Klassifikation von Informationen nach BSI-Standard 200-2, Kap. 5.1 (Klassifikationsschema, typische Stufen, Kennzeichnung, Rollen).
+- Themenfeld 3: Vorbildfunktion der Leitungsebene (200-1, Kap. 4.1; ISMS.1.A1).
+- Themenfeld 6: Schutzbedarfsfeststellung für ICS-Systeme gemeinsam mit den Verantwortlichen der Anlagen (200-2, Kap. 8.2.5).
+- Labor „Strukturanalyse und Schutzbedarfsfeststellung“: neue Aufgabe zu kritischen Kommunikationsverbindungen (200-2, Kap. 8.2.8).
+- Themenfeld 9: Beispiele für Maßnahmen, die ohne Akzeptanz scheitern, und die Prüfung der Akzeptanz durch den ISB (200-2, Kap. 9.5 und 10.1.3).
+- Themenfeld 10: Begriff und Vorgehen der IS-Revision (200-2, Kap. 10.1.3).
+- 5 neue Kontrollfragen (jetzt 121) und 6 neue Prüfungsfragen (jetzt 190), alle mit wörtlichem Quellenzitat.
+
 ## [1.5.1] – 2026-11-24
 
 ### Hinzugefügt
