@@ -13,3 +13,6 @@ The app is used as an installed PWA, often on e-ink devices that stay open for a
 
 ## Consequences
 An installed app picks up a new release at the next start or within an hour while online, without losing offline capability. The user decides when to switch to the new version.
+
+## Addendum: Trusted Types and service worker registration
+The CSP contains `require-trusted-types-for 'script'`. With it, Chrome rejects `navigator.serviceWorker.register("/sw.js")` with a plain string ("This document requires 'TrustedScriptURL' assignment"). The service worker was therefore never installed in production and the installed app needed a connection. `installTrustedTypesPolicy` (`src/hooks/trusted-types.utils.ts`, called from `src/main.tsx`) installs a Trusted Types `default` policy that accepts only `/sw.js`. The CSP stays unchanged.
