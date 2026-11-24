@@ -118,7 +118,7 @@ src/
     labs/*.lab.ts           Labore
     glossary.content.ts     Glossar
   features/     course, quiz, labs, practice, exam, progress, glossary
-  hooks/        useHashRoute, useCourse, useNow
+  hooks/        useHashRoute (typed über dem Router der UI-Bibliothek), useCourse
   stores/       progress.store (persistiert), exam.store (laufende Prüfung), Selektoren
   ui/           einziger Import-Punkt für e-ink-ui-lib
 resources/      BSI-Dokumente (PDF)
