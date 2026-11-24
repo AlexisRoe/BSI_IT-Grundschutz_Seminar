@@ -119,6 +119,12 @@ Ergänzend bietet das BSI einen kostenlosen [Online-Kurs IT-Grundschutz](https:/
 
 Aktuelle Fassungen gibt es auf der [IT-Grundschutz-Seite des BSI](https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html). Herkunft (Download-URL, Abrufdatum) und Inhalt jedes Dokuments sind in [RESSOURCES.md](RESSOURCES.md) beschrieben. `npm run verify:citations` lädt die Dokumente lokal herunter, extrahiert den Text (Ghostscript nötig) und prüft alle Quellenzitate. Die Registry der zitierfähigen Dokumente ist [`src/content/sources.constants.ts`](src/content/sources.constants.ts).
 
+### Weiterführende Literatur
+
+Zum Lernen neben diesem Kurs nutze ich folgendes Buch. Es ist **keine Quelle** des Kurses: Lektionen, Fragen und Labore verweisen nur auf die BSI-Dokumente oben ([ADR 0014](docs/decisions/0014-source-policy-and-praxis-2026.md)).
+
+- Groß, Markus (2026): *BSI IT-Grundschutz++. Alles was man wissen muss: Struktur. Absicherung. Nachweisbarkeit.* 1. Auflage. Deutschland: Independently published (Reihe: IT, KI, Governance & Management – Alles was man wissen muss). E-Book (Kindle), erschienen am 08.08.2026. ISBN: 979-8178846643, ASIN: B0HDHR5JT7. Online verfügbar unter: <https://www.amazon.de/dp/B0HDHR5JT7> [Zugriff am: 24.11.2026].
+
 ## Technologien
 
 | Bereich | Technologie | Zweck |
