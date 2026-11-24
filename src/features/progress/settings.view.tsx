@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { BUILD_INFO } from "@/config/build-info.config";
+import {
+  activateWaitingUpdate,
+  type CheckableRegistration,
+  checkForUpdate,
+} from "@/hooks/pwa-update.utils";
 import { useExamStore } from "@/stores/exam.store";
 import { selectProgressData, useProgressStore } from "@/stores/progress.store";
 import {
@@ -18,7 +23,35 @@ import { createExport, parseExport } from "./progress-transfer.utils";
 /** Export, import and reset of the locally stored progress. */
 export function SettingsView() {
   const [confirmReset, setConfirmReset] = useState(false);
+  const [checking, setChecking] = useState(false);
+  const [registration, setRegistration] = useState<CheckableRegistration>();
+  const [updateReady, setUpdateReady] = useState(false);
   const { notify } = useNotifications();
+
+  const checkUpdate = async () => {
+    setChecking(true);
+    const reg = await navigator.serviceWorker?.getRegistration();
+    setRegistration(reg);
+    const result = await checkForUpdate(reg);
+    setChecking(false);
+    switch (result) {
+      case "available":
+        setUpdateReady(true);
+        notify("Neue Version verfügbar", "Sie können sie jetzt installieren.");
+        break;
+      case "current":
+        notify("Die App ist aktuell");
+        break;
+      case "offline":
+        notify("Keine Verbindung", "Zur Prüfung ist eine Internetverbindung nötig.", "error");
+        break;
+      case "unsupported":
+        notify("Nicht verfügbar", "Dieser Browser hat keinen Service Worker.", "error");
+        break;
+      default:
+        notify("Prüfung fehlgeschlagen", "Der Server ist nicht erreichbar.", "error");
+    }
+  };
 
   const exportProgress = () => {
     const data = selectProgressData(useProgressStore.getState());
@@ -95,6 +128,17 @@ export function SettingsView() {
           <Card.Title>Über diese App</Card.Title>
         </Card.Header>
         <Card.Content>
+          <Flex column gap="md">
+            {updateReady ? (
+              <Button iconLeft="refresh" onClick={() => activateWaitingUpdate(registration)}>
+                Update installieren und neu laden
+              </Button>
+            ) : (
+              <Button.Outlined iconLeft="refresh" disabled={checking} onClick={checkUpdate}>
+                {checking ? "Prüfe …" : "Nach Update suchen"}
+              </Button.Outlined>
+            )}
+          </Flex>
           <div className="build-info">
             <Description label="Projekt" value={BUILD_INFO.title} />
             <Description label="Version" value={BUILD_INFO.version} />
