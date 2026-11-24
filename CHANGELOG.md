@@ -2,7 +2,7 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
-## [1.4.0] – 2026-11-24
+## [1.5.0] – 2026-11-24
 
 ### Hinzugefügt
 - Lektionen enden mit der Schaltfläche „Nach oben“, die an den Seitenanfang springt.
@@ -91,7 +91,7 @@ Erste Version der Progressive Web App zur Vorbereitung auf die Prüfung zum IT-G
 - Tabelle 2 der Prüfungsbedingungen ergibt 49 statt 50 Fragen; die 50. wird zufällig gezogen (ADR 0015).
 - `npm audit` meldet 4 mittlere Befunde in Build-Werkzeugen, nicht in der ausgelieferten App; bewusst zurückgestellt (ADR 0016).
 
-[1.4.0]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.3...v1.4.0
+[1.5.0]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.3...v1.5.0
 [1.3.3]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.2...v1.3.3
 [1.3.2]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/compare/v1.1.2...v1.3.1
