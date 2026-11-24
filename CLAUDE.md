@@ -3,14 +3,15 @@
 Guidance for Claude Code in this repository.
 
 ## Purpose
-PWA for the IT-Grundschutz Praktiker preparation course, built with `e-ink-ui-lib`. Reference material lives in `resources/` (PDFs).
+PWA for the IT-Grundschutz Praktiker preparation course, built with `e-ink-ui-lib`. Reference material (BSI PDFs) is git-ignored for copyright reasons (ADR 0019); `RESSOURCES.md` lists sources and URLs, `npm run verify:citations` fetches them into `resources/`.
 Course content is German and must be traceable to a document in `resources/` (ADR 0014); exam rules in ADR 0015.
-Every exam pool question needs a `source.quote` that CI finds verbatim on the cited page in `resources/.text/` (ADR 0017).
+Every exam pool question needs a `source.quote` that `npm run verify:citations` finds verbatim on the cited page in `resources/.text/` (ADR 0017, 0019). It is a manual check, not part of CI.
 
 ## Commands
 - `npm run dev` / `npm run build` / `npm run preview`
 - `npm test` / `npm run test:watch` / `npm run coverage`; single file: `npx vitest run path/to/file.test.ts`
 - `npm run typecheck`, `npm run lint`, `npm run lint:fix`, `npm run format`
+- `npm run verify:citations` — download BSI PDFs, extract text, check all `source.quote`s. Needs Ghostscript (`gs`).
 - `npm run security` — npm audit + signature check
 - `npm run check` — lint + typecheck + tests + build. Run before considering any change done.
 Use `npm ci` to install. Node version: `.nvmrc`.

@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { type Course, loadCourse } from "./content.utils";
 import type { SourceDocId, SourceRef } from "./course.types";
@@ -8,6 +8,11 @@ import { SOURCES, textFileOf } from "./sources.constants";
 const MIN_QUOTE_LENGTH = 20;
 
 const TEXT_DIR = resolve(process.cwd(), "resources/.text");
+/**
+ * The BSI texts are git-ignored (ADR 0019). Without them this suite is skipped,
+ * unless `npm run verify:citations` demands them via REQUIRE_SOURCE_TEXT.
+ */
+const hasText = existsSync(TEXT_DIR) || process.env.REQUIRE_SOURCE_TEXT === "1";
 const docIds = Object.keys(SOURCES) as SourceDocId[];
 
 let course: Course;
@@ -15,12 +20,6 @@ const pagesByDoc = new Map<SourceDocId, Map<number, string>>();
 
 beforeAll(async () => {
   course = await loadCourse();
-  for (const id of docIds) {
-    pagesByDoc.set(
-      id,
-      parsePages(readFileSync(resolve(TEXT_DIR, textFileOf(SOURCES[id])), "utf8")),
-    );
-  }
 });
 
 function allRefs(): { owner: string; ref: SourceRef }[] {
@@ -52,6 +51,26 @@ function quoteProblem(owner: string, ref: SourceRef & { quote: string }): string
 }
 
 describe("source citations", () => {
+  it("does not cite Kompendium pages, which restart in every Baustein", () => {
+    const paged = allRefs().filter((r) => r.ref.doc === "kompendium" && r.ref.page !== undefined);
+    expect(paged.map((r) => r.owner)).toEqual([]);
+  });
+
+  it("requires a quote on every exam pool question", () => {
+    expect(course.pool.filter((q) => !q.source.quote).map((q) => q.id)).toEqual([]);
+  });
+});
+
+describe.skipIf(!hasText)("source quotes against extracted BSI text", () => {
+  beforeAll(() => {
+    for (const id of docIds) {
+      pagesByDoc.set(
+        id,
+        parsePages(readFileSync(resolve(TEXT_DIR, textFileOf(SOURCES[id])), "utf8")),
+      );
+    }
+  });
+
   it("has extracted text with page markers for every registered document", () => {
     for (const id of docIds) expect(pagesByDoc.get(id)?.size ?? 0).toBeGreaterThan(0);
   });
@@ -64,14 +83,5 @@ describe("source citations", () => {
       .map((r) => quoteProblem(r.owner, r.ref))
       .filter((p): p is string => p !== undefined);
     expect(problems).toEqual([]);
-  });
-
-  it("does not cite Kompendium pages, which restart in every Baustein", () => {
-    const paged = allRefs().filter((r) => r.ref.doc === "kompendium" && r.ref.page !== undefined);
-    expect(paged.map((r) => r.owner)).toEqual([]);
-  });
-
-  it("requires a quote on every exam pool question", () => {
-    expect(course.pool.filter((q) => !q.source.quote).map((q) => q.id)).toEqual([]);
   });
 });

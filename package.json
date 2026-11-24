@@ -1,6 +1,6 @@
 {
   "name": "bsi-it-grundschutz-seminar",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "PWA preparing for the BSI IT-Grundschutz Praktiker certification",
   "keywords": [
     "react",
@@ -30,6 +30,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
+    "verify:citations": "bash scripts/fetch-resources.sh && bash scripts/extract-resource-text.sh && REQUIRE_SOURCE_TEXT=1 vitest run src/content/citations.test.ts",
     "security": "npm audit --audit-level=high && npm audit signatures",
     "outdated": "npm outdated | grep -vE \"typescript|@types/node\" || true",
     "check": "npm run lint && npm run typecheck && npm run coverage && npm run build"

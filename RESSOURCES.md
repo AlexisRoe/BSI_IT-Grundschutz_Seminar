@@ -1,8 +1,8 @@
 # Quelldokumente
 
-Herkunft und Inhalt der Dokumente in diesem Verzeichnis. Alle Dokumente sind Veröffentlichungen des BSI. Kursinhalte dürfen nur auf diese Dokumente gestützt werden (ADR 0014).
+Herkunft und Inhalt der BSI-Dokumente, die lokal in `resources/` liegen. Das Verzeichnis ist git-ignoriert (Urheberrecht, ADR 0019); `npm run verify:citations` lädt die Dokumente anhand der Quellen-URLs dieser Datei herunter (Format der Einträge nicht ändern: Überschrift `### \`datei.pdf\``, Zeile `**Quelle:** URL; …`). Alle Dokumente sind Veröffentlichungen des BSI. Kursinhalte dürfen nur auf diese Dokumente gestützt werden (ADR 0014).
 
-**Abrufdatum** ist bei allen Dokumenten der 23.11.2026, der Tag, an dem sie ins Repository aufgenommen wurden. Bei den Dokumenten zum Schulungskonzept, den BSI-Standards 200-1 bis 200-3 und beim Kompendium wurde am selben Tag geprüft, dass die Datei unter der angegebenen URL byte-identisch ist.
+**Abrufdatum** ist bei allen Dokumenten der 23.11.2026, der Tag, an dem sie erstmals aufgenommen wurden. Bei den Dokumenten zum Schulungskonzept, den BSI-Standards 200-1 bis 200-3 und beim Kompendium wurde am selben Tag geprüft, dass die Datei unter der angegebenen URL byte-identisch ist.
 
 ## Schulungskonzept und Prüfung
 

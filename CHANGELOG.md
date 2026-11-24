@@ -2,6 +2,12 @@
 
 Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/), die Versionen [Semantic Versioning](https://semver.org/lang/de/). Ausführliche Release-Notizen stehen bei den [GitHub Releases](https://github.com/AlexisRoe/BSI_IT-Grundschutz_Seminar/releases).
 
+## [1.5.0] – 2026-11-24
+
+### Geändert
+- BSI-Dokumente (PDF und extrahierter Text) sind aus urheberrechtlichen Gründen nicht mehr im Repository; `resources/` ist git-ignoriert, `RESSOURCES.md` liegt im Wurzelverzeichnis (ADR 0019). Die frühere Git-Historie enthält sie weiterhin.
+- Die Prüfung der Quellenzitate ist kein Teil von CI mehr, sondern läuft manuell mit `npm run verify:citations` (lädt die Dokumente, extrahiert den Text, führt den Test aus; Ghostscript nötig).
+
 ## [1.4.0] – 2026-11-24
 
 ### Hinzugefügt

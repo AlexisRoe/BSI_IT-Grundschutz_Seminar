@@ -25,6 +25,6 @@ Zuordnung der Themenfelder aus Curriculum v1.1 (IT-Grundschutz-Praktiker, 24 UE)
 
 ## Hinweise zu Lücken in den Quellen
 
-- **C5, HV-Benchmark, Prozess-/Produktaudits, 1st/2nd/3rd-Party-Audits, Akkreditierungsmodell**: In den Quelldokumenten in `resources/` nicht erläutert. Sie stehen nur in gekennzeichneten Ergänzungs- bzw. Praxis-Kästen und werden nicht abgefragt.
+- **C5, HV-Benchmark, Prozess-/Produktaudits, 1st/2nd/3rd-Party-Audits, Akkreditierungsmodell**: In den Quelldokumenten (`RESSOURCES.md`) nicht erläutert. Sie stehen nur in gekennzeichneten Ergänzungs- bzw. Praxis-Kästen und werden nicht abgefragt.
 - **Gesetzliche Grundlagen (BSIG, IT-SiG)**: Die BSI-Dokumente enthalten nur Bezüge (§ 8, § 8a BSIG, BSI-KritisV, ZVO). Aktuelle NIS-2-Pflichten stehen in einem Praxis-2026-Kasten.
 - Pool-Anteile: 138 Basis- und 46 Experten-Fragen (75 % / 25 %), wie in § 5 der Prüfungsbedingungen gefordert.

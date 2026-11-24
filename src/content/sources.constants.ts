@@ -1,6 +1,6 @@
 import type { SourceDocId, SourceRef } from "./course.types";
 
-/** A BSI document in `resources/` that course content may cite. */
+/** A BSI document (local, git-ignored `resources/`) that course content may cite. */
 export interface SourceDocument {
   id: SourceDocId;
   title: string;
