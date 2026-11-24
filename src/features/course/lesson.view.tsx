@@ -16,6 +16,7 @@ import {
   Pill,
   RichText,
   State,
+  scrollToTop,
   Text,
   Title,
 } from "@/ui";
@@ -124,6 +125,9 @@ export function LessonView({ lessonId }: { lessonId: string }) {
           </Button>
         )}
       </Flex>
+      <Button.Naked iconLeft="arrow-up" onClick={scrollToTop}>
+        Nach oben
+      </Button.Naked>
     </Flex>
   );
 }

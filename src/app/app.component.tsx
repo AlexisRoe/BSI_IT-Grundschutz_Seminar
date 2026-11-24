@@ -78,12 +78,12 @@ export function App() {
           </Navigation>
         </Page.Nav>
         <Page.Body>
-          <main className="app__main">
+          <div className="app__main">
             <Flex column gap="md">
               <UpdatePrompt />
               <Screen route={route} />
             </Flex>
-          </main>
+          </div>
         </Page.Body>
       </Page>
     </EinkProvider>

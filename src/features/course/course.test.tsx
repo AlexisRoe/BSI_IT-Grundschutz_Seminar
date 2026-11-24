@@ -39,6 +39,18 @@ describe("course views", () => {
     ).toBeInTheDocument();
   });
 
+  it("offers a button that scrolls the page body back to the top", async () => {
+    renderWithProviders(
+      <main data-testid="body">
+        <LessonView lessonId="t01-l02" />
+      </main>,
+    );
+    const body = screen.getByTestId("body");
+    body.scrollTop = 400;
+    fireEvent.click(await screen.findByRole("button", { name: "Nach oben" }));
+    expect(body.scrollTop).toBe(0);
+  });
+
   it("shows an empty state for unknown lessons", async () => {
     renderWithProviders(<LessonView lessonId="gibt-es-nicht" />);
     expect(await screen.findByText("Lektion nicht gefunden")).toBeInTheDocument();

@@ -4,8 +4,11 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 
 ## [1.4.0] – 2026-11-24
 
+### Hinzugefügt
+- Lektionen enden mit der Schaltfläche „Nach oben“, die an den Seitenanfang springt.
+
 ### Geändert
-- Aktualisierung auf `e-ink-ui-lib` 1.4.0. Die App nutzt nun die dort aufgenommenen Bausteine statt eigener Kopien: `EinkProvider`, `RichText`, `OrderList`, `Skeleton.Group`, `Alert` mit Aktionsbereich, `Checkbox` mit Ergebnis-Anzeige, `Table` mit Zeilenumbruch und Spaltenbreite, `Button` mit linker Ausrichtung, `useNow`, Hash-Router-Grundfunktionen, `useDownload` sowie `shuffle`, `move` und `scramble`. Testhilfen kommen aus `e-ink-ui-lib/testing`.
+- Aktualisierung auf `e-ink-ui-lib` 1.5.0. Die App nutzt nun die dort aufgenommenen Bausteine statt eigener Kopien: `EinkProvider`, `RichText`, `OrderList`, `Skeleton.Group`, `Alert` mit Aktionsbereich, `Checkbox` mit Ergebnis-Anzeige, `Table` mit Zeilenumbruch und Spaltenbreite, `Button` mit linker Ausrichtung, `useNow`, Hash-Router-Grundfunktionen, `useDownload` sowie `shuffle`, `move` und `scramble`. Testhilfen kommen aus `e-ink-ui-lib/testing`.
 - Die Schriften liefert die Bibliothek nun selbst als Dateien aus; das Build-Plugin zum Auslagern entfällt (ADR 0010 ersetzt).
 - Fehlgeschlagene Importe zeigen eine deutsche Meldung statt der englischen Standardmeldung.
 - In der Ordnungsaufgabe bleiben die Pfeil-Schaltflächen nach dem Auswerten sichtbar, sind aber deaktiviert.
@@ -15,6 +18,7 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 - Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
 
 ### Behoben
+- Beim Wechsel zur vorherigen oder nächsten Lektion blieb die Ansicht am Seitenende stehen; sie springt nun nach oben (Korrektur in `e-ink-ui-lib` 1.5.0: `navigate` setzte den Scrollbereich der Seite nicht zurück). Das doppelte `<main>`-Element der App ist entfernt.
 - Der Hinweis „Eine neue Version ist verfügbar“ blieb auch nach „Neu laden“ bestehen. Ursache: Der Service Worker konnte seine Laufzeitbibliothek wegen der Trusted-Types-Richtlinie (CSP) nicht laden und beantwortete die Aktivierungsanfrage nicht; auch Zwischenspeicher und Offline-Betrieb waren dadurch betroffen. Die Laufzeitbibliothek ist jetzt in `sw.js` eingebettet (ADR 0018).
 
 ### Entfernt
