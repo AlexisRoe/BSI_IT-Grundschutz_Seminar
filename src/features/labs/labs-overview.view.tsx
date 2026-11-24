@@ -3,7 +3,7 @@ import { getTopic } from "@/content/topics.constants";
 import { useCourse } from "@/hooks/course.hook";
 import { navigate } from "@/hooks/hash-route.hook";
 import { useProgressStore } from "@/stores/progress.store";
-import { Card, Flex, Text, Title } from "@/ui";
+import { Card, Flex, Space, Text, Title } from "@/ui";
 
 /** List of all labs with their last result. */
 export function LabsOverviewView() {
@@ -29,6 +29,7 @@ export function LabsOverviewView() {
                 <Card.Subtitle>{`Letztes Ergebnis: ${result.correct} von ${result.total} Punkten`}</Card.Subtitle>
               )}
             </Card.Header>
+            <Space size="16" />
             <Card.Action onClick={() => navigate({ name: "lab", labId: lab.id })}>
               {result ? "Wiederholen" : "Starten"}
             </Card.Action>

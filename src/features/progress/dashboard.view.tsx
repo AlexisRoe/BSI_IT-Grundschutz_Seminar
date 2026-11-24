@@ -5,7 +5,7 @@ import { navigate } from "@/hooks/hash-route.hook";
 import { useExamStore } from "@/stores/exam.store";
 import { overallLessonPercent } from "@/stores/progress.selectors";
 import { useProgressStore } from "@/stores/progress.store";
-import { Alert, Button, Card, Flex, ProgressBar, Text, Title } from "@/ui";
+import { Alert, Button, Card, Flex, ProgressBar, Space, Text, Title } from "@/ui";
 
 /** Start screen: overall progress, next step and last exam result. */
 export function DashboardView() {
@@ -44,6 +44,7 @@ export function DashboardView() {
           <Card.Subtitle>Nächster Schritt</Card.Subtitle>
           <Card.Title>{next ? next.title : "Alle Lektionen abgeschlossen"}</Card.Title>
         </Card.Header>
+        <Space size="16" />
         <Card.Action
           onClick={() =>
             next ? navigate({ name: "lesson", lessonId: next.id }) : navigate({ name: "exam" })
@@ -58,6 +59,7 @@ export function DashboardView() {
             <Card.Subtitle>Letzte Prüfungssimulation</Card.Subtitle>
             <Card.Title>{`${last.score} von ${last.total} – ${last.passed ? "bestanden" : "nicht bestanden"}`}</Card.Title>
           </Card.Header>
+          <Space size="16" />
           <Card.Action onClick={() => navigate({ name: "exam-result", examId: last.id })}>
             Auswertung ansehen
           </Card.Action>

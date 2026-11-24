@@ -10,6 +10,7 @@ Alle nennenswerten Änderungen an diesem Projekt. Das Format folgt [Keep a Chang
 - Fehlgeschlagene Importe zeigen eine deutsche Meldung statt der englischen Standardmeldung.
 - In der Ordnungsaufgabe bleiben die Pfeil-Schaltflächen nach dem Auswerten sichtbar, sind aber deaktiviert.
 - Einstellungen: „Über diese App“ ist nun eine Überschrift über der Karte, die Schaltfläche „Nach Update suchen“ steht unter der Karte.
+- Karten auf Start und Laborseite: zwischen Text und Aktionsschaltfläche steht nun ein Abstand von 1 rem (`Space`).
 - Callout-Texte zeigen Hervorhebungen (`**…**`) nun an, statt die Markierung zu entfernen.
 
 ### Behoben
