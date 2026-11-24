@@ -50,6 +50,21 @@ describe("progress views", () => {
     expect(window.location.hash).toBe("#/pruefung/ergebnis/e1");
   });
 
+  it("dashboard describes each section with a heading, text and a button", async () => {
+    renderWithProviders(<DashboardView />);
+    for (const [title, action] of [
+      ["Kurs", "Zum Kurs"],
+      ["Labore", "Labore öffnen"],
+      ["Training", "Training starten"],
+      ["Prüfungssimulation", "Simulation öffnen"],
+    ] as const) {
+      expect(await screen.findByRole("heading", { level: 2, name: title })).toBeInTheDocument();
+      expect(screen.getByRole("button", { name: action })).toBeInTheDocument();
+    }
+    fireEvent.click(screen.getByRole("button", { name: "Labore öffnen" }));
+    expect(window.location.hash).toBe("#/labor");
+  });
+
   it("progress table rows are not selectable", async () => {
     renderWithProviders(<ProgressView />);
     await screen.findByText("Lernfortschritt");
