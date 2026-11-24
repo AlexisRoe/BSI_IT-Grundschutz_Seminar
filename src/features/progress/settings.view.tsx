@@ -95,6 +95,7 @@ export function SettingsView() {
       <FileUpload
         accept={[".json", "application/json"]}
         placeholder="Exportdatei auswählen"
+        errorMessage="Import fehlgeschlagen: ungültige Exportdatei"
         onUpload={importProgress}
       >
         Fortschritt importieren
