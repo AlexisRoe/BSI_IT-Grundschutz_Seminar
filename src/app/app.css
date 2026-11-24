@@ -21,26 +21,10 @@ body,
   padding: var(--eink-size-16) var(--eink-size-32);
 }
 
-.option-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--eink-size-16);
-}
-
-.grow {
-  flex: 1;
-}
-
 @media (max-width: 40rem) {
   .app__main {
     padding: var(--eink-size-16);
   }
-}
-
-.lesson-link {
-  justify-content: flex-start;
-  text-align: left;
 }
 
 .course {
@@ -75,14 +59,4 @@ body,
   display: flex;
   flex-direction: column;
   gap: var(--eink-size-16);
-}
-
-/* Lists: first text line aligns with its marker, even when items wrap. */
-.eink-list--unordered > .eink-list__item,
-.eink-list--ordered > .eink-list__item {
-  align-items: flex-start;
-}
-
-.eink-list--unordered > .eink-list__item::before {
-  margin-top: calc((1lh - var(--eink-size-10)) / 2);
 }

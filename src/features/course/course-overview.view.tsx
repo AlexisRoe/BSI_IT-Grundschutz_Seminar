@@ -44,7 +44,7 @@ export function CourseOverviewView() {
                   {lessons.map((lesson, i) => (
                     <Button.Naked
                       key={lesson.id}
-                      className="lesson-link"
+                      align="start"
                       iconLeft={lessonsDone[lesson.id] ? "circle-check" : "circle-dashed"}
                       onClick={() => navigate({ name: "lesson", lessonId: lesson.id })}
                     >
