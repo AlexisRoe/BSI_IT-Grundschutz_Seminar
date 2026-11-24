@@ -10,7 +10,6 @@ import { selectProgressData, useProgressStore } from "@/stores/progress.store";
 import {
   Button,
   Card,
-  Description,
   FileUpload,
   Flex,
   Modal,
@@ -125,15 +124,12 @@ export function SettingsView() {
       <Title size="2">Über diese App</Title>
       <Card>
         <Card.Content>
-          <div className="build-info">
-            <Description label="Projekt" value={BUILD_INFO.title} />
-            <Description label="Version" value={BUILD_INFO.version} />
-            <Description label="Commit" value={BUILD_INFO.commit} />
-            <Description
-              label="Build-Zeit"
-              value={new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}
-            />
-          </div>
+          <Flex column gap="sm">
+            <Text>{`Projekt: ${BUILD_INFO.title}`}</Text>
+            <Text>{`Version: ${BUILD_INFO.version}`}</Text>
+            <Text>{`Commit: ${BUILD_INFO.commit}`}</Text>
+            <Text>{`Build-Zeit: ${new Date(BUILD_INFO.builtAt).toLocaleString("de-DE")}`}</Text>
+          </Flex>
         </Card.Content>
       </Card>
       {updateReady ? (

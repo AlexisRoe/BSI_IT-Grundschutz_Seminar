@@ -53,10 +53,10 @@ describe("progress views", () => {
   it("settings show build information", () => {
     renderWithProviders(<SettingsView />);
     expect(screen.getByText("Über diese App")).toBeInTheDocument();
-    expect(screen.getByText("IT-Grundschutz-Praktiker")).toBeInTheDocument();
-    expect(screen.getByText(/^\d+\.\d+\.\d+$/)).toBeInTheDocument();
-    expect(screen.getByText("Commit")).toBeInTheDocument();
-    expect(screen.getByText("Build-Zeit")).toBeInTheDocument();
+    expect(screen.getByText("Projekt: IT-Grundschutz-Praktiker")).toBeInTheDocument();
+    expect(screen.getByText(/^Version: \d+\.\d+\.\d+$/)).toBeInTheDocument();
+    expect(screen.getByText(/^Commit: /)).toBeInTheDocument();
+    expect(screen.getByText(/^Build-Zeit: /)).toBeInTheDocument();
   });
 
   it("settings export, import and reset progress", async () => {

@@ -54,9 +54,3 @@ body,
 .lab-task {
   margin-top: var(--eink-size-16);
 }
-
-.build-info {
-  display: flex;
-  flex-direction: column;
-  gap: var(--eink-size-16);
-}

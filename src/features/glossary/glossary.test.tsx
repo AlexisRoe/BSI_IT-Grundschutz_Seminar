@@ -9,6 +9,13 @@ describe("glossary", () => {
     expect(terms).toEqual([...terms].sort((a, b) => a.localeCompare(b, "de")));
   });
 
+  it("shows term as heading, the definition and the source", () => {
+    renderWithProviders(<GlossaryView />);
+    const entry = GLOSSARY[0] as (typeof GLOSSARY)[number];
+    expect(screen.getByRole("heading", { level: 2, name: entry.term })).toBeInTheDocument();
+    expect(screen.getAllByText(/^Quelle: /).length).toBe(GLOSSARY.length);
+  });
+
   it("filters by search term", () => {
     renderWithProviders(<GlossaryView />);
     expect(screen.getByText("Vertraulichkeit")).toBeInTheDocument();

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { GLOSSARY } from "@/content/glossary.content";
 import { formatSource } from "@/content/sources.constants";
-import { Flex, Input, List, ListItem, Text, Title } from "@/ui";
+import { Flex, Input, Text, Title } from "@/ui";
 
 /** Searchable glossary of IT-Grundschutz terms. */
 export function GlossaryView() {
@@ -18,13 +18,13 @@ export function GlossaryView() {
         Begriff suchen
       </Input>
       {entries.length === 0 && <Text>Keine Einträge gefunden.</Text>}
-      <List as="detailed">
-        {entries.map((e) => (
-          <ListItem key={e.term} title={e.term} description={formatSource(e.source)}>
-            {e.definition}
-          </ListItem>
-        ))}
-      </List>
+      {entries.map((e) => (
+        <Flex column gap="sm" key={e.term}>
+          <Title size="2">{e.term}</Title>
+          <Text>{e.definition}</Text>
+          <Text>{`Quelle: ${formatSource(e.source)}`}</Text>
+        </Flex>
+      ))}
     </Flex>
   );
 }

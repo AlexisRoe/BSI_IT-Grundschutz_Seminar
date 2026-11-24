@@ -32,6 +32,13 @@ describe("course views", () => {
     expect(screen.getByText(/Nicht prüfungsrelevant/)).toBeInTheDocument();
   });
 
+  it("renders definition terms as level-4 headings", async () => {
+    renderWithProviders(<LessonView lessonId="t01-l01" />);
+    expect(
+      await screen.findByRole("heading", { level: 4, name: "Vertraulichkeit" }),
+    ).toBeInTheDocument();
+  });
+
   it("shows an empty state for unknown lessons", async () => {
     renderWithProviders(<LessonView lessonId="gibt-es-nicht" />);
     expect(await screen.findByText("Lektion nicht gefunden")).toBeInTheDocument();

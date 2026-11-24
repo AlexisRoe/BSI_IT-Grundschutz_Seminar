@@ -1,17 +1,5 @@
 import type { ContentBlock } from "@/content/course.types";
-import {
-  Alert,
-  Card,
-  Description,
-  Flex,
-  Link,
-  List,
-  ListItem,
-  RichText,
-  Table,
-  Text,
-  Title,
-} from "@/ui";
+import { Alert, Card, Flex, Link, List, ListItem, RichText, Table, Text, Title } from "@/ui";
 
 /** Renders one lesson content block with library components. */
 export function ContentBlockView({ block }: { block: ContentBlock }) {
@@ -64,7 +52,14 @@ export function ContentBlockView({ block }: { block: ContentBlock }) {
         </Flex>
       );
     case "definition":
-      return <Description label={block.term} value={<RichText text={block.text} />} />;
+      return (
+        <Flex column gap="sm">
+          <Title size="4">{block.term}</Title>
+          <Text>
+            <RichText text={block.text} />
+          </Text>
+        </Flex>
+      );
     case "callout":
       return (
         <Alert
